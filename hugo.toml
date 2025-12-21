@@ -4,11 +4,12 @@ title = "Grupo Kwanza"
 
 theme = "beautifulhugo"
 
-paginate = 10
 enableRobotsTXT = true
-
 canonifyURLs = true
 relativeURLs = false
+
+[pagination]
+  pagerSize = 10
 
 [menu]
 
