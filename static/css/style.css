@@ -1,185 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+/* =====================================================
+   1. FONTES (Display + Texto + Expressiva)
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&family=Bebas+Neue&display=swap');
+
+/* =====================================================
+   2. DESIGN TOKENS (VARIÁVEIS GLOBAIS)
+   Centralizar aqui evita refatorações futuras
+   ===================================================== */
 
 :root {
-  /* Paleta base */
-  --laranja: #E85D1F;
-  --vermelho: #C41E3A;
-  --amarelo: #FDB913;
-  --preto: #000000;
-  --preto-suave: #1A1A1A;
-  --branco: #F5F5F5;
-  --cinza: #CCCCCC;
+  /* ---------- CORES BASE (IDENTIDADE) ---------- */
+  --color-primary: #E85D1F;   /* Terracota vivo */
+  --color-secondary: #9E1B32; /* Vermelho ritual */
+  --color-accent: #F2B705;    /* Dourado queimado */
+  --color-balance: #1F3D2B;   /* Verde musgo */
 
-  /* Papéis visuais */
-  --bg-main: var(--preto);
-  --bg-dark: var(--preto-suave);
-  --bg-light: var(--branco);
+  /* ---------- NEUTROS ---------- */
+  --black-pure: #0E0E0E;
+  --black-soft: #1A1A1A;
+  --gray-dark: #2A2A2A;
+  --gray-medium: #CCCCCC;
+  --white-soft: #F7F4EF;
 
-  --text-main: var(--branco);
-  --text-secondary: var(--cinza);
+  /* ---------- FUNDOS ---------- */
+  --bg-main: var(--black-pure);
+  --bg-section: var(--black-soft);
+  --bg-light: var(--white-soft);
 
-  --heading-nobre: var(--amarelo);
-  --heading-energia: var(--laranja);
+  /* ---------- TEXTO ---------- */
+  --text-main: var(--white-soft);
+  --text-secondary: var(--gray-medium);
 
-  --accent-primary: var(--laranja);
-  --accent-hover: var(--vermelho);
+  /* ---------- TÍTULOS ---------- */
+  --heading-primary: var(--color-accent);
+  --heading-secondary: var(--color-primary);
+
+  /* ---------- INTERAÇÃO ---------- */
+  --accent-default: var(--color-primary);
+  --accent-hover: var(--color-secondary);
+
+  /* ---------- UI ---------- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s ease;
 }
 
-/* Reset básico */
-* {
+/* =====================================================
+   3. RESET E BASE
+   ===================================================== */
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo do site */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  background: var(--bg-main);
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
   color: var(--text-main);
   line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Navegação */
-nav {
-  background: var(--preto);
-  padding: 20px 40px;
-}
+/* =====================================================
+   4. TIPOGRAFIA
+   ===================================================== */
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 24px;
-}
-
-nav a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--branco);
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: var(--accent-primary);
-}
-
-/* Conteúdo principal */
-main {
-  margin: 0;
-}
-
-/* Hierarquia Cultural */
 h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 68px;
-  letter-spacing: 2.5px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
   line-height: 1.1;
-  color: var(--heading-nobre);
+  color: var(--heading-primary);
 }
 
 h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 52px;
-  letter-spacing: 2px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
   line-height: 1.15;
-  color: var(--heading-energia);
+  color: var(--heading-secondary);
 }
 
-/* Estrutura e clareza */
 h3, h4, h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  color: var(--heading-nobre);
+  letter-spacing: 0.4px;
+  color: var(--heading-primary);
 }
 
-/* Página padrão */
-.pagina-header {
-  margin-bottom: 40px;
-}
-
-.pagina-subtitulo {
-  font-size: 20px;
-  color: var(--text-secondary);
-}
-
-/* Texto */
-.pagina-conteudo p {
-  font-size: 18px;
-  margin-bottom: 20px;
+p {
+  font-size: 1.05rem;
   color: var(--text-main);
 }
 
-/* Guia */
-.guia .intro {
-  background: var(--bg-dark);
-  padding: 32px;
-  border-left: 6px solid var(--accent-primary);
-  margin-bottom: 50px;
-}
-
-.guia-lista {
-  list-style: none;
-}
-
-.guia-lista li {
-  margin-bottom: 18px;
-}
-
-.guia-lista a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 22px;
-  color: var(--accent-primary);
-  text-decoration: none;
-}
-
-.guia-lista a:hover {
-  color: var(--heading-nobre);
-}
-
-/* Home-Destaques */
-.home-destaques {
-  display: grid;
-  gap: 50px;
-}
-
-.destaque h2 {
-  color: var(--laranja);
-}
-
-.destaque a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  color: var(--amarelo);
-  text-decoration: none;
-}
-
-.destaque a:hover {
-  color: var(--vermelho);
-}
-
-.home-about {
-  padding: 4rem 1.5rem;
-  background-color: var(--bg-dark);
-  color: var(--text-main);
-}
-
-.home-about h2 {
-  color: var(--heading-nobre);
-  margin-bottom: 1.5rem;
-}
-
-.home-about p {
-  max-width: 720px;
-  line-height: 1.7;
-}
+/* =====================================================
+   5. CONTAINERS E GRID
+   ===================================================== */
 
 .container {
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
 }
+
+/* =====================================================
+   6. NAVEGAÇÃO (GLASSMORPHISM LEVE)
+   ===================================================== */
+
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(14, 14, 14, 0.75);
+  backdrop-filter: blur(10px);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo img {
+  height: 48px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-menu a {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: var(--text-main);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition-fast);
+}
+
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: var(--accent-default);
+  transition: width var(--transition-base);
+}
+
+.nav-menu a:hover {
+  color: var(--accent-default);
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
+}
+
+/* =====================================================
+   7. HERO SECTION (IMPACTO + MOVIMENTO)
+   ===================================================== */
 
 .hero {
   position: relative;
@@ -189,7 +185,6 @@ h3, h4, h5 {
   overflow: hidden;
 }
 
-/* Imagens */
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -202,21 +197,21 @@ h3, h4, h5 {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 1.5s ease-in-out;
+  transition: opacity 1.6s ease-in-out;
 }
 
 .hero-bg img.active {
   opacity: 1;
 }
 
-/* Overlay */
+/* Overlay orgânico */
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0.45),
-    rgba(0,0,0,0.55)
+    180deg,
+    rgba(14,14,14,0.45),
+    rgba(14,14,14,0.75)
   );
 }
 
@@ -233,75 +228,195 @@ h3, h4, h5 {
 }
 
 .hero-subtitle {
-  font-size: 20px;
+  font-size: 1.2rem;
   max-width: 640px;
-  margin: 24px 0 32px;
+  margin: 24px 0 36px;
+  color: var(--text-secondary);
 }
 
-/* CTA */
+/* =====================================================
+   8. BOTÕES (MICRO-INTERAÇÃO: GINGA)
+   ===================================================== */
+
 .btn-primary {
   display: inline-block;
-  background: var(--accent-primary);
+  background: var(--accent-default);
   color: #fff;
-  padding: 14px 28px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: var(--radius-md);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   text-decoration: none;
-  letter-spacing: 1px;
-  transition: background 0.3s ease;
+  letter-spacing: 0.8px;
+  transition: transform var(--transition-fast),
+              background var(--transition-base),
+              box-shadow var(--transition-base);
 }
 
 .btn-primary:hover {
   background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(232, 93, 31, 0.35);
 }
 
-.site-nav {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(0,0,0,0.9);
-  backdrop-filter: blur(6px);
+/* =====================================================
+   9. SEÇÕES DE CONTEÚDO
+   ===================================================== */
+
+.home-about {
+  padding: 5.5rem 0;
+  background: var(--bg-section);
 }
+
+.home-about p {
+  max-width: 720px;
+}
+
+/* Cards com Glassmorphism */
+.card {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(12px);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  transition: transform var(--transition-base);
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* =====================================================
+   10. FOOTER
+   ===================================================== */
 
 .site-footer {
-  background: var(--bg-dark);
+  background: var(--bg-section);
   color: var(--text-secondary);
   padding: 48px 0;
-  font-size: 14px;
+  font-size: 0.85rem;
 }
 
 .site-footer p {
   text-align: center;
-  margin: 0;
 }
 
-.nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+/* =====================================================
+   11. ACESSIBILIDADE
+   ===================================================== */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
 }
 
-.nav-logo img {
-  height: 48px;
-  width: auto;
+/* =====================================================
+   12. HERO — RESPONSIVIDADE MOBILE
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 75vh;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    padding-bottom: 64px;
+  }
+
+  .hero-logo {
+    max-width: 96px;
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.15;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 20px 0 28px;
+  }
+
+  .btn-primary {
+    padding: 14px 28px;
+    font-size: 0.9rem;
+  }
 }
 
-.nav-menu {
-  list-style: none;
-  display: flex;
-  gap: 24px;
+/* Telas muito pequenas */
+@media (max-width: 420px) {
+
+  .hero {
+    min-height: 70vh;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-logo {
+    max-width: 80px;
+  }
 }
 
-.nav-menu a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: var(--text-main);
-  text-decoration: none;
+/* =====================================================
+   13. MENU MOBILE — HAMBURGER
+   ===================================================== */
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  padding: 8px;
 }
 
-.nav-menu a:hover {
-  color: var(--accent-primary);
+.nav-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  background: var(--text-main);
+  margin: 6px 0;
+  transition: all 0.3s ease;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background: var(--bg-section);
+    flex-direction: column;
+    gap: 0;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+  }
+
+  .nav-menu li {
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 18px 24px;
+  }
+
+  .nav-menu.open {
+    max-height: 400px;
+  }
 }
