@@ -1,0 +1,33 @@
+theme = 'beautifulhugo'
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Equipe Kwanza"
+    url = "/equipe-kwanza/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Guia do Capoeirista Kwanza"
+    url = "/guia-do-capoeirista-kwanza/"
+    weight = 3
+
+  [[menu.main]]
+    name = "Vem Aprender"
+    url = "/vem-aprender/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 5
+
+  [[menu.main]]
+    name = "Contatos"
+    url = "/contatos/"
+    weight = 6

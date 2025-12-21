@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<article class="pagina">
+
+  <header class="pagina-header">
+    <h1>{{ .Title }}</h1>
+
+    {{ with .Params.subtitle }}
+      <p class="pagina-subtitulo">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  <section class="pagina-conteudo">
+    {{ .Content }}
+  </section>
+
+</article>
+
+{{ end }}
