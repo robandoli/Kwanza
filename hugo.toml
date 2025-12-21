@@ -1,4 +1,14 @@
-theme = 'beautifulhugo'
+baseURL = "https://SEU-SITE.netlify.app/"
+languageCode = "pt-br"
+title = "Grupo Kwanza"
+
+theme = "beautifulhugo"
+
+paginate = 10
+enableRobotsTXT = true
+
+canonifyURLs = true
+relativeURLs = false
 
 [menu]
 
