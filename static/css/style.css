@@ -183,6 +183,7 @@ p {
   display: flex;
   align-items: center;
   overflow: hidden;
+  padding-bottom: 80px;
 }
 
 .hero-bg {
@@ -220,6 +221,7 @@ p {
   position: relative;
   z-index: 2;
   max-width: 900px;
+  padding-bottom: 64px; /* ajuste fino: 48px a 96px */
 }
 
 .hero-logo {
@@ -264,12 +266,17 @@ p {
    ===================================================== */
 
 .home-about {
-  padding: 5.5rem 0;
+  padding: 5.5rem 0 7rem;
   background: var(--bg-section);
+  padding-bottom: 80px; /* ajuste fino: 64–120px */
 }
 
 .home-about p {
   max-width: 720px;
+}
+
+.home-about .btn-primary {
+  margin-top: 32px;
 }
 
 /* Cards com Glassmorphism */
