@@ -5,7 +5,7 @@ title = "Grupo Kwanza"
 theme = "beautifulhugo"
 
 enableRobotsTXT = true
-canonifyURLs = true
+canonifyURLs = false
 relativeURLs = false
 
 [pagination]
@@ -14,31 +14,37 @@ relativeURLs = false
 [menu]
 
   [[menu.main]]
+    identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
 
   [[menu.main]]
+    identifier = "equipe"
     name = "Equipe Kwanza"
     url = "/equipe-kwanza/"
     weight = 2
 
   [[menu.main]]
+    identifier = "guia"
     name = "Guia do Capoeirista Kwanza"
     url = "/guia-do-capoeirista-kwanza/"
     weight = 3
 
   [[menu.main]]
+    identifier = "vem_aprender"
     name = "Vem Aprender"
     url = "/vem-aprender/"
     weight = 4
 
   [[menu.main]]
+    identifier = "blog"
     name = "Blog"
     url = "/blog/"
     weight = 5
 
   [[menu.main]]
+    identifier = "contatos"
     name = "Contatos"
     url = "/contatos/"
     weight = 6
