@@ -3,7 +3,7 @@
 
 <link rel="preload"
       as="image"
-      href="/img/hero/roda-1.png"
+      href="/img/hero/roda-1.webp"
       fetchpriority="high">
 
 <title>
@@ -19,6 +19,13 @@
 
 <link rel="stylesheet" href="/css/style.css">
 
+<style>
+  .footer-social svg {
+    width: 24px !important;
+    height: 24px !important;
+  }
+</style>
+
 <!-- Favicons -->
 <link rel="icon" href="/favicon/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -33,4 +40,4 @@
 <meta property="og:description"
       content="{{ with .Description }}{{ . }}{{ else }}Capoeira, cultura e formação através do Grupo Kwanza.{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "/img/logo-kwanza.png" | absURL }}">
+<meta property="og:image" content="{{ "/img/logo-kwanza.webp" | absURL }}">
