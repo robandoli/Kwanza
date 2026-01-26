@@ -1,0 +1,33 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1.1;
+  color: var(--heading-primary);
+}
+
+h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(2.4rem, 5vw, 3.4rem);
+  line-height: 1.15;
+  color: var(--heading-secondary);
+}
+
+h3, h4, h5 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: var(--heading-primary);
+}
+
+p {
+  font-size: 1.05rem;
+  color: var(--text-main);
+}

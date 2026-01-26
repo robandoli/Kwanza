@@ -1,0 +1,32 @@
+:root {
+  --color-primary: #E85D1F;
+  --color-secondary: #9E1B32;
+  --color-accent: #F2B705;
+  --color-balance: #1F3D2B;
+
+  --black-pure: #0E0E0E;
+  --black-soft: #1A1A1A;
+  --gray-dark: #2A2A2A;
+  --gray-medium: #CCCCCC;
+  --white-soft: #F7F4EF;
+
+  --bg-main: var(--black-pure);
+  --bg-section: var(--black-soft);
+  --bg-light: var(--white-soft);
+
+  --text-main: var(--white-soft);
+  --text-secondary: var(--gray-medium);
+
+  --heading-primary: var(--color-accent);
+  --heading-secondary: var(--color-primary);
+
+  --accent-default: var(--color-primary);
+  --accent-hover: var(--color-secondary);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.35s ease;
+}

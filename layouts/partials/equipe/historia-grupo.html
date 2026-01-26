@@ -1,0 +1,15 @@
+<section id="historia-grupo" class="section historia-grupo">
+  <div class="container equipe-grid">
+
+    <div class="equipe-media"></div>
+
+    <div class="equipe-conteudo">
+      <h2>História e Linhagem do Grupo Kwanza</h2>
+
+      {{ with .Params.historia_grupo }}
+        {{ . | markdownify }}
+      {{ end }}
+    </div>
+
+  </div>
+</section>

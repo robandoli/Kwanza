@@ -1,0 +1,44 @@
+<section id="historia-mestre" class="section historia-mestre">
+  <div class="container equipe-grid">
+
+    <!-- Coluna esquerda: imagem -->
+    <div class="equipe-media mestre-foto">
+      <picture>
+        <source
+          srcset="/img/M_Jaguara_Mobile.webp"
+          media="(max-width: 768px)"
+        >
+        <source
+          srcset="/img/M_Jaguara_Desktop.webp"
+          media="(min-width: 769px)"
+        >
+        <img
+          src="/img/M_Jaguara_Desktop.webp"
+          alt="Paulo Ricardo de Souza, Mestre Fundador do Grupo Kwanza"
+          loading="lazy"
+        >
+      </picture>
+    </div>
+
+    <!-- Coluna direita: texto -->
+    <div class="equipe-conteudo">
+      <h2>O Mestre Fundador</h2>
+
+      {{ with .Params.historia_mestre }}
+        {{ . | markdownify }}
+      {{ end }}
+
+      <!-- Currículo no final do conteúdo -->
+      <div class="mestre-curriculo">
+        <a
+          href="/docs/curriculo-cultural-mestre-jaguara.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          📄 Currículo cultural do Mestre Fundador (PDF)
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>

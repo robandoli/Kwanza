@@ -1,0 +1,9 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding-block: clamp(4rem, 8vh, 6rem);
+}
