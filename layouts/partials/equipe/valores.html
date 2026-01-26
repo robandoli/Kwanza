@@ -1,9 +1,17 @@
 <section id="valores" class="section">
-  <div class="container">
-    <h2>Valores e filosofia do grupo </h2>
+  <div class="equipe-grid">
 
-    {{ with .Params.linhagem }}
-      <p>{{ . }}</p>
-    {{ end }}
+    <!-- coluna esquerda vazia (alinhamento) -->
+    <div class="equipe-media"></div>
+
+    <!-- coluna de texto -->
+    <div class="equipe-conteudo">
+      <h2>Valores e Filosofia do Grupo</h2>
+
+      {{ with .Params.valores }}
+        {{ . | markdownify }}
+      {{ end }}
+    </div>
+
   </div>
 </section>

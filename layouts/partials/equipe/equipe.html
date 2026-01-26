@@ -2,8 +2,11 @@
   <div class="container">
     <h2>Equipe Kwanza</h2>
 
-    {{ with .Params.linhagem }}
-      <p>{{ . }}</p>
+    {{ with .Params.equipe_kwanza }}
+      <div class="equipe-kwanza">
+        {{ . | markdownify }}
+      </div>
     {{ end }}
+
   </div>
 </section>

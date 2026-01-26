@@ -24,24 +24,51 @@ historia_grupo: |
   respeito à ancestralidade e ao papel social da capoeira.
 
 historia_mestre: |
-  O Grupo Kwanza é conduzido por **Paulo Ricardo de Souza**, Mestre de Capoeira com quase
-  cinco décadas de dedicação à arte.
+  O Grupo Kwanza é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**, Mestre de Capoeira com mais de cinco décadas de dedicação à arte. Seu primeiro contato com a capoeira ocorreu em 1975, em Olinda–PE. A força do jogo e a musicalidade despertaram um caminho marcado por disciplina e busca constante por aprendizado.
 
-  Seu primeiro contato com a capoeira ocorreu em **1975, em Olinda–PE**. A força do jogo
-  e a musicalidade despertaram um caminho marcado por disciplina e busca constante por
-  aprendizado.
+  Ao longo de sua formação, construiu sua base com mestres renomados como Mestre Marinheiro, Mestre Russo, Mestre Ditinho e Mestre Nestor, além de receber influências fundamentais de Mestre Leopoldina, Mestre Burguês e Mestre Zambi. Sua trajetória contou ainda com a mentoria e amizade de Mestre Gato Preto.
+  
+  O reconhecimento como Mestre ocorreu em 30 de julho de 1991. Para ele, o título é uma responsabilidade profunda de formar pessoas e preservar valores. **A capoeira é compreendida como um modo de viver — uma prática que atravessa o corpo, a cultura e a vida cotidiana**. Sua filosofia fundamenta-se no respeito ao próximo, na honestidade e na valorização das relações humanas.
 
-  Ao longo de sua formação, construiu sua base com mestres renomados:
-  * **Mestre Marinheiro, Mestre Russo, Mestre Ditinho e Mestre Nestor**
-  * Influências de **Mestre Leopoldina**
-  * Mentoria e amizade de **Mestre Gato Preto**
+valores: |
+  O **Grupo Kwanza** fundamenta sua atuação em princípios que orientam não apenas a prática da capoeira, mas a formação humana e social de seus integrantes.
 
-  O reconhecimento como Mestre ocorreu em **30 de julho de 1991**. Para ele, o título é
-  uma responsabilidade profunda de formar pessoas e preservar valores.
+  A capoeira é compreendida como **modo de viver**, atravessando o corpo, a cultura e a vida cotidiana. Mais do que um jogo, é um espaço de aprendizado contínuo, disciplina, convivência e responsabilidade.
 
-  > A capoeira é compreendida como um modo de viver — uma prática que atravessa o corpo,
-  > a cultura e a vida cotidiana.
+  Entre os valores centrais do grupo estão:
+  
+  - **Respeito ao próximo e à ancestralidade**
+  - **Honestidade nas relações**
+  - **Compromisso com a formação humana**
+  - **Valorização da cultura popular brasileira**
+  - **Responsabilidade social e educacional**
 
-  Sua filosofia fundamenta-se no **respeito ao próximo, na honestidade e na valorização
-  das relações humanas**.
+  Esses princípios orientam o trabalho do grupo no Brasil e no exterior, preservando a tradição da capoeira e, ao mesmo tempo, formando pessoas conscientes de seu papel na sociedade.
+
+equipe_kwanza: |
+  <div class="kwanza-bloco">
+    <h3>KWANZA – SÃO PAULO 🇧🇷</h3>
+    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+  </div>
+
+  <div class="kwanza-bloco">
+    <h3>KWANZA – PERNAMBUCO 🇧🇷</h3>
+    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+  </div>
+  
+  <div class="kwanza-bloco">
+    <h3>KWANZA – MINAS GERAIS 🇧🇷</h3>
+    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+  </div>
+
+  <div class="kwanza-bloco">
+    <h3>KWANZA – CHILE 🇨🇱</h3>
+    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+  </div>
+  
+  <div class="kwanza-bloco">
+    <h3>KWANZA – MÉXICO 🇲🇽</h3>
+    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+  </div>
+
 ---
