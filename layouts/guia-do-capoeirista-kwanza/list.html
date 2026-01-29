@@ -1,17 +1,20 @@
 {{ define "main" }}
 
-<section class="guia">
+<section class="section">
+  <div class="container">
 
-  <ul class="guia-lista">
-    {{ range .Pages }}
-      <li>
-        <a href="{{ .RelPermalink }}">
-          <h2>{{ .Title }}</h2>
-        </a>
-      </li>
-    {{ end }}
-  </ul>
+    <ul class="guia-lista">
+      {{ range .Pages }}
+        <li class="guia-item">
+          <a href="{{ .RelPermalink }}" class="guia-link">
+            <h2>{{ .Title }}</h2>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
 
+  </div>
 </section>
 
 {{ end }}
+
