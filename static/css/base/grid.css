@@ -1,0 +1,19 @@
+.equipe-grid {
+  display: grid;
+  grid-template-columns: minmax(120px, 18%) 1fr;
+  gap: 2rem;
+  align-items: start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.equipe-media {
+  min-height: 1px;
+}
+
+@media (max-width: 900px) {
+  .equipe-grid {
+    grid-template-columns: 1fr;
+  }
+}

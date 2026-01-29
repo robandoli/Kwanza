@@ -2,16 +2,20 @@
 
 <article class="pagina">
 
-  <header class="pagina-header">
-    <h1>{{ .Title }}</h1>
+  <header class="pagina-header section">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
 
-    {{ with .Params.subtitle }}
-      <p class="pagina-subtitulo">{{ . }}</p>
-    {{ end }}
+      {{ with .Params.subtitle }}
+        <p class="pagina-subtitulo">{{ . }}</p>
+      {{ end }}
+    </div>
   </header>
 
-  <section class="pagina-conteudo">
-    {{ .Content }}
+  <section class="pagina-conteudo section">
+    <div class="container">
+      {{ .Content }}
+    </div>
   </section>
 
 </article>

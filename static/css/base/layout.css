@@ -4,6 +4,7 @@
   padding: 0 24px;
 }
 
+/* Seções institucionais */
 .section {
-  padding-block: clamp(4rem, 8vh, 6rem);
+  padding-block: clamp(1.25rem, 2.5vh, 2rem);
 }

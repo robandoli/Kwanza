@@ -1,0 +1,35 @@
+<div class="musica-bloco">
+
+  <header class="musica-header">
+    <h3>{{ .Get "titulo" }}</h3>
+
+    {{ with .Get "autor" }}
+      <p class="musica-autor">{{ . }}</p>
+    {{ end }}
+  </header>
+
+  {{ if .Get "youtube" }}
+    <div class="musica-media">
+      <iframe
+        src="https://www.youtube.com/embed/{{ .Get "youtube" }}"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+    </div>
+  {{ else if .Get "audio" }}
+    <div class="musica-media">
+      <audio controls>
+        <source src="{{ .Get "audio" }}" type="audio/mpeg">
+      </audio>
+    </div>
+  {{ end }}
+
+  <details class="musica-letra">
+    <summary>Veja aqui a letra</summary>
+
+    <div class="musica-letra-conteudo">
+      {{ .Inner | markdownify }}
+    </div>
+  </details>
+
+</div>

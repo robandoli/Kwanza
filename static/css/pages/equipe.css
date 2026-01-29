@@ -1,38 +1,7 @@
 /* =====================================================
    PÁGINA EQUIPE / IDENTIDADE KWANZA
-   GRID EDITORIAL UNIFICADO
+   ESTILOS EXCLUSIVOS DA PÁGINA
    ===================================================== */
-
-/* =====================================================
-   ESTRUTURA GERAL DAS SEÇÕES
-   ===================================================== */
-
-.section {
-  padding-block: clamp(5rem, 9vh, 7rem);
-}
-
-.section + .section {
-  margin-top: clamp(4rem, 8vh, 6rem);
-}
-
-/* =====================================================
-   GRID EDITORIAL PADRÃO (TODOS OS BLOCOS)
-   ===================================================== */
-
-.equipe-grid {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 3rem;
-  align-items: start;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-
-/* Coluna esquerda (imagem ou respiro) */
-.equipe-media {
-  min-height: 1px; /* mantém o eixo mesmo vazio */
-}
 
 /* =====================================================
    BLOCO DO MESTRE (COM IMAGEM)
@@ -54,30 +23,17 @@
 }
 
 /* =====================================================
-   TÍTULOS (TODOS OS BLOCOS)
+   CONTEÚDO TEXTUAL DA EQUIPE
    ===================================================== */
 
 .equipe-conteudo h2 {
-  margin: 0 0 2.4rem 0;
-  font-size: clamp(1.7rem, 2.6vw, 2.1rem);
-  line-height: 1.25;
-  font-weight: 600;
-  color: var(--color-primary);
-  letter-spacing: 0.4px;
+  margin-bottom: 1.25rem;
 }
-
-/* =====================================================
-   TEXTO CORRIDO – PADRÃO ÚNICO
-   ===================================================== */
 
 .equipe-conteudo p {
   font-size: 0.95rem;
   line-height: 1.55;
   margin-bottom: 1.4rem;
-  color: var(--text-main);
-}
-
-.equipe-conteudo p:first-of-type {
   color: var(--text-main);
 }
 
@@ -99,7 +55,7 @@
 }
 
 /* =====================================================
-   ORGANOGRAMA (EXCEÇÃO – IMAGEM CENTRAL)
+   ORGANOGRAMA (IMAGEM CENTRAL)
    ===================================================== */
 
 .organograma {
@@ -117,37 +73,25 @@
 }
 
 /* =====================================================
-   HEADER DA PÁGINA
+   HEADER DA PÁGINA EQUIPE
    ===================================================== */
 
 .page-header {
-  padding-block: clamp(3rem, 6vh, 4rem);
+  padding-block: clamp(1.25rem, 2.5vh, 2rem);
 }
 
 .page-header h1 {
-  font-size: clamp(1.9rem, 3vw, 2.4rem);
-  margin-bottom: 0.6rem;
+  margin: 0 0 0.5rem 0;
 }
 
 .page-header .lead {
-  font-size: 0.9rem;
   max-width: 60ch;
   opacity: 0.75;
 }
 
 /* =====================================================
-   RESPONSIVO
+   CURRÍCULO DO MESTRE
    ===================================================== */
-
-@media (max-width: 900px) {
-  .equipe-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .equipe-media {
-    max-width: 320px;
-  }
-}
 
 .mestre-curriculo {
   margin-top: 2.5rem;
@@ -163,9 +107,12 @@
   color: var(--color-accent);
 }
 
+/* =====================================================
+   GRID DE MEMBROS (EXCLUSIVO DA EQUIPE)
+   ===================================================== */
+
 .equipe-kwanza {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-

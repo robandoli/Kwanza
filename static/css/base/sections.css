@@ -1,0 +1,7 @@
+.section {
+  padding-block: clamp(1.5rem, 3vh, 2.25rem);
+}
+
+.section + .section {
+  margin-top: clamp(2rem, 4vh, 3rem);
+}

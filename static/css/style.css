@@ -4,11 +4,14 @@
 @import "base/reset.css";
 @import "base/typography.css";
 @import "base/layout.css";
+@import "base/sections.css";
+@import "base/grid.css";
 
 /* COMPONENTS */
 @import "components/navigation.css";
 @import "components/button.css";
 @import "components/footer.css";
+@import "components/musica.css";
 
 /* SECTIONS */
 @import "sections/hero.css";

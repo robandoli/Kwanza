@@ -3,7 +3,6 @@ title: "Identidade Kwanza"
 description: "Linhagem, hierarquia e pessoas que constroem o Grupo Kwanza."
 
 historia_grupo: |
-  *Linhagem, hierarquia e pessoas que constroem o Grupo Kwanza.*
 
   O **Grupo Kwanza** nasce de uma trajetória construída ao longo de décadas de vivência
   na capoeira, marcada pelo compromisso com seus fundamentos **culturais, educativos e
@@ -24,11 +23,13 @@ historia_grupo: |
   respeito à ancestralidade e ao papel social da capoeira.
 
 historia_mestre: |
-  O Grupo Kwanza é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**, Mestre de Capoeira com mais de cinco décadas de dedicação à arte. Seu primeiro contato com a capoeira ocorreu em 1975, em Olinda–PE. A força do jogo e a musicalidade despertaram um caminho marcado por disciplina e busca constante por aprendizado.
+  O **Grupo Kwanza** é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**, mestre de capoeira com mais de cinco décadas de dedicação à arte. Seu primeiro contato com a capoeira ocorreu em 1975, em Olinda–PE. A força do jogo e a musicalidade despertaram um caminho marcado pela disciplina e pela busca constante por aprendizado.
 
-  Ao longo de sua formação, construiu sua base com mestres renomados como Mestre Marinheiro, Mestre Russo, Mestre Ditinho e Mestre Nestor, além de receber influências fundamentais de Mestre Leopoldina, Mestre Burguês e Mestre Zambi. Sua trajetória contou ainda com a mentoria e amizade de Mestre Gato Preto.
-  
-  O reconhecimento como Mestre ocorreu em 30 de julho de 1991. Para ele, o título é uma responsabilidade profunda de formar pessoas e preservar valores. **A capoeira é compreendida como um modo de viver — uma prática que atravessa o corpo, a cultura e a vida cotidiana**. Sua filosofia fundamenta-se no respeito ao próximo, na honestidade e na valorização das relações humanas.
+  Ao longo de sua formação, construiu sua base com mestres renomados como **Marinheiro, Russo, Ditinho e Nestor**, além de receber influências fundamentais de Mestre Zambi e Mestre Burguês. Sua  trajetória contou ainda com a mentoria e a amizade de Mestre Leopoldina. Na Capoeira Angola, foi **discípulo de Mestre Gato Preto**, sua maior referência no estilo.
+
+  O reconhecimento como mestre ocorreu em 30 de julho de 1991. Naquela ocasião, assumiu o grupo Jogo de Guerreiro, do Mestre Ditinho. Movido pelo desejo de aprofundar seus fundamentos, buscou o conhecimento de **Mestre Zambi (Grupo Filhos de Zambi), sob cuja orientação estreitou laços que o levaram a tornar-se seu discípulo**. Para Mestre Jaguara, o título representa a responsabilidade profunda de formar pessoas e preservar valores.
+
+  A capoeira é compreendida como um modo de viver — uma prática que atravessa o corpo, a cultura e a vida cotidiana. Sua filosofia fundamenta-se no respeito ao próximo, na honestidade e na  valorização das relações humanas.
 
 valores: |
   O **Grupo Kwanza** fundamenta sua atuação em princípios que orientam não apenas a prática da capoeira, mas a formação humana e social de seus integrantes.
@@ -48,27 +49,27 @@ valores: |
 equipe_kwanza: |
   <div class="kwanza-bloco">
     <h3>KWANZA – SÃO PAULO 🇧🇷</h3>
-    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+    <p>M. Jaguara<br>CM Camarão<br>Monitoria Delicada</p>
   </div>
 
   <div class="kwanza-bloco">
     <h3>KWANZA – PERNAMBUCO 🇧🇷</h3>
-    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+    <p>CM. Dobrado<br>Prof. Arauna<br>Prof. Barauna<br>Profª. Kataryna<br>Instrutor Pequeno</p>
   </div>
   
   <div class="kwanza-bloco">
     <h3>KWANZA – MINAS GERAIS 🇧🇷</h3>
-    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+    <p>M. Chocolate<br>CM Lasqueirinha<br>CM Sertão</p>
   </div>
 
   <div class="kwanza-bloco">
     <h3>KWANZA – CHILE 🇨🇱</h3>
-    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+    <p>M. Gamela<br>CM. Casca Grossa</p>
   </div>
   
   <div class="kwanza-bloco">
     <h3>KWANZA – MÉXICO 🇲🇽</h3>
-    <p>Nome 1<br>Nome 2<br>Nome 3</p>
+    <p>Prof.Baqueta<br>Graduado Tigre</p>
   </div>
 
 ---

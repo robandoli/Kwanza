@@ -1,9 +1,15 @@
 <section class="page-header">
-  <div class="container">
-    <h1>{{ .Title }}</h1>
+  <div class="container equipe-grid">
 
-    {{ with .Params.description }}
-      <p class="lead">{{ . }}</p>
-    {{ end }}
+    <div class="equipe-media"></div>
+
+    <div class="equipe-conteudo">
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Params.description }}
+        <p class="lead">{{ . }}</p>
+      {{ end }}
+    </div>
+
   </div>
 </section>
