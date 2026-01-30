@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<article class="pagina">
+
+  <header class="pagina-header section">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Params.subtitle }}
+        <p class="pagina-subtitulo">{{ . }}</p>
+      {{ end }}
+
+      {{ if eq .File.BaseFileName "cantigas-essenciais" }}
+        <div class="musica-busca">
+          <input 
+            type="search" 
+            id="busca-musica" 
+            placeholder="Buscar por título ou letra..." 
+            aria-label="Buscar músicas"
+          >
+        </div>
+      {{ end }}
+    </div>
+  </header>
+
+  <section class="pagina-conteudo section" id="lista-musicas">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
+
+</article>
+
+{{ if eq .File.BaseFileName "cantigas-essenciais" }}
+  <script src="/js/busca-musica.js"></script>
+{{ end }}
+
+{{ end }}

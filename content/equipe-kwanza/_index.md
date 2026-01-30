@@ -46,30 +46,4 @@ valores: |
 
   Esses princípios orientam o trabalho do grupo no Brasil e no exterior, preservando a tradição da capoeira e, ao mesmo tempo, formando pessoas conscientes de seu papel na sociedade.
 
-equipe_kwanza: |
-  <div class="kwanza-bloco">
-    <h3>KWANZA – SÃO PAULO 🇧🇷</h3>
-    <p>M. Jaguara<br>CM Camarão<br>Monitoria Delicada</p>
-  </div>
-
-  <div class="kwanza-bloco">
-    <h3>KWANZA – PERNAMBUCO 🇧🇷</h3>
-    <p>CM. Dobrado<br>Prof. Arauna<br>Prof. Barauna<br>Profª. Kataryna<br>Instrutor Pequeno</p>
-  </div>
-  
-  <div class="kwanza-bloco">
-    <h3>KWANZA – MINAS GERAIS 🇧🇷</h3>
-    <p>M. Chocolate<br>CM Lasqueirinha<br>CM Sertão</p>
-  </div>
-
-  <div class="kwanza-bloco">
-    <h3>KWANZA – CHILE 🇨🇱</h3>
-    <p>M. Gamela<br>CM. Casca Grossa</p>
-  </div>
-  
-  <div class="kwanza-bloco">
-    <h3>KWANZA – MÉXICO 🇲🇽</h3>
-    <p>Prof.Baqueta<br>Graduado Tigre</p>
-  </div>
-
 ---

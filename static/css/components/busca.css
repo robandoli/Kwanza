@@ -1,0 +1,33 @@
+.musica-busca {
+  margin-top: var(--space-lg);
+  max-width: 600px;
+}
+
+.musica-busca input[type="search"] {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-main);
+  background: var(--bg-section);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-base);
+}
+
+.musica-busca input[type="search"]:focus {
+  outline: none;
+  border-color: var(--accent-default);
+}
+
+.musica-busca input[type="search"]::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.mensagem-busca-vazia {
+  padding: var(--space-xl);
+  text-align: center;
+  color: var(--text-secondary);
+  font-style: italic;
+}

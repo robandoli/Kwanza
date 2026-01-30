@@ -12,11 +12,14 @@
 @import "components/button.css";
 @import "components/footer.css";
 @import "components/musica.css";
+@import "components/busca.css";
 
 /* SECTIONS */
 @import "sections/hero.css";
+@import "sections/eventos.css";
 @import "sections/home-about.css";
 
 /* PAGES */
 @import "pages/equipe.css";
 @import "pages/guia.css";
+@import "pages/contatos.css";

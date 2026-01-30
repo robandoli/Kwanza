@@ -21,7 +21,7 @@ relativeURLs = false
 
   [[menu.main]]
     identifier = "equipe"
-    name = "Equipe Kwanza"
+    name = "Identidade Kwanza"
     url = "/equipe-kwanza/"
     weight = 2
 

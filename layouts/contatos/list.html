@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+<article class="pagina">
+
+  <!-- Header -->
+  <header class="pagina-header section">
+    <div class="container">
+      <h1>{{ .Title }}</h1>
+
+      {{ with .Params.description }}
+        <p class="pagina-subtitulo">{{ . }}</p>
+      {{ end }}
+    </div>
+  </header>
+
+  <!-- Conteúdo introdutório -->
+  <section class="pagina-conteudo section">
+    <div class="container">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- Locais Kwanza -->
+  {{ with .Params.locais_kwanza }}
+  <section class="locais-kwanza section">
+    <div class="container">
+
+      <h2>Locais Kwanza</h2>
+
+      <div class="locais-conteudo">
+        {{ range . }}
+
+        <div class="local-item">
+
+          <!-- Texto -->
+          <div class="local-texto">
+            <p>
+              <strong>{{ .nome }}</strong>
+              {{ .endereco }}<br>
+              {{ .cidade }} – {{ .estado }}<br>
+              📞 {{ .telefone }}
+            </p>
+          </div>
+
+          <!-- Mapa -->
+          <div class="local-mapa">
+            <iframe
+              src="https://www.google.com/maps?q={{ .lat }},{{ .lng }}&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+
+        </div>
+
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+  {{ end }}
+
+</article>
+
+{{ end }}

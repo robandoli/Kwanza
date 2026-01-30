@@ -8,28 +8,30 @@
     {{ end }}
   </header>
 
-  {{ if .Get "youtube" }}
-    <div class="musica-media">
-      <iframe
-        src="https://www.youtube.com/embed/{{ .Get "youtube" }}"
-        loading="lazy"
-        allowfullscreen>
-      </iframe>
-    </div>
-  {{ else if .Get "audio" }}
-    <div class="musica-media">
-      <audio controls>
-        <source src="{{ .Get "audio" }}" type="audio/mpeg">
-      </audio>
-    </div>
-  {{ end }}
+  <div class="musica-conteudo">
+    <details class="musica-letra" open>
+      <summary>Veja aqui a letra</summary>
 
-  <details class="musica-letra">
-    <summary>Veja aqui a letra</summary>
+      <div class="musica-letra-conteudo">
+        {{ .Inner | markdownify }}
+      </div>
+    </details>
 
-    <div class="musica-letra-conteudo">
-      {{ .Inner | markdownify }}
-    </div>
-  </details>
+    {{ if .Get "youtube" }}
+      <div class="musica-media">
+        <iframe
+          src="https://www.youtube.com/embed/{{ .Get "youtube" }}"
+          loading="lazy"
+          allowfullscreen>
+        </iframe>
+      </div>
+    {{ else if .Get "audio" }}
+      <div class="musica-media">
+        <audio controls>
+          <source src="{{ .Get "audio" }}" type="audio/mpeg">
+        </audio>
+      </div>
+    {{ end }}
+  </div>
 
 </div>
