@@ -172,3 +172,10 @@
     padding: var(--space-sm);
   }
 }
+
+.hero-calendario {
+  position: relative;
+  height: clamp(100px, 12vh, 150px);
+  overflow: hidden;
+  background: #000;
+}

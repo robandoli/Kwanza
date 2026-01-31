@@ -1,111 +1,11 @@
+{{ define "header" }}{{ end }}
+
 {{ define "main" }}
+
+{{ partial "calendario/hero.html" . }}
 
 <article class="pagina">
 
-  <header class="pagina-header section">
-    <div class="container">
-      <h1>{{ .Title }}</h1>
-
-      {{ with .Params.description }}
-        <p class="pagina-subtitulo">{{ . }}</p>
-      {{ end }}
-    </div>
-  </header>
-
-  <!-- Carrossel de Próximos Eventos -->
-  {{ with .Params.proximos_eventos }}
-  <section class="eventos-destaque">
-    <div class="container">
-      <div class="eventos-header">
-        <h2 class="eventos-titulo">Em destaque</h2>
-        
-        <div class="eventos-nav">
-          <button 
-            class="eventos-nav-btn eventos-prev" 
-            aria-label="Eventos anteriores"
-            disabled
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="15 18 9 12 15 6"></polyline>
-            </svg>
-          </button>
-          <button 
-            class="eventos-nav-btn eventos-next" 
-            aria-label="Próximos eventos"
-          >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="9 18 15 12 9 6"></polyline>
-            </svg>
-          </button>
-        </div>
-      </div>
-      
-      <div class="eventos-carousel">
-        <div class="eventos-track">
-          {{ range . }}
-          <article class="evento-card">
-            <div class="evento-thumb">
-              <img 
-                src="{{ .imagem }}" 
-                alt="{{ .titulo }}"
-                loading="lazy"
-                decoding="async"
-              >
-            </div>
-            
-            <div class="evento-info">
-              <h3 class="evento-nome">{{ .titulo }}</h3>
-              <p class="evento-meta">{{ .data }} · {{ .local }}</p>
-              
-              {{ with .links }}
-              <div class="evento-links">
-                {{ range . }}
-                  {{ if eq .tipo "instagram" }}
-                    <a 
-                      href="{{ .url }}" 
-                      target="_blank" 
-                      rel="noopener"
-                      aria-label="Ver no Instagram"
-                      title="Instagram"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                      </svg>
-                    </a>
-                  {{ else if eq .tipo "site" }}
-                    <a 
-                      href="{{ .url }}" 
-                      target="_blank" 
-                      rel="noopener"
-                      aria-label="Ver site do evento"
-                      title="Site"
-                    >
-                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-                        <polyline points="15 3 21 3 21 9"/>
-                        <line x1="10" y1="14" x2="21" y2="3"/>
-                      </svg>
-                    </a>
-                  {{ end }}
-                {{ end }}
-              </div>
-              {{ end }}
-            </div>
-          </article>
-          {{ end }}
-        </div>
-      </div>
-
-      <div class="eventos-dots"></div>
-    </div>
-
-    <script src="/js/eventos-carousel.js"></script>
-  </section>
-  {{ end }}
-
-  <!-- Lista Completa de Eventos -->
   {{ with .Params.eventos_lista }}
   <section class="eventos-lista section">
     <div class="container">
@@ -117,12 +17,13 @@
   </section>
   {{ end }}
 
-  <!-- Texto introdutório -->
+  {{ if .Content }}
   <section class="pagina-conteudo section">
     <div class="container">
       {{ .Content }}
     </div>
   </section>
+  {{ end }}
 
 </article>
 

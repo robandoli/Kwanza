@@ -1,0 +1,69 @@
+.editorial-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* HEADER PADRÃO (IDENTIDADE / GUIA / CONTEÚDO) */
+.page-header + .graduacoes-imagens {
+  padding-block: clamp(1.25rem, 2vh, 1.75rem);
+}
+
+.page-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: clamp(2.2rem, 5vw, 3rem);
+}
+
+.page-header .lead {
+  max-width: 60ch;
+  opacity: 0.75;
+}
+
+.graduacoes-imagens {
+  background: var(--bg-main);
+}
+
+/* GRADUAÇÕES — AJUSTE DE RITMO VERTICAL */
+.graduacoes-imagens.section {
+  padding-top: 0;
+}
+
+.graduacoes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.graduacao-item {
+  margin: 0;
+}
+
+.graduacao-item img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform var(--transition-base);
+}
+
+.graduacao-item:hover img {
+  transform: scale(1.02);
+  border-color: var(--accent-default);
+}
+
+.graduacao-item figcaption {
+  margin-top: var(--space-sm);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .graduacoes-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}

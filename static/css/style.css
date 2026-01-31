@@ -12,6 +12,8 @@
 @import "components/footer.css";
 @import "components/musica.css";
 @import "components/busca.css";
+@import "components/guia-menu.css";
+@import "components/graduacoes.css";
 
 /* SECTIONS */
 @import "sections/hero.css";

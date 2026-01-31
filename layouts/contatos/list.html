@@ -2,100 +2,104 @@
 
 <article class="pagina">
 
-  <header class="pagina-header section">
+  <header class="page-header">
     <div class="container">
-      <h1>{{ .Title }}</h1>
+      <div class="editorial-content">
+        <h1>{{ .Title }}</h1>
 
-      {{ with .Params.description }}
-        <p class="pagina-subtitulo">{{ . }}</p>
-      {{ end }}
+        {{ with .Params.description }}
+          <p class="lead">{{ . }}</p>
+        {{ end }}
+      </div>
     </div>
   </header>
 
   <section class="pagina-conteudo section">
     <div class="container">
-      {{ .Content }}
+      <div class="editorial-content">
+        {{ .Content }}
+      </div>
     </div>
   </section>
 
   {{ with .Params.locais_kwanza }}
   <section class="locais-kwanza section">
     <div class="container">
+      <div class="editorial-content">
+        <h2>Locais Kwanza</h2>
 
-      <h2>Locais Kwanza</h2>
+        {{/* =============================
+             MAPA DE BANDEIRAS
+             ============================= */}}
+        {{ $bandeiras := dict
+          "Brasil" "🇧🇷"
+          "Chile"  "🇨🇱"
+          "México" "🇲🇽"
+        }}
 
-      {{/* =============================
-           MAPA DE BANDEIRAS
-           ============================= */}}
-      {{ $bandeiras := dict
-        "Brasil" "🇧🇷"
-        "Chile"  "🇨🇱"
-        "México" "🇲🇽"
-      }}
+        {{/* =============================
+             PAÍS → ESTADO → NOMES
+             ============================= */}}
 
-      {{/* =============================
-           PAÍS → ESTADO → NOMES
-           ============================= */}}
+        {{ $scratch := newScratch }}
 
-      {{ $scratch := newScratch }}
-
-      {{/* Indexa por pais/estado */}}
-      {{ range . }}
-        {{ if and (isset . "pais") (isset . "estado") }}
-          {{ $key := printf "%s|%s" .pais .estado }}
-          {{ $scratch.Add $key (slice .) }}
-        {{ end }}
-      {{ end }}
-
-      {{/* Lista de países únicos */}}
-      {{ $paises := slice }}
-      {{ range . }}
-        {{ if not (in $paises .pais) }}
-          {{ $paises = $paises | append .pais }}
-        {{ end }}
-      {{ end }}
-
-      {{/* Renderização */}}
-      {{ range $paises }}
-        {{ $paisAtual := . }}
-
-        <h3 class="locais-pais">
-          {{ with index $bandeiras $paisAtual }}{{ . }} {{ end }}{{ $paisAtual }}
-        </h3>
-
-        {{ range $key, $items := $scratch.Values }}
-          {{ $parts := split $key "|" }}
-
-          {{ if eq (index $parts 0) $paisAtual }}
-
-            <h4 class="locais-estado">{{ index $parts 1 }}</h4>
-
-            {{ range $items }}
-              <div class="local-item">
-                <p>
-                  <strong>{{ .nome }}</strong>
-
-                  <span>
-                    {{ .endereco }}<br>
-                    {{ .cidade }} – {{ .estado }}
-                  </span>
-
-                  📞 {{ .telefone }} —
-                  <a
-                    href="https://maps.google.com/?q={{ .lat }},{{ .lng }}"
-                    target="_blank"
-                    rel="noopener">
-                    Ver no mapa
-                  </a>
-                </p>
-              </div>
-            {{ end }}
-
+        {{/* Indexa por pais/estado */}}
+        {{ range . }}
+          {{ if and (isset . "pais") (isset . "estado") }}
+            {{ $key := printf "%s|%s" .pais .estado }}
+            {{ $scratch.Add $key (slice .) }}
           {{ end }}
         {{ end }}
 
-      {{ end }}
+        {{/* Lista de países únicos */}}
+        {{ $paises := slice }}
+        {{ range . }}
+          {{ if not (in $paises .pais) }}
+            {{ $paises = $paises | append .pais }}
+          {{ end }}
+        {{ end }}
 
+        {{/* Renderização */}}
+        {{ range $paises }}
+          {{ $paisAtual := . }}
+
+          <h3 class="locais-pais">
+            {{ with index $bandeiras $paisAtual }}{{ . }} {{ end }}{{ $paisAtual }}
+          </h3>
+
+          {{ range $key, $items := $scratch.Values }}
+            {{ $parts := split $key "|" }}
+
+            {{ if eq (index $parts 0) $paisAtual }}
+
+              <h4 class="locais-estado">{{ index $parts 1 }}</h4>
+
+              {{ range $items }}
+                <div class="local-item">
+                  <p>
+                    <strong>{{ .nome }}</strong>
+
+                    <span>
+                      {{ .endereco }}<br>
+                      {{ .cidade }} – {{ .estado }}
+                    </span>
+
+                    📞 {{ .telefone }} —
+                    <a
+                      href="https://maps.google.com/?q={{ .lat }},{{ .lng }}"
+                      target="_blank"
+                      rel="noopener">
+                      Ver no mapa
+                    </a>
+                  </p>
+                </div>
+              {{ end }}
+
+            {{ end }}
+          {{ end }}
+
+        {{ end }}
+      </div>
     </div>
   </section>
   {{ end }}

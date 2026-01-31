@@ -1,6 +1,6 @@
 ---
 title: "Protocolo da Roda"
-subtitle: "O caminho simbólico e pedagógico do capoeirista"
+description: "Etiqueta, respeito e conduta dentro da roda de capoeira"
 weight: 2
 ---
 

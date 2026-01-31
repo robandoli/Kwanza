@@ -1,22 +1,55 @@
-/* Reduz espaço entre o header da página e Locais Kwanza */
+/* ============================
+   CONTATOS — ESTRUTURA EDITORIAL
+   ============================ */
+
+/* Espaço entre header e conteúdo */
 .pagina-header + .locais-kwanza {
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
-/* Grupo por estado */
+/* Container externo (mesmo da Agenda/Equipe) */
+.locais-kwanza .container {
+  max-width: 960px;
+}
+
+/* Coluna editorial interna */
+.locais-kwanza .locais-conteudo {
+  max-width: 720px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* ============================
+   AGRUPAMENTOS
+   ============================ */
+
 .locais-grupo {
-  margin-left: 1.25rem;
+  margin-left: 0;
   margin-bottom: var(--space-xl);
 }
 
-/* Item individual (card editorial leve) */
+/* Título do país */
+.locais-kwanza .locais-pais {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: 2rem;
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* ============================
+   CARDS DE LOCAL
+   ============================ */
+
 .locais-kwanza .local-item {
   background: rgba(255, 255, 255, 0.03);
   padding: 1rem 1.25rem;
   margin-bottom: var(--space-md);
 }
 
-/* Texto */
 .locais-kwanza .local-item p {
   margin: 0;
   line-height: 1.6;
@@ -38,7 +71,7 @@
   margin-bottom: 0.25rem;
 }
 
-/* Ações (telefone + mapa) */
+/* Ações */
 .locais-kwanza .local-item a {
   font-size: 1rem;
   color: inherit;
@@ -51,31 +84,16 @@
   text-decoration: underline;
 }
 
-.locais-kwanza .locais-pais {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--color-primary);
-  margin-top: var(--space-2xl);
-  margin-bottom: var(--space-lg);
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-}
-
-/* Espaço antes de cada país */
-.locais-kwanza .locais-pais {
-  margin-top: 2rem; /* aumenta o respiro entre blocos */
-}
-
-@media (max-width: 640px) {
-  .locais-kwanza .locais-pais:not(:first-of-type) {
-    margin-top: 2.5rem;
-  }
-}
+/* ============================
+   MOBILE
+   ============================ */
 
 @media (max-width: 640px) {
   .locais-kwanza .local-item {
     padding: 1rem;
   }
-}
 
+  .locais-kwanza .locais-pais:not(:first-of-type) {
+    margin-top: 2.5rem;
+  }
+}

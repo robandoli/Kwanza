@@ -1,20 +1,43 @@
 {{ define "main" }}
 
-<section class="section">
-  <div class="container">
+<article class="pagina">
 
-    <ul class="guia-lista">
-      {{ range .Pages }}
-        <li class="guia-item">
-          <a href="{{ .RelPermalink }}" class="guia-link">
-            <h2>{{ .Title }}</h2>
-          </a>
-        </li>
-      {{ end }}
-    </ul>
+  <header class="page-header">
+    <div class="container">
+      <div class="editorial-content">
 
-  </div>
-</section>
+        <h1>{{ .Title }}</h1>
+
+        {{ with .Params.subtitle }}
+          <p class="lead">{{ . }}</p>
+        {{ end }}
+
+      </div>
+    </div>
+  </header>
+
+  <section class="guia-menu section">
+    <div class="container">
+      <div class="editorial-content">
+      
+        <nav class="guia-navegacao">
+          {{ range .Pages }}
+            {{ if or (eq .File.BaseFileName "sistema-de-graduacoes") (eq .File.BaseFileName "protocolo-da-roda") (eq .File.BaseFileName "cantigas") }}
+            <a href="{{ .RelPermalink }}" class="guia-card">
+              <h2>{{ .Title }}</h2>
+              {{ with .Params.description }}
+                <p>{{ . }}</p>
+              {{ end }}
+            </a>
+            {{ end }}
+          {{ end }}
+        </nav>
+      
+      </div>
+    </div>
+  </section>
+
+</article>
 
 {{ end }}
 

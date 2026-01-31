@@ -1,6 +1,7 @@
 ---
-title: "Cantigas Essenciais"
-description: "Cantigas e músicas tradicionais da capoeira praticadas no Grupo Kwanza."
+title: "Cantigas"
+description: "Músicas tradicionais da capoeira praticadas no Grupo Kwanza"
+weight: 3
 ---
 
 {{< musica
