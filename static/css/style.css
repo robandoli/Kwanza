@@ -4,7 +4,6 @@
 @import "base/reset.css";
 @import "base/typography.css";
 @import "base/layout.css";
-@import "base/sections.css";
 @import "base/grid.css";
 
 /* COMPONENTS */
@@ -23,3 +22,4 @@
 @import "pages/equipe.css";
 @import "pages/guia.css";
 @import "pages/contatos.css";
+@import "pages/calendario.css";

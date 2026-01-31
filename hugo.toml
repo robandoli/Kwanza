@@ -38,16 +38,22 @@ relativeURLs = false
     weight = 4
 
   [[menu.main]]
+    identifier = "calendario"
+    name = "Calendário"
+    url = "/calendario-kwanza/"
+    weight = 5
+
+  [[menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
-    weight = 5
+    weight = 6
 
   [[menu.main]]
     identifier = "contatos"
     name = "Contatos"
     url = "/contatos/"
-    weight = 6
+    weight = 7
 
 [markup]
   [markup.goldmark]

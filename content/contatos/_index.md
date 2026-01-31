@@ -1,6 +1,5 @@
 ---
 title: "Fale Conosco"
-description: "Entre em contato com o projeto."
 
 locais_kwanza:
 
@@ -9,6 +8,7 @@ locais_kwanza:
   # =====================
 
   - nome: "M. Jaguara"
+    pais: "Brasil"
     endereco: "Rua das Flores, 123 – Vila Madalena"
     cidade: "São Paulo"
     estado: "SP"
@@ -17,6 +17,7 @@ locais_kwanza:
     lng: -46.6333
 
   - nome: "CM Camarão"
+    pais: "Brasil"
     endereco: "Av. Paulista, 1000 – Bela Vista"
     cidade: "São Paulo"
     estado: "SP"
@@ -25,22 +26,25 @@ locais_kwanza:
     lng: -46.6544
 
   - nome: "Monitora Cipó"
+    pais: "Brasil"
     endereco: "Rua da Bahia, 1148 – Centro"
-    cidade: "Belo Horizonte"
-    estado: "MG"
+    cidade: "Juazeiro"
+    estado: "BA"
     telefone: "(31) 98765-4321"
     lat: -19.9191
     lng: -43.9386
 
   - nome: "Monitora Delicada"
+    pais: "Brasil"
     endereco: "Rua da Bahia, 1148 – Centro"
-    cidade: "Belo Horizonte"
-    estado: "MG"
+    cidade: "Juazeiro"
+    estado: "BA"
     telefone: "(31) 98765-4321"
     lat: -19.9191
     lng: -43.9386
 
   - nome: "M. Chocolate"
+    pais: "Brasil"
     endereco: "Rua da Bahia, 1148 – Centro"
     cidade: "Belo Horizonte"
     estado: "MG"
@@ -49,6 +53,7 @@ locais_kwanza:
     lng: -43.9386
 
   - nome: "CM Lasqueirinha"
+    pais: "Brasil"
     endereco: "Av. Afonso Pena, 867 – Centro"
     cidade: "Belo Horizonte"
     estado: "MG"
@@ -57,6 +62,7 @@ locais_kwanza:
     lng: -43.9502
 
   - nome: "CM Sertão"
+    pais: "Brasil"
     endereco: "Rua Rio de Janeiro, 500 – Lourdes"
     cidade: "Belo Horizonte"
     estado: "MG"
@@ -65,6 +71,7 @@ locais_kwanza:
     lng: -43.9419
 
   - nome: "CM Dobrado"
+    pais: "Brasil"
     endereco: "Rua do Bom Jesus, 77 – Recife Antigo"
     cidade: "Recife"
     estado: "PE"
@@ -73,6 +80,7 @@ locais_kwanza:
     lng: -34.8711
 
   - nome: "Prof. Arauna"
+    pais: "Brasil"
     endereco: "Av. Boa Viagem, 3500 – Boa Viagem"
     cidade: "Recife"
     estado: "PE"
@@ -81,6 +89,7 @@ locais_kwanza:
     lng: -34.8986
 
   - nome: "Prof. Barauna"
+    pais: "Brasil"
     endereco: "Rua Imperial, 250 – São José"
     cidade: "Recife"
     estado: "PE"
@@ -89,6 +98,7 @@ locais_kwanza:
     lng: -34.8831
 
   - nome: "Profª. Kataryna"
+    pais: "Brasil"
     endereco: "Rua da Aurora, 325 – Santo Amaro"
     cidade: "Recife"
     estado: "PE"
@@ -97,6 +107,7 @@ locais_kwanza:
     lng: -34.8813
 
   - nome: "Instrutor Pequeno"
+    pais: "Brasil"
     endereco: "Av. Agamenon Magalhães, 1500 – Derby"
     cidade: "Recife"
     estado: "PE"
@@ -109,6 +120,7 @@ locais_kwanza:
   # =====================
 
   - nome: "M. Gamela"
+    pais: "Chile"
     endereco: "Av. Providencia, 2345 – Providencia"
     cidade: "Santiago"
     estado: "Región Metropolitana"
@@ -117,6 +129,7 @@ locais_kwanza:
     lng: -70.6110
 
   - nome: "CM Casca Grossa"
+    pais: "Chile"
     endereco: "Calle Bellavista, 123 – Recoleta"
     cidade: "Santiago"
     estado: "Región Metropolitana"
@@ -129,6 +142,7 @@ locais_kwanza:
   # =====================
 
   - nome: "Prof. Baqueta"
+    pais: "México"
     endereco: "Av. Insurgentes Sur, 789 – Colonia Roma"
     cidade: "Ciudad de México"
     estado: "CDMX"
@@ -137,6 +151,7 @@ locais_kwanza:
     lng: -99.1625
 
   - nome: "Graduado Tigre"
+    pais: "México"
     endereco: "Calle Amsterdam, 45 – Condesa"
     cidade: "Ciudad de México"
     estado: "CDMX"

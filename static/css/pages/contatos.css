@@ -1,48 +1,81 @@
-/* Seção */
-.locais-kwanza {
-  background: var(--bg-section);
+/* Reduz espaço entre o header da página e Locais Kwanza */
+.pagina-header + .locais-kwanza {
+  margin-top: 0rem;
 }
 
-/* Título da seção */
-.locais-kwanza h2 {
-  font-size: clamp(1.6rem, 2.5vw, 2rem);
-  font-weight: 600;
-  color: var(--color-primary);
-  margin-bottom: var(--space-lg);
-}
-
-/* Item (um local) */
-.local-item {
+/* Grupo por estado */
+.locais-grupo {
+  margin-left: 1.25rem;
   margin-bottom: var(--space-xl);
 }
 
-/* Layout texto + mapa */
-@media (min-width: 768px) {
-  .local-item {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: var(--space-lg);
-    align-items: start;
-  }
+/* Item individual (card editorial leve) */
+.locais-kwanza .local-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem 1.25rem;
+  margin-bottom: var(--space-md);
 }
 
 /* Texto */
-.local-texto p {
+.locais-kwanza .local-item p {
   margin: 0;
+  line-height: 1.6;
 }
 
-.local-texto p strong {
+/* Nome */
+.locais-kwanza .local-item p strong {
   display: block;
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-accent);
+  margin-bottom: 0.35rem;
+}
+
+/* Endereço */
+.locais-kwanza .local-item p span {
+  display: block;
+  opacity: 0.9;
   margin-bottom: 0.25rem;
 }
 
-/* Mapa */
-.local-mapa iframe {
-  width: 100%;
-  height: 180px;
-  border: 0;
-  border-radius: 8px;
+/* Ações (telefone + mapa) */
+.locais-kwanza .local-item a {
+  font-size: 1rem;
+  color: inherit;
+  opacity: 0.75;
+  text-decoration: none;
 }
+
+.locais-kwanza .local-item a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.locais-kwanza .locais-pais {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+/* Espaço antes de cada país */
+.locais-kwanza .locais-pais {
+  margin-top: 2rem; /* aumenta o respiro entre blocos */
+}
+
+@media (max-width: 640px) {
+  .locais-kwanza .locais-pais:not(:first-of-type) {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .locais-kwanza .local-item {
+    padding: 1rem;
+  }
+}
+

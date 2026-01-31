@@ -1,0 +1,82 @@
+.pagina-header + .eventos-destaque {
+  margin-top: 0;
+}
+
+
+/* Seção de eventos em destaque (carrossel) */
+.eventos-destaque {
+  padding: var(--space-xl) 0;
+  background: var(--bg-main);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Lista completa de eventos */
+.eventos-lista {
+  background: var(--bg-section);
+}
+
+.eventos-lista h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.eventos-conteudo h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-top: var(--space-2xl);
+  margin-bottom: var(--space-lg);
+  border: none;
+}
+
+.eventos-conteudo h4 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1.2rem;
+  color: var(--heading-secondary);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+.eventos-conteudo hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: var(--space-xl) 0;
+}
+
+.eventos-conteudo p {
+  padding-left: var(--space-md);
+  border-left: 3px solid rgba(232, 93, 31, 0.3);
+}
+
+.eventos-lista .eventos-conteudo p {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1rem 1.25rem;
+  margin-bottom: var(--space-md);
+  line-height: 1.6;
+  border-left: none;
+}
+
+.eventos-lista .eventos-conteudo p strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  margin-bottom: 0.35rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .eventos-conteudo h3 {
+    font-size: 1.3rem;
+  }
+
+  .eventos-conteudo p {
+    padding-left: var(--space-sm);
+    font-size: 0.95rem;
+  }
+}
+
+.evento-card {
+  background: rgba(255,255,255,0.03);
+  border-radius: 0;
+  box-shadow: none;
+}
