@@ -1,0 +1,178 @@
+{{ define "header" }}{{ end }}
+
+{{ define "main" }}
+
+{{ partial "vem-aprender/hero.html" . }}
+
+<script src="/js/vem-aprender-carousel.js"></script>
+
+<article class="pagina vem-aprender">
+
+  {{/* ==========================================
+       CONTEÚDO INTRODUTÓRIO
+       ========================================== */}}
+  {{ if .Content }}
+  <section class="section vem-aprender-intro">
+    <div class="container">
+      <div class="editorial-content">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ==========================================
+       SEÇÃO: SOBRE O PROJETO
+       Estrutura editorial padrão
+       ========================================== */}}
+  {{ with .Params.sobre_projeto }}
+  <section class="section vem-aprender-sobre">
+    <div class="container">
+      <div class="editorial-content">
+        <h2>{{ .titulo }}</h2>
+        {{ .conteudo | markdownify }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ==========================================
+       SEÇÃO: ÁREAS DE ATUAÇÃO
+       Grid 2 colunas responsivo
+       ========================================== */}}
+  {{ with .Params.areas_atuacao }}
+    {{ $items := .items }}
+    <section class="section vem-aprender-areas">
+      <div class="container">
+        <div class="editorial-content">
+          <h2>{{ .titulo }}</h2>
+        </div>
+      
+        <div class="areas-grid">
+          {{ range $items }}
+            <article class="area-card">
+              <h3>{{ .nome }}</h3>
+              <p>{{ .descricao }}</p>
+            </article>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ==========================================
+       SEÇÃO: LIDERANÇA E EQUIPE
+       Dois blocos com mesma hierarquia visual
+       ========================================== */}}
+  {{ with .Params.lideranca }}
+  <section class="section vem-aprender-lideranca">
+    <div class="container">
+      <div class="editorial-content">
+        
+        {{ with .coordenacao }}
+          {{ $items := .items }}
+          <div class="lideranca-bloco">
+            <h2>{{ .titulo }}</h2>
+          
+            {{ range $items }}
+              <div class="coordenador-item">
+                <h3>{{ .cargo }}</h3>
+                <p><strong>{{ .nome }}</strong></p>
+                <p>{{ .conteudo | markdownify }}</p>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+
+        {{/* Equipe */}}
+        {{ with .equipe }}
+        <div class="lideranca-bloco">
+          <h2>{{ .titulo }}</h2>
+          {{ .conteudo | markdownify }}
+        </div>
+        {{ end }}
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ==========================================
+       SEÇÃO: ATIVIDADES
+       Lista institucional
+       ========================================== */}}
+  {{ with .Params.atividades }}
+  <section class="section vem-aprender-atividades">
+    <div class="container">
+      <div class="editorial-content">
+        <h2>{{ .titulo }}</h2>
+        <ul class="atividades-lista">
+          {{ range .items }}
+          <li class="atividade-item">
+            <strong>{{ .nome }}</strong>
+            <p>{{ .descricao }}</p>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ==========================================
+       SEÇÃO: DOCUMENTAÇÃO / CURRÍCULOS
+       Links para PDFs em /static/docs
+       ========================================== */}}
+  {{ with .Params.documentacao }}
+  <section class="section vem-aprender-docs">
+    <div class="container">
+      <div class="editorial-content">
+        <h2>{{ .titulo }}</h2>
+        <ul class="docs-lista">
+          {{ range .items }}
+          <li class="doc-item">
+            <a href="{{ .arquivo }}" target="_blank" rel="noopener">
+              <span class="doc-icone">📄</span>
+              <span class="doc-nome">{{ .nome }}</span>
+              {{ with .descricao }}
+                <span class="doc-descricao">{{ . }}</span>
+              {{ end }}
+            </a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  {{/* ==========================================
+       SEÇÃO: MEMBROS DA EQUIPE
+       Cards escaláveis
+       ========================================== */}}
+  {{ with .Params.membros_equipe }}
+  <section class="section vem-aprender-membros">
+    <div class="container">
+      <div class="editorial-content">
+        <h2>{{ .titulo }}</h2>
+      </div>
+      <div class="membros-grid">
+        {{ range .items }}
+        <article class="membro-card">
+          <h3>{{ .nome }}</h3>
+          {{ with .funcao }}
+            <p class="membro-funcao">{{ . }}</p>
+          {{ end }}
+          {{ with .bio }}
+            <p class="membro-bio">{{ . }}</p>
+          {{ end }}
+        </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+</article>
+
+{{ end }}

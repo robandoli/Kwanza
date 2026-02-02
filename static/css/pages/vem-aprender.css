@@ -1,0 +1,441 @@
+/* =====================================================
+   VEM APRENDER — PÁGINA INSTITUCIONAL
+   Identidade visual específica do projeto
+   ===================================================== */
+
+/* Tokens de cor específicos Vem Aprender (escopo local) */
+.vem-aprender {
+  --vem-aprender-amarelo: #F2B705;
+  --vem-aprender-vermelho: #9E1B32;
+  --vem-aprender-marrom: #4A3428;
+  --vem-aprender-verde: #1F3D2B;
+}
+
+/* ==========================================
+   HERO VEM APRENDER - CORRIGIDO
+   ========================================== */
+.hero--vem-aprender {
+  height: 70vh;
+  position: relative !important;
+  z-index: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.hero--vem-aprender .hero-overlay {
+  background: linear-gradient(180deg, rgba(14,14,14,0.65), rgba(14,14,14,0.65));
+}
+
+.hero--vem-aprender h1 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  max-width: 800px;
+  line-height: 1.25;
+}
+
+.hero--vem-aprender .btn-primary {
+  margin-top: var(--space-xl);
+}
+
+/* CORREÇÃO CRÍTICA: hero-content não pode ter height: 100% */
+.hero--vem-aprender .hero-content {
+  position: absolute !important;
+  height: auto !important;
+  width: auto !important;
+  max-width: 90% !important;
+  z-index: 1 !important;
+  transform: translateY(16vh);
+}
+
+@media (max-width: 900px) {
+  .hero--vem-aprender {
+    height: 65vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero--vem-aprender {
+    height: 60vh;
+  }
+  
+  .hero--vem-aprender h1 {
+    font-size: clamp(1.6rem, 5vw, 2rem);
+  }
+}
+
+/* ==========================================
+   SEÇÃO: INTRODUÇÃO
+   ========================================== */
+.vem-aprender-intro {
+  background: var(--bg-section);
+}
+
+/* ==========================================
+   SEÇÃO: SOBRE O PROJETO - CORRIGIDA
+   ========================================== */
+.vem-aprender-sobre {
+  position: relative !important;
+  z-index: 10 !important;
+  background: var(--bg-main) !important;
+  min-height: 400px !important;
+}
+
+.vem-aprender-sobre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: var(--vem-aprender-amarelo);
+  opacity: 0.6;
+}
+
+.vem-aprender-sobre .container {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+.vem-aprender-sobre .editorial-content {
+  position: relative !important;
+  z-index: 3 !important;
+  padding: 40px 0 !important;
+}
+
+.vem-aprender-sobre h2 {
+  color: var(--text-main) !important;
+  font-size: 2rem !important;
+  margin-bottom: 30px !important;
+  padding-left: var(--space-md) !important;
+  position: relative !important;
+}
+
+.vem-aprender-sobre h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--vem-aprender-amarelo) 0%, var(--vem-aprender-vermelho) 100%);
+}
+
+/* CORREÇÃO PRINCIPAL: Parágrafos visíveis */
+.vem-aprender-sobre .editorial-content p {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: #fff !important;
+  background: none !important;
+  margin: 20px 0 !important;
+  padding: 0 !important;
+  line-height: 1.6 !important;
+  max-width: 75ch !important;
+  position: relative !important;
+  z-index: 9999 !important;
+}
+
+.vem-aprender-sobre .editorial-content p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================
+   SEÇÃO: ÁREAS DE ATUAÇÃO
+   Grid 2 colunas responsivo
+   ========================================== */
+.vem-aprender-areas {
+  background: var(--bg-section);
+}
+
+.vem-aprender-areas h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.areas-grid {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 420px));
+  justify-content: space-between;
+  gap: var(--space-xl) var(--space-lg);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  counter-reset: area-counter;
+}
+
+.area-card {
+  max-width: 420px;
+  justify-self: start;
+  padding-top: var(--space-sm);
+}
+
+.area-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin: 0 0 var(--space-xs) 0;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.area-card h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background: var(--vem-aprender-amarelo);
+  opacity: 0.7;
+}
+
+.area-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin: var(--space-sm) 0 0 0;
+  line-height: 1.7;
+  max-width: 58ch;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.area-card h3,
+.area-card p {
+  max-width: 52ch;
+}
+
+/* ==========================================
+   SEÇÃO: LIDERANÇA E EQUIPE
+   ========================================== */
+.vem-aprender-lideranca {
+  background: var(--bg-main);
+}
+
+.lideranca-bloco {
+  margin-bottom: var(--space-xl);
+}
+
+.lideranca-bloco:last-child {
+  margin-bottom: 0;
+}
+
+.lideranca-bloco h2 {
+  font-size: 1.4rem;
+  color: var(--heading-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.lideranca-bloco p {
+  margin-bottom: var(--space-sm);
+}
+
+.lideranca-bloco ul {
+  margin: var(--space-sm) 0 var(--space-md) var(--space-md);
+}
+
+.lideranca-bloco li {
+  margin-bottom: var(--space-xs);
+  line-height: 1.6;
+}
+
+/* ==========================================
+   SEÇÃO: ATIVIDADES
+   ========================================== */
+.vem-aprender-atividades {
+  background: var(--bg-section);
+}
+
+.vem-aprender-atividades h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.atividades-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.atividade-item {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.atividade-item:last-child {
+  border-bottom: none;
+}
+
+.atividade-item strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-xs);
+}
+
+.atividade-item p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ==========================================
+   SEÇÃO: DOCUMENTAÇÃO
+   ========================================== */
+.vem-aprender-docs {
+  background: var(--bg-main);
+}
+
+.vem-aprender-docs h2 {
+  margin-bottom: var(--space-lg);
+}
+
+.docs-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.doc-item {
+  margin-bottom: var(--space-sm);
+}
+
+.doc-item a {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--bg-section);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: var(--text-main);
+  transition: all var(--transition-base);
+}
+
+.doc-item a:hover {
+  border-color: var(--accent-default);
+  transform: translateX(4px);
+}
+
+.doc-icone {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.doc-nome {
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
+.doc-descricao {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-left: auto;
+}
+
+/* ==========================================
+   SEÇÃO: MEMBROS DA EQUIPE
+   ========================================== */
+.vem-aprender-membros {
+  background: var(--bg-section);
+}
+
+.vem-aprender-membros h2 {
+  margin-bottom: var(--space-xl);
+}
+
+.membros-grid {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 420px));
+  justify-content: space-between;
+  gap: var(--space-xl) var(--space-lg);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.membro-card {
+  padding-left: 0;
+  max-width: 420px;
+  justify-self: start;
+}
+
+.membro-card::before {
+  content: none;
+}
+
+.membro-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin: 0 0 var(--space-xs) 0;
+}
+
+.membro-funcao {
+  font-size: 0.9rem;
+  color: var(--vem-aprender-vermelho);
+  margin: 0 0 var(--space-sm) 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.membro-bio {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.7;
+}
+
+.membro-card h3,
+.membro-bio {
+  max-width: 52ch;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+   ========================================== */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .areas-grid,
+  .membros-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .area-card::before,
+  .membro-card::before {
+    font-size: 2.5rem;
+    opacity: 0.2;
+  }
+
+  .doc-item a {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .doc-descricao {
+    margin-left: 0;
+    margin-top: var(--space-xs);
+  }
+}
+
+/* ==========================================
+   NORMALIZAÇÃO TIPOGRÁFICA
+   ========================================== */
+
+.vem-aprender p {
+  line-height: 1.6;
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+}
+
+.vem-aprender h2 {
+  line-height: 2.5;
+  margin-bottom: var(--space-lg);
+}
+
+.vem-aprender h3 {
+  line-height: 1.8;
+  margin-bottom: var(--space-xs);
+}

@@ -95,3 +95,8 @@
   flex-direction: column;
   gap: 1.5rem;
 }
+
+.guia-card {
+  width: 100%;
+  max-width: 60ch;
+}
