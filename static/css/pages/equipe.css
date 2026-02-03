@@ -55,24 +55,6 @@
 }
 
 /* =====================================================
-   ORGANOGRAMA (IMAGEM CENTRAL)
-   ===================================================== */
-
-.organograma {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 24px;
-  text-align: center;
-}
-
-.organograma img {
-  width: 100%;
-  max-width: 960px;
-  height: auto;
-  margin: 0 auto;
-}
-
-/* =====================================================
    HEADER DA PÁGINA EQUIPE
    ===================================================== */
 
@@ -90,22 +72,66 @@
 }
 
 /* =====================================================
-   CURRÍCULO DO MESTRE
+   GALERIA EDITORIAL – TRAJETÓRIA DO MESTRE
    ===================================================== */
 
-.mestre-curriculo {
-  margin-top: 2.5rem;
+.galeria-mestre {
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
 
-.mestre-curriculo a {
-  font-size: 0.9rem;
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.galeria-grid figure {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.galeria-grid figure:focus-within {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+.galeria-grid img {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  display: block;
+  aspect-ratio: 1 /1;
+  object-fit: cover;
+}
+
+.galeria-grid figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
-  text-decoration: underline;
+  line-height: 1.3;
 }
 
-.mestre-curriculo a:hover {
-  color: var(--color-accent);
+/* Responsivo */
+@media (max-width: 900px) {
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+@media (max-width: 500px) {
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .galeria-grid figcaption {
+    font-size: 0.75rem;
+  }
+}
+
 
 /* =====================================================
    GRID DE MEMBROS (EXCLUSIVO DA EQUIPE)

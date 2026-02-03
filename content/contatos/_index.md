@@ -7,155 +7,174 @@ locais_kwanza:
   # 🇧🇷 BRASIL
   # =====================
 
-  - nome: "M. Jaguara"
+  - nome: "Jaguara"
     pais: "Brasil"
-    endereco: "Rua das Flores, 123 – Vila Madalena"
-    cidade: "São Paulo"
+    endereco: "Sede - Rua Exacta, 92 – Jardim Leonor"
+    cidade: "Cotia"
     estado: "SP"
-    telefone: "(11) 98765-4321"
-    lat: -23.5505
-    lng: -46.6333
+    telefone: "11 99524-0710"
+    lat: -23.60824
+    lng: -46.92997
 
-  - nome: "CM Camarão"
+  - nome: "Jaguara"
     pais: "Brasil"
-    endereco: "Av. Paulista, 1000 – Bela Vista"
-    cidade: "São Paulo"
+    endereco: "Rua João Colino, 64 – Centro"
+    cidade: "Osasco"
     estado: "SP"
-    telefone: "(11) 91234-5678"
-    lat: -23.5629
-    lng: -46.6544
+    telefone: "11 99524-0710"
+    lat: -23.53364
+    lng: -46.77611
 
-  - nome: "Monitora Cipó"
+  - nome: "Camarão"
     pais: "Brasil"
-    endereco: "Rua da Bahia, 1148 – Centro"
-    cidade: "Juazeiro"
-    estado: "BA"
-    telefone: "(31) 98765-4321"
-    lat: -19.9191
-    lng: -43.9386
+    endereco: "R. dos Odes, 952 – Jardim Nova Vida"
+    cidade: "Cotia"
+    estado: "SP"
+    telefone: "11 91373-9972"
+    lat: -23.58166
+    lng: -46.92678
 
-  - nome: "Monitora Delicada"
+  - nome: "Chocolate"
     pais: "Brasil"
-    endereco: "Rua da Bahia, 1148 – Centro"
-    cidade: "Juazeiro"
-    estado: "BA"
-    telefone: "(31) 98765-4321"
-    lat: -19.9191
-    lng: -43.9386
-
-  - nome: "M. Chocolate"
-    pais: "Brasil"
-    endereco: "Rua da Bahia, 1148 – Centro"
-    cidade: "Belo Horizonte"
+    endereco: "Rua Fronteira, 912 – Progresso"
+    cidade: "Frutal"
     estado: "MG"
-    telefone: "(31) 98765-4321"
-    lat: -19.9191
-    lng: -43.9386
+    telefone: ""
+    lat: -20.02928
+    lng: -48.91819
 
-  - nome: "CM Lasqueirinha"
+  - nome: "Sertão"
     pais: "Brasil"
-    endereco: "Av. Afonso Pena, 867 – Centro"
-    cidade: "Belo Horizonte"
+    endereco: "Av. Wenceslau Brás, 1785 – Ouro Verde"
+    cidade: "São Sebastião do Paraíso"
     estado: "MG"
-    telefone: "(31) 99234-5678"
-    lat: -19.9245
-    lng: -43.9502
+    telefone: ""
+    lat: -20.91988
+    lng: -46.97140
 
-  - nome: "CM Sertão"
+  - nome: "Dobrado"
     pais: "Brasil"
-    endereco: "Rua Rio de Janeiro, 500 – Lourdes"
-    cidade: "Belo Horizonte"
-    estado: "MG"
-    telefone: "(31) 98345-6789"
-    lat: -19.9281
-    lng: -43.9419
-
-  - nome: "CM Dobrado"
-    pais: "Brasil"
-    endereco: "Rua do Bom Jesus, 77 – Recife Antigo"
-    cidade: "Recife"
+    endereco: "Praça da Juventude – João de Deus"
+    cidade: "Petrolina"
     estado: "PE"
-    telefone: "(81) 98765-1234"
-    lat: -8.0631
-    lng: -34.8711
+    telefone: "(87) 98817-8416"
+    lat: -9.364448
+    lng: -40.528245
 
-  - nome: "Prof. Arauna"
+  - nome: "Kataryna"
     pais: "Brasil"
-    endereco: "Av. Boa Viagem, 3500 – Boa Viagem"
-    cidade: "Recife"
+    endereco: "Praça da Juventude – João de Deus"
+    cidade: "Petrolina"
     estado: "PE"
-    telefone: "(81) 99123-4567"
-    lat: -8.1137
-    lng: -34.8986
+    telefone: "(87) 98117-8795"
+    lat: -9.364448
+    lng: -40.528245
 
-  - nome: "Prof. Barauna"
+  - nome: "Araúna"
     pais: "Brasil"
-    endereco: "Rua Imperial, 250 – São José"
-    cidade: "Recife"
+    endereco: "Escola Municipal Prof. Zélia Mathias – Pedro Raimundo"
+    cidade: "Petrolina"
     estado: "PE"
-    telefone: "(81) 98234-5678"
-    lat: -8.0578
-    lng: -34.8831
+    telefone: "(87) 99821-6156"
+    lat: -9.3802011
+    lng: -40.525615
 
-  - nome: "Profª. Kataryna"
+  - nome: "Pequeno"
     pais: "Brasil"
-    endereco: "Rua da Aurora, 325 – Santo Amaro"
-    cidade: "Recife"
+    endereco: "Quadra Poliesportiva Novo Tempo 1 – Pedra Linda"
+    cidade: "Petrolina"
     estado: "PE"
-    telefone: "(81) 97345-6789"
-    lat: -8.0522
-    lng: -34.8813
+    telefone: "(87) 98871-5839"
+    lat: -9.34485
+    lng: -40.51659
 
-  - nome: "Instrutor Pequeno"
+  - nome: "Sol"
     pais: "Brasil"
-    endereco: "Av. Agamenon Magalhães, 1500 – Derby"
-    cidade: "Recife"
+    endereco: "Associação dos Moradores – Cosme Damião"
+    cidade: "Petrolina"
     estado: "PE"
-    telefone: "(81) 96456-7890"
-    lat: -8.0476
-    lng: -34.8984
+    telefone: "(87) 98869-3773"
+    lat: -9.36376
+    lng: -40.54557
+
+  - nome: "Florzinha"
+    pais: "Brasil"
+    endereco: "Quadra Poliesportiva Novo Tempo 1 – Pedra Linda"
+    cidade: "Petrolina"
+    estado: "PE"
+    telefone: "(87) 98871-5839"
+    lat: -9.34485
+    lng: -40.51659
+
+  - nome: "Baraúna"
+    pais: "Brasil"
+    endereco: "Bairro Novo Tempo"
+    cidade: "Petrolina"
+    estado: "PE"
+    telefone: ""
+    lat: -9.348231
+    lng: -40.515234
+
+  - nome: "Cosme Damião"
+    pais: "Brasil"
+    endereco: "Bairro Cosme Damião"
+    cidade: "Petrolina"
+    estado: "PE"
+    telefone: ""
+    lat: -9.360154
+    lng: -40.542289
 
   # =====================
   # 🇨🇱 CHILE
   # =====================
 
-  - nome: "M. Gamela"
+  - nome: "Gamela"
     pais: "Chile"
-    endereco: "Av. Providencia, 2345 – Providencia"
-    cidade: "Santiago"
-    estado: "Región Metropolitana"
-    telefone: "+56 9 8765 4321"
-    lat: -33.4269
-    lng: -70.6110
+    endereco: "Salón Multipropósito Cerro Alegre – Cerro Alegre"
+    cidade: "San Antonio"
+    estado: "Valparaíso"
+    telefone: ""
+    lat: -33.042967
+    lng: -71.627928
 
-  - nome: "CM Casca Grossa"
+  - nome: "Casca Grossa"
     pais: "Chile"
-    endereco: "Calle Bellavista, 123 – Recoleta"
-    cidade: "Santiago"
-    estado: "Región Metropolitana"
-    telefone: "+56 9 7654 3210"
-    lat: -33.4301
-    lng: -70.6340
+    endereco: "Calle Principal, s/n – Centro"
+    cidade: "Linares"
+    estado: "Maule"
+    telefone: "+56 9 4140-0102"
+    lat: -35.834550
+    lng: -71.598546
 
   # =====================
   # 🇲🇽 MÉXICO
   # =====================
 
-  - nome: "Prof. Baqueta"
+  - nome: "Baqueta"
     pais: "México"
-    endereco: "Av. Insurgentes Sur, 789 – Colonia Roma"
-    cidade: "Ciudad de México"
-    estado: "CDMX"
-    telefone: "+52 55 1234 5678"
-    lat: 19.4118
-    lng: -99.1625
+    endereco: "Cronos 8741 – San Bernabe 5° Sector (Casa Kwanza)"
+    cidade: "Monterrey"
+    estado: "Nuevo León"
+    telefone: ""
+    lat: 25.75481622
+    lng: -100.364223
 
-  - nome: "Graduado Tigre"
+  - nome: "Baqueta"
     pais: "México"
-    endereco: "Calle Amsterdam, 45 – Condesa"
-    cidade: "Ciudad de México"
-    estado: "CDMX"
-    telefone: "+52 55 9876 5432"
-    lat: 19.4104
-    lng: -99.1711
+    endereco: "Salvador Diaz Miron 3400, 2º Piso – Col. Hidalgo"
+    cidade: "Monterrey"
+    estado: "Nuevo León"
+    telefone: ""
+    lat: 25.70776385
+    lng: -100.318598
+
+  - nome: "Tigre"
+    pais: "México"
+    endereco: ""
+    cidade: ""
+    estado: ""
+    telefone: ""
+    lat: 
+    lng: 
+
 ---

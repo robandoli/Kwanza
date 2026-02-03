@@ -2,6 +2,7 @@
 
 <article class="pagina">
 
+  <!-- HEADER -->
   <header class="page-header">
     <div class="container">
       <div class="editorial-content">
@@ -14,6 +15,7 @@
     </div>
   </header>
 
+  <!-- CONTEÚDO EDITORIAL -->
   <section class="pagina-conteudo section">
     <div class="container">
       <div class="editorial-content">
@@ -22,83 +24,84 @@
     </div>
   </section>
 
+  <!-- LOCAIS KWANZA -->
   {{ with .Params.locais_kwanza }}
   <section class="locais-kwanza section">
     <div class="container">
-      <div class="editorial-content">
+      <div class="locais-conteudo">
+
         <h2>Locais Kwanza</h2>
 
-        {{/* =============================
-             MAPA DE BANDEIRAS
-             ============================= */}}
+        {{/* BANDEIRAS */}}
         {{ $bandeiras := dict
           "Brasil" "🇧🇷"
           "Chile"  "🇨🇱"
           "México" "🇲🇽"
         }}
 
-        {{/* =============================
-             PAÍS → ESTADO → NOMES
-             ============================= */}}
+        {{ $paisAnterior := "" }}
+        {{ $estadoAnterior := "" }}
 
-        {{ $scratch := newScratch }}
-
-        {{/* Indexa por pais/estado */}}
         {{ range . }}
-          {{ if and (isset . "pais") (isset . "estado") }}
-            {{ $key := printf "%s|%s" .pais .estado }}
-            {{ $scratch.Add $key (slice .) }}
-          {{ end }}
-        {{ end }}
 
-        {{/* Lista de países únicos */}}
-        {{ $paises := slice }}
-        {{ range . }}
-          {{ if not (in $paises .pais) }}
-            {{ $paises = $paises | append .pais }}
-          {{ end }}
-        {{ end }}
+          {{/* NOVO PAÍS */}}
+          {{ if ne .pais $paisAnterior }}
 
-        {{/* Renderização */}}
-        {{ range $paises }}
-          {{ $paisAtual := . }}
-
-          <h3 class="locais-pais">
-            {{ with index $bandeiras $paisAtual }}{{ . }} {{ end }}{{ $paisAtual }}
-          </h3>
-
-          {{ range $key, $items := $scratch.Values }}
-            {{ $parts := split $key "|" }}
-
-            {{ if eq (index $parts 0) $paisAtual }}
-
-              <h4 class="locais-estado">{{ index $parts 1 }}</h4>
-
-              {{ range $items }}
-                <div class="local-item">
-                  <p>
-                    <strong>{{ .nome }}</strong>
-
-                    <span>
-                      {{ .endereco }}<br>
-                      {{ .cidade }} – {{ .estado }}
-                    </span>
-
-                    📞 {{ .telefone }} —
-                    <a
-                      href="https://maps.google.com/?q={{ .lat }},{{ .lng }}"
-                      target="_blank"
-                      rel="noopener">
-                      Ver no mapa
-                    </a>
-                  </p>
+            {{ if ne $paisAnterior "" }}
                 </div>
+              </details>
+            {{ end }}
+
+            <details class="locais-pais">
+              <summary>
+                {{ with index $bandeiras .pais }}{{ . }} {{ end }}{{ .pais }}
+              </summary>
+
+              <div class="locais-pais-conteudo">
+
+            {{ $paisAnterior = .pais }}
+            {{ $estadoAnterior = "" }}
+
+          {{ end }}
+
+          {{/* NOVO ESTADO (SEMPRE DENTRO DO PAÍS) */}}
+          {{ if ne .estado $estadoAnterior }}
+            <h4 class="locais-estado">{{ .estado }}</h4>
+            {{ $estadoAnterior = .estado }}
+          {{ end }}
+
+          <!-- LOCAL -->
+          <div class="local-item">
+            <p>
+              <strong>{{ .nome }}</strong>
+
+              <span>
+                {{ .endereco }}<br>
+                {{ .cidade }}{{ if .estado }} – {{ .estado }}{{ end }}
+              </span>
+
+              {{ if .telefone }}
+                📞 {{ .telefone }}
               {{ end }}
 
-            {{ end }}
-          {{ end }}
+              {{ if and .lat .lng }}
+                <br>
+                <a
+                  href="https://maps.google.com/?q={{ .lat }},{{ .lng }}"
+                  target="_blank"
+                  rel="noopener">
+                  Ver no mapa
+                </a>
+              {{ end }}
+            </p>
+          </div>
 
         {{ end }}
+
+        {{/* FECHA ÚLTIMO PAÍS */}}
+            </div>
+          </details>
+
       </div>
     </div>
   </section>

@@ -1,18 +1,15 @@
 /* ============================
-   CONTATOS — ESTRUTURA EDITORIAL
+   CONTATOS — ESTRUTURA
    ============================ */
 
-/* Espaço entre header e conteúdo */
 .pagina-header + .locais-kwanza {
   margin-top: 0;
 }
 
-/* Container externo (mesmo da Agenda/Equipe) */
 .locais-kwanza .container {
   max-width: 960px;
 }
 
-/* Coluna editorial interna */
 .locais-kwanza .locais-conteudo {
   max-width: 720px;
   margin-left: 0;
@@ -20,24 +17,63 @@
 }
 
 /* ============================
-   AGRUPAMENTOS
+   COLLAPSE POR PAÍS (CORRIGIDO)
    ============================ */
 
-.locais-grupo {
-  margin-left: 0;
+/* Container do país */
+.locais-pais {
   margin-bottom: var(--space-xl);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  background: rgba(255,255,255,0.025);
 }
 
-/* Título do país */
-.locais-kwanza .locais-pais {
-  font-size: 1.8rem;
+/* País = TOPO DO GRUPO */
+.locais-pais summary {
+  margin: 0;
+  padding: 1.2rem 1.4rem;
+
+  font-size: 2.45rem; /* ↑ 30% (1.9 → ~2.45) */
   font-weight: 700;
   color: var(--color-primary);
-  margin-top: 2rem;
-  margin-bottom: var(--space-lg);
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
+
+  cursor: pointer;
+  list-style: none;
+}
+
+.locais-pais summary::-webkit-details-marker {
+  display: none;
+}
+
+.locais-pais summary::after {
+  content: "▾";
+  margin-left: 0.4rem;
+  font-size: 1.3rem; /* ↑ 30% */
+  opacity: 0.6;
+}
+
+.locais-pais[open] summary::after {
+  transform: rotate(180deg);
+}
+
+/* Conteúdo do país */
+.locais-pais-conteudo {
+  padding: 0 1.4rem 1.4rem;
+}
+
+/* ============================
+   ESTADOS
+   ============================ */
+
+.locais-estado {
+  margin-top: 0.6rem;
+  margin-bottom: 0.75rem;
+
+  font-size: 1.1rem; /* ↑ 30% (0.85 → ~1.1) */
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.65;
 }
 
 /* ============================
@@ -55,25 +91,23 @@
   line-height: 1.6;
 }
 
-/* Nome */
 .locais-kwanza .local-item p strong {
   display: block;
-  font-size: 1rem;
+  font-size: 1.3rem; /* ↑ 30% (1 → 1.3) */
   font-weight: 600;
   color: var(--color-accent);
   margin-bottom: 0.35rem;
 }
 
-/* Endereço */
 .locais-kwanza .local-item p span {
   display: block;
+  font-size: 1.3rem; /* ↑ 30% */
   opacity: 0.9;
   margin-bottom: 0.25rem;
 }
 
-/* Ações */
 .locais-kwanza .local-item a {
-  font-size: 1rem;
+  font-size: 1.3rem; /* ↑ 30% */
   color: inherit;
   opacity: 0.75;
   text-decoration: none;
@@ -89,11 +123,16 @@
    ============================ */
 
 @media (max-width: 640px) {
-  .locais-kwanza .local-item {
-    padding: 1rem;
+  .locais-pais summary {
+    font-size: 1.95rem; /* ↑ 30% (1.5 → ~1.95) */
+    padding: 1rem 1.1rem;
   }
 
-  .locais-kwanza .locais-pais:not(:first-of-type) {
-    margin-top: 2.5rem;
+  .locais-pais-conteudo {
+    padding: 0 1.1rem 1.1rem;
+  }
+
+  .locais-kwanza .local-item {
+    padding: 1rem;
   }
 }

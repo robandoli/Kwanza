@@ -23,13 +23,33 @@ historia_grupo: |
   respeito à ancestralidade e ao papel social da capoeira.
 
 historia_mestre: |
-  O **Grupo Kwanza** é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**, mestre de capoeira com mais de cinco décadas de dedicação à arte. Seu primeiro contato com a capoeira ocorreu em 1975, em Olinda–PE. A força do jogo e a musicalidade despertaram um caminho marcado pela disciplina e pela busca constante por aprendizado.
+  O **Grupo Kwanza** é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**,
+  mestre de capoeira com mais de cinco décadas de dedicação à arte.
+  Seu primeiro contato com a capoeira ocorreu em 1975, em Olinda–PE, quando
+  a força do jogo e a musicalidade despertaram um caminho marcado pela
+  disciplina e pela busca constante por aprendizado.
 
-  Ao longo de sua formação, construiu sua base com mestres renomados como **Marinheiro, Russo, Ditinho e Nestor**, além de receber influências fundamentais de Mestre Zambi e Mestre Burguês. Sua  trajetória contou ainda com a mentoria e a amizade de Mestre Leopoldina. Na Capoeira Angola, foi **discípulo de Mestre Gato Preto**, sua maior referência no estilo.
+  Ao longo de sua formação, construiu sua base com mestres renomados como
+  **Marinheiro, Russo, Ditinho e Nestor**, além de receber influências
+  fundamentais de Mestre Zambi e Mestre Burguês.
+  Sua trajetória contou ainda com a mentoria e a amizade de Mestre Leopoldina.
+  Na Capoeira Angola, foi **discípulo de Mestre Gato Preto**, sua principal
+  referência nesse estilo.
+  Conviveu também com Mestres Ananias e Joel, que, em diferentes momentos,
+  contribuíram com apoio e aconselhamento em sua caminhada.
 
-  O reconhecimento como mestre ocorreu em 30 de julho de 1991. Naquela ocasião, assumiu o grupo Jogo de Guerreiro, do Mestre Ditinho. Movido pelo desejo de aprofundar seus fundamentos, buscou o conhecimento de **Mestre Zambi (Grupo Filhos de Zambi), sob cuja orientação estreitou laços que o levaram a tornar-se seu discípulo**. Para Mestre Jaguara, o título representa a responsabilidade profunda de formar pessoas e preservar valores.
+  O reconhecimento como mestre ocorreu em 30 de julho de 1991.
+  Na ocasião, assumiu o grupo Jogo de Guerreiro, do Mestre Ditinho.
+  Movido pelo desejo de aprofundar seus fundamentos, buscou o conhecimento de
+  **Mestre Zambi (Grupo Filhos de Zambi)**, sob cuja orientação fortaleceu laços
+  que o levaram a tornar-se seu discípulo.
+  Para Mestre Jaguara, o título de mestre representa a responsabilidade
+  profunda de formar pessoas e preservar valores.
 
-  A capoeira é compreendida como um modo de viver — uma prática que atravessa o corpo, a cultura e a vida cotidiana. Sua filosofia fundamenta-se no respeito ao próximo, na honestidade e na  valorização das relações humanas.
+  A capoeira é compreendida como um modo de viver — uma prática que atravessa
+  o corpo, a cultura e a vida cotidiana.
+  Sua filosofia fundamenta-se no respeito ao próximo, na honestidade e na
+  valorização das relações humanas.
 
 valores: |
   O **Grupo Kwanza** fundamenta sua atuação em princípios que orientam não apenas a prática da capoeira, mas a formação humana e social de seus integrantes.

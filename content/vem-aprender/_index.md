@@ -12,14 +12,14 @@ hero_headline: "Samba de roda, patrimônio cultural brasileiro."
 
 hero_cta:
   texto: "Contratações e parcerias"
-  link: "https://wa.me/5511999999999"
+  link: "https://wa.me/5511970773820"
 
 # Redes sociais do projeto (sobrescreve padrão do footer)
 redes_sociais:
-  facebook: "https://facebook.com/vemaprender"
-  instagram: "https://instagram.com/vemaprender"
-  whatsapp: "https://wa.me/5511999999999"
-  youtube: "https://youtube.com/@vemaprender"
+  facebook: "https://www.facebook.com/lidianedivas/"
+  instagram: "https://www.instagram.com/lidi_ruby/?hl=en"
+  whatsapp: "https://wa.me/5511970773820"
+  youtube: "https://www.youtube.com/@culturapopularvemaprender"
 logo: "/img/logo-vem-aprender.webp"
 
 sobre_projeto:
@@ -103,15 +103,15 @@ documentacao:
   items:
     - nome: "Curriculo Cultura Ruby"
       arquivo: "/docs/curriculo_cultural_ruby.pdf"
-      descricao: "PDF - 20MB"
+      descricao: "PDF - 1MB"
     
     - nome: "Currículo Cultural Mestre Jaguara"
       arquivo: "/docs/curriculo_cultural_mestre_jaguara.pdf"
-      descricao: "PDF - 18MB"
+      descricao: "PDF - 12MB"
 
     - nome: "Currículo Cultura Professora Guerreira"
       arquivo: "/docs/curriculo_cultural_professora_guerreira.pdf"
-      descricao: "PDF - 15MB"
+      descricao: "PDF - 11MB"
 
 membros_equipe:
   titulo: "Nossa Equipe"
