@@ -1,11 +1,11 @@
-baseURL = "/"
+baseURL = "https://grupokwanza.com.br/"
 title = "Grupo Kwanza"
 
 defaultContentLanguage = "pt"
 defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = false
 
 theme = "beautifulhugo"
