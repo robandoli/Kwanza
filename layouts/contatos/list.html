@@ -30,7 +30,7 @@
     <div class="container">
       <div class="locais-conteudo">
 
-        <h2>Locais Kwanza</h2>
+        <h2>{{ i18n "kwanza_locations" }}</h2>
 
         {{/* BANDEIRAS */}}
         {{ $bandeiras := dict
@@ -90,7 +90,7 @@
                   href="https://maps.google.com/?q={{ .lat }},{{ .lng }}"
                   target="_blank"
                   rel="noopener">
-                  Ver no mapa
+                  {{ i18n "view_on_map" }}
                 </a>
               {{ end }}
             </p>

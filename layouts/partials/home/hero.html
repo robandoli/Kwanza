@@ -2,20 +2,20 @@
   <div class="hero-bg">
     <img 
       src="/img/hero/roda_2.webp" 
-      alt="Roda de capoeira" 
+      alt="{{ i18n "hero_img_alt_1" }}" 
       class="active"
       loading="eager"
       decoding="async"
     >
     <img 
       src="/img/hero/roda_1.webp" 
-      alt="Capoeira na academia"
+      alt="{{ i18n "hero_img_alt_2" }}"
       loading="lazy"
       decoding="async"
     >
     <img 
       src="/img/hero/treino_1.webp"
-      alt="Capoeira em comunidade"
+      alt="{{ i18n "hero_img_alt_3" }}"
       loading="lazy"
       decoding="async"
     >
@@ -24,15 +24,14 @@
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
-    <h1>CAPOEIRA É RAIZ, CORPO E CONSCIÊNCIA</h1>
+    <h1>{{ i18n "hero_title" }}</h1>
 
     <p class="hero-subtitle">
-      No Grupo Kwanza, a capoeira é vivida como cultura, disciplina e caminho de formação —
-      <br>dentro e fora da roda.
+      {{ i18n "hero_subtitle" | safeHTML }}
     </p>
 
-    <a href="/contatos/" class="btn-primary">
-      AGENDAR AULA
+    <a href="{{ relLangURL "contatos/" }}" class="btn-primary">
+      {{ i18n "hero_cta" }}
     </a>
   </div>
 </section>

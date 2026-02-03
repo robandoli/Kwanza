@@ -9,8 +9,8 @@
   {{ with .Params.eventos_lista }}
   <section class="eventos-lista section">
     <div class="container">
-      <h2>Agenda Completa</h2>
-      <div class="eventos-conteudo">
+      <div class="editorial-content">
+        <h2>{{ i18n "calendar_full_agenda" }}</h2>
         {{ . | markdownify }}
       </div>
     </div>
@@ -20,7 +20,9 @@
   {{ if .Content }}
   <section class="pagina-conteudo section">
     <div class="container">
-      {{ .Content }}
+      <div class="editorial-content">
+        {{ .Content }}
+      </div>
     </div>
   </section>
   {{ end }}

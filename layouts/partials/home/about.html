@@ -4,26 +4,18 @@
     <div class="equipe-media"></div>
 
     <div class="equipe-conteudo">
-      <h2>Quem somos</h2>
+      <h2>{{ i18n "home_about_title_1" }}</h2>
 
       <p>
-        O <strong>Grupo Kwanza</strong> nasce, em <strong>2014</strong>, do compromisso
-        com a capoeira como cultura viva, disciplina e formação humana.
+        {{ i18n "home_about_p1_1" | safeHTML }}
       </p>
 
       <p>
-        Mais do que um espaço de treino, somos um grupo que preserva a tradição,
-        respeita a ancestralidade e entende a capoeira como linguagem de educação,
-        identidade e convivência.
+        {{ i18n "home_about_p1_2" }}
       </p>
 
       <p>
-        Com mais de <strong>10 anos de atuação</strong>, o Kwanza já formou
-        <strong>mestres de capoeira</strong> e está presente em
-        <strong>três países da América Latina</strong> e em
-        <strong>quatro estados do Brasil</strong>, atuando com responsabilidade,
-        respeito aos mestres e consciência do papel que a capoeira ocupa dentro
-        e fora da roda.
+        {{ i18n "home_about_p1_3" | safeHTML }}
       </p>
     </div>
 
@@ -36,17 +28,14 @@
     <div class="equipe-media"></div>
 
     <div class="equipe-conteudo">
-      <h2>Nossa prática</h2>
+      <h2>{{ i18n "home_about_title_2" }}</h2>
 
       <p>
-        No Kwanza, a capoeira é ensinada e vivida com seriedade.
-        O treino físico caminha junto com o entendimento da história,
-        da música, dos rituais e da convivência em grupo.
+        {{ i18n "home_about_p2_1" }}
       </p>
 
       <p>
-        Valorizamos a escuta, o tempo de cada aluno e a construção
-        contínua do conhecimento — sem pressa, sem atalhos.
+        {{ i18n "home_about_p2_2" }}
       </p>
     </div>
 
@@ -60,36 +49,36 @@
     <div class="equipe-media"></div>
 
     <div class="equipe-conteudo">
-      <h2>Dúvidas frequentes</h2>
+      <h2>{{ i18n "home_faq_title" }}</h2>
 
       <details>
-        <summary>Nunca fiz capoeira. Posso começar?</summary>
-        <p>Sim. Recebemos iniciantes de todas as idades. O professor acompanha cada aluno respeitando sua experiência e condição física.</p>
+        <summary>{{ i18n "faq_q1" }}</summary>
+        <p>{{ i18n "faq_a1" }}</p>
       </details>
 
       <details>
-        <summary>Qual a idade mínima para crianças?</summary>
-        <p>Aceitamos crianças a partir de 6 anos, com acompanhamento adequado à faixa etária.</p>
+        <summary>{{ i18n "faq_q2" }}</summary>
+        <p>{{ i18n "faq_a2" }}</p>
       </details>
 
       <details>
-        <summary>Preciso de experiência ou preparo físico?</summary>
-        <p>Não. O condicionamento físico é desenvolvido gradualmente ao longo do treino.</p>
+        <summary>{{ i18n "faq_q3" }}</summary>
+        <p>{{ i18n "faq_a3" }}</p>
       </details>
 
       <details>
-        <summary>Como faço para conhecer uma aula do grupo?</summary>
-        <p>Entre em contato com o núcleo mais próximo para receber orientações iniciais.</p>
+        <summary>{{ i18n "faq_q4" }}</summary>
+        <p>{{ i18n "faq_a4" }}</p>
       </details>
 
       <details>
-        <summary>Capoeira é uma luta? É violenta?</summary>
-        <p>A capoeira é uma luta de origem afro-brasileira. O treino é controlado, respeitoso e orientado pelo professor.</p>
+        <summary>{{ i18n "faq_q5" }}</summary>
+        <p>{{ i18n "faq_a5" }}</p>
       </details>
 
       <details>
-        <summary>A capoeira está ligada a alguma religião?</summary>
-        <p>Não. A capoeira é uma manifestação cultural brasileira, sem vínculo religioso.</p>
+        <summary>{{ i18n "faq_q6" }}</summary>
+        <p>{{ i18n "faq_a6" }}</p>
       </details>
     </div>
 
@@ -102,15 +91,14 @@
     <div class="equipe-media"></div>
 
     <div class="equipe-conteudo">
-      <h2>Agende sua aula</h2>
+      <h2>{{ i18n "home_cta_title" }}</h2>
 
       <p>
-        Se você busca um espaço sério, acolhedor e comprometido com a capoeira,
-        o Grupo Kwanza está de portas abertas.
+        {{ i18n "home_cta_text" }}
       </p>
 
-      <a href="/contatos/" class="btn-primary">
-        AGENDAR AULA
+      <a href="{{ relLangURL "contatos/" }}" class="btn-primary">
+        {{ i18n "hero_cta" }}
       </a>
     </div>
   </div>

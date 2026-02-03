@@ -1,0 +1,25 @@
+# UI strings - Español
+
+nav_toggle_label: "Abrir menú"
+read_more: "Leer más"
+view_on_map: "Ver en el mapa"
+search: "Buscar"
+contact: "Contacto"
+email: "Correo electrónico"
+phone: "Teléfono"
+address: "Dirección"
+learn_more: "Saber más"
+back_to_home: "Volver a la página principal"
+calendar_full_agenda: "Agenda Completa"
+kwanza_locations: "Ubicaciones Kwanza"
+search_songs_placeholder: "Buscar por título o letra..."
+search_songs_label: "Buscar músicas"
+
+# Menu items
+menu_home: "Inicio"
+menu_identity: "Identidad Kwanza"
+menu_guide: "Guía del Capoeirista Kwanza"
+menu_learn: "Ven a Aprender"
+menu_calendar: "Calendario"
+menu_blog: "Blog"
+menu_contacts: "Contactos"

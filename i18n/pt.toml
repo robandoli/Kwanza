@@ -1,0 +1,88 @@
+# HOME - Hero
+[hero_title]
+other = "CAPOEIRA É RAIZ, CORPO E CONSCIÊNCIA"
+
+[hero_subtitle]
+other = "No Grupo Kwanza, a capoeira é vivida como cultura, disciplina e caminho de formação —<br>dentro e fora da roda."
+
+[hero_cta]
+other = "AGENDAR AULA"
+
+[hero_img_alt_1]
+other = "Roda de capoeira"
+
+[hero_img_alt_2]
+other = "Capoeira na academia"
+
+[hero_img_alt_3]
+other = "Capoeira em comunidade"
+
+# HOME - About Section 1
+[home_about_title_1]
+other = "Quem somos"
+
+[home_about_p1_1]
+other = 'O <strong>Grupo Kwanza</strong> nasce, em <strong>2014</strong>, do compromisso com a capoeira como cultura viva, disciplina e formação humana.'
+
+[home_about_p1_2]
+other = "Mais do que um espaço de treino, somos um grupo que preserva a tradição, respeita a ancestralidade e entende a capoeira como linguagem de educação, identidade e convivência."
+
+[home_about_p1_3]
+other = 'Com mais de <strong>10 anos de atuação</strong>, o Kwanza já formou <strong>mestres de capoeira</strong> e está presente em <strong>três países da América Latina</strong> e em <strong>quatro estados do Brasil</strong>, atuando com responsabilidade, respeito aos mestres e consciência do papel que a capoeira ocupa dentro e fora da roda.'
+
+# HOME - About Section 2
+[home_about_title_2]
+other = "Nossa prática"
+
+[home_about_p2_1]
+other = "No Kwanza, a capoeira é ensinada e vivida com seriedade. O treino físico caminha junto com o entendimento da história, da música, dos rituais e da convivência em grupo."
+
+ [home_about_p2_2]
+other = "Valorizamos a escuta, o tempo de cada aluno e a construção contínua do conhecimento — sem pressa, sem atalhos."
+
+# HOME - FAQ
+[home_faq_title]
+other = "Dúvidas frequentes"
+
+[faq_q1]
+other = "Nunca fiz capoeira. Posso começar?"
+
+[faq_a1]
+other = "Sim. Recebemos iniciantes de todas as idades. O professor acompanha cada aluno respeitando sua experiência e condição física."
+
+[faq_q2]
+other = "Qual a idade mínima para crianças?"
+
+[faq_a2]
+other = "Aceitamos crianças a partir de 6 anos, com acompanhamento adequado à faixa etária."
+
+[faq_q3]
+other = "Preciso de experiência ou preparo físico?"
+
+[faq_a3]
+other = "Não. O condicionamento físico é desenvolvido gradualmente ao longo do treino."
+
+[faq_q4]
+other = "Como faço para conhecer uma aula do grupo?"
+
+[faq_a4]
+other = "Entre em contato com o núcleo mais próximo para receber orientações iniciais."
+
+[faq_q5]
+other = "Capoeira é uma luta? É violenta?"
+
+[faq_a5]
+other = "A capoeira é uma luta de origem afro-brasileira. O treino é controlado, respeitoso e orientado pelo professor."
+
+[faq_q6]
+other = "A capoeira está ligada a alguma religião?"
+
+[faq_a6]
+other = "Não. A capoeira é uma manifestação cultural brasileira, sem vínculo religioso."
+
+# HOME - CTA Final
+[home_cta_title]
+other = "Agende sua aula"
+
+[home_cta_text]
+other = "Se você busca um espaço sério, acolhedor e comprometido com a capoeira, o Grupo Kwanza está de portas abertas."

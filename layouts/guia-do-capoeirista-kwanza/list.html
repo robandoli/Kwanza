@@ -19,16 +19,22 @@
   <section class="guia-menu section">
     <div class="container">
       <div class="editorial-content">
-      
+        
         <nav class="guia-navegacao">
-          {{ range .Pages }}
-            {{ if or (eq .File.BaseFileName "sistema-de-graduacoes") (eq .File.BaseFileName "protocolo-da-roda") (eq .File.BaseFileName "cantigas") }}
-            <a href="{{ .RelPermalink }}" class="guia-card">
-              <h2>{{ .Title }}</h2>
-              {{ with .Params.description }}
-                <p>{{ . }}</p>
+          {{ $section := .Site.GetPage "section" "guia-do-capoeirista-kwanza" }}
+        
+          {{ if $section }}
+            {{ range $section.Pages }}
+              {{ if eq .Lang $.Lang }}
+                {{ if not (in .File.BaseFileName "_index") }}
+                  <a href="{{ .RelPermalink }}" class="guia-card">
+                    <h2>{{ .Title }}</h2>
+                    {{ with .Params.description }}
+                      <p>{{ . }}</p>
+                    {{ end }}
+                  </a>
+                {{ end }}
               {{ end }}
-            </a>
             {{ end }}
           {{ end }}
         </nav>
@@ -40,4 +46,3 @@
 </article>
 
 {{ end }}
-

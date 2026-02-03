@@ -1,29 +1,9 @@
-.editorial-content {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-/* HEADER PADRÃO (IDENTIDADE / GUIA / CONTEÚDO) */
-.page-header {
-  padding-block: clamp(1.25rem, 2vh, 1.75rem);
-}
-
-.page-header h1 {
-  margin: 0 0 0.5rem 0;
-  font-size: clamp(2.2rem, 5vw, 3rem);
-}
-
-.page-header .lead {
-  max-width: 60ch;
-  opacity: 0.75;
-}
+/* ===============================
+   GRADUAÇÕES - Grid de imagens
+   =============================== */
 
 .graduacoes-imagens {
   background: var(--bg-main);
-}
-
-/* GRADUAÇÕES — AJUSTE DE RITMO VERTICAL */
-.graduacoes-imagens.section {
   padding-top: 0;
 }
 

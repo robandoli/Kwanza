@@ -16,7 +16,15 @@
 </title>
 
 <meta name="description"
-      content="{{ with .Description }}{{ . }}{{ else }}Capoeira, cultura e formação através do Grupo Kwanza.{{ end }}">
+      content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<!-- hreflang alternates -->
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+    <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+  {{ end }}
+{{ end }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 
 <link rel="stylesheet" href="/css/style.css">
 

@@ -1,0 +1,88 @@
+# HOME - Hero
+[hero_title]
+other = "CAPOEIRA IS ROOT, BODY, AND CONSCIOUSNESS"
+
+[hero_subtitle]
+other = "At Grupo Kwanza, capoeira is lived as culture, discipline, and a path of formation —<br>inside and outside the roda."
+
+[hero_cta]
+other = "SCHEDULE CLASS"
+
+[hero_img_alt_1]
+other = "Capoeira roda"
+
+[hero_img_alt_2]
+other = "Capoeira at the academy"
+
+[hero_img_alt_3]
+other = "Capoeira in community"
+
+# HOME - About Section 1
+[home_about_title_1]
+other = "Who we are"
+
+[home_about_p1_1]
+other = '<strong>Grupo Kwanza</strong> was born in <strong>2014</strong> from a commitment to capoeira as living culture, discipline, and human formation.'
+
+[home_about_p1_2]
+other = "More than a training space, we are a group that preserves tradition, respects ancestry, and understands capoeira as a language of education, identity, and coexistence."
+
+[home_about_p1_3]
+other = 'With over <strong>10 years of operation</strong>, Kwanza has already trained <strong>capoeira masters</strong> and is present in <strong>three Latin American countries</strong> and <strong>four Brazilian states</strong>, operating with responsibility, respect for masters, and awareness of the role capoeira plays inside and outside the roda.'
+
+# HOME - About Section 2
+[home_about_title_2]
+other = "Our practice"
+
+[home_about_p2_1]
+other = "At Kwanza, capoeira is taught and lived with seriousness. Physical training goes hand in hand with understanding history, music, rituals, and  group coexistence."
+
+[home_about_p2_2]
+other = "We value listening, each student's time, and the continuous construction of knowledge — without haste, without shortcuts."
+
+# HOME - FAQ
+[home_faq_title]
+other = "Frequently asked questions"
+
+[faq_q1]
+other = "I've never done capoeira. Can I start?"
+
+[faq_a1]
+other = "Yes. We welcome beginners of all ages. The teacher accompanies each student respecting their experience and physical condition."
+
+[faq_q2]
+other = "What is the minimum age for children?"
+
+[faq_a2]
+other = "We accept children from 6 years old, with age-appropriate guidance."
+
+[faq_q3]
+other = "Do I need experience or physical preparation?"
+
+[faq_a3]
+other = "No. Physical conditioning is developed gradually throughout training."
+
+[faq_q4]
+other = "How do I try a group class?"
+
+[faq_a4]
+other = "Contact the nearest center to receive initial guidance."
+
+[faq_q5]
+other = "Is capoeira a fight? Is it violent?"
+
+[faq_a5]
+other = "Capoeira is an Afro-Brazilian martial art. Training is controlled, respectful, and teacher-guided."
+
+[faq_q6]
+other = "Is capoeira linked to any religion?"
+
+[faq_a6]
+other = "No. Capoeira is a Brazilian cultural manifestation with no religious affiliation."
+
+# HOME - CTA Final
+[home_cta_title]
+other = "Schedule your class"
+
+[home_cta_text]
+other = "If you're looking for a serious, welcoming space committed to capoeira, Grupo Kwanza's doors are open."

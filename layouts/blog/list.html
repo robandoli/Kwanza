@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <div class="container">
+    <div class="editorial-content">
+      <h1>{{ .Title }}</h1>
+      <p class="lead">{{ .Description }}</p>
+    </div>
+  </div>
+</header>
+
+<section class="pagina-conteudo section">
+  <div class="container">
+    <div class="editorial-content">
+      
+      {{ .Content }}
+
+      {{ if .Pages }}
+      <div class="blog-lista" style="margin-top: var(--space-xl);">
+        {{ range .Pages.ByDate.Reverse }}
+          <article class="blog-item">
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+            <div class="blog-meta">
+              <time datetime="{{ .Date.Format "2006-01-02" }}">
+                {{ .Date.Format "02/01/2006" }}
+              </time>
+              {{ with .Params.author }}
+                <span class="author">{{ . }}</span>
+              {{ end }}
+            </div>
+            <p>{{ .Description }}</p>
+            <a href="{{ .Permalink }}" class="read-more">{{ i18n "read_more" }}</a>
+          </article>
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

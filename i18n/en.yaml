@@ -1,0 +1,25 @@
+# UI strings - English
+
+nav_toggle_label: "Open menu"
+read_more: "Read more"
+view_on_map: "View on map"
+search: "Search"
+contact: "Contact"
+email: "Email"
+phone: "Phone"
+address: "Address"
+learn_more: "Learn more"
+back_to_home: "Back to home"
+calendar_full_agenda: "Full Schedule"
+kwanza_locations: "Kwanza Locations"
+search_songs_placeholder: "Search by title or lyrics..."
+search_songs_label: "Search songs"
+
+# Menu items
+menu_home: "Home"
+menu_identity: "Kwanza Identity"
+menu_guide: "Capoeirista Kwanza Guide"
+menu_learn: "Come Learn"
+menu_calendar: "Calendar"
+menu_blog: "Blog"
+menu_contacts: "Contacts"

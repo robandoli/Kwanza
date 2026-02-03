@@ -1,0 +1,15 @@
+{{ if .IsTranslated }}
+<div class="lang-switcher">
+  {{ range .Translations }}
+    <a href="{{ .Permalink }}" 
+       lang="{{ .Language.Lang }}" 
+       hreflang="{{ .Language.Lang }}"
+       title="{{ .Language.LanguageName }}">
+      {{ if eq .Language.Lang "pt" }}PT
+      {{ else if eq .Language.Lang "es" }}ES
+      {{ else if eq .Language.Lang "en" }}EN
+      {{ end }}
+    </a>
+  {{ end }}
+</div>
+{{ end }}

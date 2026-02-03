@@ -1,58 +1,176 @@
-baseURL = "https://tranquil-puffpuff-e6e7a3.netlify.app/"
-languageCode = "pt-br"
+baseURL = "/"
 title = "Grupo Kwanza"
 
-theme = "beautifulhugo"
+defaultContentLanguage = "pt"
+defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
 canonifyURLs = false
 relativeURLs = false
 
+theme = "beautifulhugo"
+
 [pagination]
   pagerSize = 10
 
-[menu]
+[languages]
+  [languages.pt]
+    languageCode = "pt-BR"
+    languageName = "Português"
+    weight = 1
+    title = "Grupo Kwanza"
 
-  [[menu.main]]
+    [languages.pt.params]
+      description = "Capoeira, cultura e formação através do Grupo Kwanza."
+
+  [languages.es]
+    languageCode = "es"
+    languageName = "Español"
+    weight = 2
+    title = "Grupo Kwanza"
+
+    [languages.es.params]
+      description = "Capoeira, cultura y formación a través del Grupo Kwanza."
+
+  [languages.en]
+    languageCode = "en"
+    languageName = "English"
+    weight = 3
+    title = "Grupo Kwanza"
+
+    [languages.en.params]
+      description = "Capoeira, culture, and education through Grupo Kwanza."
+
+# Menu Português
+[languages.pt.menu]
+  [[languages.pt.menu.main]]
     identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
 
-  [[menu.main]]
+  [[languages.pt.menu.main]]
     identifier = "equipe"
     name = "Identidade Kwanza"
     url = "/equipe-kwanza/"
     weight = 2
 
-  [[menu.main]]
+  [[languages.pt.menu.main]]
     identifier = "guia"
     name = "Guia do Capoeirista Kwanza"
     url = "/guia-do-capoeirista-kwanza/"
     weight = 3
 
-  [[menu.main]]
+  [[languages.pt.menu.main]]
     identifier = "vem_aprender"
     name = "Vem Aprender"
     url = "/vem-aprender/"
     weight = 4
 
-  [[menu.main]]
+  [[languages.pt.menu.main]]
     identifier = "calendario"
     name = "Calendário"
     url = "/calendario-kwanza/"
     weight = 5
 
-  [[menu.main]]
+  [[languages.pt.menu.main]]
     identifier = "blog"
     name = "Blog"
     url = "/blog/"
     weight = 6
 
-  [[menu.main]]
+  [[languages.pt.menu.main]]
     identifier = "contatos"
     name = "Contatos"
     url = "/contatos/"
+    weight = 7
+
+# Menu Español
+[languages.es.menu]
+  [[languages.es.menu.main]]
+    identifier = "home"
+    name = "Inicio"
+    url = "/es/"
+    weight = 1
+
+  [[languages.es.menu.main]]
+    identifier = "equipe"
+    name = "Identidad Kwanza"
+    url = "/es/equipe-kwanza/"
+    weight = 2
+
+  [[languages.es.menu.main]]
+    identifier = "guia"
+    name = "Guía del Capoeirista Kwanza"
+    url = "/es/guia-do-capoeirista-kwanza/"
+    weight = 3
+
+  [[languages.es.menu.main]]
+    identifier = "vem_aprender"
+    name = "Ven a Aprender"
+    url = "/es/vem-aprender/"
+    weight = 4
+
+  [[languages.es.menu.main]]
+    identifier = "calendario"
+    name = "Calendario"
+    url = "/es/calendario-kwanza/"
+    weight = 5
+
+  [[languages.es.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/es/blog/"
+    weight = 6
+
+  [[languages.es.menu.main]]
+    identifier = "contatos"
+    name = "Contactos"
+    url = "/es/contatos/"
+    weight = 7
+
+# Menu English
+[languages.en.menu]
+  [[languages.en.menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/en/"
+    weight = 1
+
+  [[languages.en.menu.main]]
+    identifier = "equipe"
+    name = "Kwanza Identity"
+    url = "/en/equipe-kwanza/"
+    weight = 2
+
+  [[languages.en.menu.main]]
+    identifier = "guia"
+    name = "Capoeirista Kwanza Guide"
+    url = "/en/guia-do-capoeirista-kwanza/"
+    weight = 3
+
+  [[languages.en.menu.main]]
+    identifier = "vem_aprender"
+    name = "Come Learn"
+    url = "/en/vem-aprender/"
+    weight = 4
+
+  [[languages.en.menu.main]]
+    identifier = "calendario"
+    name = "Calendar"
+    url = "/en/calendario-kwanza/"
+    weight = 5
+
+  [[languages.en.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/en/blog/"
+    weight = 6
+
+  [[languages.en.menu.main]]
+    identifier = "contatos"
+    name = "Contacts"
+    url = "/en/contatos/"
     weight = 7
 
 [markup]

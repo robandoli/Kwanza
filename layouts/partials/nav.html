@@ -11,7 +11,7 @@
 
     <!-- Botão hamburger (mobile) -->
     <button class="nav-toggle"
-            aria-label="Abrir menu"
+            aria-label="{{ i18n "nav_toggle_label" }}"
             aria-expanded="false">
       <span></span>
       <span></span>
@@ -30,6 +30,8 @@
         </li>
       {{ end }}
     </ul>
+
+    {{ partial "lang-switcher.html" . }}
 
   </div>
 </nav>
