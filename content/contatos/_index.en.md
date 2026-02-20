@@ -4,20 +4,20 @@ title: "Contact Us"
 locais_kwanza:
 
   # =====================
-  # 🇧🇷 BRASIL
+  # 🇧🇷 BRAZIL
   # =====================
 
-  - nome: "Jaguara"
-    pais: "Brasil"
-    endereco: "Sede - Rua Exacta, 92 – Jardim Leonor"
+  - nome: "Mestre Jaguara"
+    pais: "Brazil"
+    endereco: "Headquarters - Rua Exacta, 92 – Jardim Leonor"
     cidade: "Cotia"
     estado: "SP"
     telefone: "11 99524-0710"
     lat: -23.60824
     lng: -46.92997
 
-  - nome: "Jaguara"
-    pais: "Brasil"
+  - nome: "Mestre Jaguara"
+    pais: "Brazil"
     endereco: "Rua João Colino, 64 – Centro"
     cidade: "Osasco"
     estado: "SP"
@@ -25,8 +25,8 @@ locais_kwanza:
     lat: -23.53364
     lng: -46.77611
 
-  - nome: "Camarão"
-    pais: "Brasil"
+  - nome: "Contra-mestre Camarão"
+    pais: "Brazil"
     endereco: "R. dos Odes, 952 – Jardim Nova Vida"
     cidade: "Cotia"
     estado: "SP"
@@ -34,8 +34,8 @@ locais_kwanza:
     lat: -23.58166
     lng: -46.92678
 
-  - nome: "Chocolate"
-    pais: "Brasil"
+  - nome: "Mestre Chocolate"
+    pais: "Brazil"
     endereco: "Rua Fronteira, 912 – Progresso"
     cidade: "Frutal"
     estado: "MG"
@@ -43,8 +43,8 @@ locais_kwanza:
     lat: -20.02928
     lng: -48.91819
 
-  - nome: "Sertão"
-    pais: "Brasil"
+  - nome: "Contra-mestre Sertão"
+    pais: "Brazil"
     endereco: "Av. Wenceslau Brás, 1785 – Ouro Verde"
     cidade: "São Sebastião do Paraíso"
     estado: "MG"
@@ -52,8 +52,8 @@ locais_kwanza:
     lat: -20.91988
     lng: -46.97140
 
-  - nome: "Dobrado"
-    pais: "Brasil"
+  - nome: "Contra-mestre Dobrado"
+    pais: "Brazil"
     endereco: "Praça da Juventude – João de Deus"
     cidade: "Petrolina"
     estado: "PE"
@@ -61,8 +61,8 @@ locais_kwanza:
     lat: -9.364448
     lng: -40.528245
 
-  - nome: "Kataryna"
-    pais: "Brasil"
+  - nome: "Professora Kataryna"
+    pais: "Brazil"
     endereco: "Praça da Juventude – João de Deus"
     cidade: "Petrolina"
     estado: "PE"
@@ -70,8 +70,8 @@ locais_kwanza:
     lat: -9.364448
     lng: -40.528245
 
-  - nome: "Araúna"
-    pais: "Brasil"
+  - nome: "Professor Araúna"
+    pais: "Brazil"
     endereco: "Escola Municipal Prof. Zélia Mathias – Pedro Raimundo"
     cidade: "Petrolina"
     estado: "PE"
@@ -79,8 +79,8 @@ locais_kwanza:
     lat: -9.3802011
     lng: -40.525615
 
-  - nome: "Pequeno"
-    pais: "Brasil"
+  - nome: "Instrutor Pequeno"
+    pais: "Brazil"
     endereco: "Quadra Poliesportiva Novo Tempo 1 – Pedra Linda"
     cidade: "Petrolina"
     estado: "PE"
@@ -88,8 +88,8 @@ locais_kwanza:
     lat: -9.34485
     lng: -40.51659
 
-  - nome: "Sol"
-    pais: "Brasil"
+  - nome: "Monitora Sol"
+    pais: "Brazil"
     endereco: "Associação dos Moradores – Cosme Damião"
     cidade: "Petrolina"
     estado: "PE"
@@ -97,8 +97,8 @@ locais_kwanza:
     lat: -9.36376
     lng: -40.54557
 
-  - nome: "Florzinha"
-    pais: "Brasil"
+  - nome: "Monitora Florzinha"
+    pais: "Brazil"
     endereco: "Quadra Poliesportiva Novo Tempo 1 – Pedra Linda"
     cidade: "Petrolina"
     estado: "PE"
@@ -106,8 +106,8 @@ locais_kwanza:
     lat: -9.34485
     lng: -40.51659
 
-  - nome: "Baraúna"
-    pais: "Brasil"
+  - nome: "Professor Baraúna"
+    pais: "Brazil"
     endereco: "Bairro Novo Tempo"
     cidade: "Petrolina"
     estado: "PE"
@@ -115,8 +115,8 @@ locais_kwanza:
     lat: -9.348231
     lng: -40.515234
 
-  - nome: "Cosme Damião"
-    pais: "Brasil"
+  - nome: "Monitor Cosme Damião"
+    pais: "Brazil"
     endereco: "Bairro Cosme Damião"
     cidade: "Petrolina"
     estado: "PE"
@@ -128,7 +128,7 @@ locais_kwanza:
   # 🇨🇱 CHILE
   # =====================
 
-  - nome: "Gamela"
+  - nome: "Mestre Gamela"
     pais: "Chile"
     endereco: "Salón Multipropósito Cerro Alegre – Cerro Alegre"
     cidade: "San Antonio"
@@ -137,7 +137,7 @@ locais_kwanza:
     lat: -33.042967
     lng: -71.627928
 
-  - nome: "Casca Grossa"
+  - nome: "Contra-mestre Casca Grossa"
     pais: "Chile"
     endereco: "Calle Principal, s/n – Centro"
     cidade: "Linares"
@@ -147,11 +147,11 @@ locais_kwanza:
     lng: -71.598546
 
   # =====================
-  # 🇲🇽 MÉXICO
+  # 🇲🇽 MEXICO
   # =====================
 
-  - nome: "Baqueta"
-    pais: "México"
+  - nome: "Professor Baqueta"
+    pais: "Mexico"
     endereco: "Cronos 8741 – San Bernabe 5° Sector (Casa Kwanza)"
     cidade: "Monterrey"
     estado: "Nuevo León"
@@ -159,13 +159,12 @@ locais_kwanza:
     lat: 25.75481622
     lng: -100.364223
 
-  - nome: "Baqueta"
-    pais: "México"
+  - nome: "Professor Baqueta"
+    pais: "Mexico"
     endereco: "Salvador Diaz Miron 3400, 2º Piso – Col. Hidalgo"
     cidade: "Monterrey"
     estado: "Nuevo León"
     telefone: ""
     lat: 25.70776385
     lng: -100.318598
-
 ---

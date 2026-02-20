@@ -17,11 +17,13 @@
 
 /* HERO DO CALENDÁRIO */
 .hero.hero-calendario {
-  height: 40vh;
-  min-height: 280px;
+  aspect-ratio: 16 / 6.3;
+  height: auto;
+  min-height: 0;
   padding: 0;
   margin-top: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .hero-calendario .hero-meta {
@@ -35,7 +37,12 @@
 .hero.hero-calendario .hero-bg img {
   height: 100%;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.hero.hero-calendario .hero-bg {
+  background: #050505;
 }
 
 /* Overlay */
@@ -52,8 +59,7 @@
 /* Mobile */
 @media (max-width: 640px) {
   .hero.hero-calendario {
-    height: 45vh;
-    min-height: 320px;
+    aspect-ratio: 16 / 6.3;
   }
 }
 

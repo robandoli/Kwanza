@@ -7,7 +7,7 @@ locais_kwanza:
   # 🇧🇷 BRASIL
   # =====================
 
-  - nome: "Jaguara"
+  - nome: "Mestre Jaguara"
     pais: "Brasil"
     endereco: "Sede - Rua Exacta, 92 – Jardim Leonor"
     cidade: "Cotia"
@@ -16,7 +16,7 @@ locais_kwanza:
     lat: -23.60824
     lng: -46.92997
 
-  - nome: "Jaguara"
+  - nome: "Mestre Jaguara"
     pais: "Brasil"
     endereco: "Rua João Colino, 64 – Centro"
     cidade: "Osasco"
@@ -25,7 +25,7 @@ locais_kwanza:
     lat: -23.53364
     lng: -46.77611
 
-  - nome: "Camarão"
+  - nome: "Contra-mestre Camarão"
     pais: "Brasil"
     endereco: "R. dos Odes, 952 – Jardim Nova Vida"
     cidade: "Cotia"
@@ -34,7 +34,7 @@ locais_kwanza:
     lat: -23.58166
     lng: -46.92678
 
-  - nome: "Chocolate"
+  - nome: "Mestre Chocolate"
     pais: "Brasil"
     endereco: "Rua Fronteira, 912 – Progresso"
     cidade: "Frutal"
@@ -43,7 +43,7 @@ locais_kwanza:
     lat: -20.02928
     lng: -48.91819
 
-  - nome: "Sertão"
+  - nome: "Contra-mestre Sertão"
     pais: "Brasil"
     endereco: "Av. Wenceslau Brás, 1785 – Ouro Verde"
     cidade: "São Sebastião do Paraíso"
@@ -52,7 +52,7 @@ locais_kwanza:
     lat: -20.91988
     lng: -46.97140
 
-  - nome: "Dobrado"
+  - nome: "Contra-mestre Dobrado"
     pais: "Brasil"
     endereco: "Praça da Juventude – João de Deus"
     cidade: "Petrolina"
@@ -61,7 +61,7 @@ locais_kwanza:
     lat: -9.364448
     lng: -40.528245
 
-  - nome: "Kataryna"
+  - nome: "Professora Kataryna"
     pais: "Brasil"
     endereco: "Praça da Juventude – João de Deus"
     cidade: "Petrolina"
@@ -70,7 +70,7 @@ locais_kwanza:
     lat: -9.364448
     lng: -40.528245
 
-  - nome: "Araúna"
+  - nome: "Professor Araúna"
     pais: "Brasil"
     endereco: "Escola Municipal Prof. Zélia Mathias – Pedro Raimundo"
     cidade: "Petrolina"
@@ -79,7 +79,7 @@ locais_kwanza:
     lat: -9.3802011
     lng: -40.525615
 
-  - nome: "Pequeno"
+  - nome: "Instrutor Pequeno"
     pais: "Brasil"
     endereco: "Quadra Poliesportiva Novo Tempo 1 – Pedra Linda"
     cidade: "Petrolina"
@@ -88,7 +88,7 @@ locais_kwanza:
     lat: -9.34485
     lng: -40.51659
 
-  - nome: "Sol"
+  - nome: "Monitora Sol"
     pais: "Brasil"
     endereco: "Associação dos Moradores – Cosme Damião"
     cidade: "Petrolina"
@@ -97,7 +97,7 @@ locais_kwanza:
     lat: -9.36376
     lng: -40.54557
 
-  - nome: "Florzinha"
+  - nome: "Monitora Florzinha"
     pais: "Brasil"
     endereco: "Quadra Poliesportiva Novo Tempo 1 – Pedra Linda"
     cidade: "Petrolina"
@@ -106,7 +106,7 @@ locais_kwanza:
     lat: -9.34485
     lng: -40.51659
 
-  - nome: "Baraúna"
+  - nome: "Professor Baraúna"
     pais: "Brasil"
     endereco: "Bairro Novo Tempo"
     cidade: "Petrolina"
@@ -115,7 +115,7 @@ locais_kwanza:
     lat: -9.348231
     lng: -40.515234
 
-  - nome: "Cosme Damião"
+  - nome: "Monitor Cosme Damião"
     pais: "Brasil"
     endereco: "Bairro Cosme Damião"
     cidade: "Petrolina"
@@ -128,7 +128,7 @@ locais_kwanza:
   # 🇨🇱 CHILE
   # =====================
 
-  - nome: "Gamela"
+  - nome: "Mestre Gamela"
     pais: "Chile"
     endereco: "Salón Multipropósito Cerro Alegre – Cerro Alegre"
     cidade: "San Antonio"
@@ -137,7 +137,7 @@ locais_kwanza:
     lat: -33.042967
     lng: -71.627928
 
-  - nome: "Casca Grossa"
+  - nome: "Contra-mestre Casca Grossa"
     pais: "Chile"
     endereco: "Calle Principal, s/n – Centro"
     cidade: "Linares"
@@ -150,7 +150,7 @@ locais_kwanza:
   # 🇲🇽 MÉXICO
   # =====================
 
-  - nome: "Baqueta"
+  - nome: "Professor Baqueta"
     pais: "México"
     endereco: "Cronos 8741 – San Bernabe 5° Sector (Casa Kwanza)"
     cidade: "Monterrey"
@@ -159,7 +159,7 @@ locais_kwanza:
     lat: 25.75481622
     lng: -100.364223
 
-  - nome: "Baqueta"
+  - nome: "Professor Baqueta"
     pais: "México"
     endereco: "Salvador Diaz Miron 3400, 2º Piso – Col. Hidalgo"
     cidade: "Monterrey"

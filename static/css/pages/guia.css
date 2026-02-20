@@ -90,6 +90,20 @@
   margin-right: auto;
 }
 
+.pagina .pagina-conteudo .container img {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.pagina .pagina-conteudo .container h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.9rem;
+}
+
 .guia-navegacao {
   display: flex;
   flex-direction: column;
@@ -99,4 +113,15 @@
 .guia-card {
   width: 100%;
   max-width: 60ch;
+}
+
+@media (max-width: 768px) {
+  .pagina .pagina-conteudo .container > * {
+    max-width: 100%;
+  }
+
+  .pagina .pagina-conteudo .container img {
+    margin-top: 0.8rem;
+    border-radius: 8px;
+  }
 }

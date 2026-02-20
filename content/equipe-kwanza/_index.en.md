@@ -51,6 +51,8 @@ historia_mestre: |
   His philosophy is based on respect for others, honesty, and the
   valorization of human relationships.
 
+  Want to learn more? Watch this documentary: https://youtu.be/Is4wsZuUzCQ?si=7GaDNNc5xcFdz0aF
+
 valores: |
   **Grupo Kwanza** bases its work on principles that guide not only the practice of capoeira, but the human and social formation of its members.
 
