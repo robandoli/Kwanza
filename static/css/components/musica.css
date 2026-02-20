@@ -19,7 +19,7 @@
 /* Layout: letra à esquerda, vídeo à direita */
 .musica-conteudo {
   display: grid;
-  grid-template-columns: 1fr 360px;
+  grid-template-columns: 1fr 216px;
   gap: var(--space-lg);
   align-items: start;
 }
@@ -57,7 +57,7 @@
 }
 
 .musica-media iframe {
-  width: 100%;
+  width: 80%;
   aspect-ratio: 16 / 9;
   border: none;
   border-radius: var(--radius-sm);

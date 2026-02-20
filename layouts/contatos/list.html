@@ -32,11 +32,13 @@
 
         <h2>{{ i18n "kwanza_locations" }}</h2>
 
-        {{/* BANDEIRAS */}}
+        {{/* BANDEIRAS (ícones para evitar renderização inconsistente de emoji no Chrome) */}}
         {{ $bandeiras := dict
-          "Brasil" "🇧🇷"
-          "Chile"  "🇨🇱"
-          "México" "🇲🇽"
+          "Brasil" "/img/flags/br.webp"
+          "Brazil" "/img/flags/br.webp"
+          "Chile" "/img/flags/cl.webp"
+          "México" "/img/flags/mx.webp"
+          "Mexico" "/img/flags/mx.webp"
         }}
 
         {{ $paisAnterior := "" }}
@@ -54,7 +56,10 @@
 
             <details class="locais-pais">
               <summary>
-                {{ with index $bandeiras .pais }}{{ . }} {{ end }}{{ .pais }}
+                {{ with index $bandeiras .pais }}
+                  <img class="flag-icon" src="{{ . }}" alt="" aria-hidden="true" loading="lazy" decoding="async">
+                {{ end }}
+                <span>{{ .pais }}</span>
               </summary>
 
               <div class="locais-pais-conteudo">

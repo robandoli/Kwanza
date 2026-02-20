@@ -41,6 +41,18 @@
   margin-bottom: 0;
 }
 
+.documentario-media {
+  margin-top: 1rem;
+  max-width: 520px;
+}
+
+.documentario-media iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: var(--radius-sm);
+}
+
 /* =====================================================
    LISTAS
    ===================================================== */

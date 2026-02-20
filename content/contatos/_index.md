@@ -108,21 +108,30 @@ locais_kwanza:
 
   - nome: "Professor Baraúna"
     pais: "Brasil"
-    endereco: "Bairro Novo Tempo"
+    endereco: "Projeto Maria Tereza KM 25"
     cidade: "Petrolina"
     estado: "PE"
-    telefone: ""
-    lat: -9.348231
-    lng: -40.515234
+    telefone: "(87) 99121-6599"
+    lat: -9.18593
+    lng: -40.56206
 
-  - nome: "Monitor Cosme Damião"
+  - nome: "Monitora Delicada"
     pais: "Brasil"
-    endereco: "Bairro Cosme Damião"
-    cidade: "Petrolina"
-    estado: "PE"
-    telefone: ""
-    lat: -9.360154
-    lng: -40.542289
+    endereco: "Av. Antönio Carlos Magalhães"
+    cidade: "Bairro Santo Antonio , Juazeiro"
+    estado: "BA"
+    telefone: "(87) 99640 -1751"
+    lat: -9.41353
+    lng: -40.5151
+
+  - nome: "Cipa"
+    pais: "Brasil"
+    endereco: "Rua 04 bairro Lomanto junior"
+    cidade: "Juazeiro"
+    estado: "BA"
+    telefone: "(74) 99133-4702"
+    lat: -9.4255328
+    lng: -40.486843
 
   # =====================
   # 🇨🇱 CHILE

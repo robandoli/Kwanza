@@ -33,28 +33,18 @@
 
   <section class="pagina-conteudo section">
     <div class="container">
-      {{ $isCantigas := and .File (eq .File.TranslationBaseName "cantigas") }}
+      {{ $isCantigas := and .File (eq .File.BaseFileName "cantigas") }}
 
       {{ if $isCantigas }}
-        <div class="musica-busca" role="search">
-          <div class="musica-busca-campo">
-            <input
-              type="search"
-              id="busca-musica"
-              placeholder="{{ i18n "search_songs_placeholder" }}"
-              autocomplete="off"
-              aria-label="{{ i18n "search_songs_label" }}"
-              data-empty-message="{{ i18n "search_songs_empty" }}"
-            >
-            <button
-              type="button"
-              id="limpar-busca-musica"
-              class="musica-busca-btn"
-              aria-label="{{ i18n "search_songs_clear" }}"
-              hidden>
-              &times;
-            </button>
-          </div>
+        <div class="musica-busca">
+          <label for="busca-musica">{{ i18n "search_songs_label" }}</label>
+          <input
+            type="search"
+            id="busca-musica"
+            placeholder="{{ i18n "search_songs_placeholder" }}"
+            autocomplete="off"
+            data-empty-message="{{ i18n "search_songs_empty" }}"
+          >
         </div>
 
         <div id="lista-musicas">
@@ -68,7 +58,7 @@
 
 </article>
 
-{{ if and .File (eq .File.TranslationBaseName "cantigas") }}
+{{ if and .File (eq .File.BaseFileName "cantigas") }}
   <script src="/js/busca-musica.js"></script>
 {{ end }}
 

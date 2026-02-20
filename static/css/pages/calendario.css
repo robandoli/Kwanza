@@ -17,7 +17,7 @@
 
 /* HERO DO CALENDÁRIO */
 .hero.hero-calendario {
-  aspect-ratio: 16 / 6.3;
+  aspect-ratio: 16 / 4.4;
   height: auto;
   min-height: 0;
   padding: 0;
@@ -59,7 +59,7 @@
 /* Mobile */
 @media (max-width: 640px) {
   .hero.hero-calendario {
-    aspect-ratio: 16 / 6.3;
+    aspect-ratio: 16 / 4.4;
   }
 }
 
@@ -85,11 +85,11 @@
   padding-top: 2rem;
 }
 
-.eventos-conteudo h3 {
+.eventos-lista .editorial-content h3 {
   font-size: 1.6rem;
   font-weight: 700;
   max-width: 720px;
-  color: var(--color-primary);
+  color: var(--heading-secondary);
   margin-top: var(--space-2xl);
   margin-bottom: var(--space-lg);
   margin-left: 0;

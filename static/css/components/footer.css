@@ -10,9 +10,9 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr) auto;
   gap: 32px;
-  align-items: center;
+  align-items: start;
 }
 
 .footer-links,
@@ -23,12 +23,11 @@
 }
 
 .footer-links {
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-content: center;
 }
 
-.footer-social {
-  justify-content: flex-end;
-}
+.footer-social { justify-content: flex-end; }
 
 .footer-links a,
 .footer-social a {
@@ -46,11 +45,12 @@
   height: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
+    align-items: center;
   }
 
   .footer-links,

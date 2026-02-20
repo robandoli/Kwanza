@@ -57,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 var(--container-padding);
+  padding: 0 clamp(1rem, 3vw, 2.25rem);
   pointer-events: none;
 }
 
@@ -113,7 +113,7 @@
   }
 
   .hero-controls {
-    padding: 0 var(--space-sm);
+    padding: 0 1rem;
   }
 
   .hero-control {

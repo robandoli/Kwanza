@@ -25,7 +25,34 @@
       <h2>O Mestre Fundador</h2>
 
       {{ with .Params.historia_mestre }}
-        {{ . | markdownify }}
+        {{ $historiaRaw := . }}
+        {{ $youtubeMatches := findRE `https?://(?:www\.)?(?:youtube\.com/watch\?[^\s]*v=[A-Za-z0-9_-]{11}[^\s]*|youtu\.be/[A-Za-z0-9_-]{11}[^\s]*)` $historiaRaw 1 }}
+        {{ $youtubeURL := "" }}
+        {{ if gt (len $youtubeMatches) 0 }}
+          {{ $youtubeURL = index $youtubeMatches 0 }}
+        {{ end }}
+
+        {{ $historiaTexto := $historiaRaw }}
+        {{ if $youtubeURL }}
+          {{ $historiaTexto = replace $historiaTexto $youtubeURL "" }}
+        {{ end }}
+
+        {{ $historiaTexto | markdownify }}
+
+        {{ if $youtubeURL }}
+          {{ $youtubeID := replaceRE `^.*(?:youtu\.be/|[?&]v=)([A-Za-z0-9_-]{11}).*$` `$1` $youtubeURL }}
+          {{ if gt (len (findRE `^[A-Za-z0-9_-]{11}$` $youtubeID)) 0 }}
+            <div class="documentario-media">
+              <iframe
+                src="https://www.youtube.com/embed/{{ $youtubeID }}"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                sandbox="allow-scripts allow-same-origin allow-presentation"
+                allowfullscreen>
+              </iframe>
+            </div>
+          {{ end }}
+        {{ end }}
       {{ end }}
 
     </div>
@@ -99,4 +126,3 @@
     </div>
   </div>
 </section>
-

@@ -51,7 +51,7 @@ historia_mestre: |
   Sua filosofia fundamenta-se no respeito ao próximo, na honestidade e na
   valorização das relações humanas.
 
-  Quer saber mais? Veja este docuemntário: https://youtu.be/Is4wsZuUzCQ?si=7GaDNNc5xcFdz0aF
+  Quer saber mais? Veja este documentário: https://youtu.be/Is4wsZuUzCQ?si=7GaDNNc5xcFdz0aF
 
 valores: |
   O **Grupo Kwanza** fundamenta sua atuação em princípios que orientam não apenas a prática da capoeira, mas a formação humana e social de seus integrantes.
