@@ -60,6 +60,11 @@
   width: 100%;
 }
 
+.nav-menu a:focus-visible {
+  outline: 2px solid var(--accent-default);
+  outline-offset: 4px;
+}
+
 /* MENU MOBILE */
 .nav-toggle {
   display: none;
@@ -74,6 +79,11 @@
   height: 2px;
   background: var(--text-main);
   margin: 6px 0;
+}
+
+.nav-toggle:focus-visible {
+  outline: 2px solid var(--accent-default);
+  outline-offset: 4px;
 }
 
 @media (max-width: 768px) {
@@ -130,6 +140,14 @@
   opacity: 1;
   background: rgba(232, 93, 31, 0.15);
   color: var(--accent-default);
+}
+
+.lang-switcher a:focus-visible {
+  opacity: 1;
+  background: rgba(232, 93, 31, 0.15);
+  color: var(--accent-default);
+  outline: 2px solid var(--accent-default);
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {

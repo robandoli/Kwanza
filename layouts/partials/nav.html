@@ -1,7 +1,7 @@
 <nav class="site-nav" aria-label="Menu principal">
   <div class="container nav-container">
 
-    <a href="/" class="nav-logo">
+    <a href="{{ relLangURL "/" }}" class="nav-logo">
       {{ if in .RelPermalink "/vem-aprender" }}
         <img src="/img/logo-vem-aprender.webp" alt="Vem Aprender">
       {{ else }}
@@ -11,14 +11,16 @@
 
     <!-- Botão hamburger (mobile) -->
     <button class="nav-toggle"
+            type="button"
             aria-label="{{ i18n "nav_toggle_label" }}"
-            aria-expanded="false">
+            aria-expanded="false"
+            aria-controls="primary-nav-menu">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <ul class="nav-menu">
+    <ul class="nav-menu" id="primary-nav-menu">
       {{ range .Site.Menus.main }}
         <li>
           <a href="{{ .URL }}"

@@ -14,6 +14,8 @@ calendar_full_agenda: "Agenda Completa"
 kwanza_locations: "Ubicaciones Kwanza"
 search_songs_placeholder: "Buscar por título o letra..."
 search_songs_label: "Buscar músicas"
+search_songs_empty: "No se encontró ninguna canción con este término."
+search_songs_clear: "Limpiar búsqueda"
 
 # Menu items
 menu_home: "Inicio"

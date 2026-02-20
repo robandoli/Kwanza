@@ -14,6 +14,8 @@ calendar_full_agenda: "Full Schedule"
 kwanza_locations: "Kwanza Locations"
 search_songs_placeholder: "Search by title or lyrics..."
 search_songs_label: "Search songs"
+search_songs_empty: "No songs found for this search."
+search_songs_clear: "Clear search"
 
 # Menu items
 menu_home: "Home"

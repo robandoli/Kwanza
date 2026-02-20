@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   toggle.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", isOpen);
+    toggle.setAttribute("aria-expanded", String(isOpen));
   });
 });

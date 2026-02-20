@@ -16,6 +16,23 @@
     </div>
   </header>
 
+  <!-- 🔽 NOVA SEÇÃO: GRADUAÇÕES -->
+  <section class="graduacoes-imagens section">
+    <div class="container">
+      <div class="graduacoes-grid">
+
+        {{ range .Params.graduacoes }}
+          <figure class="graduacao-item">
+            <img src="{{ .imagem }}" alt="{{ .titulo }}">
+            <figcaption>{{ .titulo }}</figcaption>
+          </figure>
+        {{ end }}
+
+      </div>
+    </div>
+  </section>
+  <!-- 🔼 FIM DA SEÇÃO -->
+
   <section class="guia-menu section">
     <div class="container">
       <div class="editorial-content">

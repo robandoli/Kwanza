@@ -1,5 +1,5 @@
 {{ if .IsTranslated }}
-<div class="lang-switcher">
+<nav class="lang-switcher" aria-label="Language selector">
   {{ range .Translations }}
     <a href="{{ .Permalink }}" 
        lang="{{ .Language.Lang }}" 
@@ -11,5 +11,5 @@
       {{ end }}
     </a>
   {{ end }}
-</div>
+</nav>
 {{ end }}

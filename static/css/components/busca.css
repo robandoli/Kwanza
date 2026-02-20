@@ -1,11 +1,17 @@
 .musica-busca {
-  margin-top: var(--space-lg);
-  max-width: 600px;
+  width: min(100%, 720px);
+  margin: 0 auto var(--space-xl);
+}
+
+.musica-busca-campo {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .musica-busca input[type="search"] {
   width: 100%;
-  padding: 14px 20px;
+  padding: 14px 52px 14px 20px;
   font-size: 1rem;
   font-family: 'Inter', sans-serif;
   color: var(--text-main);
@@ -18,6 +24,7 @@
 .musica-busca input[type="search"]:focus {
   outline: none;
   border-color: var(--accent-default);
+  box-shadow: 0 0 0 3px rgba(232, 93, 31, 0.18);
 }
 
 .musica-busca input[type="search"]::placeholder {
@@ -25,9 +32,44 @@
   opacity: 0.6;
 }
 
+.musica-busca-btn {
+  position: absolute;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(232, 93, 31, 0.2);
+  color: var(--text-main);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.musica-busca-btn:hover {
+  background: rgba(232, 93, 31, 0.35);
+}
+
+.musica-busca-btn:focus-visible {
+  outline: 2px solid var(--accent-default);
+  outline-offset: 2px;
+}
+
 .mensagem-busca-vazia {
   padding: var(--space-xl);
   text-align: center;
   color: var(--text-secondary);
   font-style: italic;
+}
+
+#lista-musicas {
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 900px) {
+  .musica-busca {
+    width: 100%;
+    margin-bottom: var(--space-lg);
+  }
 }

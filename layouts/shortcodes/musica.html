@@ -13,7 +13,10 @@
       <summary>Veja aqui a letra</summary>
 
       <div class="musica-letra-conteudo">
-        {{ .Inner | markdownify }}
+        {{ $letra := .Inner | strings.TrimSpace | htmlEscape }}
+        {{ $letra = replaceRE "\r\n" "\n" $letra }}
+        {{ $letra = replaceRE "\n" "<br>" $letra }}
+        {{ $letra | safeHTML }}
       </div>
     </details>
 
@@ -22,6 +25,8 @@
         <iframe
           src="https://www.youtube.com/embed/{{ .Get "youtube" }}"
           loading="lazy"
+          referrerpolicy="strict-origin-when-cross-origin"
+          sandbox="allow-scripts allow-same-origin allow-presentation"
           allowfullscreen>
         </iframe>
       </div>

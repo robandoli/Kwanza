@@ -168,13 +168,4 @@ locais_kwanza:
     lat: 25.70776385
     lng: -100.318598
 
-  - nome: "Tigre"
-    pais: "México"
-    endereco: ""
-    cidade: ""
-    estado: ""
-    telefone: ""
-    lat: 
-    lng: 
-
 ---

@@ -12,12 +12,64 @@
     </div>
   </header>
 
+  <!-- 🔽 SEÇÃO DE GRADUAÇÕES -->
+  {{ with .Params.graduacoes }}
+  <section class="graduacoes-imagens section">
+    <div class="container">
+      <div class="graduacoes-grid">
+
+        {{ range . }}
+          <figure class="graduacao-item">
+            <img src="{{ .imagem }}" alt="{{ .titulo }}">
+            <figcaption>{{ .titulo }}</figcaption>
+          </figure>
+        {{ end }}
+
+      </div>
+    </div>
+  </section>
+  {{ end }}
+  <!-- 🔼 FIM DA SEÇÃO -->
+
   <section class="pagina-conteudo section">
     <div class="container">
-      {{ .Content }}
+      {{ $isCantigas := and .File (eq .File.TranslationBaseName "cantigas") }}
+
+      {{ if $isCantigas }}
+        <div class="musica-busca" role="search">
+          <div class="musica-busca-campo">
+            <input
+              type="search"
+              id="busca-musica"
+              placeholder="{{ i18n "search_songs_placeholder" }}"
+              autocomplete="off"
+              aria-label="{{ i18n "search_songs_label" }}"
+              data-empty-message="{{ i18n "search_songs_empty" }}"
+            >
+            <button
+              type="button"
+              id="limpar-busca-musica"
+              class="musica-busca-btn"
+              aria-label="{{ i18n "search_songs_clear" }}"
+              hidden>
+              &times;
+            </button>
+          </div>
+        </div>
+
+        <div id="lista-musicas">
+          {{ .Content }}
+        </div>
+      {{ else }}
+        {{ .Content }}
+      {{ end }}
     </div>
   </section>
 
 </article>
+
+{{ if and .File (eq .File.TranslationBaseName "cantigas") }}
+  <script src="/js/busca-musica.js"></script>
+{{ end }}
 
 {{ end }}

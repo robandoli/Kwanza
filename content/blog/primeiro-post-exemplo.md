@@ -1,21 +1,52 @@
 ---
-title: "A Importância da Ancestralidade na Capoeira"
-date: 2025-02-01
-description: "Reflexão sobre a conexão entre os mestres antigos e a prática contemporânea da capoeira."
+title: "Como Fazer o Nó da Corda de Capoeira (Boca de Lobo)"
+date: 2025-02-20
+description: "Guia prático e direto sobre como fazer corretamente o nó Boca de Lobo na corda de capoeira."
 author: "Mestre Jaguara"
-tags: ["ancestralidade", "tradição", "formação"]
+tags: ["corda", "formação", "tradição"]
+video: "https://www.youtube.com/shorts/hZ8sA8Xb7aQ"
 ---
 
-A capoeira é uma prática que não se sustenta sem memória. Cada movimento, cada toque de berimbau, cada cântico carrega consigo a experiência transmitida por gerações de mestres e capoeiristas que vieram antes de nós.
+A forma como amarramos a corda também comunica disciplina. Pode parecer um detalhe simples, mas o nó bem feito demonstra organização, respeito à tradição e cuidado com a própria apresentação dentro da roda.
 
-## Respeito à Linhagem
+Entre os diversos modos de amarração, o mais conhecido é o **Boca de Lobo**. É firme, seguro e adequado para a prática cotidiana.
 
-No Grupo Kwanza, compreendemos que a ancestralidade não é apenas uma referência ao passado, mas uma presença viva no presente. Quando entramos na roda, trazemos conosco os ensinamentos de Mestre Zambi, de Mestre Gato Preto, de Mestre Leopoldina e de tantos outros que dedicaram suas vidas à capoeira.
+Você pode assistir à demonstração prática neste vídeo:  
+https://www.youtube.com/shorts/hZ8sA8Xb7aQ
 
-## Formação Contínua
+## Passo a Passo do Nó Boca de Lobo
 
-A formação do capoeirista nunca termina. Mesmo após décadas de prática, seguimos como eternos aprendizes. O respeito à hierarquia e à tradição não limita — pelo contrário, liberta e nos conecta a algo maior do que nós mesmos.
+A execução é simples quando se entende a sequência correta.
+
+**1. Posicione a corda na cintura**  
+Coloque a corda ao redor da cintura, deixando as duas pontas com tamanho semelhante.
+
+**2. Cruze as pontas na frente do corpo**  
+Forme um “X” na parte frontal da cintura.
+
+**3. Passe por baixo e traga para frente**  
+A ponta que ficou por cima deve passar por baixo da outra e retornar para frente.  
+O movimento deve ser feito pela frente — não por trás.
+
+**4. Forme a laçada**  
+Segure firme e crie uma pequena abertura com a corda.
+
+**5. Passe a outra ponta por dentro e por cima**  
+Introduza a ponta na abertura criada e traga por cima, organizando o formato do nó.
+
+**6. Ajuste e firme**  
+Puxe as duas pontas até que o nó fique centralizado e seguro.
+
+## Atenção aos Detalhes
+
+Alguns erros são comuns:
+
+- Cruzar a corda por trás do corpo.  
+- Deixar o nó frouxo.  
+- Não centralizar na parte frontal.  
+
+Na capoeira, os detalhes constroem postura. Um capoeirista atento demonstra zelo, disciplina e respeito pela prática.
 
 ---
 
-*Este é um post de exemplo. Substitua pelo conteúdo real do blog.*
+*Conteúdo educativo para formação interna e orientação de alunos.*

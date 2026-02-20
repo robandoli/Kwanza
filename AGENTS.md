@@ -1,10 +1,30 @@
-# AGENTS.md - Grupo Kwanza Hugo Site
+# AGENTS.md - Grupo Kwanza Hugo Site (Updated)
 
 This document provides essential information for AI agents working in the Grupo Kwanza Hugo static site repository.
 
 ## Project Overview
 
 This is a **Hugo static site** for Grupo Kwanza, a capoeira group. The site uses the **Beautiful Hugo** theme (submodule) with extensive custom layouts, CSS, and JavaScript. The site is in **Portuguese (pt-br)** and focuses on capoeira education, team information, cultural content, and events.
+
+## 2026 Update Notes (Important)
+
+- Goldmark HTML unsafe mode is disabled:
+  - `hugo.toml` -> `markup.goldmark.renderer.unsafe = false`
+- Security headers are configured for Netlify:
+  - `static/_headers`
+- External links with `target="_blank"` must use:
+  - `rel="noopener noreferrer"`
+- Music iframe hardening:
+  - `layouts/shortcodes/musica.html` uses `referrerpolicy` and `sandbox`
+- Song page behavior (`cantigas`) now depends on file identity, not display title:
+  - use `.File.TranslationBaseName == "cantigas"`
+- Song search is active only on `cantigas` page and filters by:
+  - title, author, and lyrics
+- Carousels support:
+  - autoplay, manual controls, pause on hidden tab, hover, and focus
+- Unit tests available (Node built-in runner):
+  - `npm test`
+  - covers `busca-musica.js` and `nav-toggle.js`
 
 ## Essential Commands
 

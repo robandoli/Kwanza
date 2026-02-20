@@ -1,21 +1,24 @@
 <section class="hero">
-  <div class="hero-bg">
+  <div class="hero-bg" id="hero-home-carousel">
     <img 
       src="/img/hero/roda_2.webp" 
-      alt="{{ i18n "hero_img_alt_1" }}" 
+      alt=""
+      aria-hidden="true"
       class="active"
       loading="eager"
       decoding="async"
     >
     <img 
       src="/img/hero/roda_1.webp" 
-      alt="{{ i18n "hero_img_alt_2" }}"
+      alt=""
+      aria-hidden="true"
       loading="lazy"
       decoding="async"
     >
     <img 
       src="/img/hero/treino_1.webp"
-      alt="{{ i18n "hero_img_alt_3" }}"
+      alt=""
+      aria-hidden="true"
       loading="lazy"
       decoding="async"
     >
@@ -33,5 +36,24 @@
     <a href="{{ relLangURL "contatos/" }}" class="btn-primary">
       {{ i18n "hero_cta" }}
     </a>
+  </div>
+
+  <div class="hero-controls" aria-label="Carousel controls">
+    <button
+      type="button"
+      class="hero-control hero-control-prev"
+      data-carousel-prev
+      aria-label="Previous slide"
+      aria-controls="hero-home-carousel">
+      &#10094;
+    </button>
+    <button
+      type="button"
+      class="hero-control hero-control-next"
+      data-carousel-next
+      aria-label="Next slide"
+      aria-controls="hero-home-carousel">
+      &#10095;
+    </button>
   </div>
 </section>

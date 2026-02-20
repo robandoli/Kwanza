@@ -103,39 +103,36 @@ documentacao:
   items:
     - nome: "Curriculo Cultura Ruby"
       arquivo: "/docs/curriculo_cultural_ruby.pdf"
-      descricao: "PDF - 1MB"
+      descricao: "PDF - 0.9MB"
     
     - nome: "Currículo Cultural Mestre Jaguara"
       arquivo: "/docs/curriculo_cultural_mestre_jaguara.pdf"
-      descricao: "PDF - 12MB"
+      descricao: "PDF - 2.3MB"
 
     - nome: "Currículo Cultura Professora Guerreira"
       arquivo: "/docs/curriculo_cultural_professora_guerreira.pdf"
-      descricao: "PDF - 11MB"
+      descricao: "PDF - 2.1MB"
 
 membros_equipe:
   titulo: "Nossa Equipe"
   items:
     - nome: "Mestre Jaguara"
-      funcao: "Cantador"
+      funcao: "Capoeirista, Cantador e Tocador"
       bio: "Referência cultural e educador, atua na condução do canto tradicional e no suporte pedagógico do projeto, assegurando fidelidade aos fundamentos do samba de roda."
 
     - nome: "Lidiane (Ruby)"
-      funcao: "Cantadora e Sambadeira"
+      funcao: "Capoeirista, Cantadora e Sambadeira"
       bio: "Produtora cultural, cantadora e sambadeira, responsável pela articulação, organização e continuidade das ações do projeto, promovendo o samba de roda como prática educativa e cultural."
 
     - nome: "CM Camarão"
-      funcao: "Percussionista"
+      funcao: "Capoeirista e Tocador"
       bio: "Atua na condução da percussão tradicional, contribuindo para a base rítmica e o suporte musical das aulas, vivências e apresentações."
 
     - nome: "Mestre Tiê"
-      funcao: "Percussionista"
+      funcao: "Capoeirista e Percussionista"
       bio: "Educador e percussionista, colabora na formação rítmica e na preservação da musicalidade tradicional do samba de roda."
 
     - nome: "Professora Guerreira"
-      funcao: "Cantadora e Sambadeira"
+      funcao: "Capoeirista, Cantadora e Sambadeira"
       bio: "Atua no canto e na dança do samba de roda, colaborando nas vivências formativas e na condução das rodas culturais do projeto."
-
 ---
-
-O Vem Aprender é um projeto de Samba de Roda, manifestação tradicional do Recôncavo Baiano. Através da musicalidade, do canto e da vivência coletiva, o projeto atua na preservação, no ensino e na valorização da cultura afro-brasileira como prática viva e de resistência.

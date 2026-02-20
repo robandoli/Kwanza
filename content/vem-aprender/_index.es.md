@@ -2,7 +2,7 @@
 title: "Ven a Aprender"
 description: "Saber tradicional como práctica viva y comunitaria"
 
-# Hero do projeto
+# Hero del proyecto
 hero_imagens:
   - "/img/vem-aprender/hero-1.webp"
   - "/img/vem-aprender/hero-2.webp"
@@ -11,10 +11,10 @@ hero_imagens:
 hero_headline: "Samba de roda, patrimonio cultural brasileño."
 
 hero_cta:
-  texto: "Contrataciones y asociaciones"
+  texto: "Contrataciones y alianzas"
   link: "https://wa.me/5511970773820"
 
-# Redes sociais do projeto (sobrescreve padrão do footer)
+# Redes sociales del proyecto (sobrescribe el estándar del footer)
 redes_sociais:
   facebook: "https://www.facebook.com/lidianedivas/"
   instagram: "https://www.instagram.com/lidi_ruby/?hl=en"
@@ -25,9 +25,9 @@ logo: "/img/logo-vem-aprender.webp"
 sobre_projeto:
   titulo: "Sobre el Proyecto"
   conteudo: |
-    Vem Aprender es un proyecto cultural dedicado al Samba de Roda del Recôncavo Baiano, manifestación afrobrasileña de carácter ancestral, comunitario y educativo. El proyecto actúa como espacio de preservación, transmisión y continuidad de los saberes tradicionales, comprendiendo el samba de roda como práctica viva, construida colectivamente y profundamente ligada a la historia del pueblo negro en Brasil.
+    Ven a Aprender es un proyecto cultural dedicado al Samba de Roda del Recôncavo Baiano, manifestación afrobrasileña de carácter ancestral, comunitario y educativo. El proyecto actúa como espacio de preservación, transmisión y continuidad de los saberes tradicionales, comprendiendo el samba de roda como práctica viva, construida colectivamente y profundamente vinculada a la historia del pueblo negro en Brasil.
 
-    Por medio del canto, la musicalidad, el cuerpo en movimiento y la vivencia en roda, Vem Aprender desarrolla acciones formativas continuas que respetan los fundamentos de la tradición, valoran la ancestralidad y fortalecen la memoria cultural. Sus actividades incluyen clases regulares, vivencias, talleres y presentaciones, promoviendo el acceso al conocimiento tradicional de forma responsable, accesible y comprometida con la preservación cultural.
+    A través del canto, la musicalidad, el cuerpo en movimiento y la vivencia en rueda, Ven a Aprender desarrolla acciones formativas continuas que respetan los fundamentos de la tradición, valoran la ancestralidad y fortalecen la memoria cultural. Sus actividades incluyen clases regulares, vivencias, talleres y presentaciones, promoviendo el acceso al conocimiento tradicional de forma responsable, accesible y comprometida con la preservación cultural.
 
     Insertado en el contexto social contemporáneo, el proyecto reafirma el samba de roda como expresión de identidad, educación y resistencia cultural, contribuyendo al enfrentamiento del borrado histórico y del prejuicio contra las manifestaciones de la cultura afrobrasileña.
 
@@ -35,13 +35,13 @@ areas_atuacao:
   titulo: "Áreas de Actuación"
   items:
     - nome: "Formación en Samba de Roda"
-      descricao: "Actuación orientada a la enseñanza de los fundamentos del samba de roda, integrando canto, musicalidad, danza y dinámica de la roda, con base en los saberes tradicionales y en la transmisión oral como eje del aprendizaje."
+      descricao: "Actuación orientada a la enseñanza de los fundamentos del samba de roda, integrando canto, musicalidad, danza y dinámica de la rueda, basada en los saberes tradicionales y en la transmisión oral como eje del aprendizaje."
     
     - nome: "Musicalidad Tradicional Afrobrasileña"
-      descricao: "Desarrollo de prácticas formativas en percusión, palmas y cantigas, promoviendo la comprensión rítmica y fortaleciendo la relación entre música, cuerpo y colectividad."
+      descricao: "Desarrollo de prácticas formativas en percusión, palmas y cantos tradicionales, promoviendo la comprensión rítmica y fortaleciendo la relación entre música, cuerpo y colectividad."
 
     - nome: "Vivencias Culturales y Talleres"
-      descricao: "Realización de vivencias, talleres y encuentros formativos orientados a la comunidad, ampliando el acceso a la cultura afrobrasileña de forma participativa, educativa y contextualizada."
+      descricao: "Realización de vivencias, talleres y encuentros formativos dirigidos a la comunidad, ampliando el acceso a la cultura afrobrasileña de forma participativa, educativa y contextualizada."
 
     - nome: "Presentaciones Culturales"
       descricao: "Participación en eventos, encuentros y acciones públicas, llevando el samba de roda como expresión artística, educativa e identitaria, siempre vinculada a su origen y significado cultural."
@@ -50,7 +50,7 @@ areas_atuacao:
       descricao: "Acciones de diálogo e intercambio con otras manifestaciones afrobrasileñas, como el maculelê y el jongo, respetando sus contextos, especificidades y modos de transmisión."
 
     - nome: "Preservación y Valorización Cultural"
-      descricao: "Actuación continua en la preservación de la memoria, de los fundamentos y de los modos tradicionales de transmisión del samba de roda, contribuyendo al enfrentamiento del borrado histórico y del prejuicio cultural."
+      descricao: "Actuación continua en la preservación de la memoria, los fundamentos y los modos tradicionales de transmisión del samba de roda, contribuyendo al enfrentamiento del borrado histórico y del prejuicio cultural."
 
 lideranca:
   coordenacao:
@@ -61,7 +61,7 @@ lideranca:
         conteudo: |
           Responsable de la coordinación general del proyecto, actuando en la producción cultural,
           organización de las actividades, articulación institucional y viabilización de las acciones
-          formativas. Conduce la planificación, la ejecución y la continuidad del proyecto,
+          formativas. Conduce la planificación, ejecución y continuidad del proyecto,
           promoviendo el acceso al samba de roda como práctica educativa y cultural.
 
       - cargo: "Coordinación Pedagógica y Cultural"
@@ -75,22 +75,22 @@ lideranca:
   equipe:
     titulo: "Educadores y Apoyo Cultural"
     conteudo: |
-      "Equipo formado por integrantes con actuación permanente en las actividades del proyecto, responsables del apoyo pedagógico, musicalidad, conducción de las rodas, organización de los encuentros y soporte a las acciones culturales."
+      "Equipo conformado por integrantes con actuación permanente en las actividades del proyecto, responsables del apoyo pedagógico, musicalidad, conducción de las ruedas, organización de los encuentros y soporte a las acciones culturales."
 
 atividades:
   titulo: "Actividades Desarrolladas"
   items:
     - nome: "Clases Regulares de Samba de Roda"
-      descricao: "Realización de clases semanales orientadas a la enseñanza de los fundamentos del samba de roda, incluyendo canto, musicalidad, danza y dinámica de la roda, respetando la tradición oral y la vivencia colectiva como base del aprendizaje."
+      descricao: "Realización de clases semanales orientadas a la enseñanza de los fundamentos del samba de roda, incluyendo canto, musicalidad, danza y dinámica de la rueda, respetando la tradición oral y la vivencia colectiva como base del aprendizaje."
 
     - nome: "Prácticas de Musicalidad Tradicional"
-      descricao: "Actividades direccionadas al aprendizaje de instrumentos tradicionales, palmas, cantigas y comprensión rítmica, fortaleciendo la relación entre música, cuerpo y colectividad en el samba de roda."
+      descricao: "Actividades dirigidas al aprendizaje de instrumentos tradicionales, palmas, cantos y comprensión rítmica, fortaleciendo la relación entre música, cuerpo y colectividad en el samba de roda."
 
     - nome: "Vivencias Culturales"
       descricao: "Encuentros prácticos e inmersivos orientados a la experiencia directa con el samba de roda, promoviendo el intercambio de saberes, el aprendizaje colectivo y el fortalecimiento de la identidad cultural."
 
     - nome: "Talleres Formativos"
-      descricao: "Realización de talleres temáticos con foco en aspectos específicos del samba de roda y de manifestaciones integradas, direccionadas a diferentes públicos y contextos culturales."
+      descricao: "Realización de talleres temáticos enfocados en aspectos específicos del samba de roda y de manifestaciones integradas, dirigidos a diferentes públicos y contextos culturales."
 
     - nome: "Presentaciones Culturales"
       descricao: "Participación en eventos, acciones culturales y actividades públicas, llevando el samba de roda como expresión artística, educativa e identitaria, siempre contextualizada en su origen y significado cultural."
@@ -101,41 +101,38 @@ atividades:
 documentacao:
   titulo: "Documentación y Currículos"
   items:
-    - nome: "Curriculo Cultura Ruby"
+    - nome: "Currículo Cultural Ruby"
       arquivo: "/docs/curriculo_cultural_ruby.pdf"
-      descricao: "PDF - 1MB"
+      descricao: "PDF - 0.9MB"
     
     - nome: "Currículo Cultural Mestre Jaguara"
       arquivo: "/docs/curriculo_cultural_mestre_jaguara.pdf"
-      descricao: "PDF - 12MB"
+      descricao: "PDF - 2.3MB"
 
-    - nome: "Currículo Cultura Professora Guerreira"
+    - nome: "Currículo Cultural Profesora Guerreira"
       arquivo: "/docs/curriculo_cultural_professora_guerreira.pdf"
-      descricao: "PDF - 11MB"
+      descricao: "PDF - 2.1MB"
 
 membros_equipe:
   titulo: "Nuestro Equipo"
   items:
     - nome: "Mestre Jaguara"
-      funcao: "Cantador"
+      funcao: "Capoeirista, Cantador y Músico"
       bio: "Referencia cultural y educador, actúa en la conducción del canto tradicional y en el soporte pedagógico del proyecto, asegurando fidelidad a los fundamentos del samba de roda."
 
     - nome: "Lidiane (Ruby)"
-      funcao: "Cantadora y Sambadeira"
+      funcao: "Capoeirista, Cantadora y Sambadeira"
       bio: "Productora cultural, cantadora y sambadeira, responsable de la articulación, organización y continuidad de las acciones del proyecto, promoviendo el samba de roda como práctica educativa y cultural."
 
     - nome: "CM Camarão"
-      funcao: "Percusionista"
-      bio: "Actúa en la conducción de la percusión tradicional, contribuyendo para la base rítmica y el soporte musical de las clases, vivencias y presentaciones."
+      funcao: "Capoeirista y Músico"
+      bio: "Actúa en la conducción de la percusión tradicional, contribuyendo a la base rítmica y al soporte musical de las clases, vivencias y presentaciones."
 
     - nome: "Mestre Tiê"
-      funcao: "Percusionista"
+      funcao: "Capoeirista y Percusionista"
       bio: "Educador y percusionista, colabora en la formación rítmica y en la preservación de la musicalidad tradicional del samba de roda."
 
-    - nome: "Professora Guerreira"
-      funcao: "Cantadora y Sambadeira"
-      bio: "Actúa en el canto y en la danza del samba de roda, colaborando en las vivencias formativas y en la conducción de las rodas culturales del proyecto."
-
+    - nome: "Profesora Guerreira"
+      funcao: "Capoeirista, Cantadora y Sambadeira"
+      bio: "Actúa en el canto y la danza del samba de roda, colaborando en las vivencias formativas y en la conducción de las ruedas culturales del proyecto."
 ---
-
-Vem Aprender es un proyecto de Samba de Roda, manifestación tradicional del Recôncavo Baiano. A través de la musicalidad, del canto y de la vivencia colectiva, el proyecto actúa en la preservación, en la enseñanza y en la valorización de la cultura afrobrasileña como práctica viva y de resistencia.

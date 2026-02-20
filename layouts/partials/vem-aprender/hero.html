@@ -1,9 +1,10 @@
 <section class="hero hero--vem-aprender">
-  <div class="hero-bg">
+  <div class="hero-bg" id="hero-vem-aprender-carousel">
     {{ range .Params.hero_imagens }}
     <img 
       src="{{ . }}" 
-      alt="Vem Aprender - Samba de Roda"
+      alt=""
+      aria-hidden="true"
       {{ if eq . (index $.Params.hero_imagens 0) }}
         class="active"
         loading="eager"
@@ -27,5 +28,24 @@
         {{ .texto }}
       </a>
     {{ end }}
+  </div>
+
+  <div class="hero-controls" aria-label="Carousel controls">
+    <button
+      type="button"
+      class="hero-control hero-control-prev"
+      data-carousel-prev
+      aria-label="Previous slide"
+      aria-controls="hero-vem-aprender-carousel">
+      &#10094;
+    </button>
+    <button
+      type="button"
+      class="hero-control hero-control-next"
+      data-carousel-next
+      aria-label="Next slide"
+      aria-controls="hero-vem-aprender-carousel">
+      &#10095;
+    </button>
   </div>
 </section>
