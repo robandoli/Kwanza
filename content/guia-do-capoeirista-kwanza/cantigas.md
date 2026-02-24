@@ -657,50 +657,6 @@ Iê cocoricó
 ---
 
 {{< musica
-  titulo="Samba Lelê"
-  autor="Mestre Jaguara · Toque São Bento Grande de Angola"
-  audio="/audio/09 Samba Lele.mp3"
->}}
-
-Samba Lelê bateu na porta
-Samba Lelê vai ver quem é
-Samba Lelê é meu amor
-Samba Lelê samba no pé
-
-Samba Lelê bateu na porta,
-Samba Lelê vai ver quem é.
-
-Olha, Samba Lelê é seu amor,
-olha, Samba Lelê samba no pé.
-
-Samba Lelê bateu na porta,
-Samba Lelê vai ver quem é.
-
-Olha, Samba Lelê é seu Jaguara,
-olha, Samba Lelê samba no pé.
-
----
-
-Ê, quando eu saí de casa,
-minha mãe me disse assim:
-
-"Ô Jaguara, quando andar,
-colega velho, traga uma nora pra mim."
-
-Minha mãe teve três filhos,
-eu nasci de terceiro:
-
-Um pra tocar sanfona,
-outro pra bater pandeiro...
-
-Mas eu fiquei pra namorar,
-que é o serviço mais maneiro!
-
-{{< /musica >}}
-
----
-
-{{< musica
   titulo="Tem Jararaca"
   autor="Mestre Jaguara · Toque: São Bento Grande da Regional"
   youtube="n4F_gmgskNA"

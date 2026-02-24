@@ -5,10 +5,10 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const vm = require("node:vm");
 const path = require("node:path");
-const { FakeDocument, FakeElement } = require("./fake-dom");
+const { FakeDocument, FakeElement } = require("../../helpers/fake-dom");
 
 function loadNavScript(document) {
-  const scriptPath = path.join(__dirname, "static/js/nav-toggle.js");
+  const scriptPath = path.join(__dirname, "../../../static/js/nav-toggle.js");
   const code = fs.readFileSync(scriptPath, "utf8");
   vm.runInNewContext(code, { document, console }, { filename: scriptPath });
   document.dispatchDOMContentLoaded();

@@ -5,10 +5,10 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const vm = require("node:vm");
 const path = require("node:path");
-const { FakeDocument, FakeElement } = require("./fake-dom");
+const { FakeDocument, FakeElement } = require("../../helpers/fake-dom");
 
 function loadBuscaScript(document) {
-  const scriptPath = path.join(__dirname, "static/js/busca-musica.js");
+  const scriptPath = path.join(__dirname, "../../../static/js/busca-musica.js");
   const code = fs.readFileSync(scriptPath, "utf8");
   const context = {
     document,
@@ -35,12 +35,16 @@ function createSongBlock(title, author, lyrics) {
   return block;
 }
 
-function setupDOM() {
+function setupDOM({ withClearButton = true } = {}) {
   const document = new FakeDocument();
   const input = new FakeElement("input", { id: "busca-musica" });
   input.dataset.emptyMessage = "Nenhuma música encontrada com este termo.";
-  const clearButton = new FakeElement("button", { id: "limpar-busca-musica" });
-  clearButton.hidden = true;
+
+  const clearButton = withClearButton
+    ? new FakeElement("button", { id: "limpar-busca-musica" })
+    : null;
+  if (clearButton) clearButton.hidden = true;
+
   const list = new FakeElement("div", { id: "lista-musicas" });
 
   list.appendChild(
@@ -51,7 +55,7 @@ function setupDOM() {
   );
 
   document.body.appendChild(input);
-  document.body.appendChild(clearButton);
+  if (clearButton) document.body.appendChild(clearButton);
   document.body.appendChild(list);
 
   return { document, input, clearButton, list };
@@ -107,3 +111,16 @@ test("botão limpar restaura lista e oculta mensagem", () => {
   assert.equal(visibleSongs(list).length, 2);
 });
 
+test("funciona sem botão de limpar", () => {
+  const { document, input, list } = setupDOM({ withClearButton: false });
+  loadBuscaScript(document);
+
+  input.value = "jararaca";
+  input.dispatchEvent({ type: "input" });
+  assert.equal(visibleSongs(list).length, 1);
+});
+
+test("sai sem erro quando elementos obrigatórios não existem", () => {
+  const document = new FakeDocument();
+  assert.doesNotThrow(() => loadBuscaScript(document));
+});

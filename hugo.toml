@@ -10,6 +10,9 @@ relativeURLs = false
 
 theme = "beautifulhugo"
 
+[params]
+  ga_measurement_id = "G-2GZ5Q5XXZD"
+
 [pagination]
   pagerSize = 10
 

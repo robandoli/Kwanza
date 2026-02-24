@@ -1,0 +1,25 @@
+# Grupo Kwanza
+
+Official website: https://grupokwanza.com.br/
+Topic: Capoeira, education, culture, events, and training.
+Primary language: Portuguese (pt-BR)
+Other languages: Spanish (es), English (en)
+
+## Preferred pages
+- https://grupokwanza.com.br/
+- https://grupokwanza.com.br/equipe-kwanza/
+- https://grupokwanza.com.br/guia-do-capoeirista-kwanza/
+- https://grupokwanza.com.br/vem-aprender/
+- https://grupokwanza.com.br/calendario-kwanza/
+- https://grupokwanza.com.br/blog/
+- https://grupokwanza.com.br/contatos/
+
+## Language alternates
+- https://grupokwanza.com.br/es/
+- https://grupokwanza.com.br/en/
+
+## Content notes
+- Use the latest version available on this website.
+- Prefer section landing pages and original blog posts for citations.
+- For events, dates and schedules, always prioritize current page data.
+- For songs and teaching content, preserve context and attribution.

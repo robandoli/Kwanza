@@ -1,6 +1,22 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google" content="notranslate">
+{{ $gaID := .Site.Params.ga_measurement_id }}
+{{ if and $gaID (not hugo.IsServer) }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ $gaID }}');
+</script>
+{{ end }}
+{{ $pageTitle := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) }}
+{{ $pageDescription := .Site.Params.description }}
+{{ with .Description }}{{ $pageDescription = . }}{{ end }}
+{{ $pageImage := "/img/logo-kwanza.webp" | absURL }}
+{{ $locale := cond (eq .Lang "pt") "pt_BR" (cond (eq .Lang "es") "es_ES" "en_US") }}
+{{ $isBlogPost := and .IsPage (eq .Section "blog") }}
 
 <link rel="preload"
       as="image"
@@ -8,15 +24,16 @@
       fetchpriority="high">
 
 <title>
-  {{ if .IsHome }}
-    {{ .Site.Title }}
-  {{ else }}
-    {{ .Title }} | {{ .Site.Title }}
-  {{ end }}
+  {{ $pageTitle }}
 </title>
 
 <meta name="description"
-      content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+      content="{{ $pageDescription }}">
+<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}Grupo Kwanza{{ end }}">
+<meta name="robots" content="{{ if .Params.noindex }}noindex,nofollow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
+
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="alternate" type="text/plain" href="{{ "/llms.txt" | absURL }}" title="LLMs">
 
 <!-- hreflang alternates -->
 {{ if .IsTranslated }}
@@ -25,6 +42,7 @@
   {{ end }}
 {{ end }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
 
 <link rel="stylesheet" href="/css/style.css">
 
@@ -33,12 +51,77 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 
-<!-- Open Graph básico -->
-<meta property="og:type" content="website">
+<!-- Open Graph -->
+<meta property="og:type" content="{{ if $isBlogPost }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ .Site.Title }}">
-<meta property="og:title"
-      content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
-<meta property="og:description"
-      content="{{ with .Description }}{{ . }}{{ else }}Capoeira, cultura e formação através do Grupo Kwanza.{{ end }}">
+<meta property="og:title" content="{{ $pageTitle }}">
+<meta property="og:description" content="{{ $pageDescription }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:image" content="{{ "/img/logo-kwanza.webp" | absURL }}">
+<meta property="og:image" content="{{ $pageImage }}">
+<meta property="og:locale" content="{{ $locale }}">
+{{ if .IsTranslated }}
+  {{ range .Translations }}
+    {{ $altLocale := cond (eq .Language.Lang "pt") "pt_BR" (cond (eq .Language.Lang "es") "es_ES" "en_US") }}
+    <meta property="og:locale:alternate" content="{{ $altLocale }}">
+  {{ end }}
+{{ end }}
+
+{{ if $isBlogPost }}
+  <meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+  <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+  {{ with .Params.author }}<meta property="article:author" content="{{ . }}">{{ end }}
+  {{ range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end }}
+{{ end }}
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $pageTitle }}">
+<meta name="twitter:description" content="{{ $pageDescription }}">
+<meta name="twitter:image" content="{{ $pageImage }}">
+
+<!-- Structured Data -->
+{{ $organization := dict
+  "@context" "https://schema.org"
+  "@type" "Organization"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "logo" $pageImage
+}}
+<script type="application/ld+json">{{ $organization | jsonify | safeHTML }}</script>
+
+{{ $website := dict
+  "@context" "https://schema.org"
+  "@type" "WebSite"
+  "name" .Site.Title
+  "url" .Site.BaseURL
+  "inLanguage" .Language.LanguageCode
+}}
+<script type="application/ld+json">{{ $website | jsonify | safeHTML }}</script>
+
+{{ if $isBlogPost }}
+  {{ $article := dict
+    "@context" "https://schema.org"
+    "@type" "Article"
+    "headline" .Title
+    "description" $pageDescription
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "mainEntityOfPage" .Permalink
+    "inLanguage" .Language.LanguageCode
+    "author" (dict "@type" "Person" "name" (default "Grupo Kwanza" .Params.author))
+    "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" $pageImage))
+    "image" (slice $pageImage)
+  }}
+  <script type="application/ld+json">{{ $article | jsonify | safeHTML }}</script>
+{{ else }}
+  {{ $webpage := dict
+    "@context" "https://schema.org"
+    "@type" "WebPage"
+    "name" .Title
+    "description" $pageDescription
+    "url" .Permalink
+    "inLanguage" .Language.LanguageCode
+    "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
+  }}
+  <script type="application/ld+json">{{ $webpage | jsonify | safeHTML }}</script>
+{{ end }}
