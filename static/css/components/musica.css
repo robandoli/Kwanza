@@ -47,7 +47,6 @@
 
 .musica-letra-conteudo p {
   margin-bottom: var(--space-sm);
-  white-space: pre-line;
 }
 
 /* Mídia (YouTube ou áudio) - coluna direita */

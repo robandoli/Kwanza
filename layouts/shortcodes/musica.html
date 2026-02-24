@@ -13,10 +13,25 @@
       <summary>Veja aqui a letra</summary>
 
       <div class="musica-letra-conteudo">
-        {{ $letra := .Inner | strings.TrimSpace | htmlEscape }}
+        {{ $letra := .InnerDeindent | strings.TrimSpace }}
         {{ $letra = replaceRE "\r\n" "\n" $letra }}
-        {{ $letra = replaceRE "\n" "<br>" $letra }}
-        {{ $letra | safeHTML }}
+        {{ $linhas := split $letra "\n" }}
+        {{ $total := len $linhas }}
+        {{ $saida := newScratch }}
+
+        {{ range $i, $linha := $linhas }}
+          {{ $linhaLimpa := $linha | strings.TrimSpace }}
+          {{ if eq $linhaLimpa "" }}
+            {{ $saida.Add "html" "<br>" }}
+          {{ else }}
+            {{ $saida.Add "html" ($.Page.RenderString (dict "display" "inline") $linha) }}
+            {{ if lt $i (sub $total 1) }}
+              {{ $saida.Add "html" "<br>" }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ $saida.Get "html" | safeHTML }}
       </div>
     </details>
 

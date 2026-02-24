@@ -113,6 +113,10 @@ documentacao:
       arquivo: "/docs/curriculo_cultural_professora_guerreira.pdf"
       descricao: "PDF - 2.1MB"
 
+    - nome: "Currículo Cultura Contra-mestre Camarão"
+      arquivo: "/docs/curriculo_cultural_cm_camarao.pdf"
+      descricao: "PDF - 1.7MB"
+
 membros_equipe:
   titulo: "Nossa Equipe"
   items:

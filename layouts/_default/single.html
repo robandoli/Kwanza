@@ -37,10 +37,10 @@
 
       {{ if $isCantigas }}
         <div class="musica-busca">
-          <label for="busca-musica">{{ i18n "search_songs_label" }}</label>
           <input
             type="search"
             id="busca-musica"
+            aria-label="{{ i18n "search_songs_label" }}"
             placeholder="{{ i18n "search_songs_placeholder" }}"
             autocomplete="off"
             data-empty-message="{{ i18n "search_songs_empty" }}"

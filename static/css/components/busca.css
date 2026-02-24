@@ -1,6 +1,6 @@
 .musica-busca {
   width: min(100%, 720px);
-  margin: 0 auto var(--space-xl);
+  margin: 0 auto 1.25rem;
 }
 
 .musica-busca-campo {
@@ -64,12 +64,12 @@
 }
 
 #lista-musicas {
-  margin-top: var(--space-lg);
+  margin-top: 1.25rem;
 }
 
 @media (max-width: 900px) {
   .musica-busca {
     width: 100%;
-    margin-bottom: var(--space-lg);
+    margin-bottom: 1rem;
   }
 }

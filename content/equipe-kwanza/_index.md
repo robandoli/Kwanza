@@ -4,23 +4,23 @@ description: "Linhagem, hierarquia e pessoas que constroem o Grupo Kwanza."
 
 historia_grupo: |
 
-  O **Grupo Kwanza** nasce de uma trajetória construída ao longo de décadas de vivência
-  na capoeira, marcada pelo compromisso com seus fundamentos **culturais, educativos e
-  humanos**.
+  O Grupo Kwanza nasce de uma trajetória construída ao longo de décadas de vivência na capoeira, marcada pelo compromisso com seus fundamentos culturais, educativos e humanos.
 
-  Sua linhagem se desenvolve a partir do convívio e aprendizado junto a grandes grupos e
-  importantes mestres da capoeira brasileira, em um percurso que sempre valorizou a
-  **tradição, a hierarquia e a responsabilidade** na formação de pessoas. Nesse caminho,
-  a capoeira foi compreendida não apenas como prática corporal, mas como **expressão
-  cultural e filosofia de vida**.
+  Sua linhagem se desenvolve a partir do convívio e aprendizado junto a grandes grupos e importantes mestres da capoeira brasileira, em um percurso que sempre valorizou a tradição, a hierarquia e a responsabilidade na formação de pessoas. Nesse caminho, a capoeira foi compreendida não apenas como prática corporal, mas como expressão cultural e filosofia de vida.
 
-  O grupo foi oficialmente fundado em **06 de abril de 2014**, como resultado de um
-  processo de amadurecimento e autonomia. Sua criação representou a necessidade de
-  construir um espaço onde o conhecimento, a musicalidade e o trabalho formativo fossem
-  valorizados de forma íntegra.
+  ### O Significado do Nome
+  A escolha do nome "Kwanza" não foi por acaso. Ele carrega a força da ancestralidade banta e se sustenta em três pilares que definem nossa identidade:
 
-  Desde então, o Grupo Kwanza atua como um espaço de **formação contínua**, preservando o
-  respeito à ancestralidade e ao papel social da capoeira.
+  - **O Início e a Renovação**: Derivado do quimbundo kuanza, o nome representa o "primeiro fruto" e o ato de começar. Para nós, simboliza o nascimento de um novo ciclo e a colheita do conhecimento plantado através das gerações.
+
+  - **A Força do Fluxo**: Inspirado no Rio Kwanza, o maior rio genuinamente angolano, refletimos em nossa prática a fluidez, a resiliência e a energia vital que conecta a África ao Brasil através do Atlântico.
+
+  - **A Soberania e o Valor**: Assim como o kwanza é a moeda de troca e valor em Angola, nosso grupo preza pelo valor humano e pela riqueza cultural imaterial que a capoeira proporciona a cada aluno.
+
+  ### Fundação e Legado
+  O grupo foi oficialmente fundado em 06 de abril de 2014, como resultado de um processo de amadurecimento e autonomia. Sua criação representou a necessidade de construir um espaço onde o conhecimento, a musicalidade e o trabalho formativo fossem valorizados de forma íntegra.
+
+  Desde então, o Grupo Kwanza atua como um espaço de formação contínua, preservando o respeito à ancestralidade e ao papel social da capoeira, sempre honrando a "primeira colheita" de cada aprendizado.
 
 historia_mestre: |
   O **Grupo Kwanza** é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**,
@@ -30,10 +30,10 @@ historia_mestre: |
   disciplina e pela busca constante por aprendizado.
 
   Ao longo de sua formação, construiu sua base com mestres renomados como
-  **Marinheiro, Russo, Ditinho e Nestor**, além de receber influências
+  **M. Marinheiro, M. Russo, M. Ditinho e M. Nestor**, além de receber influências
   fundamentais de Mestre Zambi e Mestre Burguês.
   Sua trajetória contou ainda com a mentoria e a amizade de Mestre Leopoldina.
-  Na Capoeira Angola, foi **discípulo de Mestre Gato Preto**, sua principal
+  Na Capoeira Angola, conviveu durante um tempo com o **Mestre Gato Preto**, sua principal
   referência nesse estilo.
   Conviveu também com Mestres Ananias e Joel, que, em diferentes momentos,
   contribuíram com apoio e aconselhamento em sua caminhada.
