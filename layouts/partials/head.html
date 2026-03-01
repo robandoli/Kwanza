@@ -87,7 +87,7 @@
   "url" .Site.BaseURL
   "logo" $pageImage
 }}
-<script type="application/ld+json">{{ $organization | jsonify | safeHTML }}</script>
+<script type="application/ld+json">{{ $organization | jsonify | safeJS }}</script>
 
 {{ $website := dict
   "@context" "https://schema.org"
@@ -96,7 +96,7 @@
   "url" .Site.BaseURL
   "inLanguage" .Language.LanguageCode
 }}
-<script type="application/ld+json">{{ $website | jsonify | safeHTML }}</script>
+<script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 
 {{ if $isBlogPost }}
   {{ $article := dict
@@ -112,7 +112,7 @@
     "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" $pageImage))
     "image" (slice $pageImage)
   }}
-  <script type="application/ld+json">{{ $article | jsonify | safeHTML }}</script>
+  <script type="application/ld+json">{{ $article | jsonify | safeJS }}</script>
 {{ else }}
   {{ $webpage := dict
     "@context" "https://schema.org"
@@ -123,5 +123,5 @@
     "inLanguage" .Language.LanguageCode
     "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
   }}
-  <script type="application/ld+json">{{ $webpage | jsonify | safeHTML }}</script>
+  <script type="application/ld+json">{{ $webpage | jsonify | safeJS }}</script>
 {{ end }}
