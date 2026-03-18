@@ -25,7 +25,7 @@ locais_kwanza:
     lat: -23.53364
     lng: -46.77611
 
-  - nome: "Contra-mestre Camarão"
+  - nome: "Contramestre Camarão"
     pais: "Brasil"
     endereco: "R. dos Odes, 952 – Jardim Nova Vida"
     cidade: "Cotia"
@@ -43,7 +43,7 @@ locais_kwanza:
     lat: -20.02928
     lng: -48.91819
 
-  - nome: "Contra-mestre Sertão"
+  - nome: "Contramestre Sertão"
     pais: "Brasil"
     endereco: "Av. Wenceslau Brás, 1785 – Ouro Verde"
     cidade: "São Sebastião do Paraíso"
@@ -52,7 +52,7 @@ locais_kwanza:
     lat: -20.91988
     lng: -46.97140
 
-  - nome: "Contra-mestre Dobrado"
+  - nome: "Contramestre Dobrado"
     pais: "Brasil"
     endereco: "Praça da Juventude – João de Deus"
     cidade: "Petrolina"
@@ -146,7 +146,7 @@ locais_kwanza:
     lat: -33.042967
     lng: -71.627928
 
-  - nome: "Contra-mestre Casca Grossa"
+  - nome: "Contramestre Casca Grossa"
     pais: "Chile"
     endereco: "Calle Principal, s/n – Centro"
     cidade: "Linares"
