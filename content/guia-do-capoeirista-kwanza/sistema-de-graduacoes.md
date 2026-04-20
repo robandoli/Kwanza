@@ -10,6 +10,14 @@ graduacoes:
     imagem: "/img/graduacoes/kwz_grad_adulto.webp"
 ---
 
-O sistema de graduações do Grupo Kwanza representa o caminho de evolução do capoeirista, reconhecendo não apenas habilidades técnicas, mas também comprometimento, disciplina e vivência na capoeira.
+Sistema de Graduação – Grupo Kwanza
 
-Cada corda simboliza uma etapa do desenvolvimento e carrega consigo responsabilidades crescentes dentro do grupo.
+O sistema de graduação do Grupo Kwanza organiza a progressão de forma clara e alinhada ao desenvolvimento técnico e formativo do praticante.
+
+As graduações são estruturadas por etapas, do aluno aos níveis mais avançados (Monitor, Instrutor, Professor, Contramestre e Mestre), com subdivisões em graus que permitem uma evolução gradual e consistente.
+
+A fase de Estagiário é aplicada a praticantes de outros grupos com graduação, funcionando como um período de adaptação para avaliação técnica, vivência e alinhamento com os valores do grupo.
+
+Para o público infantil e juvenil, a estrutura respeita o desenvolvimento de cada faixa etária.
+
+A graduação representa maturidade, desenvolvimento técnico e vivência cultural na capoeira, refletindo o compromisso do praticante com sua evolução e com o grupo.
