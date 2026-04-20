@@ -62,7 +62,7 @@ eventos_lista: |
   18:00 — 🔴 Cerimônia dos Mestres  
   Grupo Kwanza
 
-  Traje obrigatório: social
+  Traje: social ou esporte fino, compatível com a formalidade da cerimônia.
 
   #### 07 de Novembro
 
@@ -90,8 +90,11 @@ eventos_lista: |
   13:00 — 🎉 Batizado e Formatura  
   Mestre Jaguara
 
-  💰 **Investimento**  
+  💰 **Investimento para todos os dias**  
   R$ 300,00
+
+  💰 **Investimento para o sábado**  
+  R$ 150,00
 
   📞 **Contato**  
   (11) 99524-0710
