@@ -28,14 +28,76 @@ eventos_lista: |
   📍 S.S.P / MG
 
   ### Novembro de 2026
-  **02/11 - Internacional Capoeira Kwanza**
+  #### Internacional Capoeira Kwanza
 
-  📍 Cotia - SP  
-  O evento será realizado de 02/11 a 07/11.
+  Evento oficial do Grupo Kwanza, dedicado à formação, consagração e celebração da capoeira, com programação distribuída em três dias, na cidade de Cotia – SP.
 
-  **02 a 07/11 - Batizado e Troca de Cordas – Mestre Jaguara**
+  **Cidade e locais gerais:** Cotia - SP  
+  Ginásio de Esportes Cotia, Teatro Municipal Antônio Pio e Praça Joaquim Nunes.
 
-  📍 Cotia - SP
+  **Contexto:** programação oficial do Grupo Kwanza com vivências, aulas, roda de rua, cerimônia e batizado.
+
+  #### 05 de Novembro
+
+  🏟️ **Ginásio**  
+  Ginásio de Esportes Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
+
+  08:00 — Sequências de Mestre Bimba  
+  C. Mestre Dobrão
+
+  09:30 — Oficina de Berimbau  
+  C. Mestre Sertão
+
+  #### 06 de Novembro
+
+  🏟️ **Ginásio**  
+  Ginásio de Esportes Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
+
+  08:00 — Aula de Movimentação  
+  Mestre Jaguara
+
+  🎭 **Teatro**  
+  Teatro Municipal Antônio Pio ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
+
+  18:00 — 🔴 Cerimônia dos Mestres  
+  Grupo Kwanza
+
+  Traje obrigatório: social
+
+  #### 07 de Novembro
+
+  🏟️ **Ginásio**  
+  Ginásio de Esportes Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
+
+  08:00 — Aula de Movimentação  
+  Mestre Topeira
+
+  09:00 — Aula de Movimentação  
+  Mestrando Cica
+
+  10:00 — História da Capoeira do Rio de Janeiro  
+  Mestre Levi
+
+  🌳 **Praça**  
+  Praça Joaquim Nunes – Centro de Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
+
+  11:00 — 🎉 Roda de Rua  
+  Grupo Kwanza
+
+  🎭 **Teatro**  
+  Teatro Municipal Antônio Pio ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
+
+  13:00 — 🎉 Batizado e Formatura  
+  Mestre Jaguara
+
+  💰 **Investimento**  
+  R$ 300,00
+
+  📞 **Contato**  
+  (11) 99524-0710
+
+  🧭 **Organização**  
+  Mestre Jaguara
 
 ---
 

@@ -1,0 +1,676 @@
+.evento-kwanza {
+  background:
+    radial-gradient(circle at 20% 20%, rgba(242, 183, 5, 0.16), transparent 18%),
+    radial-gradient(circle at 80% 12%, rgba(232, 93, 31, 0.28), transparent 20%),
+    radial-gradient(circle at 70% 60%, rgba(158, 27, 50, 0.22), transparent 28%),
+    linear-gradient(180deg, #2b120f 0%, #170d0d 48%, #0e0e0e 100%);
+}
+
+.evento-kwanza__hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 5vw, 4rem) 0 clamp(1.5rem, 4vw, 3rem);
+}
+
+.evento-kwanza__hero::before,
+.evento-kwanza__hero::after {
+  content: "";
+  position: absolute;
+  border-radius: 999px;
+  filter: blur(10px);
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+.evento-kwanza__hero::before {
+  inset: 8% auto auto 8%;
+  width: 220px;
+  height: 220px;
+  background: rgba(242, 183, 5, 0.42);
+}
+
+.evento-kwanza__hero::after {
+  inset: auto 8% 10% auto;
+  width: 280px;
+  height: 280px;
+  background: rgba(232, 93, 31, 0.32);
+}
+
+.evento-kwanza__hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  align-items: center;
+}
+
+.evento-kwanza__eyebrow {
+  margin: 0 0 0.75rem;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-size: 1.1rem;
+}
+
+.evento-kwanza__hero-copy h1 {
+  max-width: 11ch;
+  margin-bottom: 1rem;
+}
+
+.evento-kwanza__lead {
+  font-size: clamp(1.05rem, 2.1vw, 1.35rem);
+  color: rgba(247, 244, 239, 0.92);
+  max-width: 54ch;
+}
+
+.evento-kwanza__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.evento-kwanza__tags span {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(247, 244, 239, 0.08);
+  border: 1px solid rgba(247, 244, 239, 0.12);
+  color: var(--white-soft);
+  font-size: 0.92rem;
+}
+
+.evento-kwanza__summary {
+  padding: 1.25rem;
+  border-radius: 24px;
+  background: rgba(14, 14, 14, 0.42);
+  border: 1px solid rgba(247, 244, 239, 0.08);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+.evento-kwanza__summary h2 {
+  margin-bottom: 0.5rem;
+}
+
+.evento-kwanza__summary p {
+  max-width: 60ch;
+  margin-bottom: 0;
+}
+
+.evento-kwanza__summary-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 0;
+}
+
+.evento-kwanza__summary-list dt {
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-medium);
+}
+
+.evento-kwanza__summary-list dd {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--white-soft);
+}
+
+.evento-kwanza__poster {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 32px;
+  background:
+    radial-gradient(circle at center, rgba(242, 183, 5, 0.2), transparent 34%),
+    linear-gradient(180deg, rgba(90, 24, 19, 0.92), rgba(45, 16, 14, 0.96));
+  border: 1px solid rgba(247, 244, 239, 0.08);
+  box-shadow: 0 24px 55px rgba(0, 0, 0, 0.35);
+}
+
+.evento-kwanza__pills {
+  display: grid;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.evento-kwanza__pill {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  border-radius: 22px;
+  color: #fff8ef;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+.evento-kwanza__pill--laranja {
+  background: linear-gradient(135deg, #f4a533, #ea6b18);
+}
+
+.evento-kwanza__pill--vermelho {
+  background: linear-gradient(135deg, #ff7d48, #d9332c);
+}
+
+.evento-kwanza__pill-day {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.evento-kwanza__pill-copy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.evento-kwanza__pill-copy strong {
+  font-size: 1.02rem;
+}
+
+.evento-kwanza__pill-copy span,
+.evento-kwanza__pill-copy small {
+  color: rgba(255, 248, 239, 0.92);
+}
+
+.evento-kwanza__seal {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 1.5rem;
+  width: min(320px, 100%);
+  aspect-ratio: 1;
+}
+
+.evento-kwanza__seal-ring,
+.evento-kwanza__seal-core {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+}
+
+.evento-kwanza__seal-ring {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border: 16px solid rgba(223, 179, 108, 0.9);
+  box-shadow: inset 0 0 0 6px rgba(255, 248, 239, 0.18);
+  color: #ffe5a6;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.evento-kwanza__seal-core {
+  inset: 18%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle, rgba(242, 183, 5, 0.92), rgba(154, 40, 20, 0.95));
+  box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.22);
+}
+
+.evento-kwanza__seal-core span {
+  max-width: 8ch;
+  text-align: center;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.05;
+  color: #2d120f;
+}
+
+.evento-kwanza__venue-card {
+  padding: 1rem 1.2rem;
+  border-radius: 22px;
+  background: rgba(247, 244, 239, 0.1);
+  border: 1px solid rgba(247, 244, 239, 0.12);
+  text-align: center;
+}
+
+.evento-kwanza__venue-card p,
+.evento-kwanza__venue-card span {
+  margin: 0;
+}
+
+.evento-kwanza__venue-card p {
+  color: #ffd08c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.evento-kwanza__venue-card strong {
+  display: block;
+  margin: 0.3rem 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(1.35rem, 2.4vw, 1.85rem);
+  line-height: 1.05;
+  color: #fff7e8;
+}
+
+.evento-kwanza__venue-card span {
+  color: rgba(255, 247, 232, 0.82);
+}
+
+.evento-kwanza__section-header {
+  margin-bottom: 1.5rem;
+}
+
+.evento-kwanza__intro p {
+  max-width: 70ch;
+  color: rgba(247, 244, 239, 0.88);
+}
+
+.evento-kwanza__days {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.evento-kwanza__day {
+  padding: 1.25rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(247, 244, 239, 0.08);
+}
+
+.evento-kwanza__day-header {
+  margin-bottom: 1rem;
+}
+
+.evento-kwanza__day-header h3 {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  color: #ffd08c;
+}
+
+.evento-kwanza__locations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.evento-kwanza__location-card {
+  padding: 1rem;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(247, 244, 239, 0.06), rgba(247, 244, 239, 0.03));
+  border: 1px solid rgba(247, 244, 239, 0.08);
+}
+
+.evento-kwanza__location-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.evento-kwanza__location-head p {
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.06em;
+  color: #ffd08c;
+}
+
+.evento-kwanza__location-head a,
+.evento-kwanza__info-card a,
+.evento-kwanza__cta {
+  color: var(--white-soft);
+  text-decoration: none;
+}
+
+.evento-kwanza__location-head a:hover,
+.evento-kwanza__info-card a:hover,
+.evento-kwanza__cta:hover {
+  text-decoration: underline;
+}
+
+.evento-kwanza__location-card h4 {
+  margin: 0.5rem 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white-soft);
+}
+
+.evento-kwanza__activities {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.evento-kwanza__activity {
+  padding-top: 0.9rem;
+  border-top: 1px solid rgba(247, 244, 239, 0.08);
+}
+
+.evento-kwanza__activity:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.evento-kwanza__time {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 1rem;
+  color: #f2b705;
+}
+
+.evento-kwanza__activity-body {
+  min-width: 0;
+}
+
+.evento-kwanza__activity-body.has-image {
+  display: grid;
+  grid-template-columns: 66px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.evento-kwanza__activity-body:not(.has-image) {
+  display: block;
+}
+
+.evento-kwanza__activity-copy {
+  min-width: 0;
+}
+
+.evento-kwanza__activity h5 {
+  margin: 0 0 0.15rem;
+  font-size: 1rem;
+  color: var(--white-soft);
+}
+
+.evento-kwanza__responsavel,
+.evento-kwanza__note {
+  margin: 0;
+}
+
+.evento-kwanza__responsavel {
+  color: rgba(247, 244, 239, 0.78);
+}
+
+.evento-kwanza__note {
+  margin-top: 0.45rem;
+  font-size: 0.92rem;
+  color: #ffd08c;
+}
+
+.evento-kwanza__activity-poster {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid rgba(247, 244, 239, 0.08);
+  background: rgba(247, 244, 239, 0.04);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
+  width: 66px;
+}
+
+.evento-kwanza__activity-poster-button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.evento-kwanza__activity-poster img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+}
+
+.evento-kwanza__lightbox {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  width: min(92vw, 520px);
+  max-width: 92vw;
+  max-height: 92vh;
+  margin: auto;
+}
+
+.evento-kwanza__lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.82);
+}
+
+.evento-kwanza__lightbox img {
+  width: 100%;
+  max-width: 92vw;
+  max-height: 92vh;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.evento-kwanza__lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(14, 14, 14, 0.78);
+  color: var(--white-soft);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.evento-kwanza__info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.evento-kwanza__info-card {
+  padding: 1rem 1.15rem;
+  border-radius: 20px;
+  background: rgba(247, 244, 239, 0.06);
+  border: 1px solid rgba(247, 244, 239, 0.08);
+}
+
+.evento-kwanza__info-card span {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: rgba(247, 244, 239, 0.76);
+}
+
+.evento-kwanza__info-card strong {
+  font-size: 1.1rem;
+  color: var(--white-soft);
+}
+
+.evento-kwanza__cta-wrap {
+  padding-top: 1rem;
+}
+
+.evento-kwanza__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 46px;
+  padding: 0.75rem 1.15rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f4a533, #e85d1f);
+  color: #1a0d08;
+  font-weight: 700;
+}
+
+.evento-kwanza__carousel-wrap {
+  overflow: hidden;
+}
+
+.evento-kwanza__carousel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.evento-kwanza__carousel-header p {
+  margin: 0;
+  color: rgba(247, 244, 239, 0.8);
+}
+
+.evento-kwanza__carousel-nav {
+  display: flex;
+  gap: 0.65rem;
+}
+
+.evento-kwanza__carousel-btn {
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(247, 244, 239, 0.12);
+  border-radius: 999px;
+  background: rgba(247, 244, 239, 0.06);
+  color: var(--white-soft);
+  cursor: pointer;
+  transition: background-color var(--transition-fast), opacity var(--transition-fast);
+}
+
+.evento-kwanza__carousel-btn:hover:not(:disabled) {
+  background: rgba(247, 244, 239, 0.12);
+}
+
+.evento-kwanza__carousel-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.evento-kwanza__carousel-btn span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.evento-kwanza__carousel-viewport {
+  overflow: hidden;
+}
+
+.evento-kwanza__carousel-track {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 2rem) / 3);
+  gap: 1rem;
+  transition: transform var(--transition-base);
+  will-change: transform;
+}
+
+.evento-kwanza__mentor-card {
+  overflow: hidden;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(247, 244, 239, 0.08), rgba(247, 244, 239, 0.03));
+  border: 1px solid rgba(247, 244, 239, 0.08);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+}
+
+.evento-kwanza__mentor-image {
+  aspect-ratio: 4 / 5;
+  background: rgba(247, 244, 239, 0.06);
+}
+
+.evento-kwanza__mentor-image--full {
+  aspect-ratio: 3 / 4;
+}
+
+.evento-kwanza__mentor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.evento-kwanza__carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.evento-kwanza__carousel-dot {
+  width: 10px;
+  height: 10px;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(247, 244, 239, 0.24);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.evento-kwanza__carousel-dot.is-active {
+  width: 28px;
+  background: linear-gradient(135deg, #f4a533, #e85d1f);
+}
+
+@media (max-width: 960px) {
+  .evento-kwanza__hero-grid,
+  .evento-kwanza__info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evento-kwanza__hero-copy h1 {
+    max-width: 100%;
+  }
+
+  .evento-kwanza__summary-list {
+    grid-template-columns: 1fr;
+  }
+
+  .evento-kwanza__carousel-track {
+    grid-auto-columns: calc((100% - 1rem) / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  .evento-kwanza__hero {
+    padding-top: 1.5rem;
+  }
+
+  .evento-kwanza__poster,
+  .evento-kwanza__day,
+  .evento-kwanza__location-card {
+    padding: 1rem;
+  }
+
+  .evento-kwanza__pill {
+    grid-template-columns: 60px 1fr;
+    border-radius: 18px;
+  }
+
+  .evento-kwanza__pill-day {
+    font-size: 1.65rem;
+  }
+
+  .evento-kwanza__activity {
+    gap: 0.35rem;
+  }
+
+  .evento-kwanza__activity-body.has-image {
+    grid-template-columns: 46px minmax(0, 1fr);
+  }
+
+  .evento-kwanza__activity-poster {
+    width: 46px;
+  }
+
+  .evento-kwanza__time {
+    font-size: 0.95rem;
+  }
+
+  .evento-kwanza__carousel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .evento-kwanza__carousel-track {
+    grid-auto-columns: 100%;
+  }
+}

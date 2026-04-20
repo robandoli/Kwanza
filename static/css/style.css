@@ -8,6 +8,7 @@
 
 /* COMPONENTS */
 @import "components/navigation.css";
+@import "components/home-event-banner.css";
 @import "components/button.css";
 @import "components/footer.css";
 @import "components/musica.css";
@@ -24,6 +25,7 @@
 @import "pages/equipe.css";
 @import "pages/guia.css";
 @import "pages/calendario.css";
+@import "pages/internacional-capoeira-kwanza.css";
 @import "pages/contatos.css";
 @import "pages/vem-aprender.css";
 @import "pages/blog.css";

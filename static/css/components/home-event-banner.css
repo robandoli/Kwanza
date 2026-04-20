@@ -1,0 +1,78 @@
+.home-event-banner {
+  background-color: #f07a21;
+  background-image: linear-gradient(90deg, #f07a21 0%, #e85d1f 100%);
+  color: var(--white-soft);
+  min-height: 36px;
+  position: relative;
+  z-index: 11;
+  overflow: hidden;
+  transition:
+    max-height var(--transition-base),
+    opacity var(--transition-fast),
+    visibility var(--transition-fast);
+}
+
+.home-event-banner__container {
+  min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+.home-event-banner__link {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.98;
+  transition: opacity var(--transition-fast);
+}
+
+.home-event-banner__text {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.home-event-banner__link:hover .home-event-banner__text,
+.home-event-banner__link:focus-visible .home-event-banner__text {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.home-event-banner__link:hover {
+  opacity: 1;
+}
+
+.home-event-banner__link:focus-visible {
+  outline: 2px solid rgba(247, 244, 239, 0.85);
+  outline-offset: 2px;
+}
+
+@media (min-width: 769px) {
+  .home-event-banner {
+    max-height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-event-banner {
+    max-height: 40px;
+  }
+
+  .home-event-banner__container {
+    min-height: 40px;
+    padding: 0 12px;
+  }
+
+  .home-event-banner__text {
+    font-size: 15px;
+  }
+}
