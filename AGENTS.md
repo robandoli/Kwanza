@@ -83,6 +83,13 @@ git submodule update --remote themes/beautifulhugo
 │   │   ├── calendario/        # Calendar sections
 │   │   │   └── hero.html      # Calendar hero (no CTA)
 │   │   ├── equipe/            # Team page sections
+│   │   ├── evento-kwanza/     # International event sections
+│   │   │   ├── hero.html
+│   │   │   ├── mestres.html
+│   │   │   ├── programacao.html
+│   │   │   ├── info.html
+│   │   │   ├── floating-whatsapp.html
+│   │   │   └── lightbox.html
 │   │   ├── head.html          # HTML head (with notranslate meta)
 │   │   ├── nav.html           # Navigation bar
 │   │   └── footer.html        # Site footer (includes scripts)
@@ -125,10 +132,11 @@ git submodule update --remote themes/beautifulhugo
 │   │       ├── guia.css
 │   │       ├── calendario.css
 │   │       └── contatos.css
-│   ├── js/                    # Custom JavaScript (4 files)
+│   ├── js/                    # Custom JavaScript (5 files)
+│   │   ├── analytics-events.js # GA4 event tracking helpers
 │   │   ├── nav-toggle.js      # Mobile navigation toggle
-│   │   ├── hero-carousel.js   # Hero image carousel (6s auto)
-│   │   ├── eventos-carousel.js # Events carousel (5s auto + manual)
+│   │   ├── hero-carousel.js   # Shared hero image carousel
+│   │   ├── internacional-capoeira-kwanza.js # Event page carousel/lightbox
 │   │   └── busca-musica.js    # Song search functionality
 │   ├── docs/                  # PDF documents
 │   ├── audio/                 # Audio files (for songs)
@@ -295,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 ```
 
-**Carousel Pattern (hero-carousel.js, eventos-carousel.js):**
+**Carousel Pattern (hero-carousel.js, internacional-capoeira-kwanza.js):**
 - Auto-play with configurable interval
 - Pause on hover/focus
 - Pause when tab is hidden
@@ -598,7 +606,7 @@ The `musica` shortcode uses `<details>` **without** `open` attribute by default.
 
 ### Creating a Carousel
 
-1. **Use eventos-carousel.js as template** (most complete example)
+1. **Use hero-carousel.js for hero image rotation** and `internacional-capoeira-kwanza.js` for card carousel behavior.
 
 2. **Key features to include:**
    - Auto-play with pause on hover
@@ -737,6 +745,8 @@ The `musica` shortcode uses `<details>` **without** `open` attribute by default.
 - `layouts/_default/baseof.html` - Base template (translate="no", Hugo version check)
 - `layouts/partials/head.html` - HTML head (notranslate meta)
 - `layouts/partials/footer.html` - Footer (script includes)
+- `layouts/_default/internacional-capoeira-kwanza.html` - Event page orchestration only
+- `layouts/partials/evento-kwanza/` - Event page sections; keep content rendering here instead of growing the top-level layout
 
 ### CSS
 - `static/css/style.css` - Main CSS (all imports)
@@ -744,8 +754,9 @@ The `musica` shortcode uses `<details>` **without** `open` attribute by default.
 - `static/css/base/layout.css` - Layout containers
 
 ### JavaScript
-- `static/js/hero-carousel.js` - Hero image rotation (6s)
-- `static/js/eventos-carousel.js` - Events carousel (5s, auto + manual)
+- `static/js/analytics-events.js` - GA4 event tracking helpers
+- `static/js/hero-carousel.js` - Shared hero image rotation (6s default, configurable with `data-carousel-interval`)
+- `static/js/internacional-capoeira-kwanza.js` - Event page carousel and lightbox
 - `static/js/busca-musica.js` - Song search
 - `static/js/nav-toggle.js` - Mobile menu
 

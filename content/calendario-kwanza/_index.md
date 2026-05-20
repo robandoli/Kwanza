@@ -28,79 +28,12 @@ eventos_lista: |
   📍 S.S.P / MG
 
   ### Novembro de 2026
-  #### Internacional Capoeira Kwanza
+  **05 a 07/11 - [Internacional Capoeira Kwanza](/internacional-capoeira-kwanza/)**
 
-  Evento oficial da Identidade Kwanza, dedicado à formação, consagração e celebração da capoeira, com programação distribuída em três dias, na cidade de Cotia – SP.
+  📍 Cotia - SP  
+  Evento oficial da Identidade Kwanza com formação, cerimônia dos mestres, roda de rua, batizado e formatura.
 
-  **Cidade e locais gerais:** Cotia - SP  
-  Ginásio de Esportes Cotia, Teatro Municipal Antônio Pio e Praça Joaquim Nunes.
-
-  **Contexto:** programação oficial da Identidade Kwanza com vivências, aulas, roda de rua, cerimônia e batizado.
-
-  #### 05 de Novembro
-
-  🏟️ **Ginásio**  
-  Ginásio de Esportes Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
-
-  08:00 — Sequências de Mestre Bimba  
-  C. Mestre Dobrão
-
-  09:30 — Oficina de Berimbau  
-  C. Mestre Sertão
-
-  #### 06 de Novembro
-
-  🏟️ **Ginásio**  
-  Ginásio de Esportes Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
-
-  08:00 — Aula de Movimentação  
-  Mestre Jaguara
-
-  🎭 **Teatro**  
-  Teatro Municipal Antônio Pio ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
-
-  18:00 — 🔴 Cerimônia dos Mestres  
-  Identidade Kwanza
-
-  Traje: social ou esporte fino, compatível com a formalidade da cerimônia.
-
-  #### 07 de Novembro
-
-  🏟️ **Ginásio**  
-  Ginásio de Esportes Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
-
-  08:00 — Aula de Movimentação  
-  Mestre Topeira
-
-  09:00 — Aula de Movimentação  
-  Mestrando Cica
-
-  10:00 — História da Capoeira do Rio de Janeiro  
-  Mestre Levi
-
-  🌳 **Praça**  
-  Praça Joaquim Nunes – Centro de Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
-
-  11:00 — 🎉 Roda de Rua  
-  Identidade Kwanza
-
-  🎭 **Teatro**  
-  Teatro Municipal Antônio Pio ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
-
-  13:00 — 🎉 Batizado e Formatura  
-  Mestre Jaguara
-
-  💰 **Investimento para todos os dias**  
-  R$ 300,00
-
-  💰 **Investimento para o sábado**  
-  R$ 150,00
-
-  📞 **Contato**  
-  (11) 99524-0710
-
-  🧭 **Organização**  
-  Mestre Jaguara
+  [Ver programação completa](/internacional-capoeira-kwanza/)
 
 ---
 

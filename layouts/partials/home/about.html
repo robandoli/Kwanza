@@ -97,7 +97,12 @@
         {{ i18n "home_cta_text" }}
       </p>
 
-      <a href="{{ relLangURL "contatos/" }}" class="btn-primary">
+      <a
+        href="{{ relLangURL "contatos/" }}"
+        class="btn-primary"
+        data-analytics-event="click_contact_cta"
+        data-analytics-param-cta-label="home_agendar_aula"
+        data-analytics-param-page-section="home_cta">
         {{ i18n "hero_cta" }}
       </a>
     </div>

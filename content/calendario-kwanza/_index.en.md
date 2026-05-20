@@ -28,12 +28,14 @@ eventos_lista: |
   📍 S.S.P / MG, Brazil
 
   ### November 2026
-  **11/02 - International Capoeira Kwanza**
+  **11/05 to 11/07 - [International Capoeira Kwanza](/en/internacional-capoeira-kwanza/)**
 
   📍 Cotia - SP, Brazil  
-  The event will take place from 11/02 to 11/07.
+  Official Identidade Kwanza event with training, masters ceremony, street roda, baptism, and graduation.
 
-  **11/02 to 11/07 - Baptism and Cord Exchange – Mestre Jaguara**
+  [See full schedule](/en/internacional-capoeira-kwanza/)
+
+  **11/07 - Baptism and Graduation – Mestre Jaguara**
 
   📍 Cotia - SP, Brazil
 

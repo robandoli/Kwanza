@@ -1,9 +1,17 @@
 <aside class="home-event-banner" data-home-event-banner>
   <div class="container home-event-banner__container">
-    <a class="home-event-banner__link" href="{{ relLangURL "/internacional-capoeira-kwanza/" }}">
+    <a
+      class="home-event-banner__link"
+      href="{{ relLangURL "/internacional-capoeira-kwanza/" }}"
+      data-analytics-event="click_event_banner"
+      data-analytics-param-event-name="internacional_capoeira_kwanza"
+      data-analytics-param-cta-label="barra_superior_evento">
+      <span class="home-event-banner__badge">{{ i18n "event_banner_badge" }}</span>
       <span class="home-event-banner__text">
-        <strong>Evento oficial Kwanza</strong> • 05 a 07 de novembro em Cotia/SP — confira a programação completa
+        <strong>{{ i18n "event_banner_title" }}</strong>
+        <span>{{ i18n "event_banner_meta" }}</span>
       </span>
+      <span class="home-event-banner__cta">{{ i18n "event_banner_cta" }}</span>
     </a>
   </div>
 </aside>

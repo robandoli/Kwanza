@@ -1,0 +1,29 @@
+<section class="evento-kwanza__info section">
+  <div class="container evento-kwanza__info-grid">
+    <div class="evento-kwanza__info-card">
+      <span>{{ i18n "event_investment" }}</span>
+      {{ with .Params.informacoes_finais.investimentos }}
+        <div class="evento-kwanza__investment-list">
+          {{ range . }}
+            <p>
+              <strong>{{ .valor }}</strong>
+              <small>{{ .descricao }}</small>
+            </p>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+    <div class="evento-kwanza__info-card">
+      <span>{{ i18n "event_contact" }}</span>
+      <strong><a href="{{ .Params.informacoes_finais.contato_link }}" target="_blank" rel="noopener noreferrer" data-analytics-event="click_whatsapp" data-analytics-param-event-name="internacional_capoeira_kwanza" data-analytics-param-cta-label="contato_card" data-analytics-param-page-section="informacoes">{{ .Params.informacoes_finais.contato_label }}</a></strong>
+    </div>
+    <div class="evento-kwanza__info-card">
+      <span>{{ i18n "event_organization" }}</span>
+      <strong>{{ .Params.informacoes_finais.organizacao }}</strong>
+    </div>
+  </div>
+
+  <div class="container evento-kwanza__cta-wrap">
+    <a class="evento-kwanza__cta" href="{{ .Params.informacoes_finais.contato_link }}" target="_blank" rel="noopener noreferrer" data-analytics-event="click_whatsapp" data-analytics-param-event-name="internacional_capoeira_kwanza" data-analytics-param-cta-label="garantir_minha_vaga" data-analytics-param-page-section="cta_final">{{ i18n "event_primary_cta" }}</a>
+  </div>
+</section>

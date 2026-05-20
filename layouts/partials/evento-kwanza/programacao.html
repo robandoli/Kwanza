@@ -1,0 +1,77 @@
+<section class="evento-kwanza__programa section">
+  <div class="container">
+    <header class="evento-kwanza__section-header">
+      <p class="evento-kwanza__eyebrow">{{ i18n "event_eyebrow_schedule" }}</p>
+      <h2>{{ i18n "event_complete_schedule" }}</h2>
+      <div class="evento-kwanza__intro">{{ .Content }}</div>
+    </header>
+
+    <div class="evento-kwanza__days">
+      {{ range .Params.programacao }}
+        <section class="evento-kwanza__day">
+          <header class="evento-kwanza__day-header">
+            <h3>{{ .data }}</h3>
+          </header>
+
+          <div class="evento-kwanza__locations">
+            {{ range .locais }}
+              <div class="evento-kwanza__location-card">
+                <div class="evento-kwanza__location-head">
+                  <p>{{ .icone }} {{ .tipo }}</p>
+                  <a
+                    href="{{ .mapa }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="{{ printf (i18n "event_map_aria") .nome }}"
+                    data-analytics-event="click_map"
+                    data-analytics-param-event-name="internacional_capoeira_kwanza"
+                    data-analytics-param-location-name="{{ .nome }}"
+                    data-analytics-param-location-type="{{ .tipo }}"
+                    data-analytics-param-page-section="programacao">
+                    <span aria-hidden="true">📍</span>
+                    {{ i18n "event_view_map" }}
+                  </a>
+                </div>
+                <h4>{{ .nome }}</h4>
+
+                <div class="evento-kwanza__activities">
+                  {{ range .atividades }}
+                    {{ $tituloAtividade := .titulo }}
+                    <article class="evento-kwanza__activity">
+                      <div class="evento-kwanza__activity-body{{ if and $.Params.feature_flags.activity_images .imagem }} has-image{{ end }}">
+                        {{ if and $.Params.feature_flags.activity_images .imagem }}
+                          <figure class="evento-kwanza__activity-poster">
+                            <button
+                              type="button"
+                              class="evento-kwanza__activity-poster-button{{ if eq .imagem_formato "paisagem" }} is-landscape{{ end }}"
+                              data-lightbox-open
+                              data-lightbox-src="{{ .imagem }}"
+                              data-lightbox-alt="{{ $tituloAtividade }}"
+                              data-analytics-event="schedule_image_open"
+                              data-analytics-param-event-name="internacional_capoeira_kwanza"
+                              data-analytics-param-activity-name="{{ $tituloAtividade }}"
+                              data-analytics-param-page-section="programacao">
+                              <img src="{{ .imagem }}" alt="{{ $tituloAtividade }}" loading="lazy" decoding="async">
+                            </button>
+                          </figure>
+                        {{ end }}
+                        <div class="evento-kwanza__activity-copy">
+                          <p class="evento-kwanza__time">{{ .horario }}</p>
+                          <h5>{{ .titulo }}</h5>
+                          <p class="evento-kwanza__responsavel">{{ .responsavel }}</p>
+                          {{ with .observacao }}
+                            <p class="evento-kwanza__note">{{ . }}</p>
+                          {{ end }}
+                        </div>
+                      </div>
+                    </article>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </div>
+  </div>
+</section>

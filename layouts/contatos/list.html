@@ -94,7 +94,11 @@
                 <a
                   href="https://maps.google.com/?q={{ .lat }},{{ .lng }}"
                   target="_blank"
-                  rel="noopener noreferrer">
+                  rel="noopener noreferrer"
+                  data-analytics-event="click_map"
+                  data-analytics-param-location-name="{{ .nome }}"
+                  data-analytics-param-location-city="{{ .cidade }}"
+                  data-analytics-param-page-section="contatos">
                   {{ i18n "view_on_map" }}
                 </a>
               {{ end }}

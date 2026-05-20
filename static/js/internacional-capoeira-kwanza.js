@@ -72,6 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.type = "button";
       dot.className = "evento-kwanza__carousel-dot";
       dot.setAttribute("aria-label", `Ir para grupo ${index + 1}`);
+      dot.dataset.analyticsEvent = "carousel_interaction";
+      dot.dataset.analyticsParamCarouselName = "formados_mestres";
+      dot.dataset.analyticsParamCarouselAction = "dot";
+      dot.dataset.analyticsParamCarouselPage = String(index + 1);
       dot.addEventListener("click", () => {
         currentPage = index;
         update();

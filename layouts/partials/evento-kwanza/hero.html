@@ -1,0 +1,11 @@
+<section class="evento-kwanza__hero">
+  <div class="container">
+    <div class="evento-kwanza__hero-copy">
+      <p class="evento-kwanza__eyebrow">{{ i18n "event_eyebrow_special_program" }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <p class="evento-kwanza__lead">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

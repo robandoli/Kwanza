@@ -47,6 +47,33 @@ class FakeElement {
     this._attributes = new Map();
   }
 
+  set className(value) {
+    this.classList = new FakeClassList(value);
+  }
+
+  get className() {
+    return this.classList.toString();
+  }
+
+  set innerHTML(value) {
+    this._innerHTML = String(value);
+    if (value === "") {
+      this.children = [];
+    }
+  }
+
+  get innerHTML() {
+    return this._innerHTML || "";
+  }
+
+  get href() {
+    return this.getAttribute("href");
+  }
+
+  set href(value) {
+    this.setAttribute("href", value);
+  }
+
   setAttribute(name, value) {
     this._attributes.set(name, String(value));
   }
@@ -78,9 +105,46 @@ class FakeElement {
     this._focused = true;
   }
 
+  matches(selector) {
+    if (selector === ":focus-within") {
+      return Boolean(this._focused) || this.children.some((child) => child.matches(selector));
+    }
+
+    return this._matchesSimple(selector);
+  }
+
+  closest(selector) {
+    let current = this;
+
+    while (current) {
+      if (current.matches(selector)) return current;
+      current = current.parentNode;
+    }
+
+    return null;
+  }
+
   _matchesSimple(selector) {
     if (selector.startsWith("#")) return this.id === selector.slice(1);
     if (selector.startsWith(".")) return this.classList.contains(selector.slice(1));
+    if (selector.startsWith("[") && selector.endsWith("]")) {
+      const raw = selector.slice(1, -1);
+      const [name, expected] = raw.split("=");
+      const cleanExpected = expected?.replace(/^["']|["']$/g, "");
+
+      let value = this.getAttribute(name);
+      if (name.startsWith("data-")) {
+        const datasetKey = name
+          .slice(5)
+          .replace(/-([a-z])/g, (_, letter) => letter.toUpperCase());
+        value = Object.prototype.hasOwnProperty.call(this.dataset, datasetKey)
+          ? this.dataset[datasetKey]
+          : value;
+      }
+
+      if (cleanExpected === undefined) return value !== null && value !== undefined;
+      return value === cleanExpected;
+    }
     return this.tagName.toLowerCase() === selector.toLowerCase();
   }
 
@@ -118,6 +182,7 @@ class FakeDocument {
   constructor() {
     this.body = new FakeElement("body");
     this.hidden = false;
+    this.title = "";
     this._listeners = new Map();
   }
 
@@ -133,6 +198,14 @@ class FakeDocument {
   dispatchDOMContentLoaded() {
     const handlers = this._listeners.get("DOMContentLoaded") || [];
     handlers.forEach((fn) => fn({ type: "DOMContentLoaded", target: this }));
+  }
+
+  dispatchEvent(event) {
+    if (!event || !event.type) throw new Error("Event must have a type");
+    if (!event.target) event.target = this;
+    const handlers = this._listeners.get(event.type) || [];
+    handlers.forEach((fn) => fn(event));
+    return true;
   }
 
   getElementById(id) {
@@ -153,4 +226,3 @@ module.exports = {
   FakeDocument,
   FakeElement,
 };
-

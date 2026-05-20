@@ -4,8 +4,6 @@
 
 {{ partial "vem-aprender/hero.html" . }}
 
-<script src="/js/vem-aprender-carousel.js"></script>
-
 <article class="pagina vem-aprender">
 
   {{/* ==========================================
@@ -131,7 +129,13 @@
         <ul class="docs-lista">
           {{ range .items }}
           <li class="doc-item">
-            <a href="{{ .arquivo }}" target="_blank" rel="noopener noreferrer">
+            <a
+              href="{{ .arquivo }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-analytics-event="file_download_curriculo"
+              data-analytics-param-file-name="{{ .nome }}"
+              data-analytics-param-page-section="documentacao">
               <span class="doc-icone">📄</span>
               <span class="doc-nome">{{ .nome }}</span>
               {{ with .descricao }}

@@ -1,3 +1,35 @@
 /public/
 .hugo_build.lock
 .DS_Store
+
+# Environment and secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*secret*
+*token*
+*credentials*
+*service-account*
+
+# Logs and local data
+*.log
+*.ndjson
+*.jsonl
+*.db
+*.sqlite
+*.csv
+*.xlsx
+logs/
+data/
+exports/
+dumps/
+backups/
+
+# Local tooling
+node_modules/
+coverage/
+.cache/
+npm-debug.log*

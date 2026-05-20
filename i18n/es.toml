@@ -86,3 +86,77 @@ other = "Agenda tu clase"
 
 [home_cta_text]
 other = "Si buscas un espacio serio, acogedor y comprometido con la capoeira, el Identidade Kwanza está con las puertas abiertas."
+
+# Global UI
+[footer_tagline]
+other = "Capoeira, cultura y formación."
+
+[floating_whatsapp_label]
+other = "Hablar por WhatsApp"
+
+[event_banner_text]
+other = "<strong>Evento oficial de Kwanza</strong> • 5 al 7 de noviembre en Cotia/SP — consulta la programación completa"
+
+[event_banner_badge]
+other = "Evento oficial"
+
+[event_banner_title]
+other = "Internacional Capoeira Kwanza"
+
+[event_banner_meta]
+other = "5 al 7 de noviembre · Cotia/SP"
+
+[event_banner_cta]
+other = "Ver programación"
+
+# International event page
+[event_page_unavailable]
+other = "Página no disponible"
+
+[event_page_unavailable_message]
+other = "Esta página está temporalmente desactivada."
+
+[event_eyebrow_special_program]
+other = "Programación especial"
+
+[event_eyebrow_homage]
+other = "Homenaje"
+
+[event_masters_gallery]
+other = "Galería de los formados como mestre"
+
+[event_previous_masters]
+other = "Formados anteriores"
+
+[event_next_masters]
+other = "Próximos formados"
+
+[event_eyebrow_schedule]
+other = "Cronograma"
+
+[event_complete_schedule]
+other = "Programación completa"
+
+[event_view_map]
+other = "Ver mapa"
+
+[event_map_aria]
+other = "Ver %s en el mapa"
+
+[event_investment]
+other = "💰 Inversión"
+
+[event_contact]
+other = "📞 Contacto"
+
+[event_organization]
+other = "🧭 Organización"
+
+[event_primary_cta]
+other = "Reservar mi lugar"
+
+[event_floating_whatsapp_aria]
+other = "Reservar mi lugar por WhatsApp"
+
+[event_lightbox_close]
+other = "Cerrar imagen ampliada"

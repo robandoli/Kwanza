@@ -1,0 +1,58 @@
+{{ with .Params.formados_mestres }}
+  <section class="evento-kwanza__mestres section">
+    <div class="container">
+      <header class="evento-kwanza__section-header">
+        <p class="evento-kwanza__eyebrow">{{ i18n "event_eyebrow_homage" }}</p>
+        <h2>{{ .titulo }}</h2>
+        <div class="evento-kwanza__intro">
+          <p>{{ .descricao }}</p>
+        </div>
+      </header>
+
+      <div class="evento-kwanza__carousel-wrap" data-mestres-carousel>
+        <div class="evento-kwanza__carousel-header">
+          <p>{{ i18n "event_masters_gallery" }}</p>
+          <div class="evento-kwanza__carousel-nav">
+            <button
+              type="button"
+              class="evento-kwanza__carousel-btn"
+              data-carousel-prev
+              data-analytics-event="carousel_interaction"
+              data-analytics-param-carousel-name="formados_mestres"
+              data-analytics-param-carousel-action="previous"
+              aria-label="{{ i18n "event_previous_masters" }}">
+              <span aria-hidden="true">‹</span>
+            </button>
+            <button
+              type="button"
+              class="evento-kwanza__carousel-btn"
+              data-carousel-next
+              data-analytics-event="carousel_interaction"
+              data-analytics-param-carousel-name="formados_mestres"
+              data-analytics-param-carousel-action="next"
+              aria-label="{{ i18n "event_next_masters" }}">
+              <span aria-hidden="true">›</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="evento-kwanza__carousel-viewport">
+          <div class="evento-kwanza__carousel-track" data-carousel-track>
+            {{ range .itens }}
+              <article class="evento-kwanza__mentor-card">
+                <div class="evento-kwanza__mentor-image evento-kwanza__mentor-image--full">
+                  <img src="{{ .imagem }}" alt="{{ .nome }}{{ with .descricao }} - {{ . }}{{ end }}" loading="lazy" decoding="async">
+                </div>
+                <div class="evento-kwanza__mentor-copy">
+                  <h3>{{ .nome }}</h3>
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </div>
+
+        <div class="evento-kwanza__carousel-dots" data-carousel-dots></div>
+      </div>
+    </div>
+  </section>
+{{ end }}

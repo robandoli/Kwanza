@@ -33,7 +33,12 @@
       {{ i18n "hero_subtitle" | safeHTML }}
     </p>
 
-    <a href="{{ relLangURL "contatos/" }}" class="btn-primary">
+    <a
+      href="{{ relLangURL "contatos/" }}"
+      class="btn-primary"
+      data-analytics-event="click_contact_cta"
+      data-analytics-param-cta-label="hero_agendar_aula"
+      data-analytics-param-page-section="home_hero">
       {{ i18n "hero_cta" }}
     </a>
   </div>
@@ -43,6 +48,9 @@
       type="button"
       class="hero-control hero-control-prev"
       data-carousel-prev
+      data-analytics-event="carousel_interaction"
+      data-analytics-param-carousel-name="home_hero"
+      data-analytics-param-carousel-action="previous"
       aria-label="Previous slide"
       aria-controls="hero-home-carousel">
       &#10094;
@@ -51,6 +59,9 @@
       type="button"
       class="hero-control hero-control-next"
       data-carousel-next
+      data-analytics-event="carousel_interaction"
+      data-analytics-param-carousel-name="home_hero"
+      data-analytics-param-carousel-action="next"
       aria-label="Next slide"
       aria-controls="hero-home-carousel">
       &#10095;
