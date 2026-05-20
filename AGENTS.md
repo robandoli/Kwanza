@@ -47,6 +47,15 @@ hugo
 - Hugo version: **0.152.2** (enforced in Netlify config)
 
 ### Git Operations
+Before creating a commit, agents must run the project validation commands and confirm they pass:
+
+```bash
+npm test
+hugo --minify
+```
+
+For JavaScript changes, also run `node --check` on the changed scripts. For dependency changes, run `npm audit --audit-level=low`.
+
 ```bash
 # Update theme submodule
 git submodule update --init --recursive

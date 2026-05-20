@@ -36,7 +36,7 @@ programacao:
       - icone: "🏟️"
         tipo: "Gimnasio"
         nome: "Gimnasio de Deportes de Cotia"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio%20Municipal%20de%20Esportes%20de%20Cotia%20Rua%20Ouro%2C%20s%2Fn%20-%20Jardim%20Nomura%2C%20Cotia%20-%20SP%2C%2006717-092%2C%20Brazil"
         atividades:
           - horario: "08:00"
             titulo: "Secuencias de Mestre Bimba"
@@ -52,7 +52,7 @@ programacao:
       - icone: "🏟️"
         tipo: "Gimnasio"
         nome: "Gimnasio de Deportes de Cotia"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio%20Municipal%20de%20Esportes%20de%20Cotia%20Rua%20Ouro%2C%20s%2Fn%20-%20Jardim%20Nomura%2C%20Cotia%20-%20SP%2C%2006717-092%2C%20Brazil"
         atividades:
           - horario: "08:00"
             titulo: "Clase de Movimiento"
@@ -61,7 +61,7 @@ programacao:
       - icone: "🎭"
         tipo: "Teatro"
         nome: "Teatro Municipal Antônio Pio"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://maps.app.goo.gl/poKZFtBzENVSoLxf6"
         atividades:
           - horario: "18:00"
             titulo: "🔴 Ceremonia de los Mestres"
@@ -75,7 +75,7 @@ programacao:
       - icone: "🏟️"
         tipo: "Gimnasio"
         nome: "Gimnasio de Deportes de Cotia"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio%20Municipal%20de%20Esportes%20de%20Cotia%20Rua%20Ouro%2C%20s%2Fn%20-%20Jardim%20Nomura%2C%20Cotia%20-%20SP%2C%2006717-092%2C%20Brazil"
         atividades:
           - horario: "08:00"
             titulo: "Clase de Movimiento"
@@ -92,7 +92,7 @@ programacao:
       - icone: "🌳"
         tipo: "Plaza"
         nome: "Plaza Joaquim Nunes - Centro de Cotia"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://maps.app.goo.gl/cTj2UxuF4SfhKjDU8"
         atividades:
           - horario: "11:00"
             titulo: "🎉 Roda de Calle"
@@ -102,7 +102,7 @@ programacao:
       - icone: "🎭"
         tipo: "Teatro"
         nome: "Teatro Municipal Antônio Pio"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://maps.app.goo.gl/poKZFtBzENVSoLxf6"
         atividades:
           - horario: "13:00"
             titulo: "🎉 Bautizado y Graduación"

@@ -36,7 +36,7 @@ programacao:
       - icone: "🏟️"
         tipo: "Gymnasium"
         nome: "Cotia Sports Gymnasium"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio%20Municipal%20de%20Esportes%20de%20Cotia%20Rua%20Ouro%2C%20s%2Fn%20-%20Jardim%20Nomura%2C%20Cotia%20-%20SP%2C%2006717-092%2C%20Brazil"
         atividades:
           - horario: "8:00 AM"
             titulo: "Mestre Bimba Sequences"
@@ -52,7 +52,7 @@ programacao:
       - icone: "🏟️"
         tipo: "Gymnasium"
         nome: "Cotia Sports Gymnasium"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio%20Municipal%20de%20Esportes%20de%20Cotia%20Rua%20Ouro%2C%20s%2Fn%20-%20Jardim%20Nomura%2C%20Cotia%20-%20SP%2C%2006717-092%2C%20Brazil"
         atividades:
           - horario: "8:00 AM"
             titulo: "Movement Class"
@@ -61,7 +61,7 @@ programacao:
       - icone: "🎭"
         tipo: "Theater"
         nome: "Antônio Pio Municipal Theater"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://maps.app.goo.gl/poKZFtBzENVSoLxf6"
         atividades:
           - horario: "6:00 PM"
             titulo: "🔴 Masters Ceremony"
@@ -75,7 +75,7 @@ programacao:
       - icone: "🏟️"
         tipo: "Gymnasium"
         nome: "Cotia Sports Gymnasium"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://www.google.com/maps/search/?api=1&query=Gin%C3%A1sio%20Municipal%20de%20Esportes%20de%20Cotia%20Rua%20Ouro%2C%20s%2Fn%20-%20Jardim%20Nomura%2C%20Cotia%20-%20SP%2C%2006717-092%2C%20Brazil"
         atividades:
           - horario: "8:00 AM"
             titulo: "Movement Class"
@@ -92,7 +92,7 @@ programacao:
       - icone: "🌳"
         tipo: "Square"
         nome: "Joaquim Nunes Square - Downtown Cotia"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://maps.app.goo.gl/cTj2UxuF4SfhKjDU8"
         atividades:
           - horario: "11:00 AM"
             titulo: "🎉 Street Roda"
@@ -102,7 +102,7 @@ programacao:
       - icone: "🎭"
         tipo: "Theater"
         nome: "Antônio Pio Municipal Theater"
-        mapa: "https://maps.app.goo.gl/i9seRrfdPHYw3oxD9"
+        mapa: "https://maps.app.goo.gl/poKZFtBzENVSoLxf6"
         atividades:
           - horario: "1:00 PM"
             titulo: "🎉 Baptism and Graduation"
