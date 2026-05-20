@@ -10,9 +10,9 @@ graduacoes:
     imagem: "/img/graduacoes/kwz_grad_adulto.webp"
 ---
 
-Sistema de Graduação – Grupo Kwanza
+Sistema de Graduação – Identidade Kwanza
 
-O sistema de graduação do Grupo Kwanza organiza a progressão de forma clara e alinhada ao desenvolvimento técnico e formativo do praticante.
+O sistema de graduação da Identidade Kwanza organiza a progressão de forma clara e alinhada ao desenvolvimento técnico e formativo do praticante.
 
 As graduações são estruturadas por etapas, do aluno aos níveis mais avançados (Monitor, Instrutor, Professor, Contramestre e Mestre), com subdivisões em graus que permitem uma evolução gradual e consistente.
 

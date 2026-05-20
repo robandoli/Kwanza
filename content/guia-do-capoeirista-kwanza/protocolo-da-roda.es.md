@@ -6,13 +6,13 @@ weight: 2
 
 ## Formación de la Batería
  
-La formación de la batería en el Grupo Kwanza sigue esta secuencia (de derecha a izquierda): pandeiro, berimbau viola, berimbau gunga, berimbau médio, atabaque, pandeiro y agogô.
+La formación de la batería en el Identidade Kwanza sigue esta secuencia (de derecha a izquierda): pandeiro, berimbau viola, berimbau gunga, berimbau médio, atabaque, pandeiro y agogô.
 
-![Formación de la batería del Grupo Kwanza](/img/bateria_kwanza.webp)
+![Formación de la batería de Identidade Kwanza](/img/bateria_kwanza.webp)
 
 En la formación de batería de **Angola**, se incluye el reco-reco, como se muestra en la imagen:
 
-![Formación de la batería del Grupo Kwanza en Angola](/img/bateria_kwanza_angola_oficial.webp)
+![Formación de la batería de Identidade Kwanza en Angola](/img/bateria_kwanza_angola_oficial.webp)
 
 ## Toques y Palmas
 

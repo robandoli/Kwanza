@@ -11,6 +11,19 @@
 </article>
 {{ else }}
 <article class="evento-kwanza">
+  <section class="evento-kwanza__hero">
+    <div class="container">
+      <div class="evento-kwanza__hero-copy">
+        <p class="evento-kwanza__eyebrow">Programação especial</p>
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.subtitle }}
+          <p class="evento-kwanza__lead">{{ . }}</p>
+        {{ end }}
+      </div>
+
+    </div>
+  </section>
+
   {{ with .Params.formados_mestres }}
     <section class="evento-kwanza__mestres section">
       <div class="container">
@@ -42,6 +55,9 @@
                   <div class="evento-kwanza__mentor-image evento-kwanza__mentor-image--full">
                     <img src="{{ .imagem }}" alt="{{ .nome }}{{ with .descricao }} - {{ . }}{{ end }}" loading="lazy" decoding="async">
                   </div>
+                  <div class="evento-kwanza__mentor-copy">
+                    <h3>{{ .nome }}</h3>
+                  </div>
                 </article>
               {{ end }}
             </div>
@@ -52,77 +68,6 @@
       </div>
     </section>
   {{ end }}
-
-  <section class="evento-kwanza__hero">
-    <div class="container evento-kwanza__hero-grid">
-      <div class="evento-kwanza__hero-copy">
-        <p class="evento-kwanza__eyebrow">Programação especial</p>
-        <h1>{{ .Title }}</h1>
-        {{ with .Params.subtitle }}
-          <p class="evento-kwanza__lead">{{ . }}</p>
-        {{ end }}
-
-        {{ with .Params.hero_etiquetas }}
-          <div class="evento-kwanza__tags" aria-label="Informações principais do evento">
-            {{ range . }}
-              <span>{{ . }}</span>
-            {{ end }}
-          </div>
-        {{ end }}
-
-        <div class="evento-kwanza__summary">
-          <div>
-            <h2>Evento oficial do Grupo Kwanza</h2>
-            <p>{{ .Params.resumo.contexto }}</p>
-          </div>
-          <dl class="evento-kwanza__summary-list">
-            <div>
-              <dt>Cidade</dt>
-              <dd>{{ .Params.resumo.cidade }}</dd>
-            </div>
-            <div>
-              <dt>Locais</dt>
-              <dd>{{ .Params.resumo.locais }}</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-
-      <aside class="evento-kwanza__poster" aria-label="Destaques do evento">
-        {{ with .Params.destaques }}
-          <div class="evento-kwanza__pills">
-            {{ range . }}
-              <div class="evento-kwanza__pill evento-kwanza__pill--{{ .variante }}">
-                <span class="evento-kwanza__pill-day">{{ .dia }}</span>
-                <div class="evento-kwanza__pill-copy">
-                  <strong>{{ .titulo }}</strong>
-                  <span>{{ .horario }}</span>
-                  <small>{{ .mes }}</small>
-                </div>
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-
-        <div class="evento-kwanza__seal">
-          <div class="evento-kwanza__seal-ring">
-            <span>Consagração</span>
-            <span>Batizado</span>
-            <span>Formação</span>
-          </div>
-          <div class="evento-kwanza__seal-core">
-            <span>Capoeira Kwanza</span>
-          </div>
-        </div>
-
-        <div class="evento-kwanza__venue-card">
-          <p>Palco principal</p>
-          <strong>Teatro Municipal Antônio Pio</strong>
-          <span>Cotia - São Paulo</span>
-        </div>
-      </aside>
-    </div>
-  </section>
 
   <section class="evento-kwanza__programa section">
     <div class="container">
@@ -144,7 +89,10 @@
                 <div class="evento-kwanza__location-card">
                   <div class="evento-kwanza__location-head">
                     <p>{{ .icone }} {{ .tipo }}</p>
-                    <a href="{{ .mapa }}" target="_blank" rel="noopener noreferrer">Mapa</a>
+                    <a href="{{ .mapa }}" target="_blank" rel="noopener noreferrer" aria-label="Ver {{ .nome }} no mapa">
+                      <span aria-hidden="true">📍</span>
+                      Ver no mapa
+                    </a>
                   </div>
                   <h4>{{ .nome }}</h4>
 
@@ -157,7 +105,7 @@
                             <figure class="evento-kwanza__activity-poster">
                               <button
                                 type="button"
-                                class="evento-kwanza__activity-poster-button"
+                                class="evento-kwanza__activity-poster-button{{ if eq .imagem_formato "paisagem" }} is-landscape{{ end }}"
                                 data-lightbox-open
                                 data-lightbox-src="{{ .imagem }}"
                                 data-lightbox-alt="{{ $tituloAtividade }}">
@@ -190,7 +138,16 @@
     <div class="container evento-kwanza__info-grid">
       <div class="evento-kwanza__info-card">
         <span>💰 Investimento</span>
-        <strong>{{ .Params.informacoes_finais.investimento }}</strong>
+        {{ with .Params.informacoes_finais.investimentos }}
+          <div class="evento-kwanza__investment-list">
+            {{ range . }}
+              <p>
+                <strong>{{ .valor }}</strong>
+                <small>{{ .descricao }}</small>
+              </p>
+            {{ end }}
+          </div>
+        {{ end }}
       </div>
       <div class="evento-kwanza__info-card">
         <span>📞 Contato</span>
@@ -203,15 +160,23 @@
     </div>
 
     <div class="container evento-kwanza__cta-wrap">
-      <a class="evento-kwanza__cta" href="{{ relLangURL .Params.informacoes_finais.calendario_link }}">Ver também no calendário geral</a>
+      <a class="evento-kwanza__cta" href="{{ .Params.informacoes_finais.contato_link }}" target="_blank" rel="noopener noreferrer">Garantir minha vaga</a>
     </div>
   </section>
 
 </article>
+<a
+  class="evento-kwanza__floating-whatsapp"
+  href="{{ .Params.informacoes_finais.contato_link }}"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Garantir minha vaga pelo WhatsApp">
+  <span>Garantir minha vaga</span>
+</a>
 <dialog class="evento-kwanza__lightbox" data-lightbox>
   <button type="button" class="evento-kwanza__lightbox-close" data-lightbox-close aria-label="Fechar imagem ampliada">&times;</button>
   <img src="" alt="" data-lightbox-image>
 </dialog>
-<script src="/js/internacional-capoeira-kwanza.js" defer></script>
+<script src="/js/internacional-capoeira-kwanza.js?v=20260520-2" defer></script>
 {{ end }}
 {{ end }}

@@ -39,4 +39,4 @@ eventos_lista: |
 
 ---
 
-Follow our schedule and join Grupo Kwanza events! Everyone is welcome!
+Follow our schedule and join Identidade Kwanza events! Everyone is welcome!

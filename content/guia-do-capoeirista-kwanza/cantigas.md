@@ -1,6 +1,6 @@
 ---
 title: "Músicas"
-description: "Músicas tradicionais da capoeira praticadas no Grupo Kwanza"
+description: "Músicas tradicionais da capoeira praticadas na Identidade Kwanza"
 weight: 3
 ---
 

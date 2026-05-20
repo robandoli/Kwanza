@@ -1,11 +1,11 @@
 baseURL = "https://grupokwanza.com.br/"
-title = "Grupo Kwanza"
+title = "Identidade Kwanza"
 
 defaultContentLanguage = "pt"
 defaultContentLanguageInSubdir = false
 
 enableRobotsTXT = true
-canonifyURLs = true
+canonifyURLs = false
 relativeURLs = false
 
 theme = "beautifulhugo"
@@ -21,28 +21,28 @@ theme = "beautifulhugo"
     languageCode = "pt-BR"
     languageName = "Português"
     weight = 1
-    title = "Grupo Kwanza"
+    title = "Identidade Kwanza"
 
     [languages.pt.params]
-      description = "Capoeira, cultura e formação através do Grupo Kwanza."
+      description = "Capoeira, cultura e formação através da Identidade Kwanza."
 
   [languages.es]
     languageCode = "es"
     languageName = "Español"
     weight = 2
-    title = "Grupo Kwanza"
+    title = "Identidade Kwanza"
 
     [languages.es.params]
-      description = "Capoeira, cultura y formación a través del Grupo Kwanza."
+      description = "Capoeira, cultura y formación a través de Identidad Kwanza."
 
   [languages.en]
     languageCode = "en"
     languageName = "English"
     weight = 3
-    title = "Grupo Kwanza"
+    title = "Identidade Kwanza"
 
     [languages.en.params]
-      description = "Capoeira, culture, and education through Grupo Kwanza."
+      description = "Capoeira, culture, and education through Identidade Kwanza."
 
 # Menu Português
 [languages.pt.menu]

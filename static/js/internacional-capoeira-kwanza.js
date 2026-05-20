@@ -33,14 +33,35 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!track || cards.length === 0) return;
 
+  const autoplayDelay = 3000;
+  let autoplayTimer = null;
+
   const getCardsPerView = () => {
     if (window.innerWidth <= 680) return 1;
     if (window.innerWidth <= 980) return 2;
-    return 3;
+    if (window.innerWidth <= 1200) return 3;
+    return 4;
   };
 
   let currentPage = 0;
   let pages = 1;
+
+  const stopAutoplay = () => {
+    if (!autoplayTimer) return;
+    window.clearTimeout(autoplayTimer);
+    autoplayTimer = null;
+  };
+
+  const startAutoplay = () => {
+    stopAutoplay();
+    if (pages <= 1) return;
+
+    autoplayTimer = window.setTimeout(() => {
+      currentPage = currentPage >= pages - 1 ? 0 : currentPage + 1;
+      update();
+      startAutoplay();
+    }, autoplayDelay);
+  };
 
   const buildDots = () => {
     if (!dotsContainer) return;
@@ -54,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.addEventListener("click", () => {
         currentPage = index;
         update();
+        startAutoplay();
       });
       dotsContainer.appendChild(dot);
     });
@@ -91,13 +113,23 @@ document.addEventListener("DOMContentLoaded", () => {
   prevButton?.addEventListener("click", () => {
     currentPage = Math.max(0, currentPage - 1);
     update();
+    startAutoplay();
   });
 
   nextButton?.addEventListener("click", () => {
     currentPage = Math.min(pages - 1, currentPage + 1);
     update();
+    startAutoplay();
   });
 
-  window.addEventListener("resize", update);
+  carousel.addEventListener("focusin", stopAutoplay);
+  carousel.addEventListener("focusout", startAutoplay);
+
+  window.addEventListener("resize", () => {
+    update();
+    startAutoplay();
+  });
+
   update();
+  startAutoplay();
 });

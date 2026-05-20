@@ -30,12 +30,12 @@ eventos_lista: |
   ### Novembro de 2026
   #### Internacional Capoeira Kwanza
 
-  Evento oficial do Grupo Kwanza, dedicado à formação, consagração e celebração da capoeira, com programação distribuída em três dias, na cidade de Cotia – SP.
+  Evento oficial da Identidade Kwanza, dedicado à formação, consagração e celebração da capoeira, com programação distribuída em três dias, na cidade de Cotia – SP.
 
   **Cidade e locais gerais:** Cotia - SP  
   Ginásio de Esportes Cotia, Teatro Municipal Antônio Pio e Praça Joaquim Nunes.
 
-  **Contexto:** programação oficial do Grupo Kwanza com vivências, aulas, roda de rua, cerimônia e batizado.
+  **Contexto:** programação oficial da Identidade Kwanza com vivências, aulas, roda de rua, cerimônia e batizado.
 
   #### 05 de Novembro
 
@@ -60,7 +60,7 @@ eventos_lista: |
   Teatro Municipal Antônio Pio ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
 
   18:00 — 🔴 Cerimônia dos Mestres  
-  Grupo Kwanza
+  Identidade Kwanza
 
   Traje: social ou esporte fino, compatível com a formalidade da cerimônia.
 
@@ -82,7 +82,7 @@ eventos_lista: |
   Praça Joaquim Nunes – Centro de Cotia ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
 
   11:00 — 🎉 Roda de Rua  
-  Grupo Kwanza
+  Identidade Kwanza
 
   🎭 **Teatro**  
   Teatro Municipal Antônio Pio ([Mapa](https://maps.app.goo.gl/i9seRrfdPHYw3oxD9))
@@ -104,4 +104,4 @@ eventos_lista: |
 
 ---
 
-Acompanhe nossa agenda e participe dos eventos do Grupo Kwanza. Todos são bem-vindos!
+Acompanhe nossa agenda e participe dos eventos da Identidade Kwanza. Todos são bem-vindos!

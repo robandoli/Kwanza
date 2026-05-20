@@ -12,12 +12,17 @@
   display: grid;
   grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr) auto;
   gap: 32px;
-  align-items: start;
+  align-items: center;
+}
+
+.footer-brand p {
+  margin: 0;
 }
 
 .footer-links,
 .footer-social {
   display: flex;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
 }
@@ -27,10 +32,16 @@
   align-content: center;
 }
 
-.footer-social { justify-content: flex-end; }
+.footer-social {
+  justify-content: flex-end;
+  line-height: 1;
+}
 
 .footer-links a,
 .footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: var(--white-soft);
   text-decoration: none;
   transition: color 0.3s ease;

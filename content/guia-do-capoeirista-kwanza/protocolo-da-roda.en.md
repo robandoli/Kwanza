@@ -6,13 +6,13 @@ weight: 2
 
 ## Bateria Formation
  
-The bateria formation in Grupo Kwanza follows this sequence (from right to left): pandeiro, viola berimbau, gunga berimbau, médio berimbau, atabaque, pandeiro, and agogô.
+The bateria formation in Identidade Kwanza follows this sequence (from right to left): pandeiro, viola berimbau, gunga berimbau, médio berimbau, atabaque, pandeiro, and agogô.
 
-![Grupo Kwanza bateria formation](/img/bateria_kwanza.webp)
+![Identidade Kwanza bateria formation](/img/bateria_kwanza.webp)
 
 In the **Angola** bateria formation, the reco-reco is included, as shown in the image:
 
-![Grupo Kwanza bateria formation in Angola style](/img/bateria_kwanza_angola_oficial.webp)
+![Identidade Kwanza bateria formation in Angola style](/img/bateria_kwanza_angola_oficial.webp)
 
 ## Rhythms and Clapping Patterns
 

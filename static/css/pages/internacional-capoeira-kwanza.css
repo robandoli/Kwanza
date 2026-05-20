@@ -43,6 +43,11 @@
   align-items: center;
 }
 
+.evento-kwanza__hero > .container {
+  display: grid;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
 .evento-kwanza__eyebrow {
   margin: 0 0 0.75rem;
   font-family: 'Bebas Neue', sans-serif;
@@ -53,7 +58,7 @@
 }
 
 .evento-kwanza__hero-copy h1 {
-  max-width: 11ch;
+  max-width: 14ch;
   margin-bottom: 1rem;
 }
 
@@ -67,7 +72,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin: 1.5rem 0;
+  margin: 0 0 1rem;
 }
 
 .evento-kwanza__tags span {
@@ -81,10 +86,16 @@
 
 .evento-kwanza__summary {
   padding: 1.25rem;
-  border-radius: 24px;
+  border-radius: 8px;
   background: rgba(14, 14, 14, 0.42);
   border: 1px solid rgba(247, 244, 239, 0.08);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+}
+
+.evento-kwanza__hero-panel {
+  display: grid;
+  gap: 1rem;
+  max-width: 960px;
 }
 
 .evento-kwanza__summary h2 {
@@ -115,6 +126,53 @@
   margin: 0;
   font-size: 1rem;
   color: var(--white-soft);
+}
+
+.evento-kwanza__highlights {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.evento-kwanza__highlight {
+  display: grid;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: center;
+  min-height: 92px;
+  padding: 0.9rem 1rem;
+  border-radius: 8px;
+  color: #fff8ef;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.2);
+}
+
+.evento-kwanza__highlight--laranja {
+  background: linear-gradient(135deg, #f4a533, #ea6b18);
+}
+
+.evento-kwanza__highlight--vermelho {
+  background: linear-gradient(135deg, #ff7d48, #d9332c);
+}
+
+.evento-kwanza__highlight-day {
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.evento-kwanza__highlight strong,
+.evento-kwanza__highlight span {
+  display: block;
+}
+
+.evento-kwanza__highlight strong {
+  font-size: 1rem;
+}
+
+.evento-kwanza__highlight span {
+  margin-top: 0.2rem;
+  color: rgba(255, 248, 239, 0.92);
 }
 
 .evento-kwanza__poster {
@@ -260,6 +318,35 @@
   margin-bottom: 1.5rem;
 }
 
+.evento-kwanza__mestres {
+  background: linear-gradient(180deg, #f3e5c8 0%, #e9d1a5 100%);
+  color: #25140f;
+}
+
+.evento-kwanza__mestres .evento-kwanza__eyebrow {
+  color: #9a3a18;
+}
+
+.evento-kwanza__mestres .evento-kwanza__section-header h2,
+.evento-kwanza__mestres .evento-kwanza__intro p,
+.evento-kwanza__mestres .evento-kwanza__carousel-header p {
+  color: #25140f;
+}
+
+.evento-kwanza__mestres .evento-kwanza__carousel-btn {
+  background: rgba(37, 20, 15, 0.08);
+  border-color: rgba(37, 20, 15, 0.18);
+  color: #25140f;
+}
+
+.evento-kwanza__mestres .evento-kwanza__carousel-btn:hover:not(:disabled) {
+  background: rgba(37, 20, 15, 0.14);
+}
+
+.evento-kwanza__mestres .evento-kwanza__carousel-dot {
+  background: rgba(37, 20, 15, 0.28);
+}
+
 .evento-kwanza__intro p {
   max-width: 70ch;
   color: rgba(247, 244, 239, 0.88);
@@ -291,9 +378,13 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+  align-items: stretch;
 }
 
 .evento-kwanza__location-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 1rem;
   border-radius: 22px;
   background: linear-gradient(180deg, rgba(247, 244, 239, 0.06), rgba(247, 244, 239, 0.03));
@@ -315,17 +406,42 @@
   color: #ffd08c;
 }
 
-.evento-kwanza__location-head a,
 .evento-kwanza__info-card a,
 .evento-kwanza__cta {
   color: var(--white-soft);
   text-decoration: none;
 }
 
-.evento-kwanza__location-head a:hover,
 .evento-kwanza__info-card a:hover,
 .evento-kwanza__cta:hover {
   text-decoration: underline;
+}
+
+.evento-kwanza__location-head a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.22rem;
+  flex: 0 0 auto;
+  min-height: 21px;
+  padding: 0.27rem 0.44rem;
+  border-radius: 999px;
+  color: #1b0f0b;
+  font-size: 0.68rem;
+  font-weight: 800;
+  line-height: 1;
+  text-decoration: none;
+  background: linear-gradient(135deg, #ffd08c, #f7931e);
+  box-shadow: 0 10px 20px rgba(247, 147, 30, 0.2);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), filter var(--transition-fast);
+}
+
+.evento-kwanza__location-head a:hover,
+.evento-kwanza__location-head a:focus-visible {
+  text-decoration: none;
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  box-shadow: 0 14px 26px rgba(247, 147, 30, 0.28);
 }
 
 .evento-kwanza__location-card h4 {
@@ -338,6 +454,8 @@
 .evento-kwanza__activities {
   display: grid;
   gap: 0.9rem;
+  flex: 1;
+  align-content: start;
 }
 
 .evento-kwanza__activity {
@@ -363,7 +481,7 @@
 
 .evento-kwanza__activity-body.has-image {
   display: grid;
-  grid-template-columns: 66px minmax(0, 1fr);
+  grid-template-columns: 131px minmax(0, 1fr);
   gap: 0.85rem;
   align-items: start;
 }
@@ -404,7 +522,7 @@
   border: 1px solid rgba(247, 244, 239, 0.08);
   background: rgba(247, 244, 239, 0.04);
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18);
-  width: 66px;
+  width: 131px;
 }
 
 .evento-kwanza__activity-poster-button {
@@ -421,6 +539,10 @@
   aspect-ratio: 3 / 4;
   object-fit: cover;
   display: block;
+}
+
+.evento-kwanza__activity-poster-button.is-landscape img {
+  aspect-ratio: 4 / 3;
 }
 
 .evento-kwanza__lightbox {
@@ -488,6 +610,22 @@
   color: var(--white-soft);
 }
 
+.evento-kwanza__investment-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.evento-kwanza__investment-list p {
+  display: grid;
+  gap: 0.1rem;
+  margin: 0;
+}
+
+.evento-kwanza__investment-list small {
+  color: rgba(247, 244, 239, 0.72);
+  font-size: 0.9rem;
+}
+
 .evento-kwanza__cta-wrap {
   padding-top: 1rem;
 }
@@ -497,11 +635,37 @@
   align-items: center;
   justify-content: center;
   min-height: 46px;
-  padding: 0.75rem 1.15rem;
+  padding: 0.85rem 1.4rem;
   border-radius: 999px;
   background: linear-gradient(135deg, #f4a533, #e85d1f);
   color: #1a0d08;
   font-weight: 700;
+  box-shadow: 0 14px 30px rgba(232, 93, 31, 0.26);
+}
+
+.evento-kwanza__floating-whatsapp {
+  position: fixed;
+  right: clamp(1rem, 2vw, 1.5rem);
+  bottom: clamp(1rem, 2vw, 1.5rem);
+  z-index: 40;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0.85rem 1.15rem;
+  border-radius: 999px;
+  background: #25d366;
+  color: #062d16;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.evento-kwanza__floating-whatsapp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.38);
+  text-decoration: none;
 }
 
 .evento-kwanza__carousel-wrap {
@@ -558,7 +722,7 @@
 .evento-kwanza__carousel-track {
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% - 2rem) / 3);
+  grid-auto-columns: calc((100% - 3rem) / 4);
   gap: 1rem;
   transition: transform var(--transition-base);
   will-change: transform;
@@ -566,10 +730,10 @@
 
 .evento-kwanza__mentor-card {
   overflow: hidden;
-  border-radius: 24px;
-  background: linear-gradient(180deg, rgba(247, 244, 239, 0.08), rgba(247, 244, 239, 0.03));
-  border: 1px solid rgba(247, 244, 239, 0.08);
-  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.22);
+  border-radius: 8px;
+  background: rgba(255, 248, 238, 0.82);
+  border: 1px solid rgba(37, 20, 15, 0.12);
+  box-shadow: 0 14px 30px rgba(37, 20, 15, 0.16);
 }
 
 .evento-kwanza__mentor-image {
@@ -578,7 +742,7 @@
 }
 
 .evento-kwanza__mentor-image--full {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
 }
 
 .evento-kwanza__mentor-image img {
@@ -586,6 +750,18 @@
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+.evento-kwanza__mentor-copy {
+  padding: 0.8rem 0.9rem 0.95rem;
+  text-align: center;
+}
+
+.evento-kwanza__mentor-copy h3 {
+  margin: 0;
+  color: #25140f;
+  font-size: 1rem;
+  line-height: 1.2;
 }
 
 .evento-kwanza__carousel-dots {
@@ -610,6 +786,12 @@
   background: linear-gradient(135deg, #f4a533, #e85d1f);
 }
 
+@media (max-width: 1200px) {
+  .evento-kwanza__carousel-track {
+    grid-auto-columns: calc((100% - 2rem) / 3);
+  }
+}
+
 @media (max-width: 960px) {
   .evento-kwanza__hero-grid,
   .evento-kwanza__info-grid {
@@ -621,6 +803,10 @@
   }
 
   .evento-kwanza__summary-list {
+    grid-template-columns: 1fr;
+  }
+
+  .evento-kwanza__highlights {
     grid-template-columns: 1fr;
   }
 
@@ -654,11 +840,19 @@
   }
 
   .evento-kwanza__activity-body.has-image {
-    grid-template-columns: 46px minmax(0, 1fr);
+    grid-template-columns: 91px minmax(0, 1fr);
   }
 
   .evento-kwanza__activity-poster {
-    width: 46px;
+    width: 91px;
+  }
+
+  .evento-kwanza__floating-whatsapp {
+    right: 1rem;
+    bottom: 1rem;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    font-size: 0.92rem;
   }
 
   .evento-kwanza__time {

@@ -29,7 +29,7 @@
 
 <meta name="description"
       content="{{ $pageDescription }}">
-<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}Grupo Kwanza{{ end }}">
+<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}Identidade Kwanza{{ end }}">
 <meta name="robots" content="{{ if .Params.noindex }}noindex,nofollow{{ else }}index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1{{ end }}">
 
 <link rel="canonical" href="{{ .Permalink }}">
@@ -108,7 +108,7 @@
     "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
     "mainEntityOfPage" .Permalink
     "inLanguage" .Language.LanguageCode
-    "author" (dict "@type" "Person" "name" (default "Grupo Kwanza" .Params.author))
+    "author" (dict "@type" "Person" "name" (default "Identidade Kwanza" .Params.author))
     "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" $pageImage))
     "image" (slice $pageImage)
   }}

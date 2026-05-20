@@ -1,10 +1,10 @@
 ---
 title: "Kwanza Identity"
-description: "Lineage, hierarchy, and the people who build Grupo Kwanza."
+description: "Lineage, hierarchy, and the people who build Identidade Kwanza."
 
 historia_grupo: |
 
-  **Grupo Kwanza** was born from a trajectory built over decades of experience
+  **Identidade Kwanza** was born from a trajectory built over decades of experience
   in capoeira, marked by a commitment to its **cultural, educational, and
   human** foundations.
 
@@ -19,11 +19,11 @@ historia_grupo: |
   build a space where knowledge, musicality, and formative work would be
   valued integrally.
 
-  Since then, Grupo Kwanza acts as a space for **continuous formation**, preserving
+  Since then, Identidade Kwanza acts as a space for **continuous formation**, preserving
   respect for ancestry and the social role of capoeira.
 
 historia_mestre: |
-  **Grupo Kwanza** is led by Paulo Ricardo de Souza, **Mestre Jaguara**,
+  **Identidade Kwanza** is led by Paulo Ricardo de Souza, **Mestre Jaguara**,
   a capoeira master with over five decades of dedication to the art.
   His first contact with capoeira occurred in 1975, in Olinda–PE, when
   the strength of the game and musicality awakened a path marked by
@@ -54,7 +54,7 @@ historia_mestre: |
   Want to learn more? Watch this documentary: https://youtu.be/Is4wsZuUzCQ?si=7GaDNNc5xcFdz0aF
 
 valores: |
-  **Grupo Kwanza** bases its work on principles that guide not only the practice of capoeira, but the human and social formation of its members.
+  **Identidade Kwanza** bases its work on principles that guide not only the practice of capoeira, but the human and social formation of its members.
 
   Capoeira is understood as a **way of living**, crossing the body, culture, and daily life. More than a game, it is a space of continuous learning, discipline, coexistence, and responsibility.
 

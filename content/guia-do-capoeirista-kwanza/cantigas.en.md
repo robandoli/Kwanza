@@ -1,6 +1,6 @@
 ---
 title: "Cantigas"
-description: "Traditional capoeira songs practiced in Grupo Kwanza"
+description: "Traditional capoeira songs practiced in Identidade Kwanza"
 weight: 3
 ---
 

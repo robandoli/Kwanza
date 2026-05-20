@@ -1,6 +1,6 @@
-# Grupo Kwanza Website
+# Identidade Kwanza Website
 
-Static multilingual Hugo site for Grupo Kwanza (`pt`, `en`, `es`), deployed on Netlify.
+Static multilingual Hugo site for Identidade Kwanza (`pt`, `en`, `es`), deployed on Netlify.
 
 ## Stack
 - Hugo `0.152.2`
@@ -52,4 +52,3 @@ Current coverage:
 - Scripts: `static/js/`
 - i18n: `i18n/`
 - Theme submodule: `themes/beautifulhugo/`
-

@@ -1,10 +1,10 @@
 ---
 title: "Identidade Kwanza"
-description: "Linhagem, hierarquia e pessoas que constroem o Grupo Kwanza."
+description: "Linhagem, hierarquia e pessoas que constroem a Identidade Kwanza."
 
 historia_grupo: |
 
-  O Grupo Kwanza nasce de uma trajetória construída ao longo de décadas de vivência na capoeira, marcada pelo compromisso com seus fundamentos culturais, educativos e humanos.
+  O Identidade Kwanza nasce de uma trajetória construída ao longo de décadas de vivência na capoeira, marcada pelo compromisso com seus fundamentos culturais, educativos e humanos.
 
   Sua linhagem se desenvolve a partir do convívio e aprendizado junto a grandes grupos e importantes mestres da capoeira brasileira, em um percurso que sempre valorizou a tradição, a hierarquia e a responsabilidade na formação de pessoas. Nesse caminho, a capoeira foi compreendida não apenas como prática corporal, mas como expressão cultural e filosofia de vida.
 
@@ -20,10 +20,10 @@ historia_grupo: |
   ### Fundação e Legado
   O grupo foi oficialmente fundado em 06 de abril de 2014, como resultado de um processo de amadurecimento e autonomia. Sua criação representou a necessidade de construir um espaço onde o conhecimento, a musicalidade e o trabalho formativo fossem valorizados de forma íntegra.
 
-  Desde então, o Grupo Kwanza atua como um espaço de formação contínua, preservando o respeito à ancestralidade e ao papel social da capoeira, sempre honrando a "primeira colheita" de cada aprendizado.
+  Desde então, a Identidade Kwanza atua como um espaço de formação contínua, preservando o respeito à ancestralidade e ao papel social da capoeira, sempre honrando a "primeira colheita" de cada aprendizado.
 
 historia_mestre: |
-  O **Grupo Kwanza** é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**,
+  O **Identidade Kwanza** é conduzido por Paulo Ricardo de Souza, o **Mestre Jaguara**,
   mestre de capoeira com mais de cinco décadas de dedicação à arte.
   Seu primeiro contato com a capoeira ocorreu em 1975, em Olinda–PE, quando
   a força do jogo e a musicalidade despertaram um caminho marcado pela
@@ -54,7 +54,7 @@ historia_mestre: |
   Quer saber mais? Veja este documentário: https://youtu.be/Is4wsZuUzCQ?si=7GaDNNc5xcFdz0aF
 
 valores: |
-  O **Grupo Kwanza** fundamenta sua atuação em princípios que orientam não apenas a prática da capoeira, mas a formação humana e social de seus integrantes.
+  O **Identidade Kwanza** fundamenta sua atuação em princípios que orientam não apenas a prática da capoeira, mas a formação humana e social de seus integrantes.
 
   A capoeira é compreendida como **modo de viver**, atravessando o corpo, a cultura e a vida cotidiana. Mais do que um jogo, é um espaço de aprendizado contínuo, disciplina, convivência e responsabilidade.
 

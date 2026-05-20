@@ -1,10 +1,10 @@
 ---
 title: "Identidad Kwanza"
-description: "Linaje, jerarquía y personas que construyen el Grupo Kwanza."
+description: "Linaje, jerarquía y personas que construyen el Identidade Kwanza."
 
 historia_grupo: |
 
-  El **Grupo Kwanza** nace de una trayectoria construida a lo largo de décadas de vivencia
+  El **Identidade Kwanza** nace de una trayectoria construida a lo largo de décadas de vivencia
   en la capoeira, marcada por el compromiso con sus fundamentos **culturales, educativos y
   humanos**.
 
@@ -19,11 +19,11 @@ historia_grupo: |
   construir un espacio donde el conocimiento, la musicalidad y el trabajo formativo fueran
   valorados de forma íntegra.
 
-  Desde entonces, el Grupo Kwanza actúa como un espacio de **formación continua**, preservando el
+  Desde entonces, el Identidade Kwanza actúa como un espacio de **formación continua**, preservando el
   respeto a la ancestralidad y al papel social de la capoeira.
 
 historia_mestre: |
-  El **Grupo Kwanza** es conducido por Paulo Ricardo de Souza, el **Mestre Jaguara**,
+  El **Identidade Kwanza** es conducido por Paulo Ricardo de Souza, el **Mestre Jaguara**,
   maestro de capoeira con más de cinco décadas de dedicación al arte.
   Su primer contacto con la capoeira ocurrió en 1975, en Olinda–PE, cuando
   la fuerza del juego y la musicalidad despertaron un camino marcado por la
@@ -54,7 +54,7 @@ historia_mestre: |
   ¿Quiere saber más? Vea este documental: https://youtu.be/Is4wsZuUzCQ?si=7GaDNNc5xcFdz0aF
 
 valores: |
-  El **Grupo Kwanza** fundamenta su actuación en principios que orientan no apenas la práctica de la capoeira, sino la formación humana y social de sus integrantes.
+  El **Identidade Kwanza** fundamenta su actuación en principios que orientan no apenas la práctica de la capoeira, sino la formación humana y social de sus integrantes.
 
   La capoeira es comprendida como **modo de vivir**, atravesando el cuerpo, la cultura y la vida cotidiana. Más que un juego, es un espacio de aprendizaje continuo, disciplina, convivencia y responsabilidad.
 

@@ -39,4 +39,4 @@ eventos_lista: |
 
 ---
 
-Siga nuestra agenda y participe en los eventos del Grupo Kwanza. ¡Todos son bienvenidos!
+Siga nuestra agenda y participe en los eventos de Identidade Kwanza. ¡Todos son bienvenidos!
