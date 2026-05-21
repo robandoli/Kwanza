@@ -123,13 +123,13 @@ other = "Special program"
 other = "Honors"
 
 [event_masters_gallery]
-other = "Gallery of new masters"
+other = "Gallery of masters, contramestres, teachers, and monitors"
 
 [event_previous_masters]
-other = "Previous masters"
+other = "Previous honorees"
 
 [event_next_masters]
-other = "Next masters"
+other = "Next honorees"
 
 [event_eyebrow_schedule]
 other = "Schedule"

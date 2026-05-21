@@ -28,7 +28,7 @@ destaques:
 resumo:
   cidade: "Cotia - SP"
   locais: "Ginásio de Esportes Cotia, Teatro Municipal Antônio Pio e Praça Joaquim Nunes"
-  contexto: "Programação oficial da Identidade Kwanza com vivências, aulas, roda de rua, cerimônia dos mestres e batizado."
+  contexto: "Programação oficial da Identidade Kwanza com vivências, aulas, roda de rua, cerimônia de formação e reconhecimento, e batizado."
 
 programacao:
   - data: "05 de Novembro"
@@ -64,7 +64,7 @@ programacao:
         mapa: "https://maps.app.goo.gl/poKZFtBzENVSoLxf6"
         atividades:
           - horario: "18:00"
-            titulo: "🔴 Cerimônia dos Mestres"
+            titulo: "🔴 Cerimônia de Formação e Reconhecimento"
             responsavel: "Identidade Kwanza"
             imagem: "/img/eventos/internacional-2026/teatro-municipal-antonio-pio.jpg"
             imagem_formato: "paisagem"
@@ -122,8 +122,8 @@ informacoes_finais:
   calendario_link: "/calendario-kwanza"
 
 formados_mestres:
-  titulo: "Formados a Mestre"
-  descricao: "Homenagem aos mestres prestigiados nesta edição do evento."
+  titulo: "Formados"
+  descricao: "Homenagem aos mestres, contramestres, professores e monitores prestigiados nesta edição do evento."
   itens:
     - nome: "Mestre Camaleão"
       imagem: "/img/eventos/internacional-2026/camaleao.png"
@@ -152,6 +152,33 @@ formados_mestres:
     - nome: "Mestre Tabaqueiro"
       imagem: "/img/eventos/internacional-2026/tabaqueiro.png"
       descricao: "Arte individual de Mestre Tabaqueiro para o evento."
+    - nome: "Contramestre Baraúna"
+      imagem: "/img/eventos/internacional-2026/barauna.png"
+      descricao: "Arte individual de Contramestre Baraúna para o evento."
+    - nome: "Contramestre Bingó"
+      imagem: "/img/eventos/internacional-2026/bingo.png"
+      descricao: "Arte individual de Contramestre Bingó para o evento."
+    - nome: "Contramestre Casca Grossa"
+      imagem: "/img/eventos/internacional-2026/casca_grossa.png"
+      descricao: "Arte individual de Contramestre Casca Grossa para o evento."
+    - nome: "Contramestre Ceará"
+      imagem: "/img/eventos/internacional-2026/ceara.png"
+      descricao: "Arte individual de Contramestre Ceará para o evento."
+    - nome: "Contramestra Kataryna"
+      imagem: "/img/eventos/internacional-2026/kataryna.png"
+      descricao: "Arte individual de Contramestra Kataryna para o evento."
+    - nome: "Professor Araúna"
+      imagem: "/img/eventos/internacional-2026/arauna.png"
+      descricao: "Arte individual de Professor Araúna para o evento."
+    - nome: "Professor Baqueta"
+      imagem: "/img/eventos/internacional-2026/baqueta.png"
+      descricao: "Arte individual de Professor Baqueta para o evento."
+    - nome: "Professor Manhoso"
+      imagem: "/img/eventos/internacional-2026/manhoso.png"
+      descricao: "Arte individual de Professor Manhoso para o evento."
+    - nome: "Monitora Raio de Sol"
+      imagem: "/img/eventos/internacional-2026/raio_sol.png"
+      descricao: "Arte individual de Monitora Raio de Sol para o evento."
 ---
 
 O Internacional Capoeira Kwanza reúne encontros formativos, cerimônias e momentos de celebração da capoeira em uma programação pensada para acolher participantes, convidados e público geral.

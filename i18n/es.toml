@@ -123,13 +123,13 @@ other = "Programación especial"
 other = "Homenaje"
 
 [event_masters_gallery]
-other = "Galería de los formados como mestre"
+other = "Galería de mestres, contramestres, profesores y monitores"
 
 [event_previous_masters]
-other = "Formados anteriores"
+other = "Homenajeados anteriores"
 
 [event_next_masters]
-other = "Próximos formados"
+other = "Próximos homenajeados"
 
 [event_eyebrow_schedule]
 other = "Cronograma"
