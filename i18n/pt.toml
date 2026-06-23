@@ -40,6 +40,28 @@ other = "No Kwanza, a capoeira é ensinada e vivida com seriedade. O treino fís
  [home_about_p2_2]
 other = "Valorizamos a escuta, o tempo de cada aluno e a construção contínua do conhecimento — sem pressa, sem atalhos."
 
+# HOME - Locations / SEO
+[home_locations_title]
+other = "Aulas de capoeira perto de você"
+
+[home_locations_p1]
+other = "A Identidade Kwanza reúne núcleos para quem procura escola de capoeira perto de mim, aulas de capoeira em Cotia, aulas de capoeira em Osasco e aulas de capoeira em Nova Vida - Cotia, com orientação de professores e mestres ligados à tradição do grupo."
+
+[home_locations_item_1]
+other = "Na região de São Paulo, temos capoeira infantil na Granja Viana e Cotia, atividade física e cultural para crianças em Cotia, atividade física e cultural para crianças em Osasco, roda de capoeira e Roda de Rua em Cotia."
+
+[home_locations_item_2]
+other = "No Brasil, o Kwanza também está presente para quem busca aulas de capoeira em Pernambuco, aulas de capoeira em Bahia, aulas de capoeira em São Sebastião do Paraíso, aulas de capoeira em Juazeiro e aulas de capoeira em Frutal."
+
+[home_locations_item_3]
+other = "Na América Latina, o grupo mantém referências para quem procura aulas de capoeira no Chile e aulas de capoeira no México."
+
+[home_locations_item_4]
+other = "Além dos treinos, a vivência cultural inclui Maculelê, Samba de Roda, música, instrumentos, canto, fundamentos e convivência em grupo."
+
+[home_locations_p2]
+other = "Cada núcleo tem sua própria agenda de aulas, rodas e encontros. Consulte a página de contatos para falar com o responsável mais próximo."
+
 # HOME - FAQ
 [home_faq_title]
 other = "Dúvidas frequentes"
@@ -90,6 +112,9 @@ other = "Se você busca um espaço sério, acolhedor e comprometido com a capoei
 # Global UI
 [footer_tagline]
 other = "Capoeira, cultura e formação."
+
+[footer_seo_text]
+other = "Aulas de capoeira em Cotia, Osasco, Nova Vida - Cotia, Pernambuco, Bahia, São Sebastião do Paraíso, Juazeiro, Frutal, Chile e México. Capoeira infantil, Maculelê, Samba de Roda, Roda de capoeira."
 
 [floating_whatsapp_label]
 other = "Falar pelo WhatsApp"

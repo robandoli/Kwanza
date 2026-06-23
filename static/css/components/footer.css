@@ -37,6 +37,18 @@
   line-height: 1;
 }
 
+.footer-seo {
+  grid-column: 1 / -1;
+  max-width: 980px;
+}
+
+.footer-seo p {
+  margin: 6px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.78);
+}
+
 .footer-links a,
 .footer-social a {
   display: inline-flex;
@@ -75,6 +87,10 @@
   }
 
   .footer-brand p {
+    margin-inline: auto;
+  }
+
+  .footer-seo {
     margin-inline: auto;
   }
 }

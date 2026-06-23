@@ -40,6 +40,28 @@ other = "En Kwanza, la capoeira se enseña y se vive con seriedad. El entrenamie
 [home_about_p2_2]
 other = "Valoramos la escucha, el tiempo de cada alumno y la construcción continua del conocimiento — sin prisa, sin atajos."
 
+# HOME - Locations / SEO
+[home_locations_title]
+other = "Clases de capoeira cerca de ti"
+
+[home_locations_p1]
+other = "Identidade Kwanza reúne núcleos para quienes buscan clases de capoeira en Cotia, clases de capoeira en Osasco, clases de capoeira en Nova Vida - Cotia y una escuela de capoeira cerca de mí, con orientación de profesores y maestros vinculados a la tradición del grupo."
+
+[home_locations_item_1]
+other = "En la región de São Paulo, tenemos capoeira infantil en Granja Viana y Cotia, actividad física y cultural para niños en Cotia y Osasco, roda de capoeira y roda de calle en Cotia."
+
+[home_locations_item_2]
+other = "En Brasil, Kwanza también está presente para quienes buscan clases de capoeira en Pernambuco, Bahía, São Sebastião do Paraíso, Juazeiro y Frutal."
+
+[home_locations_item_3]
+other = "En América Latina, el grupo mantiene referencias para clases de capoeira en Chile y clases de capoeira en México."
+
+[home_locations_item_4]
+other = "Además del entrenamiento, la vivencia cultural incluye Maculelê, Samba de Roda, música, instrumentos, canto, fundamentos y convivencia en grupo."
+
+[home_locations_p2]
+other = "Cada núcleo tiene su propia agenda de clases, rodas y encuentros. Consulta la página de contactos para hablar con el responsable más cercano."
+
 # HOME - FAQ
 [home_faq_title]
 other = "Preguntas frecuentes"
@@ -90,6 +112,9 @@ other = "Si buscas un espacio serio, acogedor y comprometido con la capoeira, el
 # Global UI
 [footer_tagline]
 other = "Capoeira, cultura y formación."
+
+[footer_seo_text]
+other = "Clases de capoeira en Cotia, Osasco, Nova Vida - Cotia, Pernambuco, Bahía, São Sebastião do Paraíso, Juazeiro, Frutal, Chile y México. Capoeira infantil, Maculelê, Samba de Roda, roda de capoeira."
 
 [floating_whatsapp_label]
 other = "Hablar por WhatsApp"

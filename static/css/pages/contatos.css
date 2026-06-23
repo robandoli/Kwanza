@@ -129,6 +129,44 @@
   text-decoration: underline;
 }
 
+.locais-kwanza .local-item .telefone-whatsapp {
+  width: fit-content;
+  margin-top: 0.6rem;
+  padding: 0.35rem 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(37, 211, 102, 0.28);
+  border-radius: 999px;
+  background: rgba(37, 211, 102, 0.08);
+  color: #25d366;
+  font-weight: 600;
+  opacity: 0.92;
+  transition: background-color 0.18s ease, border-color 0.18s ease, color 0.18s ease, opacity 0.18s ease;
+}
+
+.locais-kwanza .local-item .telefone-whatsapp svg {
+  width: 1em;
+  height: 1em;
+  flex: 0 0 auto;
+}
+
+.locais-kwanza .local-item .telefone-whatsapp span {
+  display: inline;
+  margin: 0;
+  font-size: inherit;
+  opacity: 1;
+}
+
+.locais-kwanza .local-item .telefone-whatsapp:hover,
+.locais-kwanza .local-item .telefone-whatsapp:focus-visible {
+  border-color: rgba(37, 211, 102, 0.48);
+  background: rgba(37, 211, 102, 0.14);
+  color: #7af0a2;
+  opacity: 1;
+  text-decoration: none;
+}
+
 /* ============================
    MOBILE
    ============================ */
