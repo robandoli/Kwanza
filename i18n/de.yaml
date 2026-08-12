@@ -1,0 +1,27 @@
+# UI-Texte – Deutsch
+
+nav_toggle_label: "Menü öffnen"
+read_more: "Weiterlesen"
+view_on_map: "Auf der Karte anzeigen"
+search: "Suchen"
+contact: "Kontakt"
+email: "E-Mail"
+phone: "Telefon"
+address: "Adresse"
+learn_more: "Mehr erfahren"
+back_to_home: "Zurück zur Startseite"
+calendar_full_agenda: "Vollständiges Programm"
+kwanza_locations: "Kwanza-Standorte"
+search_songs_placeholder: "Nach Titel oder Liedtext suchen ..."
+search_songs_label: "Lieder suchen"
+search_songs_empty: "Für diese Suche wurden keine Lieder gefunden."
+search_songs_clear: "Suche löschen"
+
+# Menüpunkte
+menu_home: "Startseite"
+menu_identity: "Identidade Kwanza"
+menu_guide: "Capoeira-Leitfaden"
+menu_learn: "Capoeira lernen"
+menu_calendar: "Kalender"
+menu_blog: "Blog"
+menu_contacts: "Kontakte"

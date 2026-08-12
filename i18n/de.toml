@@ -1,0 +1,186 @@
+# STARTSEITE – Hero
+[hero_title]
+other = "CAPOEIRA IST WURZEL, KÖRPER UND BEWUSSTSEIN"
+
+[hero_subtitle]
+other = "Bei Identidade Kwanza wird Capoeira als Kultur, Disziplin und Bildungsweg gelebt —<br>innerhalb und außerhalb der Roda."
+
+[hero_cta]
+other = "PROBESTUNDE VEREINBAREN"
+
+[hero_img_alt_1]
+other = "Capoeira-Roda"
+
+[hero_img_alt_2]
+other = "Capoeira im Trainingsraum"
+
+[hero_img_alt_3]
+other = "Capoeira in der Gemeinschaft"
+
+# STARTSEITE – Über uns
+[home_about_title_1]
+other = "Wer wir sind"
+
+[home_about_p1_1]
+other = '<strong>Identidade Kwanza</strong> entstand <strong>2014</strong> aus dem Engagement für Capoeira als lebendige Kultur, Disziplin und menschliche Bildung.'
+
+[home_about_p1_2]
+other = "Wir sind mehr als ein Trainingsort: eine Gruppe, die Tradition bewahrt, die Vorfahren respektiert und Capoeira als Sprache der Bildung, Identität und Gemeinschaft versteht."
+
+[home_about_p1_3]
+other = 'Mit mehr als <strong>10 Jahren Erfahrung</strong> hat Kwanza bereits <strong>Capoeira-Meister ausgebildet</strong> und ist in mehreren Ländern und brasilianischen Bundesstaaten vertreten. Dabei handeln wir verantwortungsvoll, respektieren die Meister und kennen die Bedeutung der Capoeira innerhalb und außerhalb der Roda.'
+
+[home_about_title_2]
+other = "Unsere Praxis"
+
+[home_about_p2_1]
+other = "Bei Kwanza wird Capoeira ernsthaft gelehrt und gelebt. Körperliches Training geht Hand in Hand mit dem Verständnis von Geschichte, Musik, Ritualen und dem Zusammenleben in der Gruppe."
+
+[home_about_p2_2]
+other = "Wir schätzen das Zuhören, das individuelle Tempo jedes Menschen und den kontinuierlichen Aufbau von Wissen — ohne Eile und ohne Abkürzungen."
+
+# STARTSEITE – Standorte / SEO
+[home_locations_title]
+other = "Capoeira-Unterricht in deiner Nähe"
+
+[home_locations_p1]
+other = "Identidade Kwanza vereint Trainingszentren für Menschen, die Capoeira-Unterricht in Cotia, Osasco, Nova Vida und weiteren Regionen suchen. Die Kurse werden von Lehrkräften und Meistern begleitet, die mit der Tradition der Gruppe verbunden sind."
+
+[home_locations_item_1]
+other = "In der Region São Paulo bieten wir Capoeira für Kinder, körperliche und kulturelle Aktivitäten, Rodas und Straßenrodas an."
+
+[home_locations_item_2]
+other = "In Brasilien ist Kwanza außerdem in Pernambuco, Bahia, Minas Gerais und weiteren Regionen vertreten."
+
+[home_locations_item_3]
+other = "International gibt es Standorte und Ansprechpartner in Chile, Mexiko, Mosambik und Deutschland."
+
+[home_locations_item_4]
+other = "Neben dem Training umfasst die kulturelle Erfahrung Maculelê, Samba de Roda, Musik, Instrumente, Gesang, Grundlagen und das Zusammenleben in der Gruppe."
+
+[home_locations_p2]
+other = "Jeder Standort hat einen eigenen Zeitplan für Unterricht, Rodas und Treffen. Auf der Kontaktseite findest du die nächstgelegene Ansprechperson."
+
+# STARTSEITE – FAQ
+[home_faq_title]
+other = "Häufig gestellte Fragen"
+
+[faq_q1]
+other = "Ich habe noch nie Capoeira gemacht. Kann ich anfangen?"
+
+[faq_a1]
+other = "Ja. Anfängerinnen und Anfänger jeden Alters sind willkommen. Die Lehrkraft begleitet alle entsprechend ihrer Erfahrung und körperlichen Verfassung."
+
+[faq_q2]
+other = "Ab welchem Alter können Kinder teilnehmen?"
+
+[faq_a2]
+other = "Wir nehmen Kinder ab sechs Jahren auf und bieten eine altersgerechte Begleitung."
+
+[faq_q3]
+other = "Brauche ich Erfahrung oder körperliche Vorbereitung?"
+
+[faq_a3]
+other = "Nein. Die körperliche Kondition wird im Laufe des Trainings schrittweise aufgebaut."
+
+[faq_q4]
+other = "Wie kann ich an einer Probestunde teilnehmen?"
+
+[faq_a4]
+other = "Wende dich an den nächstgelegenen Standort, um erste Informationen zu erhalten."
+
+[faq_q5]
+other = "Ist Capoeira ein Kampf? Ist sie gewalttätig?"
+
+[faq_a5]
+other = "Capoeira ist eine afrobrasilianische Kampfkunst. Das Training ist kontrolliert, respektvoll und wird von einer Lehrkraft begleitet."
+
+[faq_q6]
+other = "Ist Capoeira mit einer Religion verbunden?"
+
+[faq_a6]
+other = "Nein. Capoeira ist eine brasilianische Kulturform ohne religiöse Zugehörigkeit."
+
+# STARTSEITE – Abschluss-CTA
+[home_cta_title]
+other = "Probestunde vereinbaren"
+
+[home_cta_text]
+other = "Wenn du einen engagierten, einladenden und verantwortungsvollen Ort für Capoeira suchst, stehen dir die Türen von Identidade Kwanza offen."
+
+# Globale Benutzeroberfläche
+[footer_tagline]
+other = "Capoeira, Kultur und Bildung."
+
+[footer_seo_text]
+other = "Capoeira-Unterricht in Brasilien, Chile, Mexiko, Mosambik und Deutschland. Capoeira für Kinder, Maculelê, Samba de Roda und Capoeira-Roda."
+
+[floating_whatsapp_label]
+other = "Nachricht über WhatsApp senden"
+
+[event_banner_text]
+other = "<strong>Offizielle Kwanza-Veranstaltung</strong> • 5.–7. November in Cotia/SP — vollständiges Programm ansehen"
+
+[event_banner_badge]
+other = "Offizielle Veranstaltung"
+
+[event_banner_title]
+other = "Internationale Capoeira Kwanza"
+
+[event_banner_meta]
+other = "5.–7. November · Cotia/SP"
+
+[event_banner_cta]
+other = "Programm ansehen"
+
+# Internationale Veranstaltungsseite
+[event_page_unavailable]
+other = "Seite nicht verfügbar"
+
+[event_page_unavailable_message]
+other = "Diese Seite ist vorübergehend deaktiviert."
+
+[event_eyebrow_special_program]
+other = "Sonderprogramm"
+
+[event_eyebrow_homage]
+other = "Ehrungen"
+
+[event_masters_gallery]
+other = "Galerie der Meister, Contramestres, Lehrkräfte und Monitorinnen und Monitore"
+
+[event_previous_masters]
+other = "Vorherige Geehrte"
+
+[event_next_masters]
+other = "Nächste Geehrte"
+
+[event_eyebrow_schedule]
+other = "Programm"
+
+[event_complete_schedule]
+other = "Vollständiges Programm"
+
+[event_view_map]
+other = "Karte anzeigen"
+
+[event_map_aria]
+other = "%s auf der Karte anzeigen"
+
+[event_investment]
+other = "💰 Teilnahmebeitrag"
+
+[event_contact]
+other = "📞 Kontakt"
+
+[event_organization]
+other = "🧭 Organisation"
+
+[event_primary_cta]
+other = "Platz sichern"
+
+[event_floating_whatsapp_aria]
+other = "Platz über WhatsApp sichern"
+
+[event_lightbox_close]
+other = "Vergrößertes Bild schließen"

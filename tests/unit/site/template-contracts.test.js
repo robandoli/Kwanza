@@ -94,10 +94,13 @@ test("imagens do evento mantem alt, lazy loading e decoding assincrono", () => {
   });
 });
 
-test("todas as paginas de conteudo em portugues possuem versoes ingles e espanhol", () => {
+test("todas as paginas de conteudo em portugues possuem versoes ingles, espanhol e alemao", () => {
   const contentFiles = listFiles("content", ".md");
   const defaultLanguageFiles = contentFiles.filter(
-    (filePath) => !filePath.endsWith(".en.md") && !filePath.endsWith(".es.md")
+    (filePath) =>
+      !filePath.endsWith(".en.md") &&
+      !filePath.endsWith(".es.md") &&
+      !filePath.endsWith(".de.md")
   );
 
   defaultLanguageFiles.forEach((filePath) => {
@@ -110,5 +113,52 @@ test("todas as paginas de conteudo em portugues possuem versoes ingles e espanho
       fs.existsSync(path.join(rootDir, `${basePath}.es.md`)),
       `${filePath} nao possui traducao em espanhol`
     );
+    assert.ok(
+      fs.existsSync(path.join(rootDir, `${basePath}.de.md`)),
+      `${filePath} nao possui traducao em alemao`
+    );
   });
+});
+
+test("seletor de idiomas exibe as quatro mini bandeiras", () => {
+  const switcher = readProjectFile("layouts/partials/lang-switcher.html");
+
+  assert.match(switcher, /\.AllTranslations/);
+  assert.match(switcher, /href="{{ \.RelPermalink }}"/);
+  assert.doesNotMatch(switcher, /href="{{ \.Permalink }}"/);
+  assert.match(switcher, /aria-current="page"/);
+  ["brz_mini.webp", "eua_mini.webp", "esp_mini.webp", "ale_mini.png"].forEach(
+    (flag) => assert.match(switcher, new RegExp(`img/flags/${flag}`))
+  );
+});
+
+test("navegacao preserva espaco entre logo e menu", () => {
+  const navigation = readProjectFile("static/css/components/navigation.css");
+
+  assert.match(navigation, /\.nav-container\s*{[^}]*gap:\s*24px;/s);
+  assert.match(navigation, /\.nav-logo\s*{[^}]*flex-shrink:\s*0;/s);
+  assert.match(navigation, /@media \(max-width:\s*1400px\)/);
+});
+
+test("SEO multilingue inclui alemao e alternates completos", () => {
+  const head = readProjectFile("layouts/partials/head.html");
+  const llms = readProjectFile("static/llms.txt");
+
+  assert.match(head, /cond \(eq \.Lang "de"\) "de_DE"/);
+  assert.match(head, /range \.AllTranslations/);
+  assert.match(head, /hreflang="x-default" href="{{ \$xDefault }}"/);
+  assert.match(head, /og:image:alt/);
+  assert.match(head, /twitter:image:alt/);
+  assert.match(llms, /German \(de-DE\)/);
+  assert.match(llms, /https:\/\/grupokwanza\.com\.br\/de\//);
+});
+
+test("banner do evento possui hierarquia e alvo de toque acessiveis", () => {
+  const banner = readProjectFile("static/css/components/home-event-banner.css");
+
+  assert.match(banner, /\.home-event-banner\s*{[^}]*min-height:\s*64px;/s);
+  assert.match(banner, /\.home-event-banner__container\s*{[^}]*max-width:\s*1440px;/s);
+  assert.match(banner, /\.home-event-banner__text strong\s*{[^}]*font-size:\s*18px;/s);
+  assert.match(banner, /\.home-event-banner__cta\s*{[^}]*min-height:\s*44px;/s);
+  assert.match(banner, /\.home-event-banner__link:focus-visible\s*{[^}]*outline:\s*3px/s);
 });

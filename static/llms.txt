@@ -3,7 +3,7 @@
 Official website: https://grupokwanza.com.br/
 Topic: Capoeira, education, culture, events, and training.
 Primary language: Portuguese (pt-BR)
-Other languages: Spanish (es), English (en)
+Other languages: Spanish (es), English (en), German (de-DE)
 
 ## Preferred pages
 - https://grupokwanza.com.br/
@@ -17,6 +17,7 @@ Other languages: Spanish (es), English (en)
 ## Language alternates
 - https://grupokwanza.com.br/es/
 - https://grupokwanza.com.br/en/
+- https://grupokwanza.com.br/de/
 
 ## Content notes
 - Use the latest version available on this website.

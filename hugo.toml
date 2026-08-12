@@ -44,6 +44,15 @@ theme = "beautifulhugo"
     [languages.en.params]
       description = "Capoeira, culture, and education through Identidade Kwanza."
 
+  [languages.de]
+    languageCode = "de-DE"
+    languageName = "Deutsch"
+    weight = 4
+    title = "Identidade Kwanza"
+
+    [languages.de.params]
+      description = "Capoeira, Kultur und Bildung durch Identidade Kwanza."
+
 # Menu Português
 [languages.pt.menu]
   [[languages.pt.menu.main]]
@@ -174,6 +183,50 @@ theme = "beautifulhugo"
     identifier = "contatos"
     name = "Contacts"
     url = "/en/contatos/"
+    weight = 7
+
+# Menü Deutsch
+[languages.de.menu]
+  [[languages.de.menu.main]]
+    identifier = "home"
+    name = "Startseite"
+    url = "/de/"
+    weight = 1
+
+  [[languages.de.menu.main]]
+    identifier = "equipe"
+    name = "Identidade Kwanza"
+    url = "/de/equipe-kwanza/"
+    weight = 2
+
+  [[languages.de.menu.main]]
+    identifier = "guia"
+    name = "Capoeira-Leitfaden"
+    url = "/de/guia-do-capoeirista-kwanza/"
+    weight = 3
+
+  [[languages.de.menu.main]]
+    identifier = "vem_aprender"
+    name = "Capoeira lernen"
+    url = "/de/vem-aprender/"
+    weight = 4
+
+  [[languages.de.menu.main]]
+    identifier = "calendario"
+    name = "Kalender"
+    url = "/de/calendario-kwanza/"
+    weight = 5
+
+  [[languages.de.menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/de/blog/"
+    weight = 6
+
+  [[languages.de.menu.main]]
+    identifier = "contatos"
+    name = "Kontakte"
+    url = "/de/contatos/"
     weight = 7
 
 [markup]

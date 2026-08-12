@@ -36,14 +36,18 @@
         {{ $bandeiras := dict
           "Brasil" "/img/flags/br.webp"
           "Brazil" "/img/flags/br.webp"
+          "Brasilien" "/img/flags/br.webp"
           "Chile" "/img/flags/cl.webp"
           "México" "/img/flags/mx.webp"
           "Mexico" "/img/flags/mx.webp"
+          "Mexiko" "/img/flags/mx.webp"
           "Moçambique" "/img/flags/mocambique.webp"
           "Mozambique" "/img/flags/mocambique.webp"
+          "Mosambik" "/img/flags/mocambique.webp"
           "Alemanha" "/img/flags/ale.webp"
           "Germany" "/img/flags/ale.webp"
           "Alemania" "/img/flags/ale.webp"
+          "Deutschland" "/img/flags/ale.webp"
         }}
 
         {{ $paisAnterior := "" }}
@@ -96,7 +100,7 @@
 
               {{ if .telefone }}
                 {{ $telefoneNumero := replaceRE "\\D" "" .telefone }}
-                {{ if and (not (hasPrefix .telefone "+")) (or (eq .pais "Brasil") (eq .pais "Brazil")) }}
+                {{ if and (not (hasPrefix .telefone "+")) (or (eq .pais "Brasil") (eq .pais "Brazil") (eq .pais "Brasilien")) }}
                   {{ $telefoneNumero = printf "55%s" $telefoneNumero }}
                 {{ end }}
 

@@ -15,13 +15,19 @@
 {{ $pageDescription := .Site.Params.description }}
 {{ with .Description }}{{ $pageDescription = . }}{{ end }}
 {{ $pageImage := "/img/logo-kwanza.webp" | absURL }}
-{{ $locale := cond (eq .Lang "pt") "pt_BR" (cond (eq .Lang "es") "es_ES" "en_US") }}
+{{ $locale := cond (eq .Lang "pt") "pt_BR" (cond (eq .Lang "es") "es_ES" (cond (eq .Lang "de") "de_DE" "en_US")) }}
 {{ $isBlogPost := and .IsPage (eq .Section "blog") }}
+{{ $xDefault := .Site.BaseURL }}
+{{ range .AllTranslations }}
+  {{ if eq .Language.Lang "pt" }}{{ $xDefault = .Permalink }}{{ end }}
+{{ end }}
 
+{{ if .IsHome }}
 <link rel="preload"
       as="image"
       href="/img/hero/roda_1.webp"
       fetchpriority="high">
+{{ end }}
 
 <title>
   {{ $pageTitle }}
@@ -36,13 +42,12 @@
 <link rel="alternate" type="text/plain" href="{{ "/llms.txt" | absURL }}" title="LLMs">
 
 <!-- hreflang alternates -->
-{{ if .IsTranslated }}
-  {{ range .Translations }}
+{{ if gt (len .AllTranslations) 1 }}
+  {{ range .AllTranslations }}
     <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
   {{ end }}
 {{ end }}
-<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
-<link rel="alternate" hreflang="x-default" href="{{ .Site.BaseURL }}">
+<link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
 
 <link rel="stylesheet" href="/css/style.css">
 <script src="/js/analytics-events.js" defer></script>
@@ -59,10 +64,11 @@
 <meta property="og:description" content="{{ $pageDescription }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ $pageImage }}">
+<meta property="og:image:alt" content="{{ .Site.Title }}">
 <meta property="og:locale" content="{{ $locale }}">
 {{ if .IsTranslated }}
   {{ range .Translations }}
-    {{ $altLocale := cond (eq .Language.Lang "pt") "pt_BR" (cond (eq .Language.Lang "es") "es_ES" "en_US") }}
+    {{ $altLocale := cond (eq .Language.Lang "pt") "pt_BR" (cond (eq .Language.Lang "es") "es_ES" (cond (eq .Language.Lang "de") "de_DE" "en_US")) }}
     <meta property="og:locale:alternate" content="{{ $altLocale }}">
   {{ end }}
 {{ end }}
@@ -79,8 +85,10 @@
 <meta name="twitter:title" content="{{ $pageTitle }}">
 <meta name="twitter:description" content="{{ $pageDescription }}">
 <meta name="twitter:image" content="{{ $pageImage }}">
+<meta name="twitter:image:alt" content="{{ .Site.Title }}">
 
 <!-- Structured Data -->
+{{ if and .IsHome (eq .Lang "pt") }}
 {{ $organization := dict
   "@context" "https://schema.org"
   "@type" "Organization"
@@ -98,6 +106,7 @@
   "inLanguage" .Language.LanguageCode
 }}
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
+{{ end }}
 
 {{ if $isBlogPost }}
   {{ $article := dict

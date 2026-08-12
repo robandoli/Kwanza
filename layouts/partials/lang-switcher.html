@@ -1,13 +1,15 @@
-{{ if .IsTranslated }}
+{{ if gt (len .AllTranslations) 1 }}
 <nav class="lang-switcher" aria-label="Language selector">
-  {{ range .Translations }}
-    <a href="{{ .Permalink }}" 
-       lang="{{ .Language.Lang }}" 
+  {{ range .AllTranslations }}
+    <a href="{{ .RelPermalink }}"
+       lang="{{ .Language.Lang }}"
        hreflang="{{ .Language.Lang }}"
+       {{ if eq .Language.Lang $.Language.Lang }}aria-current="page"{{ end }}
        title="{{ .Language.LanguageName }}">
-      {{ if eq .Language.Lang "pt" }}PT
-      {{ else if eq .Language.Lang "es" }}ES
-      {{ else if eq .Language.Lang "en" }}EN
+      {{ if eq .Language.Lang "pt" }}<img class="lang-switcher__flag" src="{{ "img/flags/brz_mini.webp" | relURL }}" alt="" width="14" height="10">PT
+      {{ else if eq .Language.Lang "es" }}<img class="lang-switcher__flag" src="{{ "img/flags/esp_mini.webp" | relURL }}" alt="" width="14" height="10">ES
+      {{ else if eq .Language.Lang "en" }}<img class="lang-switcher__flag" src="{{ "img/flags/eua_mini.webp" | relURL }}" alt="" width="14" height="10">EN
+      {{ else if eq .Language.Lang "de" }}<img class="lang-switcher__flag" src="{{ "img/flags/ale_mini.png" | relURL }}" alt="" width="14" height="10">DE
       {{ end }}
     </a>
   {{ end }}
