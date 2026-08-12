@@ -39,6 +39,11 @@
           "Chile" "/img/flags/cl.webp"
           "México" "/img/flags/mx.webp"
           "Mexico" "/img/flags/mx.webp"
+          "Moçambique" "/img/flags/mocambique.webp"
+          "Mozambique" "/img/flags/mocambique.webp"
+          "Alemanha" "/img/flags/ale.webp"
+          "Germany" "/img/flags/ale.webp"
+          "Alemania" "/img/flags/ale.webp"
         }}
 
         {{ $paisAnterior := "" }}
@@ -84,6 +89,10 @@
                 {{ .endereco }}<br>
                 {{ .cidade }}{{ if .estado }} – {{ .estado }}{{ end }}
               </span>
+
+              {{ with .aulas }}
+                <span>{{ . }}</span>
+              {{ end }}
 
               {{ if .telefone }}
                 {{ $telefoneNumero := replaceRE "\\D" "" .telefone }}

@@ -34,6 +34,27 @@ locais_kwanza:
     lat: -23.58166
     lng: -46.92678
 
+  - nome: "Profesor Viajante y Profesora Delicada"
+    pais: "Brasil"
+    endereco: "Rua Flamingo, 342 – Quinta dos Angicos 2 – José Grotoli"
+    cidade: "Cotia"
+    estado: "SP"
+    aulas: "Clases: lunes, de 20:30 a 22:00; sábados, de 19:00 a 21:00. Código postal 06717-310."
+
+  - nome: "Jornalista Maria do Carmo de Almeida"
+    pais: "Brasil"
+    endereco: "Rua Calógero Mirizola, 01 – Jardim Estela Mari"
+    cidade: "Cotia"
+    estado: "SP"
+    aulas: "Clases: miércoles, de 20:00 a 22:00. Código postal 06703-220."
+
+  - nome: "Quadra Arco-Íris"
+    pais: "Brasil"
+    endereco: "Jardim Arco-Íris"
+    cidade: "Cotia"
+    estado: "SP"
+    aulas: "Clases: lunes, de 19:00 a 20:30. Código postal 06719-020."
+
   - nome: "Mestre Chocolate"
     pais: "Brasil"
     endereco: "Rua Fronteira, 912 – Progresso"
@@ -176,4 +197,27 @@ locais_kwanza:
     telefone: ""
     lat: 25.70776385
     lng: -100.318598
+
+  # =====================
+  # 🇲🇿 MOZAMBIQUE
+  # =====================
+
+  - nome: "Graduado Octávio (Fiél)"
+    pais: "Mozambique"
+    endereco: "Colégio LaSalle da Beira – Rua nº 6 – Bairro da Manga, Chingussura"
+    cidade: "Beira"
+    estado: ""
+    telefone: ""
+    aulas: "Código postal 2100."
+
+  # =====================
+  # 🇩🇪 ALEMANIA
+  # =====================
+
+  - nome: "Mestre Bigodinho"
+    pais: "Alemania"
+    endereco: "HNT Hamburg e.V. – Cuxchavener Str. 253, 212149"
+    cidade: "Hamburg"
+    estado: ""
+    telefone: "+49 176 327 65 092"
 ---
