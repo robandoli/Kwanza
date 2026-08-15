@@ -1,0 +1,45 @@
+# ai-jail sandbox configuration for Codex
+# Keep host credentials and personal data outside the agent sandbox.
+
+command = ["codex"]
+private_home = true
+no_display = true
+no_gpu = true
+no_docker = true
+no_mise = true
+ssh = false
+systemd_user = false
+browser_profile = "off"
+no_save_config = true
+
+rw_maps = ["/home/robandoli/.codex"]
+ro_maps = [
+    "/home/robandoli/Projetos/ai-engineering-skills/skills:/home/robandoli/.agents/skills",
+    "/home/robandoli/.local/bin/agent-git-preflight",
+]
+
+deny_paths = [
+    ".env",
+    ".env.*",
+    "**/.env",
+    "**/.env.*",
+    "credentials.json",
+    "**/credentials.json",
+    "service-account*.json",
+    "**/service-account*.json",
+    "**/*private*.pem",
+    "**/id_rsa",
+    "**/id_ed25519",
+    "**/*.key",
+    "**/*.p12",
+    "**/*.pfx",
+    "**/*.jks",
+    "/home/robandoli/.local/share/codex-browser/rotina-diaria-conhecimento",
+]
+
+deny_path_exceptions = [
+    ".env.example",
+    "**/.env.example",
+    ".env.sample",
+    "**/.env.sample",
+]
