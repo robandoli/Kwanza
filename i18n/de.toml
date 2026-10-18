@@ -17,6 +17,18 @@ other = "Capoeira im Trainingsraum"
 [hero_img_alt_3]
 other = "Capoeira in der Gemeinschaft"
 
+[cultural_recognition_eyebrow]
+other = "Institutionelle Anerkennung"
+
+[cultural_recognition_title]
+other = "Wir sind jetzt ein Kulturpunkt"
+
+[cultural_recognition_seal_alt]
+other = "Kulturpunkt — zertifiziert vom Kulturministerium"
+
+[cultural_recognition_footer]
+other = "Grupo Kwanza — vom Kulturministerium zertifizierter Kulturpunkt"
+
 # STARTSEITE – Über uns
 [home_about_title_1]
 other = "Wer wir sind"

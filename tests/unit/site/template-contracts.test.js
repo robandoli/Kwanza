@@ -36,6 +36,18 @@ test("templates mantem scripts e eventos globais essenciais", () => {
   assert.match(floatingWhatsapp, /data-analytics-event="click_whatsapp"/);
 });
 
+test("reconhecimento como Ponto de Cultura permanece no rodape global", () => {
+  const home = readProjectFile("layouts/index.html");
+  const footer = readProjectFile("layouts/partials/footer.html");
+
+  assert.doesNotMatch(home, /home\/cultural-recognition\.html/);
+  assert.match(footer, /marca_ponto_cultura\.webp/);
+  assert.match(footer, /cultural_recognition_eyebrow/);
+  assert.match(footer, /cultural_recognition_title/);
+  assert.match(footer, /cultural_recognition_footer/);
+  assert.doesNotMatch(footer, /pre-certificacao-ponto-cultura\.pdf/);
+});
+
 test("pagina do evento internacional preserva CTAs, mapas, galeria e analytics", () => {
   const eventPage = readProjectFile("layouts/_default/internacional-capoeira-kwanza.html");
   const mestres = readProjectFile("layouts/partials/evento-kwanza/mestres.html");

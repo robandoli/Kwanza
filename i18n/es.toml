@@ -17,6 +17,18 @@ other = "Capoeira en la academia"
 [hero_img_alt_3]
 other = "Capoeira en comunidad"
 
+[cultural_recognition_eyebrow]
+other = "Reconocimiento institucional"
+
+[cultural_recognition_title]
+other = "Ahora somos Punto de Cultura"
+
+[cultural_recognition_seal_alt]
+other = "Punto de Cultura — certificado por el Ministerio de Cultura"
+
+[cultural_recognition_footer]
+other = "Grupo Kwanza — Punto de Cultura certificado por el Ministerio de Cultura"
+
 # HOME - About Section 1
 [home_about_title_1]
 other = "Quiénes somos"

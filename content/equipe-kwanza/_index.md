@@ -68,4 +68,6 @@ valores: |
 
   Esses princípios orientam o trabalho do grupo no Brasil e no exterior, preservando a tradição da capoeira e, ao mesmo tempo, formando pessoas conscientes de seu papel na sociedade.
 
+  O **Capoeira Kwanza**, de Cotia, é reconhecido como **Ponto de Cultura** pelo Ministério da Cultura, integrando a rede da Política Nacional Cultura Viva.
+
 ---

@@ -42,4 +42,6 @@ valores: |
 
   Diese Grundsätze leiten die Arbeit der Gruppe in Brasilien und im Ausland. Dabei bewahren wir die Tradition der Capoeira und bilden Menschen, die sich ihrer Rolle in der Gesellschaft bewusst sind.
 
+  **Capoeira Kwanza** aus Cotia ist vom brasilianischen Kulturministerium als **Kulturpunkt** anerkannt und gehört zum Netzwerk der Nationalen Politik Cultura Viva.
+
 ---

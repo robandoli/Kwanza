@@ -68,4 +68,6 @@ valores: |
 
   Esos principios orientan el trabajo del grupo en Brasil y en el exterior, preservando la tradición de la capoeira y, al mismo tiempo, formando personas conscientes de su papel en la sociedad.
 
+  **Capoeira Kwanza**, de Cotia, está reconocido como **Punto de Cultura** por el Ministerio de Cultura de Brasil e integra la red de la Política Nacional Cultura Viva.
+
 ---

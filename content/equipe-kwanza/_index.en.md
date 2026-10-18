@@ -68,4 +68,6 @@ valores: |
 
   These principles guide the group's work in Brazil and abroad, preserving the tradition of capoeira while forming people aware of their role in society.
 
+  **Capoeira Kwanza**, based in Cotia, is recognized as a **Point of Culture** by Brazil's Ministry of Culture and is part of the National Living Culture Policy network.
+
 ---
