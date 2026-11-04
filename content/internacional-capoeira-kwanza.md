@@ -42,11 +42,6 @@ programacao:
             titulo: "Sequências de Mestre Bimba"
             responsavel: "C. Mestre Dobrão"
             imagem: "/img/eventos/internacional-2026/sequencias-mestre-bimba-dobrado.jpg"
-          - horario: "09:30"
-            titulo: "Oficina de Berimbau"
-            responsavel: "C. Mestre Sertão"
-            imagem: "/img/eventos/internacional-2026/oficina-berimbau-sertao.jpg"
-
   - data: "06 de Novembro"
     locais:
       - icone: "🏟️"
