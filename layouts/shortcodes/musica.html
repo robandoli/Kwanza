@@ -1,4 +1,4 @@
-<div class="musica-bloco">
+<div class="musica-bloco" data-analytics-component="song_content" data-analytics-param-content-name="{{ .Get "titulo" }}">
 
   <header class="musica-header">
     <h3>{{ .Get "titulo" }}</h3>
@@ -9,7 +9,7 @@
   </header>
 
   <div class="musica-conteudo">
-    <details class="musica-letra">
+    <details class="musica-letra" data-analytics-component="song_lyrics" data-analytics-param-content-name="{{ .Get "titulo" }}" data-analytics-param-page-section="cantigas">
       <summary>Veja aqui a letra</summary>
 
       <div class="musica-letra-conteudo">
@@ -38,16 +38,24 @@
     {{ if .Get "youtube" }}
       <div class="musica-media">
         <iframe
-          src="https://www.youtube.com/embed/{{ .Get "youtube" }}"
+          src="https://www.youtube.com/embed/{{ .Get "youtube" }}?enablejsapi=1"
           loading="lazy"
           referrerpolicy="strict-origin-when-cross-origin"
           sandbox="allow-scripts allow-same-origin allow-presentation"
+          data-analytics-component="song_video"
+          data-analytics-param-content-name="{{ .Get "titulo" }}"
+          data-analytics-param-page-section="cantigas"
           allowfullscreen>
         </iframe>
       </div>
     {{ else if .Get "audio" }}
       <div class="musica-media">
-        <audio controls>
+        <audio
+          controls
+          data-analytics-media="audio"
+          data-analytics-component="song_audio"
+          data-analytics-param-content-name="{{ .Get "titulo" }}"
+          data-analytics-param-page-section="cantigas">
           <source src="{{ .Get "audio" }}" type="audio/mpeg">
         </audio>
       </div>

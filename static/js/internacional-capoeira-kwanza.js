@@ -4,6 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightboxClose = document.querySelector("[data-lightbox-close]");
   const carousel = document.querySelector("[data-mestres-carousel]");
 
+  lightbox?.addEventListener("close", () => {
+    window.trackKwanzaAnalytics?.("schedule_image_close", {
+      event_name: "internacional_capoeira_kwanza",
+      component_name: "event_activity_lightbox",
+      page_section: "programacao",
+    });
+  });
+
   document.querySelectorAll("[data-lightbox-open]").forEach((button) => {
     button.addEventListener("click", () => {
       if (!lightbox || !lightboxImage) return;

@@ -16,7 +16,7 @@
       {{ .Content }}
 
       {{ if .Pages }}
-      <div class="blog-lista" style="margin-top: var(--space-xl);">
+      <div class="blog-lista" data-analytics-component="blog_list" style="margin-top: var(--space-xl);">
         {{ range .Pages.ByDate.Reverse }}
           <article class="blog-item">
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>

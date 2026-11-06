@@ -12,7 +12,11 @@
 
     <nav class="footer-links" aria-label="Footer menu">
       {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
+        <a
+          href="{{ .URL }}"
+          data-analytics-event="navigation_click"
+          data-analytics-param-navigation-area="footer_menu"
+          data-analytics-param-navigation-label="{{ .Identifier }}">{{ .Name }}</a>
       {{ end }}
     </nav>
 

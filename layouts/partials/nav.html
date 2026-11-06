@@ -1,7 +1,12 @@
 <nav class="site-nav" aria-label="Menu principal">
   <div class="container nav-container">
 
-    <a href="{{ relLangURL "/" }}" class="nav-logo">
+    <a
+      href="{{ relLangURL "/" }}"
+      class="nav-logo"
+      data-analytics-event="navigation_click"
+      data-analytics-param-navigation-area="header_logo"
+      data-analytics-param-navigation-label="site_logo">
       {{ if in .RelPermalink "/vem-aprender" }}
         <img src="/img/logo-vem-aprender.webp" alt="Vem Aprender">
       {{ else }}
@@ -14,7 +19,10 @@
             type="button"
             aria-label="{{ i18n "nav_toggle_label" }}"
             aria-expanded="false"
-            aria-controls="primary-nav-menu">
+            aria-controls="primary-nav-menu"
+            data-analytics-event="navigation_toggle"
+            data-analytics-param-navigation-area="primary_menu"
+            data-analytics-param-navigation-action="open">
       <span></span>
       <span></span>
       <span></span>
@@ -24,6 +32,9 @@
       {{ range .Site.Menus.main }}
         <li>
           <a href="{{ .URL }}"
+             data-analytics-event="navigation_click"
+             data-analytics-param-navigation-area="primary_menu"
+             data-analytics-param-navigation-label="{{ .Identifier }}"
              {{ if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
                aria-current="page"
              {{ end }}>

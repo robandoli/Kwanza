@@ -55,6 +55,7 @@ test("pagina do evento internacional preserva CTAs, mapas, galeria e analytics",
   const info = readProjectFile("layouts/partials/evento-kwanza/info.html");
   const floating = readProjectFile("layouts/partials/evento-kwanza/floating-whatsapp.html");
   const lightbox = readProjectFile("layouts/partials/evento-kwanza/lightbox.html");
+  const eventScript = readProjectFile("static/js/internacional-capoeira-kwanza.js");
 
   assert.match(eventPage, /data-analytics-page-event="event_view"/);
   assert.match(eventPage, /evento-kwanza\/hero\.html/);
@@ -70,6 +71,32 @@ test("pagina do evento internacional preserva CTAs, mapas, galeria e analytics",
   assert.match(info, /data-analytics-param-cta-label="contato_card"/);
   assert.match(floating, /data-analytics-param-cta-label="whatsapp_flutuante_evento"/);
   assert.match(lightbox, /data-lightbox/);
+  assert.match(eventScript, /schedule_image_close/);
+});
+
+test("CTAs e componentes interativos possuem pontos de analytics", () => {
+  const projectHero = readProjectFile("layouts/partials/vem-aprender/hero.html");
+  const navigation = readProjectFile("layouts/partials/nav.html");
+  const languageSwitcher = readProjectFile("layouts/partials/lang-switcher.html");
+  const homeAbout = readProjectFile("layouts/partials/home/about.html");
+  const songShortcode = readProjectFile("layouts/shortcodes/musica.html");
+  const founderStory = readProjectFile("layouts/partials/equipe/historia-mestre.html");
+  const analytics = readProjectFile("static/js/analytics-events.js");
+
+  assert.match(projectHero, /data-analytics-param-cta-label="vem_aprender_hero"/);
+  assert.match(projectHero, /data-analytics-param-carousel-name="vem_aprender_hero"/);
+  assert.match(navigation, /data-analytics-event="navigation_toggle"/);
+  assert.match(navigation, /data-analytics-event="navigation_click"/);
+  assert.match(languageSwitcher, /data-analytics-event="language_switch"/);
+  assert.match(languageSwitcher, /if ne \.Language\.Lang \$\.Language\.Lang/);
+  assert.match(homeAbout, /data-analytics-component="faq"/);
+  assert.match(songShortcode, /data-analytics-component="song_lyrics"/);
+  assert.match(songShortcode, /data-analytics-media="audio"/);
+  assert.match(songShortcode, /enablejsapi=1/);
+  assert.match(founderStory, /enablejsapi=1/);
+  assert.match(analytics, /content_link_click/);
+  assert.match(analytics, /content_component_toggle/);
+  assert.match(analytics, /content_media_start/);
 });
 
 test("links que abrem nova aba usam protecao contra window.opener", () => {

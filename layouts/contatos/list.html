@@ -5,7 +5,7 @@
   <!-- HEADER -->
   <header class="page-header">
     <div class="container">
-      <div class="editorial-content">
+      <div class="editorial-content" data-analytics-component="contacts_intro">
         <h1>{{ .Title }}</h1>
 
         {{ with .Params.description }}
@@ -63,7 +63,10 @@
               </details>
             {{ end }}
 
-            <details class="locais-pais">
+            <details
+              class="locais-pais"
+              data-analytics-component="contact_locations"
+              data-analytics-param-location-country="{{ .pais }}">
               <summary>
                 {{ with index $bandeiras .pais }}
                   <img class="flag-icon" src="{{ . }}" alt="" aria-hidden="true" loading="lazy" decoding="async">

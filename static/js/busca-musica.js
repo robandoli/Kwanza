@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   if (!inputBusca || !listaMusicas) return;
 
   const musicas = listaMusicas.querySelectorAll('.musica-bloco');
+  let searchTimer = null;
+  let lastTrackedQuery = '';
   
   inputBusca.addEventListener('input', (e) => {
     const termoBusca = e.target.value.toLowerCase().trim();
@@ -31,6 +33,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mensagem quando não há resultados
     atualizarMensagemVazia(termoBusca);
     if (limparBusca) limparBusca.hidden = !termoBusca;
+
+    window.clearTimeout(searchTimer);
+    searchTimer = window.setTimeout(() => {
+      if (termoBusca === lastTrackedQuery) return;
+      if (!termoBusca && !lastTrackedQuery) return;
+
+      const resultados = Array.from(musicas).filter((musica) => musica.style.display !== 'none').length;
+      window.trackKwanzaAnalytics?.('content_search', {
+        component_name: 'song_catalog',
+        search_action: termoBusca ? 'search' : 'clear',
+        search_result_count: resultados,
+      });
+      lastTrackedQuery = termoBusca;
+    }, 600);
   });
 
   if (limparBusca) {

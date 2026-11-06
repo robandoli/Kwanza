@@ -44,10 +44,12 @@
           {{ if gt (len (findRE `^[A-Za-z0-9_-]{11}$` $youtubeID)) 0 }}
             <div class="documentario-media">
               <iframe
-                src="https://www.youtube.com/embed/{{ $youtubeID }}"
+                src="https://www.youtube.com/embed/{{ $youtubeID }}?enablejsapi=1"
                 loading="lazy"
                 referrerpolicy="strict-origin-when-cross-origin"
                 sandbox="allow-scripts allow-same-origin allow-presentation"
+                data-analytics-component="founder_story_video"
+                data-analytics-param-page-section="mestre_history"
                 allowfullscreen>
               </iframe>
             </div>

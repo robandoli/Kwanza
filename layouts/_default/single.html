@@ -31,7 +31,7 @@
   {{ end }}
   <!-- 🔼 FIM DA SEÇÃO -->
 
-  <section class="pagina-conteudo section">
+  <section class="pagina-conteudo section" data-analytics-component="page_content">
     <div class="container">
       {{ $isCantigas := and .File (eq .File.BaseFileName "cantigas") }}
 
@@ -44,6 +44,8 @@
             placeholder="{{ i18n "search_songs_placeholder" }}"
             autocomplete="off"
             data-empty-message="{{ i18n "search_songs_empty" }}"
+            data-analytics-component="song_search"
+            data-analytics-param-page-section="cantigas"
           >
         </div>
 

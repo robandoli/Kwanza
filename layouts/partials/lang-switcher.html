@@ -4,6 +4,10 @@
     <a href="{{ .RelPermalink }}"
        lang="{{ .Language.Lang }}"
        hreflang="{{ .Language.Lang }}"
+       {{ if ne .Language.Lang $.Language.Lang }}
+         data-analytics-event="language_switch"
+         data-analytics-param-target-language="{{ .Language.Lang }}"
+       {{ end }}
        {{ if eq .Language.Lang $.Language.Lang }}aria-current="page"{{ end }}
        title="{{ .Language.LanguageName }}">
       {{ if eq .Language.Lang "pt" }}<img class="lang-switcher__flag" src="{{ "img/flags/brz_mini.webp" | relURL }}" alt="" width="14" height="10">PT

@@ -7,5 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
   toggle.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("open");
     toggle.setAttribute("aria-expanded", String(isOpen));
+    toggle.dataset.analyticsParamNavigationAction = isOpen ? "open" : "close";
   });
 });

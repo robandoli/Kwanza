@@ -24,7 +24,12 @@
     {{ end }}
 
     {{ with .Params.hero_cta }}
-      <a href="{{ .link }}" class="btn-primary">
+      <a
+        href="{{ .link }}"
+        class="btn-primary"
+        data-analytics-event="click_whatsapp"
+        data-analytics-param-cta-label="vem_aprender_hero"
+        data-analytics-param-page-section="vem_aprender_hero">
         {{ .texto }}
       </a>
     {{ end }}
@@ -35,6 +40,9 @@
       type="button"
       class="hero-control hero-control-prev"
       data-carousel-prev
+      data-analytics-event="carousel_interaction"
+      data-analytics-param-carousel-name="vem_aprender_hero"
+      data-analytics-param-carousel-action="previous"
       aria-label="Previous slide"
       aria-controls="hero-vem-aprender-carousel">
       &#10094;
@@ -43,6 +51,9 @@
       type="button"
       class="hero-control hero-control-next"
       data-carousel-next
+      data-analytics-event="carousel_interaction"
+      data-analytics-param-carousel-name="vem_aprender_hero"
+      data-analytics-param-carousel-action="next"
       aria-label="Next slide"
       aria-controls="hero-vem-aprender-carousel">
       &#10095;

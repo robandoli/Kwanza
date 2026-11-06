@@ -7,18 +7,39 @@ const vm = require("node:vm");
 const path = require("node:path");
 const { FakeDocument, FakeElement } = require("../../helpers/fake-dom");
 
-function loadBuscaScript(document) {
+function loadBuscaScript(document, analyticsCalls = []) {
   const scriptPath = path.join(__dirname, "../../../static/js/busca-musica.js");
   const code = fs.readFileSync(scriptPath, "utf8");
+  const scheduledCallbacks = new Map();
+  let nextTimerId = 0;
   const context = {
     document,
     console,
+    window: {
+      setTimeout(callback) {
+        nextTimerId += 1;
+        scheduledCallbacks.set(nextTimerId, callback);
+        return nextTimerId;
+      },
+      clearTimeout(timerId) {
+        scheduledCallbacks.delete(timerId);
+      },
+      trackKwanzaAnalytics: (...args) => analyticsCalls.push(args),
+    },
     Event: function Event(type) {
       this.type = type;
     },
   };
   vm.runInNewContext(code, context, { filename: scriptPath });
   document.dispatchDOMContentLoaded();
+
+  return {
+    flushTimers() {
+      const callbacks = Array.from(scheduledCallbacks.values());
+      scheduledCallbacks.clear();
+      callbacks.forEach((callback) => callback());
+    },
+  };
 }
 
 function createSongBlock(title, author, lyrics) {
@@ -80,6 +101,26 @@ test("filtra por título, autor e letra", () => {
   input.value = "passaporte";
   input.dispatchEvent({ type: "input" });
   assert.equal(visibleSongs(list).length, 1);
+});
+
+test("registra buscas estabilizadas sem enviar o texto digitado", () => {
+  const analyticsCalls = [];
+  const { document, input, list } = setupDOM();
+  const { flushTimers } = loadBuscaScript(document, analyticsCalls);
+
+  input.value = "jararaca";
+  input.dispatchEvent({ type: "input" });
+  flushTimers();
+
+  assert.equal(visibleSongs(list).length, 1);
+  assert.equal(analyticsCalls.length, 1);
+  assert.equal(analyticsCalls[0][0], "content_search");
+  assert.deepEqual(JSON.parse(JSON.stringify(analyticsCalls[0][1])), {
+    component_name: "song_catalog",
+    search_action: "search",
+    search_result_count: 1,
+  });
+  assert.equal("search_term" in analyticsCalls[0][1], false);
 });
 
 test("mostra mensagem vazia e exibe botão de limpar", () => {

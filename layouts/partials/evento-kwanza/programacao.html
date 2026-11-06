@@ -3,10 +3,10 @@
     <header class="evento-kwanza__section-header">
       <p class="evento-kwanza__eyebrow">{{ i18n "event_eyebrow_schedule" }}</p>
       <h2>{{ i18n "event_complete_schedule" }}</h2>
-      <div class="evento-kwanza__intro">{{ .Content }}</div>
+      <div class="evento-kwanza__intro" data-analytics-component="event_schedule_intro">{{ .Content }}</div>
     </header>
 
-    <div class="evento-kwanza__days">
+    <div class="evento-kwanza__days" data-analytics-component="event_schedule">
       {{ range .Params.programacao }}
         <section class="evento-kwanza__day">
           <header class="evento-kwanza__day-header">
@@ -49,6 +49,7 @@
                               data-lightbox-alt="{{ $tituloAtividade }}"
                               data-analytics-event="schedule_image_open"
                               data-analytics-param-event-name="internacional_capoeira_kwanza"
+                              data-analytics-param-component-name="event_activity_lightbox"
                               data-analytics-param-activity-name="{{ $tituloAtividade }}"
                               data-analytics-param-page-section="programacao">
                               <img src="{{ .imagem }}" alt="{{ $tituloAtividade }}" loading="lazy" decoding="async">

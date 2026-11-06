@@ -27,9 +27,11 @@ test("abre e fecha menu mobile atualizando aria-expanded", () => {
   toggle.dispatchEvent({ type: "click" });
   assert.equal(menu.classList.contains("open"), true);
   assert.equal(toggle.getAttribute("aria-expanded"), "true");
+  assert.equal(toggle.dataset.analyticsParamNavigationAction, "open");
 
   toggle.dispatchEvent({ type: "click" });
   assert.equal(menu.classList.contains("open"), false);
   assert.equal(toggle.getAttribute("aria-expanded"), "false");
+  assert.equal(toggle.dataset.analyticsParamNavigationAction, "close");
 });
 

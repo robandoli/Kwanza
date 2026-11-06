@@ -7,7 +7,7 @@
 <article class="pagina">
 
   {{ with .Params.eventos_lista }}
-  <section class="eventos-lista section">
+  <section class="eventos-lista section" data-analytics-component="calendar_agenda">
     <div class="container">
       <div class="editorial-content">
         <h2>{{ i18n "calendar_full_agenda" }}</h2>
@@ -18,7 +18,7 @@
   {{ end }}
 
   {{ if .Content }}
-  <section class="pagina-conteudo section">
+  <section class="pagina-conteudo section" data-analytics-component="page_content">
     <div class="container">
       <div class="editorial-content">
         {{ .Content }}
