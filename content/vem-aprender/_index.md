@@ -113,7 +113,7 @@ documentacao:
       arquivo: "/docs/curriculo_cultural_professora_guerreira.pdf"
       descricao: "PDF - 2.1MB"
 
-    - nome: "Currículo Cultura Contra-mestre Camarão"
+    - nome: "Currículo Cultura Mestre Camarão"
       arquivo: "/docs/curriculo_cultural_cm_camarao.pdf"
       descricao: "PDF - 1.7MB"
 
@@ -128,7 +128,7 @@ membros_equipe:
       funcao: "Capoeirista, Cantadora e Sambadeira"
       bio: "Produtora cultural, cantadora e sambadeira, responsável pela articulação, organização e continuidade das ações do projeto, promovendo o samba de roda como prática educativa e cultural."
 
-    - nome: "CM Camarão"
+    - nome: "Mestre Camarão"
       funcao: "Capoeirista e Tocador"
       bio: "Atua na condução da percussão tradicional, contribuindo para a base rítmica e o suporte musical das aulas, vivências e apresentações."
 

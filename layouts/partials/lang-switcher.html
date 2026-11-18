@@ -9,7 +9,7 @@
          data-analytics-param-target-language="{{ .Language.Lang }}"
        {{ end }}
        {{ if eq .Language.Lang $.Language.Lang }}aria-current="page"{{ end }}
-       title="{{ .Language.LanguageName }}">
+       title="{{ .Language.Label }}">
       {{ if eq .Language.Lang "pt" }}<img class="lang-switcher__flag" src="{{ "img/flags/brz_mini.webp" | relURL }}" alt="" width="14" height="10">PT
       {{ else if eq .Language.Lang "es" }}<img class="lang-switcher__flag" src="{{ "img/flags/esp_mini.webp" | relURL }}" alt="" width="14" height="10">ES
       {{ else if eq .Language.Lang "en" }}<img class="lang-switcher__flag" src="{{ "img/flags/eua_mini.webp" | relURL }}" alt="" width="14" height="10">EN

@@ -66,7 +66,9 @@ test("retrospectiva apresenta créditos, apoio e canal no conteúdo em portuguê
   const videos = readProjectFile("layouts/partials/evento-kwanza/videos.html");
   const footer = readProjectFile("layouts/partials/footer.html");
 
-  assert.match(content, /galeria_credito: "Fotografias: @soraiaoc e \[@noclickdofaf\]\(https:\/\/www\.instagram\.com\/noclickdofaf\/\) \(parte dos registros\)\."/);
+  for (const profile of ["soraiaoc", "noclickdofaf", "revelandoemocoesestudio"]) {
+    assert.ok(content.includes(`[@${profile}](https://www.instagram.com/${profile}/)`));
+  }
   assert.match(content, /videos_credito: '[^\n]*https:\/\/www\.instagram\.com\/_felipe_xavier_\//);
   assert.match(content, /apoio_texto: "Apoio: Governo Federal,[^\n]*PNAB[^\n]*ProAC Editais/);
   assert.match(content, /video_completo_url: "https:\/\/www\.youtube\.com\/@culturapopularvemaprender"/);
@@ -204,6 +206,12 @@ test("modelo do evento separa valores de demonstracao do conteudo real", () => {
 
   assert.ok(fs.existsSync(path.join(rootDir, "static/img/eventos/internacional-2026/gafanhoto.png")));
   const portugueseContent = readProjectFile("content/internacional-capoeira-kwanza.md");
+  assert.match(portugueseContent, /sharing_image_alt: "Capoeiristas abraçados no palco diante do público/);
+  ["vivencias", "roda", "cerimonias"].forEach((id) => {
+    const file = fs.readFileSync(path.join(rootDir, `static/img/eventos/internacional-2026/video-${id}.webp`));
+    assert.equal(file.toString("ascii", 0, 4), "RIFF");
+    assert.equal(file.toString("ascii", 8, 12), "WEBP");
+  });
   const gallery = portugueseContent.match(/galeria:\n([\s\S]*?)\nvideos:/)?.[1] || "";
   assert.doesNotMatch(gallery, /Imagem demonstrativa|não é uma fotografia/);
   assert.equal((gallery.match(/^    alt: "/gm) || []).length, 12);
@@ -227,6 +235,45 @@ test("retrospectiva e showcase existem nos quatro idiomas sem fallback de texto"
     const i18n = readProjectFile(`i18n/${language}.toml`);
     keys.forEach((key) => assert.match(i18n, new RegExp(`\\[${key}\\]\\s+other =`)));
   });
+});
+
+test("créditos, imagens e descrições da retrospectiva estão presentes nos quatro idiomas", () => {
+  const contentFor = (language) => readProjectFile(`content/internacional-capoeira-kwanza${language === "pt" ? "" : `.${language}`}.md`);
+  const peopleFor = (content) => {
+    const section = content.match(/formados_mestres:\n([\s\S]*?)\n---/)?.[1] || "";
+    return [...section.matchAll(/^    - nome: "([^"]+)"\n      imagem: "([^"]+)"\n      descricao: "[^"]+"/gm)]
+      .map((match) => [match[1], match[2]]);
+  };
+  const expectedPeople = peopleFor(contentFor("pt"));
+  assert.equal(expectedPeople.length, 21);
+
+  for (const language of ["pt", "en", "es", "de"]) {
+    const content = contentFor(language);
+    for (const key of ["sharing_image_alt", "galeria_credito", "videos_credito", "video_completo_url", "video_completo_texto", "apoio_texto"]) {
+      assert.match(content, new RegExp(`^${key}: .+`, "m"), `${language} requires ${key}`);
+    }
+    for (const profile of ["soraiaoc", "noclickdofaf", "revelandoemocoesestudio", "_felipe_xavier_"]) {
+      assert.ok(content.includes(`https://www.instagram.com/${profile}/`), `${language} requires ${profile}`);
+    }
+    assert.ok(content.includes('video_completo_url: "https://www.youtube.com/@culturapopularvemaprender"'));
+    const gallery = content.match(/galeria:\n([\s\S]*?)\nvideos:/)?.[1] || "";
+    assert.equal((gallery.match(/^    alt: "[^"]+"/gm) || []).length, 12);
+    assert.doesNotMatch(gallery, /placeholder|illustrative|illustrativ|demonstrativ|ilustrativ|kein Foto/i);
+    assert.deepEqual(peopleFor(content), expectedPeople, `${language} must retain the same honorees and images`);
+  }
+});
+
+test("Mestre Camarão tem o título atualizado nas páginas e traduções", () => {
+  for (const language of ["", ".en", ".es", ".de"]) {
+    for (const section of ["contatos", "vem-aprender"]) {
+      const content = readProjectFile(`content/${section}/_index${language}.md`);
+      assert.match(content, /nome: "Mestre Camarão"/);
+      assert.doesNotMatch(content, /(?:contra[ -]?mestre|cm)\s+camarão/i);
+    }
+  }
+  const portuguese = readProjectFile("content/vem-aprender/_index.md");
+  assert.match(portuguese, /Currículo Cultura Mestre Camarão/);
+  assert.match(portuguese, /arquivo: "\/docs\/curriculo_cultural_cm_camarao\.pdf"/);
 });
 
 test("CTAs e componentes interativos possuem pontos de analytics", () => {

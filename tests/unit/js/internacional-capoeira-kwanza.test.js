@@ -134,21 +134,30 @@ test("registra o fechamento do cartaz historico e devolve o foco ao acionador", 
 });
 
 test("galeria navega por setas e permite fechar com Escape nativo do dialog", () => {
+  const calls = [];
   const document = new FakeDocument();
   const { dialog, image, caption } = addLightbox(document);
   const first = addOpener(document, { group: "gallery", src: "/img/01.svg", alt: "Imagem um", caption: "Vivências" });
   const second = addOpener(document, { group: "gallery", src: "/img/02.svg", alt: "Imagem dois", caption: "Roda" });
+  addData(first, "analyticsParamGalleryItem", "registro-01");
+  addData(second, "analyticsParamGalleryItem", "registro-02");
 
-  runScript(document);
+  runScript(document, calls);
   first.dispatchEvent({ type: "click" });
   assert.equal(image.src, "/img/01.svg");
   assert.equal(caption.textContent, "Vivências");
+  assert.equal(calls.length, 0);
 
   let prevented = false;
   dialog.dispatchEvent({ type: "keydown", key: "ArrowRight", preventDefault: () => { prevented = true; } });
   assert.equal(prevented, true);
   assert.equal(image.src, "/img/02.svg");
   assert.equal(second._focused, true);
+  assert.deepEqual(JSON.parse(JSON.stringify(calls)), [["event_gallery_navigate", {
+    event_name: "internacional_capoeira_kwanza",
+    gallery_item: "registro-02",
+    gallery_action: "next",
+  }]]);
 
   prevented = false;
   dialog.dispatchEvent({ type: "keydown", key: "Escape", preventDefault: () => { prevented = true; } });
@@ -186,10 +195,37 @@ test("reproducao de video local registra a categoria no analytics", () => {
   runScript(document, calls);
   assert.equal(calls.length, 0);
   video.dispatchEvent({ type: "play" });
-  assert.deepEqual(JSON.parse(JSON.stringify(calls)), [["event_video_play", {
-    event_name: "internacional_capoeira_kwanza",
-    video_category: "roda",
-  }]]);
+  video.dispatchEvent({ type: "ended" });
+  assert.deepEqual(JSON.parse(JSON.stringify(calls)), [
+    ["event_video_play", { event_name: "internacional_capoeira_kwanza", video_category: "roda" }],
+    ["event_video_complete", { event_name: "internacional_capoeira_kwanza", video_category: "roda" }],
+  ]);
+});
+
+test("eventos de video chegam ao gtag com identificador do encontro", () => {
+  const calls = [];
+  const document = new FakeDocument();
+  const video = addData(new FakeElement("video"), "eventLocalVideo");
+  addData(video, "analyticsParamEventName", "internacional_capoeira_kwanza");
+  addData(video, "analyticsParamVideoCategory", "vivencias");
+  document.body.appendChild(video);
+  const window = {
+    location: { pathname: "/internacional-capoeira-kwanza/" },
+    gtag: (...args) => calls.push(args),
+  };
+  const analyticsPath = path.join(__dirname, "../../../static/js/analytics-events.js");
+  const context = vm.createContext({ document, window, URL });
+  vm.runInContext(fs.readFileSync(analyticsPath, "utf8"), context, { filename: analyticsPath });
+  vm.runInContext(code, context, { filename: scriptPath });
+  document.dispatchDOMContentLoaded();
+
+  video.dispatchEvent({ type: "play" });
+  video.dispatchEvent({ type: "ended" });
+  assert.deepEqual(calls.map((call) => call[1]), ["event_video_play", "event_video_complete"]);
+  calls.forEach((call) => {
+    assert.equal(call[2].event_context, "internacional_capoeira_kwanza");
+    assert.equal(call[2].video_category, "vivencias");
+  });
 });
 
 test("video so e incorporado depois do clique e com provedor e identificador validos", () => {

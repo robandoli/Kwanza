@@ -25,7 +25,7 @@ locais_kwanza:
     lat: -23.53364
     lng: -46.77611
 
-  - nome: "Contra-mestre Camarão"
+  - nome: "Mestre Camarão"
     pais: "Brasilien"
     endereco: "R. dos Odes, 952 – Jardim Nova Vida"
     cidade: "Cotia"

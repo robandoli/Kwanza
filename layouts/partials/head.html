@@ -4,12 +4,7 @@
 {{ $gaID := .Site.Params.ga_measurement_id }}
 {{ if and $gaID (not hugo.IsServer) }}
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ $gaID }}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', '{{ $gaID }}');
-</script>
+<script src="/js/gtag-init.js" data-measurement-id="{{ $gaID }}"></script>
 {{ end }}
 {{ $pageTitle := cond .IsHome .Site.Title (printf "%s | %s" .Title .Site.Title) }}
 {{ $pageDescription := .Site.Params.description }}
@@ -23,7 +18,7 @@
   {{ $pageImageSpecific = true }}
 {{ end }}
 {{ $pageImageAlt := .Site.Title }}
-{{ if $pageImageSpecific }}{{ $pageImageAlt = .Title }}{{ end }}
+{{ if $pageImageSpecific }}{{ $pageImageAlt = .Params.sharing_image_alt | default .Title }}{{ end }}
 {{ $locale := cond (eq .Lang "pt") "pt_BR" (cond (eq .Lang "es") "es_ES" (cond (eq .Lang "de") "de_DE" "en_US")) }}
 {{ $isBlogPost := and .IsPage (eq .Section "blog") }}
 {{ $xDefault := .Site.BaseURL }}
@@ -59,7 +54,7 @@
 <link rel="alternate" hreflang="x-default" href="{{ $xDefault }}">
 
 <link rel="stylesheet" href="/css/style.css">
-<script src="/js/analytics-events.js" defer></script>
+<script src="/js/analytics-events.js?v=20261118-2" defer></script>
 
 <!-- Favicons -->
 <link rel="icon" href="/favicon/logo-kwanza.ico" sizes="any">
@@ -112,7 +107,7 @@
   "@type" "WebSite"
   "name" .Site.Title
   "url" .Site.BaseURL
-  "inLanguage" .Language.LanguageCode
+  "inLanguage" .Language.Locale
 }}
 <script type="application/ld+json">{{ $website | jsonify | safeJS }}</script>
 {{ end }}
@@ -126,7 +121,7 @@
     "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
     "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
     "mainEntityOfPage" .Permalink
-    "inLanguage" .Language.LanguageCode
+    "inLanguage" .Language.Locale
     "author" (dict "@type" "Person" "name" (default "Identidade Kwanza" .Params.author))
     "publisher" (dict "@type" "Organization" "name" .Site.Title "logo" (dict "@type" "ImageObject" "url" $pageImage))
     "image" (slice $pageImage)
@@ -139,11 +134,11 @@
     "name" .Title
     "description" $pageDescription
     "url" .Permalink
-    "inLanguage" .Language.LanguageCode
+    "inLanguage" .Language.Locale
     "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
   }}
   {{ with .Params.evento }}
-    {{ $event := dict "@type" "Event" "name" $.Title "eventStatus" "https://schema.org/EventCompleted" "startDate" .inicio "endDate" .fim "location" (dict "@type" "Place" "name" .local) }}
+    {{ $event := dict "@type" "Event" "name" $.Title "description" $pageDescription "url" $.Permalink "image" $pageImage "eventStatus" "https://schema.org/EventCompleted" "startDate" .inicio "endDate" .fim "location" (dict "@type" "Place" "name" .local) }}
     {{ $webpage = merge $webpage (dict "about" $event) }}
   {{ end }}
   <script type="application/ld+json">{{ $webpage | jsonify | safeJS }}</script>

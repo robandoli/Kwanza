@@ -4,10 +4,11 @@ description: "Retrospectiva do Internacional Capoeira Kwanza 2026 em Cotia (SP),
 subtitle: "Tradição, formação e encontros que fortalecem nossa história."
 layout: "internacional-capoeira-kwanza"
 sharing_image: "/img/eventos/internacional-2026/retrospectiva-capa.webp"
-galeria_credito: "Fotografias: @soraiaoc e [@noclickdofaf](https://www.instagram.com/noclickdofaf/) (parte dos registros)."
+sharing_image_alt: "Capoeiristas abraçados no palco diante do público durante o encontro em Cotia."
+galeria_credito: "Créditos fotográficos: [@soraiaoc](https://www.instagram.com/soraiaoc/), [@noclickdofaf](https://www.instagram.com/noclickdofaf/) e [@revelandoemocoesestudio](https://www.instagram.com/revelandoemocoesestudio/)."
 videos_credito: 'Vídeos: autoria própria e [@\_felipe\_xavier\_](https://www.instagram.com/_felipe_xavier_/).'
 video_completo_url: "https://www.youtube.com/@culturapopularvemaprender"
-video_completo_texto: "Assista ao vídeo completo da formatura no canal Cultura Popular Vem Aprender, no YouTube."
+video_completo_texto: "Confira mais vídeos e imagens no canal Cultura Popular Vem Aprender."
 apoio_texto: "Apoio: Governo Federal, por meio da Política Nacional Aldir Blanc de Fomento à Cultura (PNAB); Governo do Estado de São Paulo; Secretaria da Cultura, Economia e Indústria Criativas; Fomento CULTSP e ProAC Editais."
 feature_flags:
   page_enabled: true
@@ -19,14 +20,14 @@ evento:
   fim: "2026-11-07"
   periodo: "5 a 7 de novembro de 2026"
   imagem: "/img/eventos/internacional-2026/retrospectiva-capa.webp"
-  imagem_alt: "Capoeiristas reunidos com certificados no palco durante o Internacional Capoeira Kwanza 2026."
+  imagem_alt: "Capoeiristas abraçados no palco diante do público durante o encontro em Cotia."
   imagem_largura: 1600
   imagem_altura: 980
 home_destaque:
   imagem: "/img/eventos/internacional-2026/kwanza-em-movimento.webp"
   alt: "Integrantes do Grupo Kwanza reunidos no palco durante o encontro."
   largura: 1200
-  altura: 760
+  altura: 927
 
 indicadores:
   - id: participantes
@@ -366,3 +367,5 @@ formados_mestres:
       descricao: "Registro de Monitora Raio de Sol no evento."
 ---
 Entre 5 e 7 de novembro de 2026, o Internacional Capoeira Kwanza reuniu capoeiristas em Cotia, São Paulo, sob a direção de Mestre Jaguara. O encontro, realizado pelo Ponto de Cultura Capoeira Kwanza, valorizou a cultura da capoeira e abriu espaço para formação, troca de conhecimentos e convivência.
+
+A programação incluiu workshop em 5 de novembro, cerimônia em 6 de novembro e batizado e troca de cordas em 7 de novembro.
