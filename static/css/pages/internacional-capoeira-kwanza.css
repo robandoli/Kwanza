@@ -529,6 +529,24 @@
   padding-block: clamp(3rem, 7vw, 6rem);
 }
 
+.evento-kwanza__gallery-credit,
+.evento-kwanza__video-credit {
+  color: var(--text-editorial-muted);
+}
+
+.evento-kwanza__gallery-credit a,
+.evento-kwanza__video-credit a {
+  color: var(--color-secondary);
+}
+
+.evento-kwanza__video-complete {
+  margin-top: var(--space-lg);
+}
+
+.evento-kwanza__video-complete a {
+  color: var(--color-secondary);
+}
+
 .evento-kwanza__gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

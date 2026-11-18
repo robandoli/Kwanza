@@ -17,6 +17,7 @@
       <header class="evento-kwanza__section-header editorial-content">
         <p class="evento-kwanza__eyebrow">{{ i18n "event_videos_eyebrow" }}</p>
         <h2 id="event-videos-title">{{ i18n "event_videos_title" }}</h2>
+        {{ with $page.Params.videos_credito }}<p class="evento-kwanza__video-credit">{{ . | markdownify }}</p>{{ end }}
       </header>
       <div class="evento-kwanza__video-grid">
         {{ range . }}
@@ -42,6 +43,9 @@
           </article>
         {{ end }}
       </div>
+      {{ with $page.Params.video_completo_url }}
+        <p class="evento-kwanza__video-complete"><a href="{{ . }}" data-analytics-event="external_social_click" data-analytics-param-social-network="youtube" data-analytics-param-page-section="event_videos">{{ $page.Params.video_completo_texto }}</a></p>
+      {{ end }}
     </div>
   </section>
 {{ end }}

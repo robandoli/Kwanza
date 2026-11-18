@@ -60,6 +60,22 @@ test("reconhecimento permanece global e regua aparece somente na pagina internac
   });
 });
 
+test("retrospectiva apresenta créditos, apoio e canal no conteúdo em português", () => {
+  const content = readProjectFile("content/internacional-capoeira-kwanza.md");
+  const gallery = readProjectFile("layouts/partials/evento-kwanza/galeria.html");
+  const videos = readProjectFile("layouts/partials/evento-kwanza/videos.html");
+  const footer = readProjectFile("layouts/partials/footer.html");
+
+  assert.match(content, /galeria_credito: "Fotografias: @soraiaoc e \[@noclickdofaf\]\(https:\/\/www\.instagram\.com\/noclickdofaf\/\) \(parte dos registros\)\."/);
+  assert.match(content, /videos_credito: '[^\n]*https:\/\/www\.instagram\.com\/_felipe_xavier_\//);
+  assert.match(content, /apoio_texto: "Apoio: Governo Federal,[^\n]*PNAB[^\n]*ProAC Editais/);
+  assert.match(content, /video_completo_url: "https:\/\/www\.youtube\.com\/@culturapopularvemaprender"/);
+  assert.match(gallery, /with \$page\.Params\.galeria_credito/);
+  assert.match(videos, /with \$page\.Params\.videos_credito/);
+  assert.match(videos, /with \$page\.Params\.video_completo_url[\s\S]*?data-analytics-event="external_social_click"[\s\S]*?data-analytics-param-page-section="event_videos"/);
+  assert.match(footer, /if and \.File \(eq \.File\.TranslationBaseName "internacional-capoeira-kwanza"\)[\s\S]*?with \.Params\.apoio_texto/);
+});
+
 test("pagina do evento usa narrativa de retrospectiva e mantem os contratos de analytics", () => {
   const eventPage = readProjectFile("layouts/_default/internacional-capoeira-kwanza.html");
   const mestres = readProjectFile("layouts/partials/evento-kwanza/mestres.html");
@@ -176,7 +192,8 @@ test("modelo do evento separa valores de demonstracao do conteudo real", () => {
     assert.doesNotMatch(content, /descricao: .*não confirma uma graduação|does not confirm that a graduation|no confirma que se haya realizado una graduación|bestätigt keine tatsächlich erfolgte Graduierung/i);
     assert.doesNotMatch(content, /presença nesta agenda não confirma|does not, by itself, confirm|no confirma, por sí sola|bestätigt für sich genommen nicht/i);
     assert.equal((content.match(/^  - id: "registro-/gm) || []).length, 12);
-    assert.doesNotMatch(content, /youtube\.com|youtu\.be|vimeo\.com/);
+    const videoContent = content.match(/videos:\n([\s\S]*?)\ndepoimentos:/)?.[1] || "";
+    assert.doesNotMatch(videoContent, /youtube\.com|youtu\.be|vimeo\.com/);
 
     const testimonialContent = content.match(/depoimentos:\n([\s\S]*?)\narquivo_historico:/)?.[1] || "";
     assert.equal((testimonialContent.match(/id: "depoimento-0[1-3]"/g) || []).length, 3);

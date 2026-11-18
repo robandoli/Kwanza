@@ -10,6 +10,7 @@
       <header class="evento-kwanza__section-header editorial-content">
         <p class="evento-kwanza__eyebrow">{{ i18n "event_gallery_eyebrow" }}</p>
         <h2 id="event-gallery-title">{{ i18n "event_gallery_title" }}</h2>
+        {{ with $page.Params.galeria_credito }}<p class="evento-kwanza__gallery-credit">{{ . | markdownify }}</p>{{ end }}
       </header>
       <div class="evento-kwanza__gallery-grid">
         {{ range . }}
