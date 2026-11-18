@@ -20,6 +20,13 @@
   background: var(--white-pure);
 }
 
+.footer-funding-strip__text {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-sm) var(--container-padding);
+  color: var(--text-editorial);
+}
+
 .footer-funding-strip__image {
   display: block;
   width: 100%;

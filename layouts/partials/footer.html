@@ -84,6 +84,7 @@
 
   {{ if and .File (eq .File.TranslationBaseName "internacional-capoeira-kwanza") }}
     <div class="footer-funding-strip">
+      {{ with .Params.apoio_texto }}<p class="footer-funding-strip__text">{{ . }}</p>{{ end }}
       <img
         class="footer-funding-strip__image"
         src="/img/eventos/internacional-2026/regua_cultura.webp"

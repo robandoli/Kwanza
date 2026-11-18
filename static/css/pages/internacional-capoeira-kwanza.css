@@ -442,6 +442,7 @@
 
 .evento-kwanza__carousel-viewport {
   overflow: hidden;
+  touch-action: pan-y pinch-zoom;
 }
 
 .evento-kwanza__carousel-track {
@@ -526,6 +527,24 @@
 
 .evento-kwanza__gallery {
   padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.evento-kwanza__gallery-credit,
+.evento-kwanza__video-credit {
+  color: var(--text-editorial-muted);
+}
+
+.evento-kwanza__gallery-credit a,
+.evento-kwanza__video-credit a {
+  color: var(--color-secondary);
+}
+
+.evento-kwanza__video-complete {
+  margin-top: var(--space-lg);
+}
+
+.evento-kwanza__video-complete a {
+  color: var(--color-secondary);
 }
 
 .evento-kwanza__gallery-grid {
