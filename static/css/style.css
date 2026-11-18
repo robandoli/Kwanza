@@ -8,7 +8,6 @@
 
 /* COMPONENTS */
 @import "components/navigation.css";
-@import "components/home-event-banner.css";
 @import "components/button.css";
 @import "components/footer.css";
 @import "components/floating-whatsapp.css";
@@ -21,6 +20,7 @@
 @import "sections/hero.css";
 @import "sections/eventos.css";
 @import "sections/home-about.css";
+@import "sections/home-event-showcase.css";
 
 /* PAGES */
 @import "pages/equipe.css";

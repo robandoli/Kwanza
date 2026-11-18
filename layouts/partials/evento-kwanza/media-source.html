@@ -1,0 +1,10 @@
+{{ $src := .src | default "" }}
+{{ $demo := false }}
+{{ if and $src (not (os.FileExists (printf "static%s" $src))) }}
+  {{ $src = "" }}
+{{ end }}
+{{ if and (not $src) .demoMedia .demoSrc (os.FileExists (printf "static%s" .demoSrc)) }}
+  {{ $src = .demoSrc }}
+  {{ $demo = true }}
+{{ end }}
+{{ return (dict "src" $src "demo" $demo) }}

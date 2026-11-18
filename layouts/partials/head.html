@@ -15,6 +15,15 @@
 {{ $pageDescription := .Site.Params.description }}
 {{ with .Description }}{{ $pageDescription = . }}{{ end }}
 {{ $pageImage := "/img/logo-kwanza.webp" | absURL }}
+{{ $pageImageSpecific := false }}
+{{ $demoMedia := and .Params.feature_flags.demo_media (ne hugo.Environment "production") }}
+{{ $shareImage := partial "evento-kwanza/media-source.html" (dict "src" .Params.sharing_image "demoSrc" .Params.sharing_image_demo "demoMedia" $demoMedia) }}
+{{ if $shareImage.src }}
+  {{ $pageImage = $shareImage.src | absURL }}
+  {{ $pageImageSpecific = true }}
+{{ end }}
+{{ $pageImageAlt := .Site.Title }}
+{{ if $pageImageSpecific }}{{ $pageImageAlt = .Title }}{{ end }}
 {{ $locale := cond (eq .Lang "pt") "pt_BR" (cond (eq .Lang "es") "es_ES" (cond (eq .Lang "de") "de_DE" "en_US")) }}
 {{ $isBlogPost := and .IsPage (eq .Section "blog") }}
 {{ $xDefault := .Site.BaseURL }}
@@ -64,7 +73,7 @@
 <meta property="og:description" content="{{ $pageDescription }}">
 <meta property="og:url" content="{{ .Permalink }}">
 <meta property="og:image" content="{{ $pageImage }}">
-<meta property="og:image:alt" content="{{ .Site.Title }}">
+<meta property="og:image:alt" content="{{ $pageImageAlt }}">
 <meta property="og:locale" content="{{ $locale }}">
 {{ if .IsTranslated }}
   {{ range .Translations }}
@@ -85,7 +94,7 @@
 <meta name="twitter:title" content="{{ $pageTitle }}">
 <meta name="twitter:description" content="{{ $pageDescription }}">
 <meta name="twitter:image" content="{{ $pageImage }}">
-<meta name="twitter:image:alt" content="{{ .Site.Title }}">
+<meta name="twitter:image:alt" content="{{ $pageImageAlt }}">
 
 <!-- Structured Data -->
 {{ if and .IsHome (eq .Lang "pt") }}
@@ -133,5 +142,9 @@
     "inLanguage" .Language.LanguageCode
     "isPartOf" (dict "@type" "WebSite" "name" .Site.Title "url" .Site.BaseURL)
   }}
+  {{ with .Params.evento }}
+    {{ $event := dict "@type" "Event" "name" $.Title "eventStatus" "https://schema.org/EventCompleted" "startDate" .inicio "endDate" .fim "location" (dict "@type" "Place" "name" .local) }}
+    {{ $webpage = merge $webpage (dict "about" $event) }}
+  {{ end }}
   <script type="application/ld+json">{{ $webpage | jsonify | safeJS }}</script>
 {{ end }}

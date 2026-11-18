@@ -3,6 +3,26 @@
   --color-secondary: #9E1B32;
   --color-accent: #F2B705;
   --color-balance: #1F3D2B;
+  --text-editorial: #25231F;
+  --text-editorial-copy: #45433F;
+  --text-editorial-muted: #514F4B;
+  --text-editorial-secondary: #5C5851;
+  --text-editorial-subtle: #625D56;
+  --text-editorial-faint: #6B655E;
+  --text-editorial-placeholder: #4B4841;
+  --text-editorial-error: #4B2424;
+  --text-demo-note: #6C4A11;
+  --white-pure: #FFFFFF;
+  --text-on-dark: #FFFFFF;
+  --text-on-demo: #241B0B;
+  --text-on-video: #FFFFFF;
+  --surface-white: #FFFFFF;
+  --surface-editorial-warm: #EEE8DC;
+  --surface-image-placeholder: #E9E5DC;
+  --surface-image-muted: #DED8CC;
+  --surface-dark: #171713;
+  --surface-video: #211713;
+  --surface-cta-dark: #171B16;
 
   --black-pure: #0E0E0E;
   --black-soft: #1A1A1A;

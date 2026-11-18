@@ -81,6 +81,20 @@
       <p>{{ i18n "footer_seo_text" }}</p>
     </div>
   </div>
+
+  {{ if and .File (eq .File.TranslationBaseName "internacional-capoeira-kwanza") }}
+    <div class="footer-funding-strip">
+      <img
+        class="footer-funding-strip__image"
+        src="/img/eventos/internacional-2026/regua_cultura.webp"
+        alt="{{ i18n "footer_funding_strip_alt" }}"
+        width="1600"
+        height="243"
+        loading="lazy"
+        decoding="async"
+      >
+    </div>
+  {{ end }}
 </footer>
 
 <script src="/js/hero-carousel.js"></script>

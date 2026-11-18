@@ -1,11 +1,27 @@
-<section class="evento-kwanza__hero">
-  <div class="container">
-    <div class="evento-kwanza__hero-copy">
-      <p class="evento-kwanza__eyebrow">{{ i18n "event_eyebrow_special_program" }}</p>
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.subtitle }}
-        <p class="evento-kwanza__lead">{{ . }}</p>
-      {{ end }}
-    </div>
+{{ $page := .page }}
+{{ $event := $page.Params.evento }}
+{{ $media := partial "evento-kwanza/media-source.html" (dict "src" $event.imagem "demoSrc" $event.imagem_demo "demoMedia" .demoMedia) }}
+{{ $src := $media.src }}
+<header class="evento-kwanza__hero">
+  {{ if $src }}
+    <img
+      class="evento-kwanza__hero-image"
+      src="{{ $src }}"
+      alt="{{ $event.imagem_alt }}"
+      width="{{ $event.imagem_largura }}"
+      height="{{ $event.imagem_altura }}"
+      fetchpriority="high"
+      decoding="async">
+  {{ end }}
+  <div class="evento-kwanza__hero-shade" aria-hidden="true"></div>
+  <div class="container evento-kwanza__hero-content">
+    <p class="evento-kwanza__eyebrow">{{ i18n "event_retrospective_label" }}</p>
+    <h1>{{ $page.Title }}</h1>
+    <p class="evento-kwanza__lead">{{ $page.Params.subtitle }}</p>
+    <dl class="evento-kwanza__hero-meta">
+      <div><dt>{{ i18n "event_location_label" }}</dt><dd>{{ $event.local }}</dd></div>
+      <div><dt>{{ i18n "event_period_label" }}</dt><dd>{{ $event.periodo }}</dd></div>
+      <div><dt>{{ i18n "event_status_label" }}</dt><dd>{{ i18n "event_completed" }}</dd></div>
+    </dl>
   </div>
-</section>
+</header>

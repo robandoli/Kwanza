@@ -1,0 +1,20 @@
+{{ $media := partial "evento-kwanza/media-source.html" . }}
+{{ with $media.src }}
+  {{ $width := $.width | default 1200 }}
+  {{ $height := $.height | default 800 }}
+  <figure class="evento-kwanza__figure{{ with $.class }} evento-kwanza__figure--{{ . }}{{ end }}">
+    <div class="evento-kwanza__image-frame" data-image-frame>
+      <span class="evento-kwanza__image-loading" aria-hidden="true">{{ i18n "event_image_loading" }}</span>
+      <img
+        data-event-image
+        src="{{ . }}"
+        alt="{{ $.alt }}"
+        width="{{ $width }}"
+        height="{{ $height }}"
+        loading="{{ $.loading | default "lazy" }}"
+        decoding="async">
+      <span class="evento-kwanza__image-error" data-image-error role="status" hidden>{{ i18n "event_image_error" }}</span>
+    </div>
+    {{ with $.caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+{{ end }}

@@ -1,4 +1,10 @@
-<dialog class="evento-kwanza__lightbox" data-lightbox data-analytics-component="event_activity_lightbox">
+<dialog class="evento-kwanza__lightbox" data-lightbox aria-labelledby="event-lightbox-title">
+  <h2 id="event-lightbox-title" class="evento-kwanza__visually-hidden">{{ i18n "event_lightbox_title" }}</h2>
   <button type="button" class="evento-kwanza__lightbox-close" data-lightbox-close aria-label="{{ i18n "event_lightbox_close" }}">&times;</button>
-  <img src="" alt="" data-lightbox-image>
+  <button type="button" class="evento-kwanza__lightbox-nav evento-kwanza__lightbox-nav--previous" data-lightbox-prev aria-label="{{ i18n "event_gallery_previous" }}">‹</button>
+  <figure>
+    <img src="" alt="" data-lightbox-image>
+    <figcaption data-lightbox-caption></figcaption>
+  </figure>
+  <button type="button" class="evento-kwanza__lightbox-nav evento-kwanza__lightbox-nav--next" data-lightbox-next aria-label="{{ i18n "event_gallery_next" }}">›</button>
 </dialog>
