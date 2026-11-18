@@ -21,7 +21,7 @@ O site envia os eventos definidos neste documento quando `ga_measurement_id` est
 | `content_search` | Busca no catálogo de cantigas | `component_name`, `search_action`, `search_result_count` |
 | `content_media_start` | Início de reprodução de áudio | `component_name`, `content_name`, `media_type` |
 | `content_media_complete` | Áudio reproduzido até o fim | `component_name`, `content_name`, `media_type` |
-| `carousel_interaction` | Uso manual de controles de carrossel | `carousel_name`, `carousel_action` |
+| `carousel_interaction` | Uso de controles ou deslize no carrossel | `carousel_name`, `carousel_action` |
 | `schedule_image_open` | Abertura de imagem da programação do evento | `activity_name`, `page_section` |
 | `schedule_image_close` | Fechamento da imagem da programação do evento | `event_name`, `page_section` |
 | `event_view` | Entrada na página do evento internacional | `event_name` |

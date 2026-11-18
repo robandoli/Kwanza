@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!carousel) return;
 
   const track = carousel.querySelector("[data-carousel-track]");
+  const viewport = carousel.querySelector("[data-carousel-viewport]");
   const prevButton = carousel.querySelector("[data-carousel-prev]");
   const nextButton = carousel.querySelector("[data-carousel-next]");
   const dotsContainer = carousel.querySelector("[data-carousel-dots]");
@@ -212,6 +213,39 @@ document.addEventListener("DOMContentLoaded", () => {
     currentPage = Math.min(pages - 1, currentPage + 1);
     update();
   });
+  let touchStart = null;
+  viewport?.addEventListener("touchstart", (event) => {
+    if (event.touches.length !== 1) {
+      touchStart = null;
+      return;
+    }
+    const touch = event.touches[0];
+    touchStart = { id: touch.identifier, x: touch.clientX, y: touch.clientY };
+  }, { passive: true });
+  viewport?.addEventListener("touchend", (event) => {
+    if (!touchStart || event.touches.length !== 0) {
+      touchStart = null;
+      return;
+    }
+    const touch = Array.from(event.changedTouches).find((item) => item.identifier === touchStart.id);
+    if (!touch) {
+      touchStart = null;
+      return;
+    }
+    const deltaX = touch.clientX - touchStart.x;
+    const deltaY = touch.clientY - touchStart.y;
+    touchStart = null;
+    if (Math.abs(deltaX) < 50 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+    const nextPage = Math.max(0, Math.min(pages - 1, currentPage + (deltaX < 0 ? 1 : -1)));
+    if (nextPage === currentPage) return;
+    currentPage = nextPage;
+    update();
+    window.trackKwanzaAnalytics?.("carousel_interaction", {
+      carousel_name: "formados_mestres",
+      carousel_action: deltaX < 0 ? "swipe_next" : "swipe_previous",
+    });
+  }, { passive: true });
+  viewport?.addEventListener("touchcancel", () => { touchStart = null; }, { passive: true });
   window.addEventListener?.("resize", update);
   update();
 });

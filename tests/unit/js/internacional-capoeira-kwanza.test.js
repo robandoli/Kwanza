@@ -45,18 +45,66 @@ function addOpener(document, { group, src, alt, caption }) {
   return button;
 }
 
-function runScript(document, analyticsCalls = []) {
+function runScript(document, analyticsCalls = [], innerWidth = 1366) {
   vm.runInNewContext(code, {
     document,
     URL,
     window: {
-      innerWidth: 1366,
+      innerWidth,
       getComputedStyle: () => ({ columnGap: "0", gap: "0" }),
       trackKwanzaAnalytics: (...args) => analyticsCalls.push(args),
     },
   }, { filename: scriptPath });
   document.dispatchDOMContentLoaded();
 }
+
+test("carrossel responde ao deslize horizontal e preserva rolagem vertical e limites", () => {
+  const calls = [];
+  const document = new FakeDocument();
+  const carousel = addData(new FakeElement("div"), "mestresCarousel");
+  const viewport = addData(new FakeElement("div"), "carouselViewport");
+  const track = addData(new FakeElement("div"), "carouselTrack");
+  const previous = addData(new FakeElement("button"), "carouselPrev");
+  const next = addData(new FakeElement("button"), "carouselNext");
+  const dots = addData(new FakeElement("div"), "carouselDots");
+  for (let i = 0; i < 3; i += 1) {
+    const card = new FakeElement("article");
+    card.getBoundingClientRect = () => ({ width: 300 });
+    track.appendChild(card);
+  }
+  viewport.appendChild(track);
+  [previous, next, viewport, dots].forEach((element) => carousel.appendChild(element));
+  document.body.appendChild(carousel);
+  runScript(document, calls, 375);
+
+  const touch = (x, y, identifier = 1) => ({ clientX: x, clientY: y, identifier });
+  const swipe = (start, end) => {
+    viewport.dispatchEvent({ type: "touchstart", touches: [start] });
+    viewport.dispatchEvent({ type: "touchend", touches: [], changedTouches: [end] });
+  };
+  assert.equal(track.style.transform, "translateX(-0px)");
+  swipe(touch(250, 100), touch(120, 110));
+  assert.equal(track.style.transform, "translateX(-300px)");
+  assert.equal(previous.disabled, false);
+  assert.equal(dots.children[1].getAttribute("aria-pressed"), "true");
+  swipe(touch(250, 100), touch(230, 110));
+  swipe(touch(250, 100), touch(180, 220));
+  assert.equal(track.style.transform, "translateX(-300px)");
+  swipe(touch(100, 100), touch(220, 105));
+  swipe(touch(100, 100), touch(220, 105));
+  assert.equal(track.style.transform, "translateX(-0px)");
+  assert.equal(previous.disabled, true);
+  assert.deepEqual(JSON.parse(JSON.stringify(calls)), [
+    ["carousel_interaction", { carousel_name: "formados_mestres", carousel_action: "swipe_next" }],
+    ["carousel_interaction", { carousel_name: "formados_mestres", carousel_action: "swipe_previous" }],
+  ]);
+  viewport.dispatchEvent({ type: "touchstart", touches: [touch(250, 100)] });
+  viewport.dispatchEvent({ type: "touchcancel" });
+  viewport.dispatchEvent({ type: "touchend", touches: [], changedTouches: [touch(100, 100)] });
+  assert.equal(track.style.transform, "translateX(-0px)");
+  next.dispatchEvent({ type: "click" });
+  assert.equal(track.style.transform, "translateX(-300px)");
+});
 
 test("registra o fechamento do cartaz historico e devolve o foco ao acionador", () => {
   const calls = [];

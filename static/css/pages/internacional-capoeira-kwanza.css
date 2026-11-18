@@ -442,6 +442,7 @@
 
 .evento-kwanza__carousel-viewport {
   overflow: hidden;
+  touch-action: pan-y pinch-zoom;
 }
 
 .evento-kwanza__carousel-track {
