@@ -124,7 +124,7 @@ membros_equipe:
       funcao: "Capoeirista, Cantadora y Sambadeira"
       bio: "Productora cultural, cantadora y sambadeira, responsable de la articulación, organización y continuidad de las acciones del proyecto, promoviendo el samba de roda como práctica educativa y cultural."
 
-    - nome: "CM Camarão"
+    - nome: "Mestre Camarão"
       funcao: "Capoeirista y Músico"
       bio: "Actúa en la conducción de la percusión tradicional, contribuyendo a la base rítmica y al soporte musical de las clases, vivencias y presentaciones."
 

@@ -28,6 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const nextIndex = (currentIndex + direction + images.length) % images.length;
     showImage(images[nextIndex]);
     activeTrigger.focus();
+    if (activeGroup === "gallery") {
+      window.trackKwanzaAnalytics?.("event_gallery_navigate", {
+        event_name: "internacional_capoeira_kwanza",
+        gallery_item: activeTrigger.dataset.analyticsParamGalleryItem || "unknown",
+        gallery_action: direction > 0 ? "next" : "previous",
+      });
+    }
   };
 
   document.querySelectorAll("[data-lightbox-open]").forEach((button) => {
@@ -118,12 +125,14 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   document.querySelectorAll("[data-event-local-video]").forEach((video) => {
-    video.addEventListener("play", () => {
-      window.trackKwanzaAnalytics?.("event_video_play", {
+    const trackVideo = (eventName) => {
+      window.trackKwanzaAnalytics?.(eventName, {
         event_name: video.dataset.analyticsParamEventName || "internacional_capoeira_kwanza",
         video_category: video.dataset.analyticsParamVideoCategory || "uncategorized",
       });
-    });
+    };
+    video.addEventListener("play", () => trackVideo("event_video_play"));
+    video.addEventListener("ended", () => trackVideo("event_video_complete"));
   });
 
   document.querySelectorAll("[data-video-load]").forEach((button) => {

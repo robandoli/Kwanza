@@ -44,6 +44,7 @@ test("envia evento de página com parâmetros padronizados", () => {
     page_path: "/internacional-capoeira-kwanza/",
     page_title: "Internacional Capoeira Kwanza",
     event_name: "internacional_capoeira_kwanza",
+    event_context: "internacional_capoeira_kwanza",
   });
 });
 
@@ -82,6 +83,22 @@ test("envia evento de clique a partir do elemento clicado ou ancestral", () => {
     link_type: "external",
     link_url: "https://wa.me",
   });
+});
+
+test("identificador do encontro não altera o contexto definido nem outros eventos", () => {
+  const calls = [];
+  const document = new FakeDocument();
+  const window = {
+    location: { pathname: "/" },
+    gtag: (...args) => calls.push(args),
+  };
+  loadAnalyticsScript({ document, window });
+
+  window.trackKwanzaAnalytics("outro_evento", { event_name: "outro_encontro" });
+  window.trackKwanzaAnalytics("event_view", { event_name: "internacional_capoeira_kwanza", event_context: "valor_explicito" });
+
+  assert.equal(calls[0][2].event_context, undefined);
+  assert.equal(calls[1][2].event_context, "valor_explicito");
 });
 
 test("registra cliques editoriais sem enviar a query do destino", () => {

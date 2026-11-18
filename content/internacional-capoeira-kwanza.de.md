@@ -1,9 +1,15 @@
 ---
 title: "Internationale Capoeira Kwanza 2026"
-description: "Institutioneller Rückblick auf die Internationale Capoeira Kwanza 2026, die vom 5. bis 7. November in Cotia, São Paulo, stattfand."
+description: "Rückblick auf die Internationale Capoeira Kwanza 2026 in Cotia (São Paulo), mit Rodas und Graduierung unter der Leitung von Mestre Jaguara."
 subtitle: "Tradition, Bildung und Begegnungen, die unsere Geschichte stärken."
 layout: "internacional-capoeira-kwanza"
 sharing_image: "/img/eventos/internacional-2026/retrospectiva-capa.webp"
+sharing_image_alt: "Capoeiristas stehen auf der Bühne umarmt vor dem Publikum während des Treffens in Cotia."
+galeria_credito: "Fotografien: [@soraiaoc](https://www.instagram.com/soraiaoc/), [@noclickdofaf](https://www.instagram.com/noclickdofaf/) und [@revelandoemocoesestudio](https://www.instagram.com/revelandoemocoesestudio/)."
+videos_credito: 'Videos: Eigenproduktion und [@\_felipe\_xavier\_](https://www.instagram.com/_felipe_xavier_/).'
+video_completo_url: "https://www.youtube.com/@culturapopularvemaprender"
+video_completo_texto: "Weitere Videos und Bilder gibt es auf dem Kanal Cultura Popular Vem Aprender."
+apoio_texto: "Unterstützung: Governo Federal über die Política Nacional Aldir Blanc de Fomento à Cultura (PNAB); Governo do Estado de São Paulo; Secretaria da Cultura, Economia e Indústria Criativas; Fomento CULTSP und ProAC Editais."
 feature_flags:
   page_enabled: true
   demo_media: false
@@ -14,14 +20,14 @@ evento:
   fim: "2026-11-07"
   periodo: "5.–7. November 2026"
   imagem: "/img/eventos/internacional-2026/retrospectiva-capa.webp"
-  imagem_alt: "Capoeiristas mit Zertifikaten auf der Bühne beim International Capoeira Kwanza 2026."
+  imagem_alt: "Capoeiristas stehen auf der Bühne umarmt vor dem Publikum während des Treffens in Cotia."
   imagem_largura: 1600
   imagem_altura: 980
 home_destaque:
   imagem: "/img/eventos/internacional-2026/kwanza-em-movimento.webp"
   alt: "Mitglieder der Grupo Kwanza versammelt auf der Bühne während des Treffens."
   largura: 1200
-  altura: 760
+  altura: 927
 
 indicadores:
   - id: participantes
@@ -86,77 +92,77 @@ galeria:
   - id: "registro-02"
     categoria: "cerimonias"
     legenda: "Zeremonien"
-    alt: "Illustrativer Platzhalter für zeremonien, kein Foto der Veranstaltung 2026."
+    alt: "Eine Gruppe Geehrter posiert auf der Bühne mit Urkunden."
     imagem: "/img/eventos/internacional-2026/galeria-02-cerimonias.webp"
     largura: 1200
     altura: 800
   - id: "registro-03"
     categoria: "roda"
     legenda: "Straßenroda"
-    alt: "Illustrativer Platzhalter für straßenroda, kein Foto der Veranstaltung 2026."
+    alt: "Zwei Capoeiristas spielen in einer Roda im Freien, umgeben von Teilnehmenden."
     imagem: "/img/eventos/internacional-2026/galeria-03-roda-de-rua.webp"
     largura: 1200
     altura: 800
   - id: "registro-04"
     categoria: "batizado"
     legenda: "Batizado"
-    alt: "Illustrativer Platzhalter für batizado, kein Foto der Veranstaltung 2026."
+    alt: "Capoeiristas spielen auf der Bühne während des Batizado."
     imagem: "/img/eventos/internacional-2026/galeria-04-batizado.webp"
     largura: 1200
     altura: 800
   - id: "registro-05"
     categoria: "coletivo"
     legenda: "Gemeinschaftstreffen"
-    alt: "Illustrativer Platzhalter für gemeinschaftstreffen, kein Foto der Veranstaltung 2026."
+    alt: "Zwei Capoeiristas spielen in einer Roda im Freien vor Publikum."
     imagem: "/img/eventos/internacional-2026/galeria-05-encontro-coletivo.webp"
     largura: 1200
     altura: 800
   - id: "registro-06"
     categoria: "coletivo"
     legenda: "Musik und Bewegung"
-    alt: "Illustrativer Platzhalter für musik und bewegung, kein Foto der Veranstaltung 2026."
+    alt: "Ein Capoeirista mit Berimbau begleitet eine Roda im Freien."
     imagem: "/img/eventos/internacional-2026/galeria-06-musica-e-movimento.webp"
     largura: 1200
     altura: 800
   - id: "registro-07"
     categoria: "coletivo"
     legenda: "Gemeinsames Lernen"
-    alt: "Illustrativer Platzhalter für gemeinsames lernen, kein Foto der Veranstaltung 2026."
+    alt: "Capoeiristas spielen auf der Bühne vor Musikern und sitzenden Teilnehmenden."
     imagem: "/img/eventos/internacional-2026/galeria-07-aprendizagem.webp"
     largura: 1200
     altura: 800
   - id: "registro-08"
     categoria: "coletivo"
     legenda: "Capoeira im öffentlichen Raum"
-    alt: "Illustrativer Platzhalter für capoeira im öffentlichen raum, kein Foto der Veranstaltung 2026."
+    alt: "Eine Gruppe von Teilnehmenden versammelt sich für ein Foto im Freien."
     imagem: "/img/eventos/internacional-2026/galeria-08-espaco-publico.webp"
     largura: 1200
     altura: 800
   - id: "registro-09"
     categoria: "coletivo"
     legenda: "Capoeira-Roda"
-    alt: "Illustrativer Platzhalter für capoeira-roda, kein Foto der Veranstaltung 2026."
+    alt: "Capoeiristas spielen auf der Bühne vor Musikern und sitzenden Teilnehmenden."
     imagem: "/img/eventos/internacional-2026/galeria-09-roda.webp"
     largura: 1200
     altura: 800
   - id: "registro-10"
     categoria: "coletivo"
     legenda: "Feier"
-    alt: "Illustrativer Platzhalter für feier, kein Foto der Veranstaltung 2026."
+    alt: "Kinder posieren in der Sporthalle für ein Foto, im Hintergrund das Publikum."
     imagem: "/img/eventos/internacional-2026/galeria-10-celebracao.webp"
     largura: 1200
     altura: 720
   - id: "registro-11"
     categoria: "coletivo"
     legenda: "Bewegung und Ausdruck"
-    alt: "Illustrativer Platzhalter für bewegung und ausdruck, kein Foto der Veranstaltung 2026."
+    alt: "Capoeiristas begrüßen sich in einer Roda im Freien."
     imagem: "/img/eventos/internacional-2026/galeria-11-movimento-expressao.webp"
     largura: 1200
     altura: 800
   - id: "registro-12"
     categoria: "coletivo"
     legenda: "Gemeinschaft"
-    alt: "Illustrativer Platzhalter für gemeinschaft, kein Foto der Veranstaltung 2026."
+    alt: "Publikum und Capoeiristas auf den Tribünen der Sporthalle."
     imagem: "/img/eventos/internacional-2026/galeria-12-comunidade.webp"
     largura: 1200
     altura: 800
@@ -169,7 +175,7 @@ videos:
     identificador: ""
     url: ""
     miniatura: "/img/eventos/internacional-2026/video-vivencias.webp"
-    miniatura_alt: "Illustratives Video-Miniaturbild für bildung und gemeinsames erleben"
+    miniatura_alt: "Miniaturbild des Videos zu Bildung und gemeinsamen Erfahrungen"
   - id: "roda"
     arquivo: "/img/eventos/internacional-2026/video-roda-otimizado.mp4"
     titulo: "Roda"
@@ -178,7 +184,7 @@ videos:
     identificador: ""
     url: ""
     miniatura: "/img/eventos/internacional-2026/video-roda.webp"
-    miniatura_alt: "Illustratives Video-Miniaturbild für roda"
+    miniatura_alt: "Miniaturbild des Roda-Videos"
   - id: "cerimonias"
     arquivo: "/img/eventos/internacional-2026/video-cerimonias-otimizado.mp4"
     titulo: "Zeremonien"
@@ -187,7 +193,7 @@ videos:
     identificador: ""
     url: ""
     miniatura: "/img/eventos/internacional-2026/video-cerimonias.webp"
-    miniatura_alt: "Illustratives Video-Miniaturbild für zeremonien"
+    miniatura_alt: "Miniaturbild des Videos zu den Zeremonien"
 depoimentos:
   - id: "depoimento-01"
     demo: false
@@ -294,66 +300,72 @@ arquivo_historico:
               imagem_formato: "paisagem"
 formados_mestres:
   titulo: "Geehrte Personen"
-  descricao: "Individuelle Grafiken für die in der Kommunikation dieser Ausgabe geehrten Personen."
+  descricao: "Aufnahmen der bei dieser Ausgabe geehrten Personen."
   itens:
     - nome: "Mestre Camaleão"
       imagem: "/img/eventos/internacional-2026/camaleao.png"
-      descricao: "Persönliches Motiv für Mestre Camaleão bei der Veranstaltung."
+      descricao: "Bild von Mestre Camaleão für die Veranstaltung."
     - nome: "Mestre Camarão"
       imagem: "/img/eventos/internacional-2026/camarao.png"
-      descricao: "Persönliches Motiv für Mestre Camarão bei der Veranstaltung."
+      descricao: "Bild von Mestre Camarão für die Veranstaltung."
     - nome: "Mestre Dobrado"
       imagem: "/img/eventos/internacional-2026/dobrado.png"
-      descricao: "Persönliches Motiv für Mestre Dobrado bei der Veranstaltung."
+      descricao: "Bild von Mestre Dobrado für die Veranstaltung."
     - nome: "Mestre Guerreiro"
       imagem: "/img/eventos/internacional-2026/guerreiro.png"
-      descricao: "Persönliches Motiv für Mestre Guerreiro bei der Veranstaltung."
+      descricao: "Bild von Mestre Guerreiro für die Veranstaltung."
     - nome: "Mestre Lasqueirinha"
       imagem: "/img/eventos/internacional-2026/lasqueirinha.png"
-      descricao: "Persönliches Motiv für Mestre Lasqueirinha bei der Veranstaltung."
+      descricao: "Bild von Mestre Lasqueirinha für die Veranstaltung."
     - nome: "Mestre Marcha Lenta"
       imagem: "/img/eventos/internacional-2026/marcha_lenta.png"
-      descricao: "Persönliches Motiv für Mestre Marcha Lenta bei der Veranstaltung."
+      descricao: "Bild von Mestre Marcha Lenta für die Veranstaltung."
     - nome: "Mestre Mister M"
       imagem: "/img/eventos/internacional-2026/mister_m.png"
-      descricao: "Persönliches Motiv für Mestre Mister M bei der Veranstaltung."
+      descricao: "Bild von Mestre Mister M für die Veranstaltung."
     - nome: "Mestre Tabaqueiro"
       imagem: "/img/eventos/internacional-2026/tabaqueiro.png"
-      descricao: "Persönliches Motiv für Mestre Tabaqueiro bei der Veranstaltung."
+      descricao: "Bild von Mestre Tabaqueiro für die Veranstaltung."
     - nome: "Contramestre Baraúna"
       imagem: "/img/eventos/internacional-2026/barauna.png"
-      descricao: "Persönliches Motiv für Contramestre Baraúna bei der Veranstaltung."
+      descricao: "Bild von Contramestre Baraúna für die Veranstaltung."
     - nome: "Contramestre Bingó"
       imagem: "/img/eventos/internacional-2026/bingo.png"
-      descricao: "Persönliches Motiv für Contramestre Bingó bei der Veranstaltung."
+      descricao: "Bild von Contramestre Bingó für die Veranstaltung."
     - nome: "Contramestre Casca Grossa"
       imagem: "/img/eventos/internacional-2026/casca_grossa.png"
-      descricao: "Persönliches Motiv für Contramestre Casca Grossa bei der Veranstaltung."
+      descricao: "Bild von Contramestre Casca Grossa für die Veranstaltung."
     - nome: "Contramestre Ceará"
       imagem: "/img/eventos/internacional-2026/ceara.png"
-      descricao: "Persönliches Motiv für Contramestre Ceará bei der Veranstaltung."
+      descricao: "Bild von Contramestre Ceará für die Veranstaltung."
     - nome: "Contramestra Kataryna"
       imagem: "/img/eventos/internacional-2026/kataryna.png"
-      descricao: "Persönliches Motiv für Contramestra Kataryna bei der Veranstaltung."
+      descricao: "Bild von Contramestra Kataryna für die Veranstaltung."
     - nome: "Professor Araúna"
       imagem: "/img/eventos/internacional-2026/arauna.png"
-      descricao: "Persönliches Motiv für Professor Araúna bei der Veranstaltung."
+      descricao: "Bild von Professor Araúna für die Veranstaltung."
     - nome: "Professor Baqueta"
       imagem: "/img/eventos/internacional-2026/baqueta.png"
-      descricao: "Persönliches Motiv für Professor Baqueta bei der Veranstaltung."
+      descricao: "Bild von Professor Baqueta für die Veranstaltung."
     - nome: "Professor Bom Cabelo"
+      imagem: "/img/eventos/internacional-2026/bom-cabelo.png"
+      descricao: "Bild von Professor Bom Cabelo für die Veranstaltung."
     - nome: "Professor Gafanhoto"
       imagem: "/img/eventos/internacional-2026/gafanhoto.png"
-      descricao: "Persönliches Motiv für Professor Gafanhoto bei der Veranstaltung."
+      descricao: "Bild von Professor Gafanhoto für die Veranstaltung."
     - nome: "Professora Guerreira"
       imagem: "/img/eventos/internacional-2026/guerreira.png"
-      descricao: "Persönliches Motiv für Professora Guerreira bei der Veranstaltung."
+      descricao: "Bild von Professora Guerreira für die Veranstaltung."
     - nome: "Professor Manhoso"
       imagem: "/img/eventos/internacional-2026/manhoso.png"
-      descricao: "Persönliches Motiv für Professor Manhoso bei der Veranstaltung."
+      descricao: "Bild von Professor Manhoso für die Veranstaltung."
     - nome: "Monitora Cabloca"
+      imagem: "/img/eventos/internacional-2026/cabloca.png"
+      descricao: "Bild von Monitora Cabloca für die Veranstaltung."
     - nome: "Monitora Raio de Sol"
       imagem: "/img/eventos/internacional-2026/raio_sol.png"
-      descricao: "Persönliches Motiv für Monitora Raio de Sol bei der Veranstaltung."
+      descricao: "Bild von Monitora Raio de Sol für die Veranstaltung."
 ---
-Vom 5. bis 7. November 2026 kamen Capoeiristas bei der Internationalen Capoeira Kwanza in Cotia zusammen. Das Treffen sollte die Capoeira-Kultur würdigen und Raum für Bildung, Wissensaustausch und Gemeinschaft schaffen.
+Vom 5. bis 7. November 2026 kamen Capoeiristas bei der Internationalen Capoeira Kwanza in Cotia, São Paulo, unter der Leitung von Mestre Jaguara zusammen. Das vom Ponto de Cultura Capoeira Kwanza organisierte Treffen würdigte die Capoeira-Kultur und bot Raum für Bildung, Wissensaustausch und Gemeinschaft.
+
+Das Programm umfasste einen Workshop am 5. November, eine Zeremonie am 6. November sowie Batizado und Kordelwechsel am 7. November.

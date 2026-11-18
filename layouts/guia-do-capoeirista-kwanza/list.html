@@ -46,7 +46,7 @@
                 {{ if not (in .File.BaseFileName "_index") }}
                   <a href="{{ .RelPermalink }}" class="guia-card">
                     <h2>{{ .Title }}</h2>
-                    {{ with .Params.description }}
+                    {{ with .Description }}
                       <p>{{ . }}</p>
                     {{ end }}
                   </a>

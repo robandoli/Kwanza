@@ -123,7 +123,7 @@ membros_equipe:
       funcao: "Capoeirista, Sängerin und Sambadeira"
       bio: "Kulturproduzentin, Sängerin und Sambadeira. Sie verantwortet Vernetzung, Organisation und Fortführung des Projekts und fördert Samba de Roda als Bildungs- und Kulturpraxis."
 
-    - nome: "CM Camarão"
+    - nome: "Mestre Camarão"
       funcao: "Capoeirista und Musiker"
       bio: "Er leitet die traditionelle Perkussion und trägt zur rhythmischen Grundlage und musikalischen Begleitung von Unterricht, Vertiefungen und Auftritten bei."
 

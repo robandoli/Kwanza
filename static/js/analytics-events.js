@@ -6,6 +6,9 @@
       page_path: window.location.pathname,
       page_title: document.title,
       ...params,
+      ...(params.event_name === "internacional_capoeira_kwanza" && !params.event_context
+        ? { event_context: "internacional_capoeira_kwanza" }
+        : {}),
     });
   };
 

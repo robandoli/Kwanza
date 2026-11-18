@@ -3,12 +3,15 @@
 Static multilingual Hugo site for Identidade Kwanza (`pt`, `en`, `es`), deployed on Netlify.
 
 ## Stack
-- Hugo `0.152.2`
+- Hugo `0.170.1` or newer
+- Node.js `26` (see `.nvmrc`)
 - Theme: `themes/beautifulhugo` (submodule)
 - Custom templates in `layouts/`
 - Custom assets in `static/`
 
 ## Local Development
+Use the Hugo version above and activate Node.js 26 with your version manager (for example, `nvm install` followed by `nvm use`).
+
 ```bash
 hugo server
 ```

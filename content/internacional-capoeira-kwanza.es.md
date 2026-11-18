@@ -1,9 +1,15 @@
 ---
 title: "Internacional Capoeira Kwanza 2026"
-description: "Retrospectiva institucional del Internacional Capoeira Kwanza 2026, realizado en Cotia, São Paulo, del 5 al 7 de noviembre."
+description: "Retrospectiva del Internacional Capoeira Kwanza 2026 en Cotia (São Paulo), con rodas y graduación bajo la dirección de Mestre Jaguara."
 subtitle: "Tradición, formación y encuentros que fortalecen nuestra historia."
 layout: "internacional-capoeira-kwanza"
 sharing_image: "/img/eventos/internacional-2026/retrospectiva-capa.webp"
+sharing_image_alt: "Capoeiristas abrazados en el escenario ante el público durante el encuentro en Cotia."
+galeria_credito: "Créditos fotográficos: [@soraiaoc](https://www.instagram.com/soraiaoc/), [@noclickdofaf](https://www.instagram.com/noclickdofaf/) y [@revelandoemocoesestudio](https://www.instagram.com/revelandoemocoesestudio/)."
+videos_credito: 'Vídeos: producción propia y [@\_felipe\_xavier\_](https://www.instagram.com/_felipe_xavier_/).'
+video_completo_url: "https://www.youtube.com/@culturapopularvemaprender"
+video_completo_texto: "Descubre más vídeos e imágenes en el canal Cultura Popular Vem Aprender."
+apoio_texto: "Apoyo: Governo Federal, a través de la Política Nacional Aldir Blanc de Fomento à Cultura (PNAB); Governo do Estado de São Paulo; Secretaria da Cultura, Economia e Indústria Criativas; Fomento CULTSP y ProAC Editais."
 feature_flags:
   page_enabled: true
   demo_media: false
@@ -14,14 +20,14 @@ evento:
   fim: "2026-11-07"
   periodo: "5 al 7 de noviembre de 2026"
   imagem: "/img/eventos/internacional-2026/retrospectiva-capa.webp"
-  imagem_alt: "Capoeiristas reunidos con certificados en el escenario durante el Internacional Capoeira Kwanza 2026."
+  imagem_alt: "Capoeiristas abrazados en el escenario ante el público durante el encuentro en Cotia."
   imagem_largura: 1600
   imagem_altura: 980
 home_destaque:
   imagem: "/img/eventos/internacional-2026/kwanza-em-movimento.webp"
   alt: "Integrantes del Grupo Kwanza reunidos en el escenario durante el encuentro."
   largura: 1200
-  altura: 760
+  altura: 927
 
 indicadores:
   - id: participantes
@@ -86,77 +92,77 @@ galeria:
   - id: "registro-02"
     categoria: "cerimonias"
     legenda: "Ceremonias"
-    alt: "Placeholder ilustrativo para ceremonias, no es una fotografía del evento de 2026."
+    alt: "Un grupo de homenajeados posa en el escenario sosteniendo certificados."
     imagem: "/img/eventos/internacional-2026/galeria-02-cerimonias.webp"
     largura: 1200
     altura: 800
   - id: "registro-03"
     categoria: "roda"
     legenda: "Roda callejera"
-    alt: "Placeholder ilustrativo para roda callejera, no es una fotografía del evento de 2026."
+    alt: "Dos capoeiristas juegan en una roda al aire libre rodeada de participantes."
     imagem: "/img/eventos/internacional-2026/galeria-03-roda-de-rua.webp"
     largura: 1200
     altura: 800
   - id: "registro-04"
     categoria: "batizado"
     legenda: "Bautizado"
-    alt: "Placeholder ilustrativo para bautizado, no es una fotografía del evento de 2026."
+    alt: "Capoeiristas juegan en el escenario durante el bautizado."
     imagem: "/img/eventos/internacional-2026/galeria-04-batizado.webp"
     largura: 1200
     altura: 800
   - id: "registro-05"
     categoria: "coletivo"
     legenda: "Encuentro colectivo"
-    alt: "Placeholder ilustrativo para encuentro colectivo, no es una fotografía del evento de 2026."
+    alt: "Dos capoeiristas juegan en una roda al aire libre ante el público."
     imagem: "/img/eventos/internacional-2026/galeria-05-encontro-coletivo.webp"
     largura: 1200
     altura: 800
   - id: "registro-06"
     categoria: "coletivo"
     legenda: "Música y movimiento"
-    alt: "Placeholder ilustrativo para música y movimiento, no es una fotografía del evento de 2026."
+    alt: "Un capoeirista con berimbau acompaña una roda al aire libre."
     imagem: "/img/eventos/internacional-2026/galeria-06-musica-e-movimento.webp"
     largura: 1200
     altura: 800
   - id: "registro-07"
     categoria: "coletivo"
     legenda: "Aprendizaje compartido"
-    alt: "Placeholder ilustrativo para aprendizaje compartido, no es una fotografía del evento de 2026."
+    alt: "Capoeiristas juegan en el escenario ante músicos y participantes sentados."
     imagem: "/img/eventos/internacional-2026/galeria-07-aprendizagem.webp"
     largura: 1200
     altura: 800
   - id: "registro-08"
     categoria: "coletivo"
     legenda: "Capoeira en el espacio público"
-    alt: "Placeholder ilustrativo para capoeira en el espacio público, no es una fotografía del evento de 2026."
+    alt: "Un grupo de participantes se reúne para una fotografía al aire libre."
     imagem: "/img/eventos/internacional-2026/galeria-08-espaco-publico.webp"
     largura: 1200
     altura: 800
   - id: "registro-09"
     categoria: "coletivo"
     legenda: "Roda de capoeira"
-    alt: "Placeholder ilustrativo para roda de capoeira, no es una fotografía del evento de 2026."
+    alt: "Capoeiristas juegan en el escenario ante músicos y participantes sentados."
     imagem: "/img/eventos/internacional-2026/galeria-09-roda.webp"
     largura: 1200
     altura: 800
   - id: "registro-10"
     categoria: "coletivo"
     legenda: "Celebración"
-    alt: "Placeholder ilustrativo para celebración, no es una fotografía del evento de 2026."
+    alt: "Niños posan para una fotografía en el gimnasio con el público al fondo."
     imagem: "/img/eventos/internacional-2026/galeria-10-celebracao.webp"
     largura: 1200
     altura: 720
   - id: "registro-11"
     categoria: "coletivo"
     legenda: "Movimiento y expresión"
-    alt: "Placeholder ilustrativo para movimiento y expresión, no es una fotografía del evento de 2026."
+    alt: "Capoeiristas se saludan en una roda al aire libre."
     imagem: "/img/eventos/internacional-2026/galeria-11-movimento-expressao.webp"
     largura: 1200
     altura: 800
   - id: "registro-12"
     categoria: "coletivo"
     legenda: "Comunidad"
-    alt: "Placeholder ilustrativo para comunidad, no es una fotografía del evento de 2026."
+    alt: "El público y capoeiristas reunidos en las gradas del gimnasio."
     imagem: "/img/eventos/internacional-2026/galeria-12-comunidade.webp"
     largura: 1200
     altura: 800
@@ -169,7 +175,7 @@ videos:
     identificador: ""
     url: ""
     miniatura: "/img/eventos/internacional-2026/video-vivencias.webp"
-    miniatura_alt: "Miniatura de vídeo ilustrativa de formación y vivencias"
+    miniatura_alt: "Miniatura del vídeo de formación y vivencias"
   - id: "roda"
     arquivo: "/img/eventos/internacional-2026/video-roda-otimizado.mp4"
     titulo: "Roda"
@@ -178,7 +184,7 @@ videos:
     identificador: ""
     url: ""
     miniatura: "/img/eventos/internacional-2026/video-roda.webp"
-    miniatura_alt: "Miniatura de vídeo ilustrativa de roda"
+    miniatura_alt: "Miniatura del vídeo de roda"
   - id: "cerimonias"
     arquivo: "/img/eventos/internacional-2026/video-cerimonias-otimizado.mp4"
     titulo: "Ceremonias"
@@ -187,7 +193,7 @@ videos:
     identificador: ""
     url: ""
     miniatura: "/img/eventos/internacional-2026/video-cerimonias.webp"
-    miniatura_alt: "Miniatura de vídeo ilustrativa de ceremonias"
+    miniatura_alt: "Miniatura del vídeo de ceremonias"
 depoimentos:
   - id: "depoimento-01"
     demo: false
@@ -294,66 +300,72 @@ arquivo_historico:
               imagem_formato: "paisagem"
 formados_mestres:
   titulo: "Personas homenajeadas"
-  descricao: "Obras individuales dedicadas a las personas homenajeadas en la comunicación de esta edición."
+  descricao: "Registros de las personas homenajeadas en esta edición."
   itens:
     - nome: "Mestre Camaleão"
       imagem: "/img/eventos/internacional-2026/camaleao.png"
-      descricao: "Arte individual de Mestre Camaleão para el evento."
+      descricao: "Imagen de Mestre Camaleão para el evento."
     - nome: "Mestre Camarão"
       imagem: "/img/eventos/internacional-2026/camarao.png"
-      descricao: "Arte individual de Mestre Camarão para el evento."
+      descricao: "Imagen de Mestre Camarão para el evento."
     - nome: "Mestre Dobrado"
       imagem: "/img/eventos/internacional-2026/dobrado.png"
-      descricao: "Arte individual de Mestre Dobrado para el evento."
+      descricao: "Imagen de Mestre Dobrado para el evento."
     - nome: "Mestre Guerreiro"
       imagem: "/img/eventos/internacional-2026/guerreiro.png"
-      descricao: "Arte individual de Mestre Guerreiro para el evento."
+      descricao: "Imagen de Mestre Guerreiro para el evento."
     - nome: "Mestre Lasqueirinha"
       imagem: "/img/eventos/internacional-2026/lasqueirinha.png"
-      descricao: "Arte individual de Mestre Lasqueirinha para el evento."
+      descricao: "Imagen de Mestre Lasqueirinha para el evento."
     - nome: "Mestre Marcha Lenta"
       imagem: "/img/eventos/internacional-2026/marcha_lenta.png"
-      descricao: "Arte individual de Mestre Marcha Lenta para el evento."
+      descricao: "Imagen de Mestre Marcha Lenta para el evento."
     - nome: "Mestre Mister M"
       imagem: "/img/eventos/internacional-2026/mister_m.png"
-      descricao: "Arte individual de Mestre Mister M para el evento."
+      descricao: "Imagen de Mestre Mister M para el evento."
     - nome: "Mestre Tabaqueiro"
       imagem: "/img/eventos/internacional-2026/tabaqueiro.png"
-      descricao: "Arte individual de Mestre Tabaqueiro para el evento."
+      descricao: "Imagen de Mestre Tabaqueiro para el evento."
     - nome: "Contramestre Baraúna"
       imagem: "/img/eventos/internacional-2026/barauna.png"
-      descricao: "Arte individual de Contramestre Baraúna para el evento."
+      descricao: "Imagen de Contramestre Baraúna para el evento."
     - nome: "Contramestre Bingó"
       imagem: "/img/eventos/internacional-2026/bingo.png"
-      descricao: "Arte individual de Contramestre Bingó para el evento."
+      descricao: "Imagen de Contramestre Bingó para el evento."
     - nome: "Contramestre Casca Grossa"
       imagem: "/img/eventos/internacional-2026/casca_grossa.png"
-      descricao: "Arte individual de Contramestre Casca Grossa para el evento."
+      descricao: "Imagen de Contramestre Casca Grossa para el evento."
     - nome: "Contramestre Ceará"
       imagem: "/img/eventos/internacional-2026/ceara.png"
-      descricao: "Arte individual de Contramestre Ceará para el evento."
+      descricao: "Imagen de Contramestre Ceará para el evento."
     - nome: "Contramestra Kataryna"
       imagem: "/img/eventos/internacional-2026/kataryna.png"
-      descricao: "Arte individual de Contramestra Kataryna para el evento."
+      descricao: "Imagen de Contramestra Kataryna para el evento."
     - nome: "Professor Araúna"
       imagem: "/img/eventos/internacional-2026/arauna.png"
-      descricao: "Arte individual de Professor Araúna para el evento."
+      descricao: "Imagen de Professor Araúna para el evento."
     - nome: "Professor Baqueta"
       imagem: "/img/eventos/internacional-2026/baqueta.png"
-      descricao: "Arte individual de Professor Baqueta para el evento."
+      descricao: "Imagen de Professor Baqueta para el evento."
     - nome: "Professor Bom Cabelo"
+      imagem: "/img/eventos/internacional-2026/bom-cabelo.png"
+      descricao: "Imagen de Professor Bom Cabelo para el evento."
     - nome: "Professor Gafanhoto"
       imagem: "/img/eventos/internacional-2026/gafanhoto.png"
-      descricao: "Arte individual de Professor Gafanhoto para el evento."
+      descricao: "Imagen de Professor Gafanhoto para el evento."
     - nome: "Professora Guerreira"
       imagem: "/img/eventos/internacional-2026/guerreira.png"
-      descricao: "Arte individual de Professora Guerreira para el evento."
+      descricao: "Imagen de Professora Guerreira para el evento."
     - nome: "Professor Manhoso"
       imagem: "/img/eventos/internacional-2026/manhoso.png"
-      descricao: "Arte individual de Professor Manhoso para el evento."
+      descricao: "Imagen de Professor Manhoso para el evento."
     - nome: "Monitora Cabloca"
+      imagem: "/img/eventos/internacional-2026/cabloca.png"
+      descricao: "Imagen de Monitora Cabloca para el evento."
     - nome: "Monitora Raio de Sol"
       imagem: "/img/eventos/internacional-2026/raio_sol.png"
-      descricao: "Arte individual de Monitora Raio de Sol para el evento."
+      descricao: "Imagen de Monitora Raio de Sol para el evento."
 ---
-Del 5 al 7 de noviembre de 2026, el Internacional Capoeira Kwanza reunió a capoeiristas en Cotia. El encuentro tuvo como propósito valorar la cultura de la capoeira y abrir un espacio para la formación, el intercambio de conocimientos y la convivencia.
+Del 5 al 7 de noviembre de 2026, el Internacional Capoeira Kwanza reunió a capoeiristas en Cotia, São Paulo, bajo la dirección de Mestre Jaguara. El encuentro, organizado por el Ponto de Cultura Capoeira Kwanza, valoró la cultura de la capoeira y abrió un espacio para la formación, el intercambio de conocimientos y la convivencia.
+
+La programación incluyó un taller el 5 de noviembre, una ceremonia el 6 de noviembre y un bautizado y cambio de cuerdas el 7 de noviembre.

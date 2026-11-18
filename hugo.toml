@@ -18,8 +18,8 @@ theme = "beautifulhugo"
 
 [languages]
   [languages.pt]
-    languageCode = "pt-BR"
-    languageName = "Português"
+    locale = "pt-BR"
+    label = "Português"
     weight = 1
     title = "Identidade Kwanza"
 
@@ -27,8 +27,8 @@ theme = "beautifulhugo"
       description = "Capoeira, cultura e formação através da Identidade Kwanza."
 
   [languages.es]
-    languageCode = "es"
-    languageName = "Español"
+    locale = "es"
+    label = "Español"
     weight = 2
     title = "Identidade Kwanza"
 
@@ -36,8 +36,8 @@ theme = "beautifulhugo"
       description = "Capoeira, cultura y formación a través de Identidad Kwanza."
 
   [languages.en]
-    languageCode = "en"
-    languageName = "English"
+    locale = "en"
+    label = "English"
     weight = 3
     title = "Identidade Kwanza"
 
@@ -45,8 +45,8 @@ theme = "beautifulhugo"
       description = "Capoeira, culture, and education through Identidade Kwanza."
 
   [languages.de]
-    languageCode = "de-DE"
-    languageName = "Deutsch"
+    locale = "de-DE"
+    label = "Deutsch"
     weight = 4
     title = "Identidade Kwanza"
 
