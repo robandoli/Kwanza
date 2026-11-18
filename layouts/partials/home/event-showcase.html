@@ -1,0 +1,26 @@
+{{ with site.GetPage "/internacional-capoeira-kwanza/" }}
+  {{ $event := .Params.evento }}
+  {{ $highlight := .Params.home_destaque }}
+  {{ $demoMedia := and .Params.feature_flags.demo_media (ne hugo.Environment "production") }}
+  {{ $media := partial "evento-kwanza/media-source.html" (dict "src" $highlight.imagem "demoSrc" $highlight.imagem_demo "demoMedia" $demoMedia) }}
+  {{ $src := $media.src }}
+  <section class="home-event-showcase section" aria-labelledby="home-event-showcase-title">
+    <div class="container">
+      <a class="home-event-showcase__link{{ if $src }} has-image{{ end }}" href="{{ relLangURL "/internacional-capoeira-kwanza/" }}" data-analytics-event="click_event_banner" data-analytics-param-event-name="internacional_capoeira_kwanza" data-analytics-param-cta-label="home_retrospectiva">
+        {{ if $src }}
+          <div class="home-event-showcase__image">
+            <img src="{{ $src }}" alt="{{ $highlight.alt }}" width="{{ $highlight.largura }}" height="{{ $highlight.altura }}" loading="lazy" decoding="async">
+            {{ if $media.demo }}<span class="evento-kwanza__demo-stamp">{{ i18n "event_demo_media_label" }}</span>{{ end }}
+          </div>
+        {{ end }}
+        <div class="home-event-showcase__copy">
+          <p class="evento-kwanza__eyebrow">{{ i18n "home_event_showcase_eyebrow" }}</p>
+          <h2 id="home-event-showcase-title">{{ i18n "event_showcase_title" }}</h2>
+          <p class="home-event-showcase__meta">{{ $event.periodo }} · {{ $event.local }}</p>
+          <p>{{ i18n "home_event_showcase_text" }}</p>
+          <span class="home-event-showcase__cta">{{ i18n "event_showcase_cta" }}</span>
+        </div>
+      </a>
+    </div>
+  </section>
+{{ end }}

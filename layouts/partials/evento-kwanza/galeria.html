@@ -1,0 +1,32 @@
+{{ $page := .page }}
+{{ $items := slice }}
+{{ range $page.Params.galeria }}
+  {{ $media := partial "evento-kwanza/media-source.html" (dict "src" .imagem "demoSrc" .imagem_demo "demoMedia" $.demoMedia) }}
+  {{ if $media.src }}{{ $items = $items | append (merge . (dict "resolvedMedia" $media)) }}{{ end }}
+{{ end }}
+{{ with $items }}
+  <section class="evento-kwanza__gallery section" aria-labelledby="event-gallery-title">
+    <div class="container">
+      <header class="evento-kwanza__section-header editorial-content">
+        <p class="evento-kwanza__eyebrow">{{ i18n "event_gallery_eyebrow" }}</p>
+        <h2 id="event-gallery-title">{{ i18n "event_gallery_title" }}</h2>
+      </header>
+      <div class="evento-kwanza__gallery-grid">
+        {{ range . }}
+          {{ $src := .resolvedMedia.src }}
+          <figure class="evento-kwanza__gallery-item" data-gallery-item data-gallery-category="{{ .categoria }}">
+            <button type="button" class="evento-kwanza__gallery-open" data-lightbox-open data-lightbox-group="gallery" data-lightbox-src="{{ $src }}" data-lightbox-alt="{{ .alt }}" data-lightbox-caption="{{ .legenda }}" data-analytics-event="event_gallery_open" data-analytics-param-event-name="internacional_capoeira_kwanza" data-analytics-param-gallery-item="{{ .id }}" aria-label="{{ printf (i18n "event_gallery_open_aria") .legenda }}">
+              <span class="evento-kwanza__image-frame" data-image-frame style="aspect-ratio: {{ .largura }} / {{ .altura }}">
+                <span class="evento-kwanza__image-loading" aria-hidden="true">{{ i18n "event_image_loading" }}</span>
+                <img data-event-image src="{{ $src }}" alt="{{ .alt }}" width="{{ .largura }}" height="{{ .altura }}" loading="lazy" decoding="async">
+                <span class="evento-kwanza__image-error" data-image-error role="status" hidden>{{ i18n "event_image_error" }}</span>
+              </span>
+              <span class="evento-kwanza__gallery-caption"><strong>{{ i18n (printf "event_category_%s" .categoria) }}</strong><span>{{ .legenda }}</span></span>
+            </button>
+            <figcaption class="evento-kwanza__visually-hidden">{{ .legenda }}</figcaption>
+          </figure>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

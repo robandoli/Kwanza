@@ -4,7 +4,7 @@
 
 .site-footer {
   background: var(--bg-section);
-  padding: 60px 0;
+  padding: 60px 0 0;
   color: var(--white-soft);
 }
 
@@ -13,6 +13,19 @@
   grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr) auto;
   gap: 32px;
   align-items: center;
+  padding-bottom: var(--space-xl);
+}
+
+.footer-funding-strip {
+  background: var(--white-pure);
+}
+
+.footer-funding-strip__image {
+  display: block;
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  margin-inline: auto;
 }
 
 .footer-brand p {
@@ -156,7 +169,11 @@
   }
 
   .site-footer {
-    padding: 44px 0;
+    padding: 44px 0 0;
+  }
+
+  .footer-grid {
+    padding-bottom: var(--space-lg);
   }
 
   .footer-links {

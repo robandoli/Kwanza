@@ -1,0 +1,26 @@
+{{ $page := .page }}
+{{ $items := slice }}
+{{ range $page.Params.depoimentos }}
+  {{ if and .aprovado (not .demo) }}
+    {{ $items = $items | append . }}
+  {{ end }}
+{{ end }}
+{{ with $items }}
+  <section class="evento-kwanza__testimonials section" aria-labelledby="event-testimonials-title">
+    <div class="container">
+      <header class="evento-kwanza__section-header editorial-content">
+        <p class="evento-kwanza__eyebrow">{{ i18n "event_testimonials_eyebrow" }}</p>
+        <h2 id="event-testimonials-title">{{ i18n "event_testimonials_title" }}</h2>
+      </header>
+      <div class="evento-kwanza__testimonial-grid">
+        {{ range . }}
+          <figure class="evento-kwanza__testimonial">
+            {{ if and (not .demo) .fotografia }}<img src="{{ .fotografia }}" alt="{{ .nome }}" width="96" height="96" loading="lazy" decoding="async">{{ end }}
+            <blockquote>{{ .texto }}</blockquote>
+            <figcaption><strong>{{ .nome }}</strong><span>{{ .vinculo }}</span>{{ with .localidade }}<span>{{ . }}</span>{{ end }}</figcaption>
+          </figure>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

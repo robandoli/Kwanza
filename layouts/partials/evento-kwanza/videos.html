@@ -1,0 +1,47 @@
+{{ $page := .page }}
+{{ $items := slice }}
+{{ range $page.Params.videos }}
+  {{ $providerSupported := in (slice "youtube" "vimeo") .provedor }}
+  {{ $media := partial "evento-kwanza/media-source.html" (dict "src" .miniatura "demoSrc" .miniatura_demo "demoMedia" $.demoMedia) }}
+  {{ $localFile := .arquivo | default "" }}
+  {{ $hasLocalVideo := and (hasPrefix $localFile "/img/eventos/internacional-2026/") (hasSuffix $localFile ".mp4") (not (in $localFile "..")) (os.FileExists (printf "static%s" $localFile)) }}
+  {{ $hasPlayback := and $providerSupported (or .url .identificador) }}
+  {{ $hasDemoThumbnail := and $.demoMedia $media.demo }}
+  {{ if or $hasLocalVideo $hasPlayback $hasDemoThumbnail }}
+    {{ $items = $items | append (merge . (dict "resolvedMedia" $media "hasPlayback" $hasPlayback "hasLocalVideo" $hasLocalVideo)) }}
+  {{ end }}
+{{ end }}
+{{ with $items }}
+  <section class="evento-kwanza__videos section" aria-labelledby="event-videos-title">
+    <div class="container">
+      <header class="evento-kwanza__section-header editorial-content">
+        <p class="evento-kwanza__eyebrow">{{ i18n "event_videos_eyebrow" }}</p>
+        <h2 id="event-videos-title">{{ i18n "event_videos_title" }}</h2>
+      </header>
+      <div class="evento-kwanza__video-grid">
+        {{ range . }}
+          {{ $thumb := .resolvedMedia.src }}
+          <article class="evento-kwanza__video-item">
+            <div class="evento-kwanza__video-frame">
+              {{ $providerSupported := in (slice "youtube" "vimeo") .provedor }}
+              {{ if .hasLocalVideo }}
+                <video controls playsinline preload="metadata" aria-label="{{ .titulo }}" data-event-local-video data-analytics-param-event-name="internacional_capoeira_kwanza" data-analytics-param-video-category="{{ .id }}"{{ if and $thumb (not .resolvedMedia.demo) }} poster="{{ $thumb }}"{{ end }}>
+                  <source src="{{ .arquivo }}" type="video/mp4">
+                </video>
+              {{ else if .hasPlayback }}
+                <button type="button" class="evento-kwanza__video-load" data-video-load data-video-provider="{{ .provedor }}" data-video-id="{{ .identificador }}" data-video-url="{{ .url }}" data-video-title="{{ .titulo }}" data-analytics-param-event-name="internacional_capoeira_kwanza" data-analytics-param-video-category="{{ .id }}" aria-label="{{ printf (i18n "event_video_play_aria") .titulo }}">
+                  {{ if $thumb }}<img src="{{ $thumb }}" alt="{{ .miniatura_alt }}" width="1200" height="800" loading="lazy" decoding="async">{{ end }}
+                  <span>{{ i18n "event_video_play" }}</span>
+                </button>
+              {{ else if $thumb }}
+                <img src="{{ $thumb }}" alt="{{ .miniatura_alt }}" width="1200" height="800" loading="lazy" decoding="async">
+              {{ end }}
+            </div>
+            <h3>{{ .titulo }}</h3>
+            <p>{{ .descricao }}</p>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

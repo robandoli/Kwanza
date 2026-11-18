@@ -26,6 +26,9 @@ other = "Wir sind jetzt ein Kulturpunkt"
 [cultural_recognition_seal_alt]
 other = "Kulturpunkt — zertifiziert vom Kulturministerium"
 
+[footer_funding_strip_alt]
+other = "Logos der Institutionen, die das Kulturprojekt fördern, unterstützen und umsetzen."
+
 [cultural_recognition_footer]
 other = "Grupo Kwanza — vom Kulturministerium zertifizierter Kulturpunkt"
 
@@ -130,30 +133,12 @@ other = "Capoeira-Unterricht in Brasilien, Chile, Mexiko, Mosambik und Deutschla
 [floating_whatsapp_label]
 other = "Nachricht über WhatsApp senden"
 
-[event_banner_text]
-other = "<strong>Offizielle Kwanza-Veranstaltung</strong> • 5.–7. November in Cotia/SP — vollständiges Programm ansehen"
-
-[event_banner_badge]
-other = "Offizielle Veranstaltung"
-
-[event_banner_title]
-other = "Internationale Capoeira Kwanza"
-
-[event_banner_meta]
-other = "5.–7. November · Cotia/SP"
-
-[event_banner_cta]
-other = "Programm ansehen"
-
 # Internationale Veranstaltungsseite
 [event_page_unavailable]
 other = "Seite nicht verfügbar"
 
 [event_page_unavailable_message]
 other = "Diese Seite ist vorübergehend deaktiviert."
-
-[event_eyebrow_special_program]
-other = "Sonderprogramm"
 
 [event_eyebrow_homage]
 other = "Ehrungen"
@@ -167,32 +152,177 @@ other = "Vorherige Geehrte"
 [event_next_masters]
 other = "Nächste Geehrte"
 
-[event_eyebrow_schedule]
-other = "Programm"
-
-[event_complete_schedule]
-other = "Vollständiges Programm"
-
 [event_view_map]
 other = "Karte anzeigen"
 
 [event_map_aria]
 other = "%s auf der Karte anzeigen"
 
-[event_investment]
-other = "💰 Teilnahmebeitrag"
-
-[event_contact]
-other = "📞 Kontakt"
-
-[event_organization]
-other = "🧭 Organisation"
-
-[event_primary_cta]
-other = "Platz sichern"
-
-[event_floating_whatsapp_aria]
-other = "Platz über WhatsApp sichern"
-
 [event_lightbox_close]
 other = "Vergrößertes Bild schließen"
+
+# International Capoeira Kwanza retrospective
+[event_showcase_title]
+other = "Internationale Capoeira Kwanza 2026"
+
+[event_showcase_cta]
+other = "Rückblick ansehen"
+
+[event_demo_media_label]
+other = "Beispielinhalt"
+
+[event_retrospective_label]
+other = "Institutionelles Gedenken"
+
+[event_location_label]
+other = "Ort"
+
+[event_period_label]
+other = "Zeitraum"
+
+[event_status_label]
+other = "Status"
+
+[event_completed]
+other = "Veranstaltung fand statt"
+
+[event_intro_eyebrow]
+other = "Die Begegnung"
+
+[event_intro_title]
+other = "Capoeira verbindet Generationen und Regionen"
+
+[event_indicators_eyebrow]
+other = "Die Veranstaltung in Zahlen"
+
+[event_indicators_title]
+other = "Teilnahme und Bildung"
+
+[event_metric_participantes]
+other = "Teilnehmende"
+
+[event_metric_graduacoes]
+other = "Graduierungen"
+
+[event_metric_oficinas_programadas]
+other = "Workshops im Programm"
+
+[event_metric_localidades]
+other = "Vertretene Regionen"
+
+[event_metric_atividades]
+other = "Durchgeführte Aktivitäten"
+
+[event_moments_eyebrow]
+other = "Erlebnisse"
+
+[event_moments_title]
+other = "Besondere Momente"
+
+[event_moment_formacao]
+other = "Bildung"
+
+[event_moment_reconhecimento]
+other = "Würdigung"
+
+[event_moment_roda-de-rua]
+other = "Gemeinschaft"
+
+[event_moment_batizado-formatura]
+other = "Weiterentwicklung"
+
+[event_masters_pages]
+other = "Navigation durch die Seiten der Geehrten"
+
+[event_gallery_eyebrow]
+other = "Visuelle Aufzeichnungen"
+
+[event_gallery_title]
+other = "Bildergalerie"
+
+[event_category_vivencias]
+other = "Gemeinsames Training"
+
+[event_category_cerimonias]
+other = "Zeremonien"
+
+[event_category_roda]
+other = "Roda"
+
+[event_category_batizado]
+other = "Batizado"
+
+[event_category_coletivo]
+other = "Gemeinschaftstreffen"
+
+[event_gallery_open_aria]
+other = "Bild vergrößern: %s"
+
+[event_gallery_previous]
+other = "Vorheriges Bild"
+
+[event_gallery_next]
+other = "Nächstes Bild"
+
+[event_lightbox_title]
+other = "Vergrößertes Bild"
+
+[event_image_loading]
+other = "Bild wird geladen"
+
+[event_image_error]
+other = "Dieses Bild konnte nicht geladen werden."
+
+[event_videos_eyebrow]
+other = "Audiovisuelles"
+
+[event_videos_title]
+other = "Videos"
+
+[event_video_play]
+other = "Video abspielen"
+
+[event_video_play_aria]
+other = "Video abspielen: %s"
+
+[event_testimonials_eyebrow]
+other = "Stimmen aus der Gemeinschaft"
+
+[event_testimonials_title]
+other = "Erfahrungsberichte"
+
+[event_cta_eyebrow]
+other = "Nächste Schritte"
+
+[event_cta_title]
+other = "Diese Geschichte geht weiter. Werden Sie Teil davon."
+
+[event_cta_text]
+other = "Lernen Sie unsere Aktivitäten kennen und erfahren Sie, wie Sie Ihre Capoeira-Reise mit Kwanza beginnen können."
+
+[event_cta_learn]
+other = "Unsere Kurse kennenlernen"
+
+[event_cta_group]
+other = "Grupo Kwanza kennenlernen"
+
+[event_archive_eyebrow]
+other = "Erinnerung an die Veranstaltung"
+
+[event_archive_title]
+other = "Erinnerung und Programm der Veranstaltung"
+
+[home_event_showcase_eyebrow]
+other = "Kwanza in Bewegung"
+
+[home_event_showcase_text]
+other = "Eine Begegnung mit Schwerpunkt auf Bildung, Kultur und Austausch unter Capoeiristas."
+
+[event_archive_poster_alt]
+other = "Originalplakat mit dem Programm der Veranstaltung"
+
+[event_archive_poster_label]
+other = "Originalplakat zum Programm"
+
+[event_masters_page_format]
+other = "Seite %current% von %total% der Geehrten"

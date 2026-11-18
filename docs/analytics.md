@@ -8,7 +8,7 @@ O site envia os eventos definidos neste documento quando `ga_measurement_id` est
 | --- | --- | --- |
 | `click_contact_cta` | CTA de contato na home | `cta_label`, `page_section` |
 | `click_whatsapp` | Contato por WhatsApp, incluindo CTAs flutuantes | `cta_label`, `page_section`, `event_name` |
-| `click_event_banner` | Banner do evento na home | `cta_label`, `event_name` |
+| `click_event_banner` | Vitrine Kwanza em Movimento na home | `cta_label`, `event_name` |
 | `click_map` | Abertura de mapa | `location_name`, `location_city`, `page_section` |
 | `file_download_curriculo` | Clique em arquivo de currículo | `file_name`, `page_section` |
 | `external_social_click` | Acesso a rede social | `social_network`, `page_section` |
@@ -25,12 +25,15 @@ O site envia os eventos definidos neste documento quando `ga_measurement_id` est
 | `schedule_image_open` | Abertura de imagem da programação do evento | `activity_name`, `page_section` |
 | `schedule_image_close` | Fechamento da imagem da programação do evento | `event_name`, `page_section` |
 | `event_view` | Entrada na página do evento internacional | `event_name` |
+| `event_gallery_open` | Abertura de imagem na galeria da retrospectiva | `event_name`, `gallery_item` |
+| `event_video_play` | Clique para carregar um vídeo validado | `event_name`, `video_category` |
+| `event_learn_cta_click` | CTA para aulas ou apresentação institucional na retrospectiva | `event_name`, `cta_label` |
 
 `page_path` e `page_title` acompanham os eventos. Para links externos, `link_url` contém somente a origem; para links internos, contém o caminho sem query ou fragmento. Links de telefone e e-mail não enviam o endereço de destino.
 
 O texto digitado na busca de cantigas não é enviado. Buscas são registradas após 600 ms sem digitação, junto com a quantidade de resultados.
 
-Os vídeos incorporados do YouTube recebem `enablejsapi=1` para permitir que a medição otimizada de vídeo do GA4 registre `video_start`, `video_progress` e `video_complete`, se esse recurso estiver habilitado na propriedade.
+Os vídeos externos da retrospectiva são incorporados após um clique e a validação do provedor e do identificador ou URL HTTPS. Nos vídeos locais, `event_video_play` é enviado ao iniciar ou retomar a reprodução; nos externos, ao carregar o vídeo. O evento não registra dados pessoais.
 
 ## Relatórios
 

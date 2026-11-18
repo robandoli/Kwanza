@@ -4,3 +4,9 @@
 
 [build.environment]
   HUGO_VERSION = "0.152.2"
+
+[context.deploy-preview]
+  command = "hugo --minify --environment preview"
+
+[context.branch-deploy]
+  command = "hugo --minify --environment preview"

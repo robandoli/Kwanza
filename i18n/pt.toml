@@ -26,6 +26,9 @@ other = "Agora somos Ponto de Cultura"
 [cultural_recognition_seal_alt]
 other = "Ponto de Cultura — certificado pelo Ministério da Cultura"
 
+[footer_funding_strip_alt]
+other = "Logos das instituições de fomento, apoio e realização do projeto cultural."
+
 [cultural_recognition_footer]
 other = "Grupo Kwanza — Ponto de Cultura certificado pelo Ministério da Cultura"
 
@@ -131,30 +134,12 @@ other = "Aulas de capoeira em Cotia, Osasco, Nova Vida - Cotia, Pernambuco, Bahi
 [floating_whatsapp_label]
 other = "Falar pelo WhatsApp"
 
-[event_banner_text]
-other = "<strong>Evento oficial Kwanza</strong> • 05 a 07 de novembro em Cotia/SP — confira a programação completa"
-
-[event_banner_badge]
-other = "Evento oficial"
-
-[event_banner_title]
-other = "Internacional Capoeira Kwanza"
-
-[event_banner_meta]
-other = "05 a 07 de novembro · Cotia/SP"
-
-[event_banner_cta]
-other = "Ver programação"
-
 # International event page
 [event_page_unavailable]
 other = "Página indisponível"
 
 [event_page_unavailable_message]
 other = "Esta página está temporariamente desativada."
-
-[event_eyebrow_special_program]
-other = "Programação especial"
 
 [event_eyebrow_homage]
 other = "Homenagem"
@@ -168,32 +153,177 @@ other = "Homenageados anteriores"
 [event_next_masters]
 other = "Próximos homenageados"
 
-[event_eyebrow_schedule]
-other = "Cronograma"
-
-[event_complete_schedule]
-other = "Programação completa"
-
 [event_view_map]
 other = "Ver no mapa"
 
 [event_map_aria]
 other = "Ver %s no mapa"
 
-[event_investment]
-other = "💰 Investimento"
-
-[event_contact]
-other = "📞 Contato"
-
-[event_organization]
-other = "🧭 Organização"
-
-[event_primary_cta]
-other = "Garantir minha vaga"
-
-[event_floating_whatsapp_aria]
-other = "Garantir minha vaga pelo WhatsApp"
-
 [event_lightbox_close]
 other = "Fechar imagem ampliada"
+
+# International Capoeira Kwanza retrospective
+[event_showcase_title]
+other = "Internacional Capoeira Kwanza 2026"
+
+[event_showcase_cta]
+other = "Ver retrospectiva"
+
+[event_demo_media_label]
+other = "Conteúdo demonstrativo"
+
+[event_retrospective_label]
+other = "Memória institucional"
+
+[event_location_label]
+other = "Local"
+
+[event_period_label]
+other = "Período"
+
+[event_status_label]
+other = "Situação"
+
+[event_completed]
+other = "Evento realizado"
+
+[event_intro_eyebrow]
+other = "O encontro"
+
+[event_intro_title]
+other = "A capoeira que conecta gerações e territórios"
+
+[event_indicators_eyebrow]
+other = "O evento em números"
+
+[event_indicators_title]
+other = "Participação e formação"
+
+[event_metric_participantes]
+other = "Participantes"
+
+[event_metric_graduacoes]
+other = "Graduações"
+
+[event_metric_oficinas_programadas]
+other = "Oficinas na programação"
+
+[event_metric_localidades]
+other = "Localidades representadas"
+
+[event_metric_atividades]
+other = "Atividades realizadas"
+
+[event_moments_eyebrow]
+other = "Experiências"
+
+[event_moments_title]
+other = "Momentos marcantes"
+
+[event_moment_formacao]
+other = "Formação"
+
+[event_moment_reconhecimento]
+other = "Cerimônias"
+
+[event_moment_roda-de-rua]
+other = "Comunidade"
+
+[event_moment_batizado-formatura]
+other = "Continuidade"
+
+[event_masters_pages]
+other = "Navegação das páginas de homenageados"
+
+[event_gallery_eyebrow]
+other = "Registros visuais"
+
+[event_gallery_title]
+other = "Galeria"
+
+[event_category_vivencias]
+other = "Vivências"
+
+[event_category_cerimonias]
+other = "Cerimônias"
+
+[event_category_roda]
+other = "Roda"
+
+[event_category_batizado]
+other = "Batizado"
+
+[event_category_coletivo]
+other = "Participação coletiva"
+
+[event_gallery_open_aria]
+other = "Ampliar imagem: %s"
+
+[event_gallery_previous]
+other = "Imagem anterior"
+
+[event_gallery_next]
+other = "Próxima imagem"
+
+[event_lightbox_title]
+other = "Imagem ampliada"
+
+[event_image_loading]
+other = "Carregando imagem"
+
+[event_image_error]
+other = "Não foi possível carregar esta imagem."
+
+[event_videos_eyebrow]
+other = "Audiovisual"
+
+[event_videos_title]
+other = "Vídeos"
+
+[event_video_play]
+other = "Reproduzir vídeo"
+
+[event_video_play_aria]
+other = "Reproduzir vídeo: %s"
+
+[event_testimonials_eyebrow]
+other = "Vozes da comunidade"
+
+[event_testimonials_title]
+other = "Depoimentos"
+
+[event_cta_eyebrow]
+other = "Próximos passos"
+
+[event_cta_title]
+other = "Essa história continua. Faça parte dela."
+
+[event_cta_text]
+other = "Conheça nossas atividades e descubra como começar sua caminhada na capoeira com o Kwanza."
+
+[event_cta_learn]
+other = "Conheça nossas aulas"
+
+[event_cta_group]
+other = "Conheça o Grupo Kwanza"
+
+[event_archive_eyebrow]
+other = "Memória do evento"
+
+[event_archive_title]
+other = "Memória e programação do evento"
+
+[home_event_showcase_eyebrow]
+other = "Kwanza em Movimento"
+
+[home_event_showcase_text]
+other = "Um encontro dedicado à formação, à cultura e à convivência entre capoeiristas."
+
+[event_archive_poster_alt]
+other = "Cartaz original com a programação do evento"
+
+[event_archive_poster_label]
+other = "Cartaz original da programação"
+
+[event_masters_page_format]
+other = "Página %current% de %total% dos homenageados"

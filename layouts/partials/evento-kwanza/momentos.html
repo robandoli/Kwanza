@@ -1,0 +1,26 @@
+{{ $page := .page }}
+{{ with $page.Params.momentos }}
+  <section class="evento-kwanza__moments section" aria-labelledby="event-moments-title">
+    <div class="container">
+      <header class="evento-kwanza__section-header editorial-content">
+        <p class="evento-kwanza__eyebrow">{{ i18n "event_moments_eyebrow" }}</p>
+        <h2 id="event-moments-title">{{ i18n "event_moments_title" }}</h2>
+      </header>
+      <div class="evento-kwanza__moment-list">
+        {{ range $index, $moment := . }}
+          <article class="evento-kwanza__moment evento-kwanza__moment--{{ $moment.id }}" id="momento-{{ $moment.id }}" aria-labelledby="momento-titulo-{{ $moment.id }}">
+            {{ partial "evento-kwanza/image.html" (dict "src" $moment.imagem "demoSrc" $moment.imagem_demo "demoMedia" $.demoMedia "alt" $moment.alt "width" $moment.imagem_largura "height" $moment.imagem_altura "class" "moment" "caption" "" "loading" "lazy") }}
+            <div class="evento-kwanza__moment-copy">
+              <p class="evento-kwanza__eyebrow"><span class="evento-kwanza__moment-index" aria-hidden="true">{{ printf "%02d" (add $index 1) }}</span>{{ i18n (printf "event_moment_%s" $moment.id) }}</p>
+              <h3 id="momento-titulo-{{ $moment.id }}">{{ $moment.titulo }}</h3>
+              <p>{{ $moment.descricao }}</p>
+              {{ range $moment.fotos }}
+                {{ partial "evento-kwanza/image.html" (dict "src" .imagem "demoSrc" .imagem_demo "demoMedia" $.demoMedia "alt" .alt "width" .largura "height" .altura "caption" .legenda "loading" "lazy") }}
+              {{ end }}
+            </div>
+          </article>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

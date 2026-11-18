@@ -2,18 +2,23 @@
 {{ if not .Params.feature_flags.page_enabled }}
   {{ partial "evento-kwanza/disabled.html" . }}
 {{ else }}
+  {{ $demoMedia := and .Params.feature_flags.demo_media (ne hugo.Environment "production") }}
   <article
     class="evento-kwanza"
     data-analytics-page-event="event_view"
     data-analytics-param-event-name="internacional_capoeira_kwanza">
-    {{ partial "evento-kwanza/hero.html" . }}
+    {{ partial "evento-kwanza/hero.html" (dict "page" . "demoMedia" $demoMedia) }}
+    {{ partial "evento-kwanza/intro.html" . }}
+    {{ partial "evento-kwanza/indicadores.html" (dict "page" . "demoMedia" $demoMedia) }}
+    {{ partial "evento-kwanza/momentos.html" (dict "page" . "demoMedia" $demoMedia) }}
     {{ partial "evento-kwanza/mestres.html" . }}
+    {{ partial "evento-kwanza/galeria.html" (dict "page" . "demoMedia" $demoMedia) }}
+    {{ partial "evento-kwanza/videos.html" (dict "page" . "demoMedia" $demoMedia) }}
+    {{ partial "evento-kwanza/depoimentos.html" (dict "page" . "demoMedia" $demoMedia) }}
+    {{ partial "evento-kwanza/cta.html" . }}
     {{ partial "evento-kwanza/programacao.html" . }}
-    {{ partial "evento-kwanza/info.html" . }}
   </article>
-
-  {{ partial "evento-kwanza/floating-whatsapp.html" . }}
   {{ partial "evento-kwanza/lightbox.html" . }}
-  <script src="/js/internacional-capoeira-kwanza.js?v=20260520-2" defer></script>
+  <script src="/js/internacional-capoeira-kwanza.js?v=20261109-1" defer></script>
 {{ end }}
 {{ end }}
